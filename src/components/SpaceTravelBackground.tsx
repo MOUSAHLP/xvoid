@@ -151,7 +151,7 @@ const SpaceTravelBackground: React.FC = () => {
     <>
       <canvas
         ref={canvasRef}
-        className="fixed inset-0 w-full h-full -z-10"
+        className="fixed inset-0 w-full h-full z-0"
       />
       <div className="absolute inset-0 bg-gradient-to-b from-cosmic-dark via-cosmic-dark/50 to-transparent opacity-30"></div>
     </>

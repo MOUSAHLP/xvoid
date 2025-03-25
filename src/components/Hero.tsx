@@ -22,15 +22,15 @@ const Hero: React.FC = () => {
               We build cutting-edge web and mobile applications that transcend boundaries and explore new technological frontiers.
             </p>
             
-            <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start space-y-4 sm:space-y-0 sm:space-x-6">
-              <Link to="/contact" className="cosmic-button group">
-                <span className="flex items-center">
+            <div className="flex flex-col items-center justify-center lg:justify-start space-y-4">
+              <Link to="/contact" className="cosmic-button group w-full sm:w-auto">
+                <span className="flex items-center justify-center">
                   Launch Your Project
                   <ArrowRight className="ml-2 w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" />
                 </span>
               </Link>
               
-              <Link to="/portfolio" className="text-cosmic-blue hover:text-glow transition-all duration-300 group flex items-center">
+              <Link to="/portfolio" className="text-cosmic-blue hover:text-glow transition-all duration-300 group flex items-center w-full sm:w-auto justify-center">
                 View Our Work
                 <span className="ml-2 transform transition-transform duration-300 group-hover:translate-x-1">→</span>
               </Link>

@@ -9,6 +9,7 @@ import Index from "./pages/Index";
 import About from "./pages/About";
 import Services from "./pages/Services";
 import Portfolio from "./pages/Portfolio";
+import ProjectDetail from "./pages/ProjectDetail";
 import Contact from "./pages/Contact";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
@@ -64,6 +65,16 @@ const App = () => {
                   transition={{ duration: 0.5 }}
                 >
                   <Portfolio />
+                </motion.div>
+              } />
+              <Route path="/project/:id" element={
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  exit={{ opacity: 0 }}
+                  transition={{ duration: 0.5 }}
+                >
+                  <ProjectDetail />
                 </motion.div>
               } />
               <Route path="/contact" element={

@@ -11,42 +11,42 @@ const Portfolio: React.FC = () => {
   // Projects data
   const projects = [
     {
-      id: 1,
+      id: "1",
       title: "Nebula Finance Dashboard",
       description: "A comprehensive financial dashboard with real-time data visualization and AI-powered insights.",
       image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop",
       category: "Web Application"
     },
     {
-      id: 2,
+      id: "2",
       title: "Quantum Health Mobile App",
       description: "A health tracking application with personalized recommendations and seamless device integration.",
       image: "https://images.unsplash.com/photo-1551650975-87deedd944c3?q=80&w=1974&auto=format&fit=crop",
       category: "Mobile App"
     },
     {
-      id: 3,
+      id: "3",
       title: "Stellar E-commerce Platform",
       description: "A complete e-commerce solution with AI-powered product recommendations and analytics.",
       image: "https://images.unsplash.com/photo-1557821552-17105176677c?q=80&w=1932&auto=format&fit=crop",
       category: "Web Application"
     },
     {
-      id: 4,
+      id: "4",
       title: "Cosmos Social Network",
       description: "A next-generation social platform with advanced privacy features and content curation.",
       image: "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?q=80&w=2012&auto=format&fit=crop",
       category: "Web & Mobile"
     },
     {
-      id: 5,
+      id: "5",
       title: "Galactic Analytics",
       description: "Business intelligence platform with interactive dashboards and predictive analytics.",
       image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015&auto=format&fit=crop",
       category: "AI Solutions"
     },
     {
-      id: 6,
+      id: "6",
       title: "Orbit CRM",
       description: "Customer relationship management system with AI-powered insights and automation.",
       image: "https://images.unsplash.com/photo-1543286386-713bdd548da4?q=80&w=2070&auto=format&fit=crop",
@@ -106,6 +106,7 @@ const Portfolio: React.FC = () => {
             {filteredProjects.map((project, index) => (
               <ProjectCard
                 key={project.id}
+                id={project.id}
                 title={project.title}
                 description={project.description}
                 image={project.image}

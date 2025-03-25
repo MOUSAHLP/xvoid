@@ -2,6 +2,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Eye, Code, ExternalLink } from "lucide-react";
+import { Link } from "react-router-dom";
 
 interface ProjectCardProps {
   title: string;
@@ -9,6 +10,7 @@ interface ProjectCardProps {
   image: string;
   category: string;
   delay: number;
+  id?: string;
 }
 
 const ProjectCard: React.FC<ProjectCardProps> = ({
@@ -16,7 +18,8 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   description,
   image,
   category,
-  delay
+  delay,
+  id = "1" // Default ID if none provided
 }) => {
   return (
     <motion.div
@@ -72,14 +75,14 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             Code
           </a>
           
-          <a 
-            href="#" 
+          <Link 
+            to={`/project/${id}`}
             className="flex items-center text-sm text-white/70 hover:text-cosmic-pink transition-colors duration-300 ml-auto"
             aria-label={`View ${title} details`}
           >
             Details
             <ExternalLink className="ml-1 w-4 h-4" />
-          </a>
+          </Link>
         </div>
       </div>
     </motion.div>
