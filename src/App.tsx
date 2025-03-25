@@ -17,10 +17,10 @@ const App = () => {
   return (
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
-        <Toaster />
-        <Sonner />
         <BrowserRouter>
           <Navbar />
+          <Toaster />
+          <Sonner />
           <AnimatePresence mode="wait">
             <Routes>
               <Route path="/" element={
