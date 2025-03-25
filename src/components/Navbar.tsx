@@ -2,19 +2,27 @@
 import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
+import LanguageSelector from "./LanguageSelector";
+import { useLanguage } from "@/context/LanguageContext";
 
 const Navbar: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const location = useLocation();
+  const { language, t } = useLanguage();
+  const isArabic = language === 'ar';
+  
+  // Determine if we're on an Arabic route
+  const baseUrl = isArabic ? '/ar' : '';
   
   // Navigation items
   const navItems = [
-    { name: "Home", path: "/" },
-    { name: "Services", path: "/services" },
-    { name: "Portfolio", path: "/portfolio" },
-    { name: "About", path: "/about" },
-    { name: "Contact", path: "/contact" },
+    { name: t('home'), path: `${baseUrl}/` },
+    { name: t('services'), path: `${baseUrl}/services` },
+    { name: t('portfolio'), path: `${baseUrl}/portfolio` },
+    { name: t('technologies'), path: `${baseUrl}/technologies` },
+    { name: t('about'), path: `${baseUrl}/about` },
+    { name: t('contact'), path: `${baseUrl}/contact` },
   ];
   
   // Handle scroll effect
@@ -43,13 +51,13 @@ const Navbar: React.FC = () => {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled ? "bg-cosmic-dark/90 backdrop-blur-lg shadow-lg" : "bg-transparent"
-      }`}
+      } ${isArabic ? 'rtl' : 'ltr'}`}
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link 
-            to="/" 
+            to={baseUrl === '/ar' ? '/ar' : '/'} 
             className="flex items-center space-x-2"
             aria-label="X-POSITRON Home"
           >
@@ -64,32 +72,37 @@ const Navbar: React.FC = () => {
           </Link>
           
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-8">
-            {navItems.map((item) => (
-              <Link
-                key={item.name}
-                to={item.path}
-                className={`relative px-1 py-2 font-medium text-sm transition-colors duration-300 group ${
-                  location.pathname === item.path
-                    ? "text-glow"
-                    : "text-white/80 hover:text-cosmic-blue"
-                }`}
-              >
-                {item.name}
-                <span className={`absolute bottom-0 left-0 h-0.5 bg-cosmic-blue transform transition-transform duration-300 ${
-                  location.pathname === item.path ? "w-full" : "w-0 group-hover:w-full"
-                }`} />
-              </Link>
-            ))}
-          </nav>
-          
-          {/* CTA Button */}
-          <Link
-            to="/contact"
-            className="hidden md:inline-flex cosmic-button"
-          >
-            <span>Launch Your Project</span>
-          </Link>
+          <div className="hidden md:flex items-center space-x-8">
+            <nav className="flex items-center space-x-8">
+              {navItems.map((item) => (
+                <Link
+                  key={item.name}
+                  to={item.path}
+                  className={`relative px-1 py-2 font-medium text-sm transition-colors duration-300 group ${
+                    location.pathname === item.path
+                      ? "text-glow"
+                      : "text-white/80 hover:text-cosmic-blue"
+                  }`}
+                >
+                  {item.name}
+                  <span className={`absolute bottom-0 left-0 h-0.5 bg-cosmic-blue transform transition-transform duration-300 ${
+                    location.pathname === item.path ? "w-full" : "w-0 group-hover:w-full"
+                  }`} />
+                </Link>
+              ))}
+            </nav>
+            
+            {/* Language Selector */}
+            <LanguageSelector />
+            
+            {/* CTA Button */}
+            <Link
+              to={`${baseUrl}/contact`}
+              className="hidden md:inline-flex cosmic-button"
+            >
+              <span>{t('launchProject')}</span>
+            </Link>
+          </div>
           
           {/* Mobile Menu Button */}
           <button
@@ -109,7 +122,7 @@ const Navbar: React.FC = () => {
       {/* Mobile Menu */}
       <div
         className={`md:hidden absolute w-full bg-cosmic-dark/95 backdrop-blur-xl transition-all duration-300 ease-in-out ${
-          isMenuOpen ? "max-h-96 border-b border-cosmic-blue/30" : "max-h-0 overflow-hidden"
+          isMenuOpen ? "max-h-screen border-b border-cosmic-blue/30" : "max-h-0 overflow-hidden"
         }`}
       >
         <nav className="container mx-auto px-4 py-6 flex flex-col space-y-4">
@@ -126,11 +139,14 @@ const Navbar: React.FC = () => {
               {item.name}
             </Link>
           ))}
+          
+          <LanguageSelector />
+          
           <Link
-            to="/contact"
+            to={`${baseUrl}/contact`}
             className="cosmic-button mt-2 w-full flex justify-center"
           >
-            <span>Launch Your Project</span>
+            <span>{t('launchProject')}</span>
           </Link>
         </nav>
       </div>

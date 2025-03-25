@@ -1,6 +1,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -63,6 +64,22 @@
     font-family: 'Orbitron', sans-serif;
     @apply font-bold tracking-wider;
   }
+  
+  /* Arabic Font Settings */
+  .rtl {
+    direction: rtl;
+    text-align: right;
+    font-family: 'Cairo', 'Poppins', sans-serif;
+  }
+  
+  .rtl h1, 
+  .rtl h2, 
+  .rtl h3, 
+  .rtl h4, 
+  .rtl h5, 
+  .rtl h6 {
+    font-family: 'Cairo', sans-serif;
+  }
 }
 
 @layer components {
@@ -113,5 +130,14 @@
 
   .glass-panel {
     @apply bg-white/5 backdrop-blur-xl border border-white/10 rounded-xl;
+  }
+  
+  /* RTL specific styles */
+  .rtl .cosmic-button {
+    @apply bg-gradient-to-l;
+  }
+  
+  .rtl .cosmic-button::before {
+    @apply bg-gradient-to-l;
   }
 }
