@@ -1,4 +1,3 @@
-
 import React, { useEffect } from "react";
 import Hero from "@/components/Hero";
 import StarBackground from "@/components/StarBackground";
@@ -6,6 +5,7 @@ import ServiceCard from "@/components/ServiceCard";
 import ProjectCard from "@/components/ProjectCard";
 import { Link } from "react-router-dom";
 import { Monitor, Smartphone, BrainCircuit, ArrowRight, Users, Globe, Shield, Clock } from "lucide-react";
+import TechnologiesSection from "../components/TechnologiesSection";
 
 const Index: React.FC = () => {
   // Mock data for services
@@ -92,11 +92,14 @@ const Index: React.FC = () => {
   ];
   
   return (
-    <>
+    <main>
       <StarBackground />
       
       {/* Hero Section */}
       <Hero />
+      
+      {/* Technologies Section */}
+      <TechnologiesSection />
       
       {/* Services Section */}
       <section className="py-20 relative">
@@ -303,7 +306,7 @@ const Index: React.FC = () => {
           </div>
         </div>
       </section>
-    </>
+    </main>
   );
 };
 

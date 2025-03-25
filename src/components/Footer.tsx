@@ -3,8 +3,9 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { 
   Github, 
-  Twitter, 
+  Youtube, 
   Linkedin, 
+  Facebook, 
   Instagram, 
   Mail, 
   Phone, 
@@ -45,20 +46,6 @@ const Footer: React.FC = () => {
             <div className="flex space-x-4">
               <a
                 href="#"
-                aria-label="GitHub"
-                className="w-10 h-10 rounded-full flex items-center justify-center bg-white/5 hover:bg-cosmic-blue/20 transition-colors duration-300 border border-white/10 hover:border-cosmic-blue/30"
-              >
-                <Github className="w-5 h-5 text-white" />
-              </a>
-              <a
-                href="#"
-                aria-label="Twitter"
-                className="w-10 h-10 rounded-full flex items-center justify-center bg-white/5 hover:bg-cosmic-blue/20 transition-colors duration-300 border border-white/10 hover:border-cosmic-blue/30"
-              >
-                <Twitter className="w-5 h-5 text-white" />
-              </a>
-              <a
-                href="#"
                 aria-label="LinkedIn"
                 className="w-10 h-10 rounded-full flex items-center justify-center bg-white/5 hover:bg-cosmic-blue/20 transition-colors duration-300 border border-white/10 hover:border-cosmic-blue/30"
               >
@@ -66,10 +53,24 @@ const Footer: React.FC = () => {
               </a>
               <a
                 href="#"
+                aria-label="Facebook"
+                className="w-10 h-10 rounded-full flex items-center justify-center bg-white/5 hover:bg-cosmic-blue/20 transition-colors duration-300 border border-white/10 hover:border-cosmic-blue/30"
+              >
+                <Facebook className="w-5 h-5 text-white" />
+              </a>
+              <a
+                href="#"
                 aria-label="Instagram"
                 className="w-10 h-10 rounded-full flex items-center justify-center bg-white/5 hover:bg-cosmic-blue/20 transition-colors duration-300 border border-white/10 hover:border-cosmic-blue/30"
               >
                 <Instagram className="w-5 h-5 text-white" />
+              </a>
+              <a
+                href="#"
+                aria-label="YouTube"
+                className="w-10 h-10 rounded-full flex items-center justify-center bg-white/5 hover:bg-cosmic-blue/20 transition-colors duration-300 border border-white/10 hover:border-cosmic-blue/30"
+              >
+                <Youtube className="w-5 h-5 text-white" />
               </a>
             </div>
           </div>
@@ -111,29 +112,29 @@ const Footer: React.FC = () => {
             <h3 className="text-lg font-bold mb-6 text-glow-purple">Our Services</h3>
             <ul className="space-y-3">
               <li>
-                <a href="#" className="text-white/70 hover:text-cosmic-purple transition-colors duration-300">
+                <Link to="/service/web-development" className="text-white/70 hover:text-cosmic-purple transition-colors duration-300">
                   Web Development
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-white/70 hover:text-cosmic-purple transition-colors duration-300">
+                <Link to="/service/mobile-applications" className="text-white/70 hover:text-cosmic-purple transition-colors duration-300">
                   Mobile Applications
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-white/70 hover:text-cosmic-purple transition-colors duration-300">
+                <Link to="/service/ai-solutions" className="text-white/70 hover:text-cosmic-purple transition-colors duration-300">
                   AI Solutions
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-white/70 hover:text-cosmic-purple transition-colors duration-300">
+                <Link to="/service/ui-ux-design" className="text-white/70 hover:text-cosmic-purple transition-colors duration-300">
                   UI/UX Design
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-white/70 hover:text-cosmic-purple transition-colors duration-300">
+                <Link to="/service/digital-marketing" className="text-white/70 hover:text-cosmic-purple transition-colors duration-300">
                   Digital Marketing
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -174,10 +175,10 @@ const Footer: React.FC = () => {
           </p>
           
           <div className="flex items-center space-x-6">
-            <Link to="/privacy" className="text-white/50 text-sm hover:text-white transition-colors duration-300">
+            <Link to="/privacy-policy" className="text-white/50 text-sm hover:text-white transition-colors duration-300">
               Privacy Policy
             </Link>
-            <Link to="/terms" className="text-white/50 text-sm hover:text-white transition-colors duration-300">
+            <Link to="/terms-of-service" className="text-white/50 text-sm hover:text-white transition-colors duration-300">
               Terms of Service
             </Link>
             <Link to="/sitemap" className="text-white/50 text-sm hover:text-white transition-colors duration-300">

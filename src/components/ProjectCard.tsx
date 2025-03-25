@@ -1,7 +1,7 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { Eye, Code, ExternalLink } from "lucide-react";
+import { Eye, Youtube, ExternalLink } from "lucide-react";
 import { Link } from "react-router-dom";
 
 interface ProjectCardProps {
@@ -11,6 +11,8 @@ interface ProjectCardProps {
   category: string;
   delay: number;
   id?: string;
+  demoUrl?: string;
+  youtubeUrl?: string;
 }
 
 const ProjectCard: React.FC<ProjectCardProps> = ({
@@ -19,7 +21,9 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   image,
   category,
   delay,
-  id = "1" // Default ID if none provided
+  id = "1", // Default ID if none provided
+  demoUrl,
+  youtubeUrl
 }) => {
   return (
     <motion.div
@@ -57,23 +61,31 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         
         {/* Action Buttons */}
         <div className="flex items-center space-x-4">
-          <a 
-            href="#" 
-            className="flex items-center text-sm text-white/70 hover:text-cosmic-blue transition-colors duration-300"
-            aria-label={`View ${title} demo`}
-          >
-            <Eye className="mr-1 w-4 h-4" />
-            Demo
-          </a>
+          {demoUrl && (
+            <a 
+              href={demoUrl} 
+              className="flex items-center text-sm text-white/70 hover:text-cosmic-blue transition-colors duration-300"
+              aria-label={`View ${title} demo`}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Eye className="mr-1 w-4 h-4" />
+              Demo
+            </a>
+          )}
           
-          <a 
-            href="#" 
-            className="flex items-center text-sm text-white/70 hover:text-cosmic-purple transition-colors duration-300"
-            aria-label={`View ${title} code`}
-          >
-            <Code className="mr-1 w-4 h-4" />
-            Code
-          </a>
+          {youtubeUrl && (
+            <a 
+              href={youtubeUrl} 
+              className="flex items-center text-sm text-white/70 hover:text-cosmic-purple transition-colors duration-300"
+              aria-label={`Watch ${title} video`}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Youtube className="mr-1 w-4 h-4" />
+              Video
+            </a>
+          )}
           
           <Link 
             to={`/project/${id}`}
