@@ -1,5 +1,5 @@
 
-import React, { createContext, useState, useContext, ReactNode } from 'react';
+import React, { createContext, useState, useContext, ReactNode, useEffect } from 'react';
 import translations from '../data/translations.json';
 
 export type Language = 'en' | 'ar';
@@ -14,7 +14,7 @@ const LanguageContext = createContext<LanguageContextType | undefined>(undefined
 
 export const LanguageProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
   // Get initial language from localStorage or default to 'en'
-  const initialLanguage = localStorage.getItem('language') as Language || 'en';
+  const initialLanguage = (localStorage.getItem('language') as Language) || 'en';
   const [language, setLanguage] = useState<Language>(initialLanguage);
 
   const changeLanguage = (lang: Language) => {
@@ -24,6 +24,11 @@ export const LanguageProvider: React.FC<{ children: ReactNode }> = ({ children }
     // Update document dir attribute for RTL support
     document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
   };
+
+  // Set initial RTL direction
+  useEffect(() => {
+    document.documentElement.dir = language === 'ar' ? 'rtl' : 'ltr';
+  }, []);
 
   const t = (key: string): string => {
     const parts = key.split('.');

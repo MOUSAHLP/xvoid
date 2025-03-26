@@ -75,6 +75,7 @@ const AnimatedRoutes = () => {
   );
 };
 
+// App component with proper provider nesting
 const App = () => {
   return (
     <QueryClientProvider client={queryClient}>
