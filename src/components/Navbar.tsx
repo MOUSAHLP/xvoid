@@ -15,13 +15,12 @@ const Navbar: React.FC = () => {
   // Determine if we're on an Arabic route
   const baseUrl = isArabic ? '/ar' : '';
   
-  // Navigation items
+  // Navigation items - Contact removed as requested
   const navItems = [
     { name: t('nav.home'), path: `${baseUrl}/` },
     { name: t('nav.services'), path: `${baseUrl}/services` },
     { name: t('nav.portfolio'), path: `${baseUrl}/portfolio` },
     { name: t('nav.about'), path: `${baseUrl}/about` },
-    { name: t('nav.contact'), path: `${baseUrl}/contact` },
   ];
   
   // Handle scroll effect

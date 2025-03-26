@@ -17,7 +17,6 @@ import Contact from "./pages/Contact";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsOfService from "./pages/TermsOfService";
 import Sitemap from "./pages/Sitemap";
-import Technologies from "./pages/Technologies";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import NotFound from "./pages/NotFound";
@@ -53,7 +52,6 @@ const AnimatedRoutes = () => {
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         <Route path="/terms-of-service" element={<TermsOfService />} />
         <Route path="/sitemap" element={<Sitemap />} />
-        <Route path="/technologies" element={<Technologies />} />
         
         {/* Arabic Routes */}
         <Route path="/ar" element={<Index />} />
@@ -66,7 +64,6 @@ const AnimatedRoutes = () => {
         <Route path="/ar/privacy-policy" element={<PrivacyPolicy />} />
         <Route path="/ar/terms-of-service" element={<TermsOfService />} />
         <Route path="/ar/sitemap" element={<Sitemap />} />
-        <Route path="/ar/technologies" element={<Technologies />} />
         
         {/* Catch-all route */}
         <Route path="*" element={<NotFound />} />

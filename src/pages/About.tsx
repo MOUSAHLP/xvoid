@@ -10,67 +10,46 @@ import {
   Globe, 
   Zap 
 } from "lucide-react";
+import { useLanguage } from "@/context/LanguageContext";
+import timelineData from "@/data/timeline.json";
 
 const About: React.FC = () => {
-  // Timeline data
-  const timeline = [
-    {
-      year: "2016",
-      title: "The Beginning",
-      description: "X-POSITRON was founded with a vision to create innovative digital solutions."
-    },
-    {
-      year: "2018",
-      title: "Expansion",
-      description: "Opened new offices and expanded our team to serve a growing client base."
-    },
-    {
-      year: "2020",
-      title: "Global Reach",
-      description: "Started working with international clients and established a global presence."
-    },
-    {
-      year: "2022",
-      title: "Innovation Hub",
-      description: "Launched our innovation lab focused on emerging technologies."
-    },
-    {
-      year: "2023",
-      title: "Award Recognition",
-      description: "Received multiple industry awards for our cutting-edge projects."
-    },
-  ];
+  const { language, t } = useLanguage();
+  const isArabic = language === 'ar';
   
-  // Team data
+  // Get timeline data based on language
+  const timeline = language === 'en' ? timelineData.en : timelineData.ar;
+  
+  // Team data with translations
   const team = [
     {
-      name: "Alex Chen",
-      position: "Founder & CEO",
+      name: isArabic ? "أليكس تشن" : "Alex Chen",
+      position: isArabic ? "المؤسس والرئيس التنفيذي" : "Founder & CEO",
       image: "https://i.pravatar.cc/300?img=12",
-      description: "Visionary leader with 15+ years of tech experience."
+      description: isArabic ? "قائد ذو رؤية مع أكثر من 15 عامًا من الخبرة التقنية." : "Visionary leader with 15+ years of tech experience."
     },
     {
-      name: "Emma Rodriguez",
-      position: "CTO",
+      name: isArabic ? "إيما رودريغيز" : "Emma Rodriguez",
+      position: isArabic ? "المدير التقني" : "CTO",
       image: "https://i.pravatar.cc/300?img=10",
-      description: "Technology expert specializing in AI and machine learning."
+      description: isArabic ? "خبيرة تكنولوجية متخصصة في الذكاء الاصطناعي وتعلم الآلة." : "Technology expert specializing in AI and machine learning."
     },
     {
-      name: "Michael Johnson",
-      position: "Design Director",
+      name: isArabic ? "مايكل جونسون" : "Michael Johnson",
+      position: isArabic ? "مدير التصميم" : "Design Director",
       image: "https://i.pravatar.cc/300?img=11",
-      description: "Award-winning designer with a passion for user experience."
+      description: isArabic ? "مصمم حائز على جوائز مع شغف لتجربة المستخدم." : "Award-winning designer with a passion for user experience."
     },
     {
-      name: "Sarah Kim",
-      position: "Development Lead",
+      name: isArabic ? "سارة كيم" : "Sarah Kim",
+      position: isArabic ? "قائدة التطوير" : "Development Lead",
       image: "https://i.pravatar.cc/300?img=9",
-      description: "Full-stack developer with expertise in scalable applications."
+      description: isArabic ? "مطورة شاملة مع خبرة في التطبيقات القابلة للتوسع." : "Full-stack developer with expertise in scalable applications."
     },
   ];
   
   return (
-    <>
+    <div className={isArabic ? 'rtl' : 'ltr'}>
       <StarBackground />
       
       {/* Hero Section */}
@@ -83,7 +62,11 @@ const About: React.FC = () => {
               transition={{ duration: 0.5 }}
               className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6"
             >
-              About <span className="text-glow">X-POSITRON</span>
+              {isArabic ? (
+                <>عن <span className="text-glow">إكس بوزيترون</span></>
+              ) : (
+                <>About <span className="text-glow">X-POSITRON</span></>
+              )}
             </motion.h1>
             <motion.p 
               initial={{ opacity: 0, y: 20 }}
@@ -91,7 +74,10 @@ const About: React.FC = () => {
               transition={{ duration: 0.5, delay: 0.2 }}
               className="text-xl text-white/70 max-w-3xl mx-auto"
             >
-              We are a team of passionate technologists, designers, and dreamers building digital solutions that transcend boundaries.
+              {isArabic ? 
+                "نحن فريق من التقنيين والمصممين والحالمين الشغوفين نبني حلولاً رقمية تتجاوز الحدود." : 
+                "We are a team of passionate technologists, designers, and dreamers building digital solutions that transcend boundaries."
+              }
             </motion.p>
           </div>
         </div>
@@ -103,16 +89,16 @@ const About: React.FC = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div>
               <span className="inline-block px-3 py-1 text-xs font-medium bg-cosmic-blue/10 rounded-full text-cosmic-blue mb-4">
-                OUR MISSION
+                {t('about.mission.title')}
               </span>
               <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                We build tech that travels beyond boundaries
+                {t('about.mission.heading')}
               </h2>
               <p className="text-white/70 mb-6">
-                At X-POSITRON, our mission is to empower businesses with innovative technology solutions that drive growth and transformation. We believe in pushing the boundaries of what's possible in the digital realm.
+                {t('about.mission.description')}
               </p>
               <p className="text-white/70">
-                We're committed to excellence, continuous innovation, and delivering measurable results for our clients across the globe.
+                {t('about.mission.description2')}
               </p>
               
               <div className="grid grid-cols-2 gap-6 mt-10">
@@ -123,8 +109,8 @@ const About: React.FC = () => {
                     </div>
                   </div>
                   <div>
-                    <h3 className="text-lg font-bold mb-2">Purpose-Driven</h3>
-                    <p className="text-white/70 text-sm">Creating meaningful digital experiences</p>
+                    <h3 className="text-lg font-bold mb-2">{t('about.purpose.title')}</h3>
+                    <p className="text-white/70 text-sm">{t('about.purpose.description')}</p>
                   </div>
                 </div>
                 
@@ -135,8 +121,8 @@ const About: React.FC = () => {
                     </div>
                   </div>
                   <div>
-                    <h3 className="text-lg font-bold mb-2">User-Focused</h3>
-                    <p className="text-white/70 text-sm">Designing for human needs first</p>
+                    <h3 className="text-lg font-bold mb-2">{t('about.user.title')}</h3>
+                    <p className="text-white/70 text-sm">{t('about.user.description')}</p>
                   </div>
                 </div>
               </div>
@@ -164,13 +150,13 @@ const About: React.FC = () => {
         <div className="container mx-auto px-4 relative">
           <div className="text-center mb-16">
             <span className="inline-block px-3 py-1 text-xs font-medium bg-cosmic-purple/10 rounded-full text-cosmic-purple mb-4">
-              OUR JOURNEY
+              {t('about.journey.title')}
             </span>
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              The X-POSITRON Story
+              {t('about.journey.heading')}
             </h2>
             <p className="text-white/70 max-w-2xl mx-auto">
-              From humble beginnings to industry recognition, our journey has been one of continuous growth and innovation.
+              {t('about.journey.description')}
             </p>
           </div>
           
@@ -215,13 +201,13 @@ const About: React.FC = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <span className="inline-block px-3 py-1 text-xs font-medium bg-cosmic-pink/10 rounded-full text-cosmic-pink mb-4">
-              OUR VALUES
+              {t('about.values.title')}
             </span>
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Guiding Principles
+              {t('about.values.heading')}
             </h2>
             <p className="text-white/70 max-w-2xl mx-auto">
-              Our core values define who we are and guide everything we do.
+              {t('about.values.description')}
             </p>
           </div>
           
@@ -230,24 +216,24 @@ const About: React.FC = () => {
               <div className="w-16 h-16 rounded-full bg-white/5 flex items-center justify-center mx-auto mb-6">
                 <Zap className="w-8 h-8 text-cosmic-blue" />
               </div>
-              <h3 className="text-xl font-bold mb-3">Innovation</h3>
-              <p className="text-white/70">We continuously explore new technologies and approaches to solve complex problems.</p>
+              <h3 className="text-xl font-bold mb-3">{t('about.values_list.innovation.title')}</h3>
+              <p className="text-white/70">{t('about.values_list.innovation.description')}</p>
             </div>
             
             <div className="cosmic-card text-center">
               <div className="w-16 h-16 rounded-full bg-white/5 flex items-center justify-center mx-auto mb-6">
                 <Award className="w-8 h-8 text-cosmic-purple" />
               </div>
-              <h3 className="text-xl font-bold mb-3">Excellence</h3>
-              <p className="text-white/70">We maintain the highest standards in everything we do, from code quality to client communication.</p>
+              <h3 className="text-xl font-bold mb-3">{t('about.values_list.excellence.title')}</h3>
+              <p className="text-white/70">{t('about.values_list.excellence.description')}</p>
             </div>
             
             <div className="cosmic-card text-center">
               <div className="w-16 h-16 rounded-full bg-white/5 flex items-center justify-center mx-auto mb-6">
                 <Globe className="w-8 h-8 text-cosmic-pink" />
               </div>
-              <h3 className="text-xl font-bold mb-3">Global Perspective</h3>
-              <p className="text-white/70">We embrace diversity of thought, culture, and experience in our solutions.</p>
+              <h3 className="text-xl font-bold mb-3">{t('about.values_list.global.title')}</h3>
+              <p className="text-white/70">{t('about.values_list.global.description')}</p>
             </div>
           </div>
         </div>
@@ -258,13 +244,13 @@ const About: React.FC = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <span className="inline-block px-3 py-1 text-xs font-medium bg-cosmic-blue/10 rounded-full text-cosmic-blue mb-4">
-              OUR TEAM
+              {t('about.team.title')}
             </span>
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Meet Our Cosmic Engineers
+              {t('about.team.heading')}
             </h2>
             <p className="text-white/70 max-w-2xl mx-auto">
-              Talented professionals dedicated to creating exceptional digital experiences.
+              {t('about.team.description')}
             </p>
           </div>
           
@@ -295,7 +281,7 @@ const About: React.FC = () => {
           </div>
         </div>
       </section>
-    </>
+    </div>
   );
 };
 

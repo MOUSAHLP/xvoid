@@ -11,12 +11,16 @@ import {
   Phone, 
   MapPin 
 } from "lucide-react";
+import { useLanguage } from "@/context/LanguageContext";
 
 const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
+  const { language, t } = useLanguage();
+  const isArabic = language === 'ar';
+  const baseUrl = isArabic ? '/ar' : '';
   
   return (
-    <footer className="bg-cosmic-dark relative overflow-hidden border-t border-white/5">
+    <footer className={`bg-cosmic-dark relative overflow-hidden border-t border-white/5 ${isArabic ? 'rtl' : 'ltr'}`}>
       {/* Star background */}
       <div className="absolute inset-0 bg-star-pattern bg-[length:20px_20px] opacity-10 pointer-events-none"></div>
       
@@ -39,7 +43,7 @@ const Footer: React.FC = () => {
             </div>
             
             <p className="text-white/70 mb-6">
-              Crafting digital universes and exploring new technological frontiers. We build tech that travels beyond boundaries.
+              {t('footer.aboutText')}
             </p>
             
             {/* Social Media */}
@@ -77,31 +81,26 @@ const Footer: React.FC = () => {
           
           {/* Quick Links */}
           <div>
-            <h3 className="text-lg font-bold mb-6 text-glow">Quick Links</h3>
+            <h3 className="text-lg font-bold mb-6 text-glow">{t('footer.about')}</h3>
             <ul className="space-y-3">
               <li>
-                <Link to="/" className="text-white/70 hover:text-cosmic-blue transition-colors duration-300">
-                  Home
+                <Link to={`${baseUrl}/`} className="text-white/70 hover:text-cosmic-blue transition-colors duration-300">
+                  {t('nav.home')}
                 </Link>
               </li>
               <li>
-                <Link to="/services" className="text-white/70 hover:text-cosmic-blue transition-colors duration-300">
-                  Services
+                <Link to={`${baseUrl}/services`} className="text-white/70 hover:text-cosmic-blue transition-colors duration-300">
+                  {t('nav.services')}
                 </Link>
               </li>
               <li>
-                <Link to="/portfolio" className="text-white/70 hover:text-cosmic-blue transition-colors duration-300">
-                  Portfolio
+                <Link to={`${baseUrl}/portfolio`} className="text-white/70 hover:text-cosmic-blue transition-colors duration-300">
+                  {t('nav.portfolio')}
                 </Link>
               </li>
               <li>
-                <Link to="/about" className="text-white/70 hover:text-cosmic-blue transition-colors duration-300">
-                  About Us
-                </Link>
-              </li>
-              <li>
-                <Link to="/contact" className="text-white/70 hover:text-cosmic-blue transition-colors duration-300">
-                  Contact
+                <Link to={`${baseUrl}/about`} className="text-white/70 hover:text-cosmic-blue transition-colors duration-300">
+                  {t('nav.about')}
                 </Link>
               </li>
             </ul>
@@ -109,31 +108,31 @@ const Footer: React.FC = () => {
           
           {/* Services */}
           <div>
-            <h3 className="text-lg font-bold mb-6 text-glow-purple">Our Services</h3>
+            <h3 className="text-lg font-bold mb-6 text-glow-purple">{t('sections.services.title')}</h3>
             <ul className="space-y-3">
               <li>
-                <Link to="/service/web-development" className="text-white/70 hover:text-cosmic-purple transition-colors duration-300">
-                  Web Development
+                <Link to={`${baseUrl}/service/web-development`} className="text-white/70 hover:text-cosmic-purple transition-colors duration-300">
+                  {isArabic ? "تطوير الويب" : "Web Development"}
                 </Link>
               </li>
               <li>
-                <Link to="/service/mobile-applications" className="text-white/70 hover:text-cosmic-purple transition-colors duration-300">
-                  Mobile Applications
+                <Link to={`${baseUrl}/service/mobile-applications`} className="text-white/70 hover:text-cosmic-purple transition-colors duration-300">
+                  {isArabic ? "تطبيقات الجوال" : "Mobile Applications"}
                 </Link>
               </li>
               <li>
-                <Link to="/service/ai-solutions" className="text-white/70 hover:text-cosmic-purple transition-colors duration-300">
-                  AI Solutions
+                <Link to={`${baseUrl}/service/ai-solutions`} className="text-white/70 hover:text-cosmic-purple transition-colors duration-300">
+                  {isArabic ? "حلول الذكاء الاصطناعي" : "AI Solutions"}
                 </Link>
               </li>
               <li>
-                <Link to="/service/ui-ux-design" className="text-white/70 hover:text-cosmic-purple transition-colors duration-300">
-                  UI/UX Design
+                <Link to={`${baseUrl}/service/ui-ux-design`} className="text-white/70 hover:text-cosmic-purple transition-colors duration-300">
+                  {isArabic ? "تصميم واجهة المستخدم" : "UI/UX Design"}
                 </Link>
               </li>
               <li>
-                <Link to="/service/digital-marketing" className="text-white/70 hover:text-cosmic-purple transition-colors duration-300">
-                  Digital Marketing
+                <Link to={`${baseUrl}/service/digital-marketing`} className="text-white/70 hover:text-cosmic-purple transition-colors duration-300">
+                  {isArabic ? "التسويق الرقمي" : "Digital Marketing"}
                 </Link>
               </li>
             </ul>
@@ -141,12 +140,12 @@ const Footer: React.FC = () => {
           
           {/* Contact Info */}
           <div>
-            <h3 className="text-lg font-bold mb-6 text-glow-pink">Contact Us</h3>
+            <h3 className="text-lg font-bold mb-6 text-glow-pink">{t('footer.contact')}</h3>
             <ul className="space-y-4">
               <li className="flex items-start">
                 <MapPin className="w-5 h-5 mr-3 text-cosmic-pink shrink-0 mt-0.5" />
                 <span className="text-white/70">
-                  123 Tech Boulevard, Digital City, Universe 42
+                  {isArabic ? "123 شارع التكنولوجيا، المدينة الرقمية، الكون 42" : "123 Tech Boulevard, Digital City, Universe 42"}
                 </span>
               </li>
               <li className="flex items-center">
@@ -171,18 +170,18 @@ const Footer: React.FC = () => {
         {/* Copyright */}
         <div className="flex flex-col md:flex-row items-center justify-between">
           <p className="text-white/50 text-sm mb-4 md:mb-0">
-            © {currentYear} X-POSITRON. All rights reserved.
+            © {currentYear} X-POSITRON. {t('footer.rights')}
           </p>
           
           <div className="flex items-center space-x-6">
-            <Link to="/privacy-policy" className="text-white/50 text-sm hover:text-white transition-colors duration-300">
-              Privacy Policy
+            <Link to={`${baseUrl}/privacy-policy`} className="text-white/50 text-sm hover:text-white transition-colors duration-300">
+              {t('footer.privacy')}
             </Link>
-            <Link to="/terms-of-service" className="text-white/50 text-sm hover:text-white transition-colors duration-300">
-              Terms of Service
+            <Link to={`${baseUrl}/terms-of-service`} className="text-white/50 text-sm hover:text-white transition-colors duration-300">
+              {t('footer.terms')}
             </Link>
-            <Link to="/sitemap" className="text-white/50 text-sm hover:text-white transition-colors duration-300">
-              Sitemap
+            <Link to={`${baseUrl}/sitemap`} className="text-white/50 text-sm hover:text-white transition-colors duration-300">
+              {t('footer.sitemap')}
             </Link>
           </div>
         </div>
