@@ -1,4 +1,3 @@
-
 import React from "react";
 import Hero from "@/components/Hero";
 import StarBackground from "@/components/StarBackground";
@@ -9,6 +8,7 @@ import { Monitor, Smartphone, BrainCircuit, ArrowRight, Users, Globe, Shield, Cl
 import TechnologiesSection from "../components/TechnologiesSection";
 import { useLanguage } from "@/context/LanguageContext";
 import { useLocation } from "react-router-dom";
+import servicesData from "@/data/services.json";
 
 const Index: React.FC = () => {
   const { language, t } = useLanguage();
@@ -16,30 +16,23 @@ const Index: React.FC = () => {
   const isArabic = location.pathname.includes('/ar');
   const baseUrl = isArabic ? '/ar' : '';
   
-  // Mock data for services
-  const services = [
-    {
-      id: 1,
-      title: isArabic ? "تطوير الويب" : "Web Development",
-      description: isArabic ? "نقوم بإنشاء تطبيقات ويب سريعة وآمنة وسريعة الاستجابة باستخدام أحدث التقنيات." : "We create responsive, fast and secure web applications using cutting-edge technologies.",
-      icon: <Monitor className="w-7 h-7 text-cosmic-blue" />,
-      color: "blue" as const
-    },
-    {
-      id: 2,
-      title: isArabic ? "تطبيقات الموبايل" : "Mobile Applications",
-      description: isArabic ? "تطبيقات الجوال الأصلية وعبر الأنظمة الأساسية التي توفر تجارب مستخدم استثنائية." : "Native and cross-platform mobile apps that deliver exceptional user experiences.",
-      icon: <Smartphone className="w-7 h-7 text-cosmic-purple" />,
-      color: "purple" as const
-    },
-    {
-      id: 3,
-      title: isArabic ? "حلول الذكاء الاصطناعي" : "AI Solutions",
-      description: isArabic ? "أنظمة ذكية وحلول تعلم آلي لأتمتة العمليات وتحسينها." : "Intelligent systems and machine learning solutions to automate and optimize processes.",
-      icon: <BrainCircuit className="w-7 h-7 text-cosmic-pink" />,
-      color: "pink" as const
-    }
-  ];
+  // Get first 3 services based on language
+  const allServices = isArabic ? servicesData.ar : servicesData.en;
+  const services = allServices.slice(0, 3);
+  
+  // Icons mapping for services
+  const iconComponents = {
+    "Monitor": <Monitor className="w-7 h-7 text-cosmic-blue" />,
+    "Smartphone": <Smartphone className="w-7 h-7 text-cosmic-purple" />,
+    "BrainCircuit": <BrainCircuit className="w-7 h-7 text-cosmic-pink" />
+  };
+  
+  // Color mapping for services
+  const colorMapping = {
+    1: "blue" as const,
+    2: "purple" as const,
+    3: "pink" as const
+  };
   
   // Mock data for projects
   const projects = [
@@ -125,16 +118,20 @@ const Index: React.FC = () => {
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {services.map((service, index) => (
-              <ServiceCard
-                key={service.id}
-                title={service.title}
-                description={service.description}
-                icon={service.icon}
-                color={service.color}
-                delay={index}
-              />
-            ))}
+            {services.map((service, index) => {
+              const iconKey = service.icon as keyof typeof iconComponents;
+              return (
+                <ServiceCard
+                  key={service.id}
+                  id={service.id}
+                  title={service.title}
+                  description={service.description}
+                  icon={iconComponents[iconKey] || iconComponents.Monitor}
+                  color={colorMapping[service.id as keyof typeof colorMapping] || "blue"}
+                  delay={index}
+                />
+              );
+            })}
           </div>
           
           <div className="text-center mt-12">
@@ -337,3 +334,4 @@ const Index: React.FC = () => {
 };
 
 export default Index;
+

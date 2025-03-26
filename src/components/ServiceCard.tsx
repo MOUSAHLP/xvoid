@@ -2,8 +2,11 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { ExternalLink } from "lucide-react";
+import { Link } from "react-router-dom";
+import { useLanguage } from "@/context/LanguageContext";
 
 interface ServiceCardProps {
+  id?: number;
   title: string;
   description: string;
   icon: React.ReactNode;
@@ -12,6 +15,7 @@ interface ServiceCardProps {
 }
 
 const ServiceCard: React.FC<ServiceCardProps> = ({ 
+  id, 
   title, 
   description, 
   icon,
@@ -19,6 +23,8 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
   delay
 }) => {
   const [isHovered, setIsHovered] = useState(false);
+  const { language } = useLanguage();
+  const baseUrl = language === 'ar' ? '/ar' : '';
   
   const colorClasses = {
     blue: {
@@ -86,13 +92,15 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
         {description}
       </p>
       
-      <a 
-        href="#" 
-        className={`inline-flex items-center text-sm font-medium ${colorClasses[color].textGlow} group-hover:underline`}
-      >
-        Learn more
-        <ExternalLink className="ml-1 w-4 h-4" />
-      </a>
+      {id && (
+        <Link 
+          to={`${baseUrl}/service/${id}`} 
+          className={`inline-flex items-center text-sm font-medium ${colorClasses[color].textGlow} group-hover:underline`}
+        >
+          {language === 'ar' ? 'معرفة المزيد' : 'Learn more'}
+          <ExternalLink className={`${language === 'ar' ? 'mr-1' : 'ml-1'} w-4 h-4`} />
+        </Link>
+      )}
     </motion.div>
   );
 };

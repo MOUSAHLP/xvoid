@@ -1,115 +1,98 @@
 
 import React, { useEffect, useRef } from "react";
 
-interface Star {
-  x: number;
-  y: number;
-  size: number;
-  opacity: number;
-  speed: number;
-}
-
-export const StarBackground: React.FC = () => {
+const StarBackground: React.FC = () => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
-  const starsRef = useRef<Star[]>([]);
-  const animationFrameRef = useRef<number>(0);
-  const activeRef = useRef<boolean>(true);
-
+  
   useEffect(() => {
     const canvas = canvasRef.current;
     if (!canvas) return;
-
+    
     const ctx = canvas.getContext("2d");
     if (!ctx) return;
-
-    // Set canvas size to window size
-    const setCanvasSize = () => {
+    
+    // Set canvas dimensions
+    const setCanvasDimensions = () => {
       canvas.width = window.innerWidth;
       canvas.height = window.innerHeight;
     };
-
-    setCanvasSize();
-    window.addEventListener("resize", setCanvasSize);
-
+    
+    // Initial setup
+    setCanvasDimensions();
+    
     // Create stars
-    const createStars = () => {
-      const stars: Star[] = [];
-      for (let i = 0; i < 150; i++) {
+    const stars: {x: number; y: number; radius: number; opacity: number; speed: number}[] = [];
+    
+    // Generate stars with reduced flashing/flickering
+    const generateStars = () => {
+      stars.length = 0; // Clear existing stars
+      const density = window.innerWidth < 768 ? 50 : 100;
+      
+      for (let i = 0; i < density; i++) {
         stars.push({
           x: Math.random() * canvas.width,
           y: Math.random() * canvas.height,
-          size: Math.random() * 1.5 + 0.5,
-          opacity: Math.random() * 0.5 + 0.5,
-          speed: Math.random() * 0.05 + 0.01,
+          radius: Math.random() * 1.5,
+          opacity: Math.random() * 0.5 + 0.5, // Higher base opacity
+          speed: Math.random() * 0.05 + 0.01  // Slower speed to reduce flashing
         });
       }
-      starsRef.current = stars;
     };
-
-    createStars();
-
-    // Animate stars
-    const animate = () => {
-      if (!activeRef.current) return;
-      
+    
+    generateStars();
+    
+    // Animation
+    let animationFrameId: number;
+    
+    const render = () => {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
       
       // Draw stars
-      starsRef.current.forEach((star) => {
+      stars.forEach(star => {
         ctx.beginPath();
-        ctx.arc(star.x, star.y, star.size, 0, 2 * Math.PI);
+        ctx.arc(star.x, star.y, star.radius, 0, Math.PI * 2);
         ctx.fillStyle = `rgba(255, 255, 255, ${star.opacity})`;
         ctx.fill();
         
-        // Move star
+        // Subtle opacity change to prevent harsh flickering
+        star.opacity += Math.random() * 0.02 - 0.01;
+        star.opacity = Math.max(0.3, Math.min(0.8, star.opacity));
+        
+        // Move stars
         star.y += star.speed;
         
-        // Reset star if it goes off screen
+        // Reset position if star moves off screen
         if (star.y > canvas.height) {
           star.y = 0;
           star.x = Math.random() * canvas.width;
         }
       });
       
-      // Generate random shooting star (with low probability)
-      if (Math.random() < 0.002) {
-        const startX = Math.random() * canvas.width;
-        const startY = Math.random() * (canvas.height / 3);
-        
-        // Draw shooting star
-        ctx.beginPath();
-        ctx.moveTo(startX, startY);
-        ctx.lineTo(startX + 10, startY + 10);
-        ctx.strokeStyle = "rgba(255, 255, 255, 0.8)";
-        ctx.lineWidth = 2;
-        ctx.stroke();
-        
-        // Add glow effect
-        ctx.shadowBlur = 10;
-        ctx.shadowColor = "#00F0FF";
-      } else {
-        ctx.shadowBlur = 0;
-      }
-      
-      animationFrameRef.current = requestAnimationFrame(animate);
+      animationFrameId = requestAnimationFrame(render);
     };
-
-    // Set active flag to true when component mounts
-    activeRef.current = true;
-    animate();
-
+    
+    render();
+    
+    // Handle resize
+    const handleResize = () => {
+      setCanvasDimensions();
+      generateStars();
+    };
+    
+    window.addEventListener("resize", handleResize);
+    
+    // Cleanup
     return () => {
-      // Set active flag to false when component unmounts
-      activeRef.current = false;
-      window.removeEventListener("resize", setCanvasSize);
-      cancelAnimationFrame(animationFrameRef.current);
+      window.removeEventListener("resize", handleResize);
+      cancelAnimationFrame(animationFrameId);
     };
   }, []);
-
+  
   return (
     <canvas
       ref={canvasRef}
-      className="fixed inset-0 w-full h-full -z-10"
+      className="fixed top-0 left-0 w-full h-full z-0 bg-cosmic-dark"
+      style={{ pointerEvents: "none" }}
     />
   );
 };
