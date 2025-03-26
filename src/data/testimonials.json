@@ -1,0 +1,35 @@
+
+{
+  "en": [
+    {
+      "id": 1,
+      "quote": "X-POSITRON transformed our business with their innovative solutions. Their attention to detail and dedication to excellence is unmatched.",
+      "author": "Sarah Johnson",
+      "position": "CEO, TechFusion",
+      "avatar": "https://i.pravatar.cc/150?img=1"
+    },
+    {
+      "id": 2,
+      "quote": "Working with the X-POSITRON team was a game-changer for our startup. They delivered beyond our expectations and within our timeline.",
+      "author": "Michael Chen",
+      "position": "Founder, NexGen",
+      "avatar": "https://i.pravatar.cc/150?img=2"
+    }
+  ],
+  "ar": [
+    {
+      "id": 1,
+      "quote": "قامت X-POSITRON بتحويل أعمالنا من خلال حلولهم المبتكرة. اهتمامهم بالتفاصيل وتفانيهم في التميز لا مثيل له.",
+      "author": "سارة جونسون",
+      "position": "الرئيس التنفيذي، TechFusion",
+      "avatar": "https://i.pravatar.cc/150?img=1"
+    },
+    {
+      "id": 2,
+      "quote": "كان العمل مع فريق X-POSITRON بمثابة نقلة نوعية لشركتنا الناشئة. لقد قدموا أكثر من توقعاتنا وضمن الجدول الزمني المحدد.",
+      "author": "مايكل تشين",
+      "position": "مؤسس، NexGen",
+      "avatar": "https://i.pravatar.cc/150?img=2"
+    }
+  ]
+}

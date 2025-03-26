@@ -1,0 +1,235 @@
+
+{
+  "en": [
+    {
+      "id": "1",
+      "title": "Nebula Finance Dashboard",
+      "description": "A comprehensive financial dashboard with real-time data visualization and AI-powered insights.",
+      "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop",
+      "category": "Web Application",
+      "fullDescription": "Nebula Finance Dashboard is a cutting-edge financial management platform designed for modern businesses. It combines powerful data visualization capabilities with AI-driven insights to help companies make better financial decisions.",
+      "challenge": "The client needed a comprehensive solution to track financial performance across multiple departments and locations in real-time, with capabilities for forecasting and scenario planning.",
+      "solution": "We developed a responsive web application with real-time data synchronization, interactive charts and graphs, and AI algorithms for trend analysis and anomaly detection.",
+      "results": "Since implementing the Nebula Finance Dashboard, the client has reported a 30% improvement in financial decision-making speed and a 25% reduction in reporting errors.",
+      "technologies": ["React", "Node.js", "TensorFlow.js", "D3.js", "WebSockets", "MongoDB"],
+      "testimonial": {
+        "quote": "The Nebula Finance Dashboard has transformed how we manage our finances. The real-time insights have been invaluable for our decision-making process.",
+        "author": "Sarah Johnson",
+        "position": "CFO, Global Enterprises Inc."
+      },
+      "demoLink": "https://demo.nebula-finance.example.com",
+      "videoLink": "https://youtu.be/example1"
+    },
+    {
+      "id": "2",
+      "title": "Quantum Health Mobile App",
+      "description": "A health tracking application with personalized recommendations and seamless device integration.",
+      "image": "https://images.unsplash.com/photo-1551650975-87deedd944c3?q=80&w=1974&auto=format&fit=crop",
+      "category": "Mobile App",
+      "fullDescription": "Quantum Health is a personalized health tracking application designed to help users monitor their fitness, nutrition, and wellbeing. The app integrates with wearable devices and provides AI-powered recommendations based on user data.",
+      "challenge": "The client wanted to create a mobile app that would stand out in the crowded health and fitness market by offering truly personalized experiences and actionable health insights.",
+      "solution": "We built a cross-platform mobile app that seamlessly connects with fitness wearables, tracks various health metrics, and uses machine learning to provide personalized recommendations.",
+      "results": "The app has achieved a 4.8-star rating on app stores and over 500,000 downloads in the first year, with users reporting an average 35% improvement in health habits.",
+      "technologies": ["React Native", "Firebase", "TensorFlow Lite", "Bluetooth API", "HealthKit", "Google Fit API"],
+      "testimonial": {
+        "quote": "Quantum Health has revolutionized how our users approach their wellness journey. The personalized insights and seamless device integration set a new standard for health apps.",
+        "author": "Dr. Michael Chen",
+        "position": "CEO, Quantum Health Solutions"
+      },
+      "demoLink": null,
+      "videoLink": "https://youtu.be/example2"
+    },
+    {
+      "id": "3",
+      "title": "Stellar E-commerce Platform",
+      "description": "A complete e-commerce solution with AI-powered product recommendations and analytics.",
+      "image": "https://images.unsplash.com/photo-1557821552-17105176677c?q=80&w=1932&auto=format&fit=crop",
+      "category": "Web Application",
+      "fullDescription": "Stellar is a comprehensive e-commerce platform built for scalability and performance. It includes advanced features like AI-powered product recommendations, sophisticated inventory management, and detailed analytics.",
+      "challenge": "The client needed to transition from a legacy e-commerce system to a modern platform capable of handling high traffic volumes while providing personalized shopping experiences.",
+      "solution": "We developed a custom e-commerce platform with a microservices architecture, real-time inventory management, AI-driven product recommendations, and comprehensive analytics dashboards.",
+      "results": "Within six months of launch, the client experienced a 45% increase in conversion rates, a 60% improvement in page load times, and a 28% increase in average order value.",
+      "technologies": ["React", "Node.js", "PostgreSQL", "Redis", "Elasticsearch", "Docker", "Kubernetes"],
+      "testimonial": {
+        "quote": "Stellar has transformed our online business. The platform's speed, reliability, and smart features have dramatically improved our customer experience and sales performance.",
+        "author": "Jessica Lee",
+        "position": "Digital Director, Stellar Retail Group"
+      },
+      "demoLink": "https://demo.stellar-ecommerce.example.com",
+      "videoLink": null
+    },
+    {
+      "id": "4",
+      "title": "Cosmos Social Network",
+      "description": "A next-generation social platform with advanced privacy features and content curation.",
+      "image": "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?q=80&w=2012&auto=format&fit=crop",
+      "category": "Web & Mobile",
+      "fullDescription": "Cosmos is a privacy-focused social networking platform designed to give users complete control over their data and content. It features sophisticated content curation algorithms and innovative community-building tools.",
+      "challenge": "The client wanted to create a social platform that could compete with established networks while differentiating itself through enhanced privacy controls and better content relevance.",
+      "solution": "We built a comprehensive social platform available on web and mobile, with end-to-end encryption for messages, granular privacy controls, and AI-powered content curation that doesn't compromise user data.",
+      "results": "Cosmos has attracted over 2 million active users within its first year, with user surveys indicating that 78% of users chose the platform specifically for its privacy features.",
+      "technologies": ["React", "React Native", "GraphQL", "Node.js", "MongoDB", "Redis", "AWS"],
+      "testimonial": {
+        "quote": "Cosmos has created something truly unique in the social media landscape. Their focus on privacy and user control sets them apart from every other platform we've used.",
+        "author": "Alex Rivera",
+        "position": "Technology Columnist, Tech Today"
+      },
+      "demoLink": null,
+      "videoLink": "https://youtu.be/example4"
+    },
+    {
+      "id": "5",
+      "title": "Galactic Analytics",
+      "description": "Business intelligence platform with interactive dashboards and predictive analytics.",
+      "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015&auto=format&fit=crop",
+      "category": "AI Solutions",
+      "fullDescription": "Galactic Analytics is an advanced business intelligence platform that transforms complex data into actionable insights. It provides interactive dashboards, predictive analytics, and automated reporting capabilities.",
+      "challenge": "The client needed a way to consolidate data from multiple sources and provide non-technical stakeholders with easy-to-understand visualizations and insights.",
+      "solution": "We created a comprehensive analytics platform that integrates with multiple data sources, processes information in real-time, and presents insights through intuitive dashboards with drill-down capabilities.",
+      "results": "Users report spending 70% less time preparing reports, while decision-making time has decreased by 40% due to faster access to relevant insights.",
+      "technologies": ["React", "Python", "TensorFlow", "Apache Spark", "PostgreSQL", "D3.js", "Docker"],
+      "testimonial": {
+        "quote": "Galactic Analytics has transformed how we understand our business data. What used to take days of analysis can now be visualized and understood in minutes.",
+        "author": "Marcus Thompson",
+        "position": "Head of Business Intelligence, Global Corp"
+      },
+      "demoLink": "https://demo.galactic-analytics.example.com",
+      "videoLink": "https://youtu.be/example5"
+    },
+    {
+      "id": "6",
+      "title": "Orbit CRM",
+      "description": "Customer relationship management system with AI-powered insights and automation.",
+      "image": "https://images.unsplash.com/photo-1543286386-713bdd548da4?q=80&w=2070&auto=format&fit=crop",
+      "category": "Web Application",
+      "fullDescription": "Orbit CRM is a next-generation customer relationship management system designed for modern sales teams. It features AI-powered lead scoring, automated follow-ups, and comprehensive analytics.",
+      "challenge": "The client needed a CRM that would reduce manual data entry, provide actionable insights about prospects, and seamlessly integrate with their existing tools.",
+      "solution": "We developed a custom CRM with automated data capture, AI-driven lead scoring and follow-up recommendations, and an open API architecture for easy integration with other business tools.",
+      "results": "Sales teams using Orbit CRM have reported a 35% increase in productivity, 28% higher conversion rates, and a 20% reduction in sales cycle length.",
+      "technologies": ["Angular", "Node.js", "PostgreSQL", "TensorFlow", "Redis", "Elasticsearch", "Docker"],
+      "testimonial": {
+        "quote": "Orbit CRM has revolutionized our sales process. The AI-powered insights help our team focus on the most promising leads, and the automation features have eliminated hours of manual work.",
+        "author": "Jennifer Martinez",
+        "position": "VP of Sales, Enterprise Solutions Inc."
+      },
+      "demoLink": "https://demo.orbit-crm.example.com",
+      "videoLink": null
+    }
+  ],
+  "ar": [
+    {
+      "id": "1",
+      "title": "لوحة تحكم Nebula المالية",
+      "description": "لوحة مالية شاملة مع تصور البيانات في الوقت الفعلي ورؤى مدعومة بالذكاء الاصطناعي.",
+      "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop",
+      "category": "تطبيق ويب",
+      "fullDescription": "لوحة تحكم Nebula المالية هي منصة إدارة مالية متطورة مصممة للشركات الحديثة. تجمع بين قدرات تصور البيانات القوية والرؤى المدعومة بالذكاء الاصطناعي لمساعدة الشركات على اتخاذ قرارات مالية أفضل.",
+      "challenge": "احتاج العميل إلى حل شامل لتتبع الأداء المالي عبر أقسام ومواقع متعددة في الوقت الفعلي، مع قدرات للتنبؤ وتخطيط السيناريوهات.",
+      "solution": "قمنا بتطوير تطبيق ويب متجاوب مع مزامنة البيانات في الوقت الفعلي، ورسوم بيانية تفاعلية، وخوارزميات الذكاء الاصطناعي لتحليل الاتجاهات واكتشاف الشذوذ.",
+      "results": "منذ تنفيذ لوحة تحكم Nebula المالية، أبلغ العميل عن تحسن بنسبة 30٪ في سرعة اتخاذ القرارات المالية وانخفاض بنسبة 25٪ في أخطاء إعداد التقارير.",
+      "technologies": ["React", "Node.js", "TensorFlow.js", "D3.js", "WebSockets", "MongoDB"],
+      "testimonial": {
+        "quote": "لقد حولت لوحة تحكم Nebula المالية طريقة إدارتنا لأموالنا. كانت الرؤى في الوقت الفعلي لا تقدر بثمن لعملية صنع القرار لدينا.",
+        "author": "سارة جونسون",
+        "position": "المدير المالي، شركة المؤسسات العالمية"
+      },
+      "demoLink": "https://demo.nebula-finance.example.com",
+      "videoLink": "https://youtu.be/example1"
+    },
+    {
+      "id": "2",
+      "title": "تطبيق Quantum Health للجوال",
+      "description": "تطبيق لتتبع الصحة مع توصيات شخصية وتكامل سلس مع الأجهزة.",
+      "image": "https://images.unsplash.com/photo-1551650975-87deedd944c3?q=80&w=1974&auto=format&fit=crop",
+      "category": "تطبيق جوال",
+      "fullDescription": "Quantum Health هو تطبيق لتتبع الصحة الشخصية مصمم لمساعدة المستخدمين على مراقبة لياقتهم وتغذيتهم ورفاهيتهم. يتكامل التطبيق مع الأجهزة القابلة للارتداء ويوفر توصيات مدعومة بالذكاء الاصطناعي بناءً على بيانات المستخدم.",
+      "challenge": "أراد العميل إنشاء تطبيق جوال يبرز في سوق الصحة واللياقة البدنية المزدحم من خلال تقديم تجارب شخصية حقًا ورؤى صحية قابلة للتنفيذ.",
+      "solution": "قمنا ببناء تطبيق جوال متعدد المنصات يتصل بسلاسة مع أجهزة اللياقة البدنية القابلة للارتداء، ويتتبع مقاييس صحية مختلفة، ويستخدم التعلم الآلي لتقديم توصيات شخصية.",
+      "results": "حقق التطبيق تقييمًا قدره 4.8 نجوم في متاجر التطبيقات وأكثر من 500,000 تنزيل في السنة الأولى، مع إبلاغ المستخدمين عن تحسن بنسبة 35٪ في العادات الصحية.",
+      "technologies": ["React Native", "Firebase", "TensorFlow Lite", "Bluetooth API", "HealthKit", "Google Fit API"],
+      "testimonial": {
+        "quote": "لقد أحدث Quantum Health ثورة في كيفية تعامل مستخدمينا مع رحلة العافية الخاصة بهم. الرؤى الشخصية والتكامل السلس مع الأجهزة يضع معيارًا جديدًا لتطبيقات الصحة.",
+        "author": "د. مايكل تشين",
+        "position": "الرئيس التنفيذي، حلول Quantum Health"
+      },
+      "demoLink": null,
+      "videoLink": "https://youtu.be/example2"
+    },
+    {
+      "id": "3",
+      "title": "منصة Stellar للتجارة الإلكترونية",
+      "description": "حل متكامل للتجارة الإلكترونية مع توصيات المنتجات المدعومة بالذكاء الاصطناعي والتحليلات.",
+      "image": "https://images.unsplash.com/photo-1557821552-17105176677c?q=80&w=1932&auto=format&fit=crop",
+      "category": "تطبيق ويب",
+      "fullDescription": "Stellar هي منصة تجارة إلكترونية شاملة مبنية للتوسع والأداء. تتضمن ميزات متقدمة مثل توصيات المنتجات المدعومة بالذكاء الاصطناعي، وإدارة المخزون المتطورة، والتحليلات التفصيلية.",
+      "challenge": "احتاج العميل إلى الانتقال من نظام تجارة إلكترونية قديم إلى منصة حديثة قادرة على التعامل مع أحجام حركة المرور العالية مع توفير تجارب تسوق مخصصة.",
+      "solution": "قمنا بتطوير منصة تجارة إلكترونية مخصصة مع بنية microservices، وإدارة مخزون في الوقت الفعلي، وتوصيات منتجات مدعومة بالذكاء الاصطناعي، ولوحات تحليلات شاملة.",
+      "results": "في غضون ستة أشهر من الإطلاق، شهد العميل زيادة بنسبة 45٪ في معدلات التحويل، وتحسن بنسبة 60٪ في أوقات تحميل الصفحة، وزيادة بنسبة 28٪ في متوسط قيمة الطلب.",
+      "technologies": ["React", "Node.js", "PostgreSQL", "Redis", "Elasticsearch", "Docker", "Kubernetes"],
+      "testimonial": {
+        "quote": "لقد حولت Stellar أعمالنا عبر الإنترنت. سرعة المنصة وموثوقيتها وميزاتها الذكية حسنت بشكل كبير تجربة العملاء وأداء المبيعات لدينا.",
+        "author": "جيسيكا لي",
+        "position": "المدير الرقمي، مجموعة Stellar للتجزئة"
+      },
+      "demoLink": "https://demo.stellar-ecommerce.example.com",
+      "videoLink": null
+    },
+    {
+      "id": "4",
+      "title": "شبكة Cosmos الاجتماعية",
+      "description": "منصة اجتماعية من الجيل التالي مع ميزات خصوصية متقدمة وتنسيق المحتوى.",
+      "image": "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?q=80&w=2012&auto=format&fit=crop",
+      "category": "ويب وجوال",
+      "fullDescription": "Cosmos هي منصة للتواصل الاجتماعي تركز على الخصوصية مصممة لمنح المستخدمين سيطرة كاملة على بياناتهم ومحتواهم. تتميز بخوارزميات تنسيق محتوى متطورة وأدوات مبتكرة لبناء المجتمع.",
+      "challenge": "أراد العميل إنشاء منصة اجتماعية يمكنها المنافسة مع الشبكات القائمة مع تمييز نفسها من خلال ضوابط الخصوصية المعززة وأهمية المحتوى بشكل أفضل.",
+      "solution": "قمنا ببناء منصة اجتماعية شاملة متاحة على الويب والهاتف المحمول، مع تشفير من طرف إلى طرف للرسائل، وضوابط خصوصية تفصيلية، وتنسيق محتوى مدعوم بالذكاء الاصطناعي لا يساوم على بيانات المستخدم.",
+      "results": "جذبت Cosmos أكثر من 2 مليون مستخدم نشط خلال عامها الأول، مع استطلاعات المستخدمين التي تشير إلى أن 78٪ من المستخدمين اختاروا المنصة تحديدًا لميزات الخصوصية الخاصة بها.",
+      "technologies": ["React", "React Native", "GraphQL", "Node.js", "MongoDB", "Redis", "AWS"],
+      "testimonial": {
+        "quote": "أنشأت Cosmos شيئًا فريدًا حقًا في مشهد وسائل التواصل الاجتماعي. تركيزهم على الخصوصية وتحكم المستخدم يميزهم عن كل منصة أخرى استخدمناها.",
+        "author": "أليكس ريفيرا",
+        "position": "كاتب عمود التكنولوجيا، تك توداي"
+      },
+      "demoLink": null,
+      "videoLink": "https://youtu.be/example4"
+    },
+    {
+      "id": "5",
+      "title": "تحليلات Galactic",
+      "description": "منصة ذكاء أعمال مع لوحات تحكم تفاعلية وتحليلات تنبؤية.",
+      "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015&auto=format&fit=crop",
+      "category": "حلول الذكاء الاصطناعي",
+      "fullDescription": "تحليلات Galactic هي منصة ذكاء أعمال متقدمة تحول البيانات المعقدة إلى رؤى قابلة للتنفيذ. توفر لوحات تحكم تفاعلية وتحليلات تنبؤية وقدرات تقارير آلية.",
+      "challenge": "احتاج العميل إلى طريقة لتوحيد البيانات من مصادر متعددة وتزويد أصحاب المصلحة غير التقنيين بتصورات ورؤى سهلة الفهم.",
+      "solution": "أنشأنا منصة تحليلات شاملة تتكامل مع مصادر بيانات متعددة، وتعالج المعلومات في الوقت الفعلي، وتقدم رؤى من خلال لوحات تحكم بديهية مع إمكانات التعمق.",
+      "results": "يبلغ المستخدمون عن قضاء وقت أقل بنسبة 70٪ في إعداد التقارير، بينما انخفض وقت اتخاذ القرار بنسبة 40٪ بسبب الوصول الأسرع إلى الرؤى ذات الصلة.",
+      "technologies": ["React", "Python", "TensorFlow", "Apache Spark", "PostgreSQL", "D3.js", "Docker"],
+      "testimonial": {
+        "quote": "لقد حولت تحليلات Galactic طريقة فهمنا لبيانات أعمالنا. ما كان يستغرق أيامًا من التحليل يمكن الآن تصوره وفهمه في دقائق.",
+        "author": "ماركوس طومسون",
+        "position": "رئيس ذكاء الأعمال، جلوبال كورب"
+      },
+      "demoLink": "https://demo.galactic-analytics.example.com",
+      "videoLink": "https://youtu.be/example5"
+    },
+    {
+      "id": "6",
+      "title": "Orbit CRM",
+      "description": "نظام إدارة علاقات العملاء مع رؤى وأتمتة مدعومة بالذكاء الاصطناعي.",
+      "image": "https://images.unsplash.com/photo-1543286386-713bdd548da4?q=80&w=2070&auto=format&fit=crop",
+      "category": "تطبيق ويب",
+      "fullDescription": "Orbit CRM هو نظام إدارة علاقات العملاء من الجيل التالي مصمم لفرق المبيعات الحديثة. يتميز بتقييم العملاء المحتملين المدعوم بالذكاء الاصطناعي، والمتابعات الآلية، والتحليلات الشاملة.",
+      "challenge": "احتاج العميل إلى نظام CRM من شأنه تقليل إدخال البيانات اليدوي، وتوفير رؤى قابلة للتنفيذ حول العملاء المحتملين، والتكامل بسلاسة مع أدواتهم الحالية.",
+      "solution": "قمنا بتطوير CRM مخصص مع التقاط البيانات الآلي، وتقييم العملاء المحتملين المدعوم بالذكاء الاصطناعي وتوصيات المتابعة، وبنية API مفتوحة للتكامل السهل مع أدوات الأعمال الأخرى.",
+      "results": "أبلغت فرق المبيعات التي تستخدم Orbit CRM عن زيادة بنسبة 35٪ في الإنتاجية، ومعدلات تحويل أعلى بنسبة 28٪، وانخفاض بنسبة 20٪ في طول دورة المبيعات.",
+      "technologies": ["Angular", "Node.js", "PostgreSQL", "TensorFlow", "Redis", "Elasticsearch", "Docker"],
+      "testimonial": {
+        "quote": "لقد أحدث Orbit CRM ثورة في عملية المبيعات لدينا. تساعد الرؤى المدعومة بالذكاء الاصطناعي فريقنا على التركيز على العملاء المحتملين الأكثر واعدة، وقد قضت ميزات الأتمتة على ساعات من العمل اليدوي.",
+        "author": "جينيفر مارتينيز",
+        "position": "نائب الرئيس للمبيعات، شركة الحلول المؤسسية"
+      },
+      "demoLink": "https://demo.orbit-crm.example.com",
+      "videoLink": null
+    }
+  ]
+}

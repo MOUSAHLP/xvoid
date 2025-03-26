@@ -1,43 +1,45 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
 import StarBackground from "@/components/StarBackground";
+import { Link } from "react-router-dom";
+import { ChevronRight } from "lucide-react";
+import { useLanguage } from "@/context/LanguageContext";
 
 const Sitemap: React.FC = () => {
-  // Define site structure
-  const siteStructure = [
+  const { language, t } = useLanguage();
+  const isArabic = language === 'ar';
+  const baseUrl = isArabic ? '/ar' : '';
+
+  const sitemapSections = [
     {
-      section: "Main Pages",
+      title: isArabic ? "الصفحات الرئيسية" : "Main Pages",
       links: [
-        { title: "Home", path: "/" },
-        { title: "About Us", path: "/about" },
-        { title: "Services", path: "/services" },
-        { title: "Portfolio", path: "/portfolio" },
-        { title: "Contact", path: "/contact" }
+        { name: t('nav.home'), path: `${baseUrl}/` },
+        { name: t('nav.services'), path: `${baseUrl}/services` },
+        { name: t('nav.portfolio'), path: `${baseUrl}/portfolio` },
+        { name: t('nav.about'), path: `${baseUrl}/about` },
+        { name: t('nav.contact'), path: `${baseUrl}/contact` },
       ]
     },
     {
-      section: "Services",
+      title: isArabic ? "الصفحات القانونية" : "Legal Pages",
       links: [
-        { title: "Web Development", path: "/service/web-development" },
-        { title: "Mobile Applications", path: "/service/mobile-applications" },
-        { title: "AI Solutions", path: "/service/ai-solutions" },
-        { title: "UI/UX Design", path: "/service/ui-ux-design" },
-        { title: "Digital Marketing", path: "/service/digital-marketing" }
+        { name: t('footer.privacy'), path: `${baseUrl}/privacy-policy` },
+        { name: t('footer.terms'), path: `${baseUrl}/terms-of-service` },
+        { name: t('footer.sitemap'), path: `${baseUrl}/sitemap` },
       ]
     },
     {
-      section: "Legal",
+      title: isArabic ? "الروابط الإضافية" : "Additional Links",
       links: [
-        { title: "Privacy Policy", path: "/privacy-policy" },
-        { title: "Terms of Service", path: "/terms-of-service" }
+        { name: t('technologies.title'), path: `${baseUrl}/technologies` },
       ]
     }
   ];
 
   return (
-    <>
+    <div className={isArabic ? 'rtl' : 'ltr'}>
       <StarBackground />
       <section className="min-h-screen pt-32 pb-20">
         <div className="container mx-auto px-4">
@@ -46,22 +48,22 @@ const Sitemap: React.FC = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <h1 className="text-4xl font-bold mb-8 text-center">Sitemap</h1>
+            <h1 className="text-4xl font-bold mb-8 text-center">{t('sitemap.title')}</h1>
             
             <div className="cosmic-card max-w-4xl mx-auto">
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                {siteStructure.map((section) => (
-                  <div key={section.section}>
-                    <h2 className="text-xl font-bold mb-4 text-glow">{section.section}</h2>
-                    <ul className="space-y-2">
-                      {section.links.map((link) => (
-                        <li key={link.path}>
+              <div className="grid md:grid-cols-2 gap-8">
+                {sitemapSections.map((section, index) => (
+                  <div key={index}>
+                    <h2 className="text-2xl font-bold mb-4">{section.title}</h2>
+                    <ul className="space-y-3">
+                      {section.links.map((link, linkIndex) => (
+                        <li key={linkIndex}>
                           <Link 
                             to={link.path}
-                            className="text-white/70 hover:text-cosmic-blue transition-colors duration-300 flex items-center"
+                            className="flex items-center hover:text-cosmic-blue transition-colors"
                           >
-                            <span className="mr-2">•</span>
-                            {link.title}
+                            <ChevronRight className="h-4 w-4 mr-2" />
+                            <span>{link.name}</span>
                           </Link>
                         </li>
                       ))}
@@ -73,7 +75,7 @@ const Sitemap: React.FC = () => {
           </motion.div>
         </div>
       </section>
-    </>
+    </div>
   );
 };
 

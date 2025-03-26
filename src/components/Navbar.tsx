@@ -17,12 +17,11 @@ const Navbar: React.FC = () => {
   
   // Navigation items
   const navItems = [
-    { name: t('home'), path: `${baseUrl}/` },
-    { name: t('services'), path: `${baseUrl}/services` },
-    { name: t('portfolio'), path: `${baseUrl}/portfolio` },
-    { name: t('technologies'), path: `${baseUrl}/technologies` },
-    { name: t('about'), path: `${baseUrl}/about` },
-    { name: t('contact'), path: `${baseUrl}/contact` },
+    { name: t('nav.home'), path: `${baseUrl}/` },
+    { name: t('nav.services'), path: `${baseUrl}/services` },
+    { name: t('nav.portfolio'), path: `${baseUrl}/portfolio` },
+    { name: t('nav.about'), path: `${baseUrl}/about` },
+    { name: t('nav.contact'), path: `${baseUrl}/contact` },
   ];
   
   // Handle scroll effect
@@ -100,7 +99,7 @@ const Navbar: React.FC = () => {
               to={`${baseUrl}/contact`}
               className="hidden md:inline-flex cosmic-button"
             >
-              <span>{t('launchProject')}</span>
+              <span>{t('buttons.launchProject')}</span>
             </Link>
           </div>
           
@@ -146,7 +145,7 @@ const Navbar: React.FC = () => {
             to={`${baseUrl}/contact`}
             className="cosmic-button mt-2 w-full flex justify-center"
           >
-            <span>{t('launchProject')}</span>
+            <span>{t('buttons.launchProject')}</span>
           </Link>
         </nav>
       </div>

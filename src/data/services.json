@@ -1,0 +1,209 @@
+
+{
+  "en": [
+    {
+      "id": 1,
+      "title": "Web Development",
+      "description": "We create responsive, fast and secure web applications using cutting-edge technologies.",
+      "icon": "Monitor",
+      "color": "blue",
+      "fullDescription": "Our web development services cover everything from simple websites to complex web applications. We use modern frameworks like React, Angular, and Vue.js to build responsive, fast-loading sites that look great on any device. Our development process focuses on clean code, security, and user experience.",
+      "features": [
+        "Responsive design for all devices",
+        "Performance optimization",
+        "SEO-friendly development",
+        "Integration with third-party services",
+        "Secure authentication systems",
+        "Database design and implementation"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Mobile Applications",
+      "description": "Native and cross-platform mobile apps that deliver exceptional user experiences.",
+      "icon": "Smartphone",
+      "color": "purple",
+      "fullDescription": "We develop mobile applications for iOS and Android platforms that are intuitive, fast, and provide an excellent user experience. Whether you need a native app with platform-specific features or a cross-platform solution that works everywhere, our mobile development team can deliver the perfect solution for your needs.",
+      "features": [
+        "Native iOS and Android development",
+        "Cross-platform solutions with React Native",
+        "UI/UX design for mobile",
+        "Push notification implementation",
+        "Offline functionality",
+        "App Store and Google Play deployment",
+        "Regular updates and maintenance"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "AI Solutions",
+      "description": "Intelligent systems and machine learning solutions to automate and optimize processes.",
+      "icon": "BrainCircuit",
+      "color": "pink",
+      "fullDescription": "Our AI solutions leverage machine learning and data analytics to help businesses make better decisions, automate processes, and gain insights from their data. From natural language processing to computer vision, we can implement AI technologies that provide real business value and competitive advantage.",
+      "features": [
+        "Machine learning models development",
+        "Natural language processing",
+        "Predictive analytics",
+        "Computer vision solutions",
+        "Recommendation systems",
+        "Chatbots and virtual assistants",
+        "Data processing and analysis"
+      ]
+    },
+    {
+      "id": 4,
+      "title": "UI/UX Design",
+      "description": "User-centered design that creates intuitive and engaging digital experiences.",
+      "icon": "Palette",
+      "color": "green",
+      "fullDescription": "Our design team creates user interfaces that are not only visually appealing but also intuitive and functional. We follow a user-centered design process, conducting research, creating wireframes and prototypes, and testing with real users to ensure the final product meets their needs and expectations.",
+      "features": [
+        "User research and personas",
+        "Information architecture",
+        "Wireframing and prototyping",
+        "Visual design",
+        "Interaction design",
+        "Usability testing",
+        "Accessible design principles"
+      ]
+    },
+    {
+      "id": 5,
+      "title": "E-commerce Solutions",
+      "description": "Custom online stores and marketplace platforms that drive sales and growth.",
+      "icon": "ShoppingCart",
+      "color": "blue",
+      "fullDescription": "We build e-commerce solutions that help businesses sell their products or services online. From custom online stores to marketplace platforms, our e-commerce solutions include everything you need to manage products, process payments, and provide excellent customer service.",
+      "features": [
+        "Custom online store development",
+        "Shopping cart and checkout process",
+        "Payment gateway integration",
+        "Product management systems",
+        "Customer account management",
+        "Order processing and tracking",
+        "Analytics and reporting"
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Digital Marketing",
+      "description": "Strategic marketing solutions to increase your online visibility and reach.",
+      "icon": "TrendingUp",
+      "color": "purple",
+      "fullDescription": "Our digital marketing services help businesses reach their target audience, generate leads, and increase conversions. We use data-driven strategies across various channels to create campaigns that deliver measurable results and ROI.",
+      "features": [
+        "Search engine optimization (SEO)",
+        "Pay-per-click advertising (PPC)",
+        "Social media marketing",
+        "Email marketing campaigns",
+        "Content marketing strategies",
+        "Analytics and performance tracking",
+        "Conversion rate optimization"
+      ]
+    }
+  ],
+  "ar": [
+    {
+      "id": 1,
+      "title": "تطوير الويب",
+      "description": "نقوم بإنشاء تطبيقات ويب سريعة وآمنة وسريعة الاستجابة باستخدام أحدث التقنيات.",
+      "icon": "Monitor",
+      "color": "blue",
+      "fullDescription": "تغطي خدمات تطوير الويب لدينا كل شيء من المواقع البسيطة إلى تطبيقات الويب المعقدة. نستخدم أطر عمل حديثة مثل React و Angular و Vue.js لبناء مواقع سريعة التحميل وسريعة الاستجابة تبدو رائعة على أي جهاز. تركز عملية التطوير لدينا على الكود النظيف والأمان وتجربة المستخدم.",
+      "features": [
+        "تصميم متجاوب لجميع الأجهزة",
+        "تحسين الأداء",
+        "تطوير صديق لمحركات البحث",
+        "التكامل مع خدمات الطرف الثالث",
+        "أنظمة مصادقة آمنة",
+        "تصميم وتنفيذ قواعد البيانات"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "تطبيقات الموبايل",
+      "description": "تطبيقات الجوال الأصلية وعبر الأنظمة الأساسية التي توفر تجارب مستخدم استثنائية.",
+      "icon": "Smartphone",
+      "color": "purple",
+      "fullDescription": "نقوم بتطوير تطبيقات الجوال لمنصات iOS و Android التي تتسم بالبديهية والسرعة وتوفر تجربة مستخدم ممتازة. سواء كنت بحاجة إلى تطبيق أصلي بميزات خاصة بالمنصة أو حل عبر المنصات يعمل في كل مكان، يمكن لفريق تطوير الجوال لدينا تقديم الحل المثالي لاحتياجاتك.",
+      "features": [
+        "تطوير iOS و Android الأصلي",
+        "حلول عبر المنصات مع React Native",
+        "تصميم واجهة المستخدم/تجربة المستخدم للجوال",
+        "تنفيذ الإشعارات",
+        "وظائف دون اتصال",
+        "نشر في App Store و Google Play",
+        "تحديثات وصيانة منتظمة"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "حلول الذكاء الاصطناعي",
+      "description": "أنظمة ذكية وحلول تعلم آلي لأتمتة العمليات وتحسينها.",
+      "icon": "BrainCircuit",
+      "color": "pink",
+      "fullDescription": "تستفيد حلول الذكاء الاصطناعي لدينا من التعلم الآلي وتحليلات البيانات لمساعدة الشركات على اتخاذ قرارات أفضل وأتمتة العمليات والحصول على رؤى من بياناتها. من معالجة اللغة الطبيعية إلى رؤية الكمبيوتر، يمكننا تنفيذ تقنيات الذكاء الاصطناعي التي توفر قيمة تجارية حقيقية وميزة تنافسية.",
+      "features": [
+        "تطوير نماذج التعلم الآلي",
+        "معالجة اللغة الطبيعية",
+        "التحليلات التنبؤية",
+        "حلول رؤية الكمبيوتر",
+        "أنظمة التوصية",
+        "روبوتات الدردشة والمساعدين الافتراضيين",
+        "معالجة وتحليل البيانات"
+      ]
+    },
+    {
+      "id": 4,
+      "title": "تصميم واجهة المستخدم/تجربة المستخدم",
+      "description": "تصميم يركز على المستخدم يخلق تجارب رقمية بديهية وجذابة.",
+      "icon": "Palette",
+      "color": "green",
+      "fullDescription": "يقوم فريق التصميم لدينا بإنشاء واجهات مستخدم ليست جذابة بصرياً فحسب، بل أيضاً بديهية وعملية. نتبع عملية تصميم تركز على المستخدم، وإجراء الأبحاث، وإنشاء الإطارات السلكية والنماذج الأولية، والاختبار مع مستخدمين حقيقيين لضمان تلبية المنتج النهائي لاحتياجاتهم وتوقعاتهم.",
+      "features": [
+        "أبحاث المستخدم والشخصيات",
+        "هندسة المعلومات",
+        "الإطارات السلكية والنماذج الأولية",
+        "التصميم المرئي",
+        "تصميم التفاعل",
+        "اختبار قابلية الاستخدام",
+        "مبادئ التصميم المتاحة"
+      ]
+    },
+    {
+      "id": 5,
+      "title": "حلول التجارة الإلكترونية",
+      "description": "متاجر إلكترونية مخصصة ومنصات سوق تدفع المبيعات والنمو.",
+      "icon": "ShoppingCart",
+      "color": "blue",
+      "fullDescription": "نقوم ببناء حلول التجارة الإلكترونية التي تساعد الشركات على بيع منتجاتها أو خدماتها عبر الإنترنت. من المتاجر الإلكترونية المخصصة إلى منصات السوق، تتضمن حلول التجارة الإلكترونية لدينا كل ما تحتاجه لإدارة المنتجات ومعالجة المدفوعات وتقديم خدمة عملاء ممتازة.",
+      "features": [
+        "تطوير متجر إلكتروني مخصص",
+        "عربة التسوق وعملية الدفع",
+        "تكامل بوابة الدفع",
+        "أنظمة إدارة المنتجات",
+        "إدارة حساب العميل",
+        "معالجة الطلبات وتتبعها",
+        "التحليلات وإعداد التقارير"
+      ]
+    },
+    {
+      "id": 6,
+      "title": "التسويق الرقمي",
+      "description": "حلول تسويقية استراتيجية لزيادة ظهورك ووصولك عبر الإنترنت.",
+      "icon": "TrendingUp",
+      "color": "purple",
+      "fullDescription": "تساعد خدمات التسويق الرقمي لدينا الشركات على الوصول إلى جمهورها المستهدف وتوليد العملاء المحتملين وزيادة التحويلات. نستخدم استراتيجيات قائمة على البيانات عبر قنوات مختلفة لإنشاء حملات تقدم نتائج قابلة للقياس وعائد على الاستثمار.",
+      "features": [
+        "تحسين محركات البحث (SEO)",
+        "إعلانات الدفع بالنقرة (PPC)",
+        "التسويق عبر وسائل التواصل الاجتماعي",
+        "حملات التسويق عبر البريد الإلكتروني",
+        "استراتيجيات تسويق المحتوى",
+        "تحليلات وتتبع الأداء",
+        "تحسين معدل التحويل"
+      ]
+    }
+  ]
+}

@@ -1,7 +1,9 @@
 
-import React, { createContext, useState, useContext, ReactNode } from 'react';
+import React, { createContext, useState, useContext, ReactNode, useEffect } from 'react';
+import { useLocation, useNavigate } from 'react-router-dom';
+import translations from '../data/translations.json';
 
-type Language = 'en' | 'ar';
+export type Language = 'en' | 'ar';
 
 interface LanguageContextType {
   language: Language;
@@ -9,79 +11,61 @@ interface LanguageContextType {
   t: (key: string) => string;
 }
 
-// Create translations object
-const translations: Record<string, Record<string, string>> = {
-  en: {
-    // Navigation
-    'home': 'Home',
-    'services': 'Services',
-    'portfolio': 'Portfolio',
-    'about': 'About',
-    'contact': 'Contact',
-    'technologies': 'Technologies',
-    
-    // Buttons
-    'launchProject': 'Launch Your Project',
-    'viewWork': 'View Our Work',
-    'exploreSpace': 'Explore Our Space',
-    'getStarted': 'Get Started Today',
-    'details': 'View Details',
-    
-    // Sections
-    'servicesTitle': 'Digital Solutions for Every Need',
-    'portfolioTitle': 'Featured Projects',
-    'testimonialTitle': 'What Our Clients Say',
-    'techTitle': 'Technologies We Use',
-    'readyToLaunch': 'Ready to Launch Your Digital Journey?',
-    
-    // Footer
-    'allRights': 'All Rights Reserved',
-    'privacy': 'Privacy Policy',
-    'terms': 'Terms of Service',
-    'sitemap': 'Sitemap',
-  },
-  ar: {
-    // Navigation
-    'home': 'الرئيسية',
-    'services': 'الخدمات',
-    'portfolio': 'المشاريع',
-    'about': 'من نحن',
-    'contact': 'اتصل بنا',
-    'technologies': 'التقنيات',
-    
-    // Buttons
-    'launchProject': 'أطلق مشروعك',
-    'viewWork': 'مشاهدة أعمالنا',
-    'exploreSpace': 'استكشف الفضاء',
-    'getStarted': 'ابدأ اليوم',
-    'details': 'عرض التفاصيل',
-    
-    // Sections
-    'servicesTitle': 'حلول رقمية لكل احتياجاتك',
-    'portfolioTitle': 'مشاريع مميزة',
-    'testimonialTitle': 'ماذا يقول عملاؤنا',
-    'techTitle': 'التقنيات التي نستخدمها',
-    'readyToLaunch': 'هل أنت جاهز لإطلاق رحلتك الرقمية؟',
-    
-    // Footer
-    'allRights': 'جميع الحقوق محفوظة',
-    'privacy': 'سياسة الخصوصية',
-    'terms': 'شروط الخدمة',
-    'sitemap': 'خريطة الموقع',
-  }
-};
-
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
 
 export const LanguageProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
-  const [language, setLanguage] = useState<Language>('en');
+  const location = useLocation();
+  const navigate = useNavigate();
+  const [language, setLanguage] = useState<Language>(
+    location.pathname.startsWith('/ar') ? 'ar' : 'en'
+  );
+
+  useEffect(() => {
+    // Update language based on URL changes
+    const newLanguage = location.pathname.startsWith('/ar') ? 'ar' : 'en';
+    if (language !== newLanguage) {
+      setLanguage(newLanguage);
+    }
+  }, [location.pathname]);
+
+  const changeLanguage = (lang: Language) => {
+    setLanguage(lang);
+    
+    // Don't navigate if we're already on the right path
+    const currentIsArabic = location.pathname.startsWith('/ar');
+    if ((lang === 'ar' && !currentIsArabic) || (lang === 'en' && currentIsArabic)) {
+      const newPath = getTogglePath(location.pathname, lang);
+      navigate(newPath);
+    }
+  };
+
+  const getTogglePath = (path: string, targetLang: Language): string => {
+    if (targetLang === 'ar' && !path.startsWith('/ar')) {
+      return `/ar${path === '/' ? '' : path}`;
+    } else if (targetLang === 'en' && path.startsWith('/ar')) {
+      return path.replace('/ar', '') || '/';
+    }
+    return path;
+  };
 
   const t = (key: string): string => {
-    return translations[language][key] || key;
+    const parts = key.split('.');
+    let result = translations[language] as any;
+    
+    for (const part of parts) {
+      if (result && result[part] !== undefined) {
+        result = result[part];
+      } else {
+        console.warn(`Translation missing for key: ${key} in language: ${language}`);
+        return key;
+      }
+    }
+    
+    return typeof result === 'string' ? result : key;
   };
 
   return (
-    <LanguageContext.Provider value={{ language, setLanguage, t }}>
+    <LanguageContext.Provider value={{ language, setLanguage: changeLanguage, t }}>
       {children}
     </LanguageContext.Provider>
   );

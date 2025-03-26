@@ -38,49 +38,35 @@ const ScrollToTop = () => {
 // AnimatedRoutes component to handle route transitions
 const AnimatedRoutes = () => {
   const location = useLocation();
-  const isArabic = location.pathname.includes('/ar');
-  
-  // Create a page wrapper that adds the Arabic class if needed
-  const PageWrapper = ({ children }: { children: React.ReactNode }) => (
-    <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0 }}
-      transition={{ duration: 0.5 }}
-      className={isArabic ? 'rtl' : 'ltr'}
-    >
-      {children}
-    </motion.div>
-  );
   
   return (
     <AnimatePresence mode="wait">
       <Routes location={location} key={location.pathname}>
         {/* English Routes */}
-        <Route path="/" element={<PageWrapper><Index /></PageWrapper>} />
-        <Route path="/about" element={<PageWrapper><About /></PageWrapper>} />
-        <Route path="/services" element={<PageWrapper><Services /></PageWrapper>} />
-        <Route path="/service/:id" element={<PageWrapper><ServiceDetail /></PageWrapper>} />
-        <Route path="/portfolio" element={<PageWrapper><Portfolio /></PageWrapper>} />
-        <Route path="/project/:id" element={<PageWrapper><ProjectDetail /></PageWrapper>} />
-        <Route path="/contact" element={<PageWrapper><Contact /></PageWrapper>} />
-        <Route path="/privacy-policy" element={<PageWrapper><PrivacyPolicy /></PageWrapper>} />
-        <Route path="/terms-of-service" element={<PageWrapper><TermsOfService /></PageWrapper>} />
-        <Route path="/sitemap" element={<PageWrapper><Sitemap /></PageWrapper>} />
-        <Route path="/technologies" element={<PageWrapper><Technologies /></PageWrapper>} />
+        <Route path="/" element={<Index />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/services" element={<Services />} />
+        <Route path="/service/:id" element={<ServiceDetail />} />
+        <Route path="/portfolio" element={<Portfolio />} />
+        <Route path="/project/:id" element={<ProjectDetail />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        <Route path="/terms-of-service" element={<TermsOfService />} />
+        <Route path="/sitemap" element={<Sitemap />} />
+        <Route path="/technologies" element={<Technologies />} />
         
         {/* Arabic Routes */}
-        <Route path="/ar" element={<PageWrapper><Index /></PageWrapper>} />
-        <Route path="/ar/about" element={<PageWrapper><About /></PageWrapper>} />
-        <Route path="/ar/services" element={<PageWrapper><Services /></PageWrapper>} />
-        <Route path="/ar/service/:id" element={<PageWrapper><ServiceDetail /></PageWrapper>} />
-        <Route path="/ar/portfolio" element={<PageWrapper><Portfolio /></PageWrapper>} />
-        <Route path="/ar/project/:id" element={<PageWrapper><ProjectDetail /></PageWrapper>} />
-        <Route path="/ar/contact" element={<PageWrapper><Contact /></PageWrapper>} />
-        <Route path="/ar/privacy-policy" element={<PageWrapper><PrivacyPolicy /></PageWrapper>} />
-        <Route path="/ar/terms-of-service" element={<PageWrapper><TermsOfService /></PageWrapper>} />
-        <Route path="/ar/sitemap" element={<PageWrapper><Sitemap /></PageWrapper>} />
-        <Route path="/ar/technologies" element={<PageWrapper><Technologies /></PageWrapper>} />
+        <Route path="/ar" element={<Index />} />
+        <Route path="/ar/about" element={<About />} />
+        <Route path="/ar/services" element={<Services />} />
+        <Route path="/ar/service/:id" element={<ServiceDetail />} />
+        <Route path="/ar/portfolio" element={<Portfolio />} />
+        <Route path="/ar/project/:id" element={<ProjectDetail />} />
+        <Route path="/ar/contact" element={<Contact />} />
+        <Route path="/ar/privacy-policy" element={<PrivacyPolicy />} />
+        <Route path="/ar/terms-of-service" element={<TermsOfService />} />
+        <Route path="/ar/sitemap" element={<Sitemap />} />
+        <Route path="/ar/technologies" element={<Technologies />} />
         
         {/* Catch-all route */}
         <Route path="*" element={<NotFound />} />

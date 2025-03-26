@@ -1,0 +1,269 @@
+
+{
+  "categories": [
+    {
+      "name": {
+        "en": "Frontend",
+        "ar": "واجهة أمامية"
+      },
+      "technologies": [
+        {
+          "name": "React",
+          "icon": "/lovable-uploads/4b1c1e3a-22a5-490a-af60-1144f3ff69b4.png",
+          "description": {
+            "en": "A JavaScript library for building user interfaces, maintained by Facebook.",
+            "ar": "مكتبة جافا سكريبت لبناء واجهات المستخدم، تحت رعاية فيسبوك."
+          }
+        },
+        {
+          "name": "Vue.js",
+          "icon": "/lovable-uploads/ff1851fc-0bb9-4e41-bd74-0b884a9d2c96.png",
+          "description": {
+            "en": "Progressive JavaScript framework for building UIs and single-page applications.",
+            "ar": "إطار عمل جافا سكريبت تقدمي لبناء واجهات المستخدم والتطبيقات أحادية الصفحة."
+          }
+        },
+        {
+          "name": "Angular",
+          "icon": "/lovable-uploads/b3f59f19-4c87-4f63-8fca-67a1c5a661eb.png",
+          "description": {
+            "en": "Platform for building mobile and desktop web applications, developed by Google.",
+            "ar": "منصة لبناء تطبيقات الويب للجوال وسطح المكتب، طورتها جوجل."
+          }
+        },
+        {
+          "name": "Tailwind CSS",
+          "icon": "/lovable-uploads/3f34d66c-1ad0-4cb1-9db4-a0ebb1bbb31f.png",
+          "description": {
+            "en": "Utility-first CSS framework for rapidly building custom designs.",
+            "ar": "إطار عمل CSS أولي للمرافق لبناء تصميمات مخصصة بسرعة."
+          }
+        },
+        {
+          "name": "TypeScript",
+          "icon": "/lovable-uploads/3f34d66c-1ad0-4cb1-9db4-a0ebb1bbb31f.png",
+          "description": {
+            "en": "Typed superset of JavaScript that compiles to plain JavaScript.",
+            "ar": "مجموعة مكتوبة من جافا سكريبت يتم تجميعها إلى جافا سكريبت عادي."
+          }
+        }
+      ]
+    },
+    {
+      "name": {
+        "en": "Backend",
+        "ar": "واجهة خلفية"
+      },
+      "technologies": [
+        {
+          "name": "Node.js",
+          "icon": "/lovable-uploads/3f34d66c-1ad0-4cb1-9db4-a0ebb1bbb31f.png",
+          "description": {
+            "en": "JavaScript runtime built on Chrome's V8 JavaScript engine.",
+            "ar": "بيئة تشغيل جافا سكريبت مبنية على محرك V8 JavaScript من Chrome."
+          }
+        },
+        {
+          "name": "Express",
+          "icon": "/lovable-uploads/3f34d66c-1ad0-4cb1-9db4-a0ebb1bbb31f.png",
+          "description": {
+            "en": "Fast, unopinionated, minimalist web framework for Node.js.",
+            "ar": "إطار عمل ويب سريع وغير متحيز وبسيط لـ Node.js."
+          }
+        },
+        {
+          "name": "Django",
+          "icon": "/lovable-uploads/3f34d66c-1ad0-4cb1-9db4-a0ebb1bbb31f.png",
+          "description": {
+            "en": "High-level Python Web framework that encourages rapid development.",
+            "ar": "إطار عمل ويب Python عالي المستوى يشجع على التطوير السريع."
+          }
+        },
+        {
+          "name": "Ruby on Rails",
+          "icon": "/lovable-uploads/3f34d66c-1ad0-4cb1-9db4-a0ebb1bbb31f.png",
+          "description": {
+            "en": "Server-side web application framework written in Ruby.",
+            "ar": "إطار عمل تطبيق ويب من جانب الخادم مكتوب بلغة Ruby."
+          }
+        },
+        {
+          "name": "Laravel",
+          "icon": "/lovable-uploads/3f34d66c-1ad0-4cb1-9db4-a0ebb1bbb31f.png",
+          "description": {
+            "en": "PHP web application framework with expressive, elegant syntax.",
+            "ar": "إطار عمل تطبيق ويب PHP بأسلوب تعبيري وأنيق."
+          }
+        }
+      ]
+    },
+    {
+      "name": {
+        "en": "Database",
+        "ar": "قواعد البيانات"
+      },
+      "technologies": [
+        {
+          "name": "MongoDB",
+          "icon": "/lovable-uploads/3f34d66c-1ad0-4cb1-9db4-a0ebb1bbb31f.png",
+          "description": {
+            "en": "Document-oriented NoSQL database used for high volume data storage.",
+            "ar": "قاعدة بيانات NoSQL موجهة للمستندات تستخدم لتخزين البيانات ذات الحجم الكبير."
+          }
+        },
+        {
+          "name": "PostgreSQL",
+          "icon": "/lovable-uploads/3f34d66c-1ad0-4cb1-9db4-a0ebb1bbb31f.png",
+          "description": {
+            "en": "Powerful, open source object-relational database system.",
+            "ar": "نظام قاعدة بيانات علائقية كائنية قوي ومفتوح المصدر."
+          }
+        },
+        {
+          "name": "MySQL",
+          "icon": "/lovable-uploads/3f34d66c-1ad0-4cb1-9db4-a0ebb1bbb31f.png",
+          "description": {
+            "en": "Open-source relational database management system.",
+            "ar": "نظام إدارة قواعد البيانات العلائقية مفتوح المصدر."
+          }
+        },
+        {
+          "name": "Redis",
+          "icon": "/lovable-uploads/3f34d66c-1ad0-4cb1-9db4-a0ebb1bbb31f.png",
+          "description": {
+            "en": "In-memory data structure store, used as a database, cache, and message broker.",
+            "ar": "مخزن بنية بيانات في الذاكرة، يستخدم كقاعدة بيانات وذاكرة تخزين مؤقت ووسيط رسائل."
+          }
+        },
+        {
+          "name": "Firebase",
+          "icon": "/lovable-uploads/3f34d66c-1ad0-4cb1-9db4-a0ebb1bbb31f.png",
+          "description": {
+            "en": "Platform developed by Google for creating mobile and web applications.",
+            "ar": "منصة طورتها Google لإنشاء تطبيقات الجوال والويب."
+          }
+        }
+      ]
+    },
+    {
+      "name": {
+        "en": "Mobile",
+        "ar": "تطبيقات الجوال"
+      },
+      "technologies": [
+        {
+          "name": "React Native",
+          "icon": "/lovable-uploads/3f34d66c-1ad0-4cb1-9db4-a0ebb1bbb31f.png",
+          "description": {
+            "en": "Framework for building native apps using React and JavaScript.",
+            "ar": "إطار عمل لبناء تطبيقات أصلية باستخدام React و JavaScript."
+          }
+        },
+        {
+          "name": "Flutter",
+          "icon": "/lovable-uploads/3f34d66c-1ad0-4cb1-9db4-a0ebb1bbb31f.png",
+          "description": {
+            "en": "UI toolkit from Google for building natively compiled applications.",
+            "ar": "مجموعة أدوات واجهة المستخدم من Google لبناء تطبيقات مترجمة أصلية."
+          }
+        },
+        {
+          "name": "Swift",
+          "icon": "/lovable-uploads/3f34d66c-1ad0-4cb1-9db4-a0ebb1bbb31f.png",
+          "description": {
+            "en": "Powerful and intuitive programming language for iOS and macOS.",
+            "ar": "لغة برمجة قوية وبديهية لنظامي iOS و macOS."
+          }
+        },
+        {
+          "name": "Kotlin",
+          "icon": "/lovable-uploads/3f34d66c-1ad0-4cb1-9db4-a0ebb1bbb31f.png",
+          "description": {
+            "en": "Modern programming language for Android development.",
+            "ar": "لغة برمجة حديثة لتطوير Android."
+          }
+        }
+      ]
+    },
+    {
+      "name": {
+        "en": "DevOps",
+        "ar": "دِف أوبس"
+      },
+      "technologies": [
+        {
+          "name": "Docker",
+          "icon": "/lovable-uploads/3f34d66c-1ad0-4cb1-9db4-a0ebb1bbb31f.png",
+          "description": {
+            "en": "Platform for developing, shipping, and running applications in containers.",
+            "ar": "منصة لتطوير وشحن وتشغيل التطبيقات في حاويات."
+          }
+        },
+        {
+          "name": "Kubernetes",
+          "icon": "/lovable-uploads/3f34d66c-1ad0-4cb1-9db4-a0ebb1bbb31f.png",
+          "description": {
+            "en": "Open-source system for automating deployment, scaling, and management of containerized applications.",
+            "ar": "نظام مفتوح المصدر لأتمتة نشر وتوسيع وإدارة التطبيقات المحتواة."
+          }
+        },
+        {
+          "name": "AWS",
+          "icon": "/lovable-uploads/3f34d66c-1ad0-4cb1-9db4-a0ebb1bbb31f.png",
+          "description": {
+            "en": "Comprehensive cloud computing platform provided by Amazon.",
+            "ar": "منصة حوسبة سحابية شاملة مقدمة من Amazon."
+          }
+        },
+        {
+          "name": "GitHub Actions",
+          "icon": "/lovable-uploads/3f34d66c-1ad0-4cb1-9db4-a0ebb1bbb31f.png",
+          "description": {
+            "en": "CI/CD platform that automates build, test, and deployment pipeline.",
+            "ar": "منصة CI/CD تؤتمت خط أنابيب البناء والاختبار والنشر."
+          }
+        }
+      ]
+    },
+    {
+      "name": {
+        "en": "AI & ML",
+        "ar": "الذكاء الاصطناعي والتعلم الآلي"
+      },
+      "technologies": [
+        {
+          "name": "TensorFlow",
+          "icon": "/lovable-uploads/3f34d66c-1ad0-4cb1-9db4-a0ebb1bbb31f.png",
+          "description": {
+            "en": "Open source machine learning framework developed by Google.",
+            "ar": "إطار عمل التعلم الآلي مفتوح المصدر طورته Google."
+          }
+        },
+        {
+          "name": "PyTorch",
+          "icon": "/lovable-uploads/3f34d66c-1ad0-4cb1-9db4-a0ebb1bbb31f.png",
+          "description": {
+            "en": "Open source machine learning library developed by Facebook.",
+            "ar": "مكتبة تعلم آلي مفتوحة المصدر طورتها Facebook."
+          }
+        },
+        {
+          "name": "OpenAI API",
+          "icon": "/lovable-uploads/3f34d66c-1ad0-4cb1-9db4-a0ebb1bbb31f.png",
+          "description": {
+            "en": "API for accessing new AI models developed by OpenAI.",
+            "ar": "واجهة برمجة تطبيقات للوصول إلى نماذج الذكاء الاصطناعي الجديدة التي طورتها OpenAI."
+          }
+        },
+        {
+          "name": "Scikit-Learn",
+          "icon": "/lovable-uploads/3f34d66c-1ad0-4cb1-9db4-a0ebb1bbb31f.png",
+          "description": {
+            "en": "Machine learning library for Python programming language.",
+            "ar": "مكتبة تعلم آلي للغة برمجة Python."
+          }
+        }
+      ]
+    }
+  ]
+}

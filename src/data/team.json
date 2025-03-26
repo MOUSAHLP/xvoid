@@ -1,0 +1,55 @@
+
+{
+  "en": [
+    {
+      "name": "Alex Chen",
+      "position": "Founder & CEO",
+      "image": "https://i.pravatar.cc/300?img=12",
+      "description": "Visionary leader with 15+ years of tech experience."
+    },
+    {
+      "name": "Emma Rodriguez",
+      "position": "CTO",
+      "image": "https://i.pravatar.cc/300?img=10",
+      "description": "Technology expert specializing in AI and machine learning."
+    },
+    {
+      "name": "Michael Johnson",
+      "position": "Design Director",
+      "image": "https://i.pravatar.cc/300?img=11",
+      "description": "Award-winning designer with a passion for user experience."
+    },
+    {
+      "name": "Sarah Kim",
+      "position": "Development Lead",
+      "image": "https://i.pravatar.cc/300?img=9",
+      "description": "Full-stack developer with expertise in scalable applications."
+    }
+  ],
+  "ar": [
+    {
+      "name": "أليكس تشن",
+      "position": "المؤسس والرئيس التنفيذي",
+      "image": "https://i.pravatar.cc/300?img=12",
+      "description": "قائد صاحب رؤية مع أكثر من 15 عامًا من الخبرة التقنية."
+    },
+    {
+      "name": "إيما رودريغيز",
+      "position": "المدير التقني",
+      "image": "https://i.pravatar.cc/300?img=10",
+      "description": "خبير تكنولوجي متخصص في الذكاء الاصطناعي والتعلم الآلي."
+    },
+    {
+      "name": "مايكل جونسون",
+      "position": "مدير التصميم",
+      "image": "https://i.pravatar.cc/300?img=11",
+      "description": "مصمم حائز على جوائز مع شغف لتجربة المستخدم."
+    },
+    {
+      "name": "سارة كيم",
+      "position": "رئيس التطوير",
+      "image": "https://i.pravatar.cc/300?img=9",
+      "description": "مطور شامل مع خبرة في التطبيقات القابلة للتوسع."
+    }
+  ]
+}

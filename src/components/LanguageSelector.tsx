@@ -27,7 +27,7 @@ const LanguageSelector: React.FC = () => {
       to={getTogglePath()} 
       onClick={handleToggle}
       className="flex items-center gap-2 text-white/80 hover:text-cosmic-blue transition-colors"
-      aria-label={language === 'en' ? 'Switch to Arabic' : 'Switch to English'}
+      aria-label={language === 'en' ? 'التبديل إلى العربية' : 'Switch to English'}
     >
       <Globe className="h-4 w-4" />
       <span>{language === 'en' ? 'العربية' : 'English'}</span>

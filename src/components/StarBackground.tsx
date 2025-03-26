@@ -13,6 +13,7 @@ export const StarBackground: React.FC = () => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const starsRef = useRef<Star[]>([]);
   const animationFrameRef = useRef<number>(0);
+  const activeRef = useRef<boolean>(true);
 
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -49,6 +50,8 @@ export const StarBackground: React.FC = () => {
 
     // Animate stars
     const animate = () => {
+      if (!activeRef.current) return;
+      
       ctx.clearRect(0, 0, canvas.width, canvas.height);
       
       // Draw stars
@@ -91,9 +94,13 @@ export const StarBackground: React.FC = () => {
       animationFrameRef.current = requestAnimationFrame(animate);
     };
 
+    // Set active flag to true when component mounts
+    activeRef.current = true;
     animate();
 
     return () => {
+      // Set active flag to false when component unmounts
+      activeRef.current = false;
       window.removeEventListener("resize", setCanvasSize);
       cancelAnimationFrame(animationFrameRef.current);
     };

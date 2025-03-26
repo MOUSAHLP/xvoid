@@ -1,0 +1,467 @@
+
+{
+  "en": {
+    "nav": {
+      "home": "Home",
+      "services": "Services",
+      "portfolio": "Portfolio",
+      "about": "About",
+      "contact": "Contact"
+    },
+    "buttons": {
+      "launchProject": "Launch Your Project",
+      "viewWork": "View Our Work",
+      "exploreSpace": "Explore Our Space",
+      "getStarted": "Get Started Today",
+      "details": "View Details",
+      "seeDemo": "See Demo",
+      "watchVideo": "Watch Video",
+      "viewAll": "View All",
+      "send": "Send Message"
+    },
+    "hero": {
+      "title": "Digital Solutions for The Future",
+      "subtitle": "Innovative web and mobile applications that elevate your business to new heights."
+    },
+    "sections": {
+      "services": {
+        "title": "OUR SERVICES",
+        "heading": "Digital Solutions for Every Need",
+        "description": "We offer a comprehensive range of services to help businesses navigate the digital landscape and achieve their goals."
+      },
+      "why": {
+        "title": "WHY CHOOSE US",
+        "heading": "Our Approach to Excellence",
+        "description": "We combine technical expertise with creative thinking to deliver solutions that exceed expectations."
+      },
+      "portfolio": {
+        "title": "OUR WORK",
+        "heading": "Featured Projects",
+        "description": "Explore our portfolio of innovative digital solutions that have helped businesses achieve their goals."
+      },
+      "testimonials": {
+        "title": "TESTIMONIALS",
+        "heading": "What Our Clients Say",
+        "description": "Don't just take our word for it. Hear what our clients have to say about working with us."
+      },
+      "technologies": {
+        "title": "TECH EXPERTISE",
+        "heading": "Technologies We Use",
+        "description": "We leverage cutting-edge technologies to build powerful, scalable solutions."
+      },
+      "cta": {
+        "heading": "Ready to Launch Your Digital Journey?",
+        "description": "Let's create something extraordinary together. Our team is ready to bring your vision to life."
+      }
+    },
+    "features": {
+      "expertTeam": {
+        "title": "Expert Team",
+        "description": "Skilled professionals with deep industry knowledge."
+      },
+      "globalReach": {
+        "title": "Global Reach",
+        "description": "Serving clients across continents with tailored solutions."
+      },
+      "securityFocus": {
+        "title": "Security Focus",
+        "description": "Built-in security for peace of mind and compliance."
+      },
+      "timelyDelivery": {
+        "title": "Timely Delivery",
+        "description": "Meeting deadlines without compromising on quality."
+      }
+    },
+    "about": {
+      "mission": {
+        "title": "OUR MISSION",
+        "heading": "We build tech that travels beyond boundaries",
+        "description": "At X-POSITRON, our mission is to empower businesses with innovative technology solutions that drive growth and transformation. We believe in pushing the boundaries of what's possible in the digital realm.",
+        "description2": "We're committed to excellence, continuous innovation, and delivering measurable results for our clients across the globe."
+      },
+      "journey": {
+        "title": "OUR JOURNEY",
+        "heading": "The X-POSITRON Story",
+        "description": "From humble beginnings to industry recognition, our journey has been one of continuous growth and innovation."
+      },
+      "values": {
+        "title": "OUR VALUES",
+        "heading": "Guiding Principles",
+        "description": "Our core values define who we are and guide everything we do."
+      },
+      "team": {
+        "title": "OUR TEAM",
+        "heading": "Meet Our Cosmic Engineers",
+        "description": "Talented professionals dedicated to creating exceptional digital experiences."
+      },
+      "values_list": {
+        "innovation": {
+          "title": "Innovation",
+          "description": "We continuously explore new technologies and approaches to solve complex problems."
+        },
+        "excellence": {
+          "title": "Excellence",
+          "description": "We maintain the highest standards in everything we do, from code quality to client communication."
+        },
+        "global": {
+          "title": "Global Perspective",
+          "description": "We embrace diversity of thought, culture, and experience in our solutions."
+        }
+      },
+      "purpose": {
+        "title": "Purpose-Driven",
+        "description": "Creating meaningful digital experiences"
+      },
+      "user": {
+        "title": "User-Focused",
+        "description": "Designing for human needs first"
+      }
+    },
+    "contact": {
+      "title": "GET IN TOUCH",
+      "heading": "Send Us an Interstellar Transmission",
+      "description": "Ready to start your digital journey? We're here to help bring your vision to life.",
+      "form": {
+        "name": "Name",
+        "email": "Email",
+        "subject": "Subject",
+        "message": "Message",
+        "namePlaceholder": "Your name",
+        "emailPlaceholder": "your.email@example.com",
+        "subjectPlaceholder": "How can we help?",
+        "messagePlaceholder": "Tell us about your project..."
+      },
+      "info": {
+        "title": "Contact Information",
+        "email": {
+          "title": "Email",
+          "value": "contact@xpositron.com"
+        },
+        "location": {
+          "title": "Location",
+          "value": "123 Tech Boulevard, Silicon Valley, CA 94024"
+        },
+        "phone": {
+          "title": "Phone",
+          "value": "+1 (555) 123-4567"
+        }
+      },
+      "hours": {
+        "title": "Office Hours",
+        "weekdays": "Monday - Friday",
+        "weekdayHours": "9:00 AM - 6:00 PM",
+        "saturday": "Saturday",
+        "saturdayHours": "10:00 AM - 4:00 PM",
+        "sunday": "Sunday",
+        "sundayHours": "Closed"
+      }
+    },
+    "technologies": {
+      "title": "TECH EXPERTISE",
+      "heading": "Our Technology Stack",
+      "description": "Explore the cutting-edge technologies we use to create powerful digital solutions for our clients."
+    },
+    "portfolio": {
+      "title": "OUR WORK",
+      "heading": "Explore Our Portfolio",
+      "description": "Discover our innovative digital solutions that have helped businesses across various industries.",
+      "filters": {
+        "all": "All"
+      }
+    },
+    "footer": {
+      "about": "About X-POSITRON",
+      "aboutText": "We are a digital agency specialized in creating innovative web and mobile solutions that drive business growth.",
+      "contact": "Contact Us",
+      "legal": "Legal",
+      "follow": "Follow Us",
+      "rights": "All Rights Reserved",
+      "sitemap": "Sitemap",
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Service"
+    },
+    "stats": {
+      "projectsCompleted": "Projects Completed",
+      "teamMembers": "Team Members",
+      "countriesServed": "Countries Served",
+      "yearsOfExcellence": "Years of Excellence"
+    },
+    "privacyPolicy": {
+      "title": "Privacy Policy",
+      "sections": {
+        "intro": {
+          "title": "1. Introduction",
+          "content": "At X-POSITRON, we take your privacy seriously. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or use our services. Please read this policy carefully. If you do not agree with the terms of this privacy policy, please do not access the site."
+        },
+        "collection": {
+          "title": "2. Information We Collect",
+          "content": "We may collect personal information that you voluntarily provide to us when you:",
+          "items": [
+            "Register for our services",
+            "Express an interest in obtaining information about us or our products and services",
+            "Participate in activities on our website",
+            "Contact us"
+          ]
+        },
+        "usage": {
+          "title": "3. How We Use Your Information",
+          "content": "We may use the information we collect for various purposes, including:",
+          "items": [
+            "Providing, maintaining, and improving our services",
+            "Communicating with you about our services",
+            "Responding to your inquiries",
+            "Monitoring and analyzing trends, usage, and activities",
+            "Detecting, preventing, and addressing technical issues"
+          ]
+        },
+        "cookies": {
+          "title": "4. Cookies and Tracking Technologies",
+          "content": "We may use cookies, web beacons, tracking pixels, and other tracking technologies to help customize our website and improve your experience. When you access our website, your personal information is not collected through the use of tracking technology. Most browsers are set to accept cookies by default. You can remove or reject cookies, but be aware that such action could affect the availability and functionality of the website."
+        },
+        "contact": {
+          "title": "5. Contact Us",
+          "content": "If you have questions or concerns about this Privacy Policy, please contact us at:",
+          "email": "info@xpositron.tech"
+        }
+      }
+    },
+    "terms": {
+      "title": "Terms of Service"
+    },
+    "sitemap": {
+      "title": "Sitemap"
+    }
+  },
+  "ar": {
+    "nav": {
+      "home": "الرئيسية",
+      "services": "الخدمات",
+      "portfolio": "المشاريع",
+      "about": "من نحن",
+      "contact": "اتصل بنا"
+    },
+    "buttons": {
+      "launchProject": "أطلق مشروعك",
+      "viewWork": "مشاهدة أعمالنا",
+      "exploreSpace": "استكشف الفضاء",
+      "getStarted": "ابدأ اليوم",
+      "details": "عرض التفاصيل",
+      "seeDemo": "مشاهدة العرض",
+      "watchVideo": "مشاهدة الفيديو",
+      "viewAll": "عرض الكل",
+      "send": "إرسال رسالة"
+    },
+    "hero": {
+      "title": "حلول رقمية للمستقبل",
+      "subtitle": "تطبيقات ويب وجوال مبتكرة ترتقي بأعمالك إلى آفاق جديدة."
+    },
+    "sections": {
+      "services": {
+        "title": "خدماتنا",
+        "heading": "حلول رقمية لكل احتياج",
+        "description": "نقدم مجموعة شاملة من الخدمات لمساعدة الشركات على التنقل في المشهد الرقمي وتحقيق أهدافها."
+      },
+      "why": {
+        "title": "لماذا تختارنا",
+        "heading": "نهجنا نحو التميز",
+        "description": "نحن نجمع بين الخبرة التقنية والتفكير الإبداعي لتقديم حلول تفوق التوقعات."
+      },
+      "portfolio": {
+        "title": "أعمالنا",
+        "heading": "مشاريع مميزة",
+        "description": "استكشف محفظتنا من الحلول الرقمية المبتكرة التي ساعدت الشركات على تحقيق أهدافها."
+      },
+      "testimonials": {
+        "title": "الشهادات",
+        "heading": "ماذا يقول عملاؤنا",
+        "description": "لا تأخذ كلمتنا فقط. اسمع ما يقوله عملاؤنا عن العمل معنا."
+      },
+      "technologies": {
+        "title": "خبرة تقنية",
+        "heading": "التقنيات التي نستخدمها",
+        "description": "نستخدم أحدث التقنيات لبناء حلول قوية وقابلة للتوسع."
+      },
+      "cta": {
+        "heading": "هل أنت جاهز لإطلاق رحلتك الرقمية؟",
+        "description": "دعنا نبتكر شيئًا استثنائيًا معًا. فريقنا جاهز لإحياء رؤيتك."
+      }
+    },
+    "features": {
+      "expertTeam": {
+        "title": "فريق خبير",
+        "description": "محترفون مهرة ذوو معرفة عميقة بالصناعة."
+      },
+      "globalReach": {
+        "title": "وصول عالمي",
+        "description": "خدمة العملاء عبر القارات بحلول مخصصة."
+      },
+      "securityFocus": {
+        "title": "تركيز على الأمان",
+        "description": "أمان مدمج لراحة البال والامتثال."
+      },
+      "timelyDelivery": {
+        "title": "تسليم في الوقت المحدد",
+        "description": "الالتزام بالمواعيد النهائية دون المساس بالجودة."
+      }
+    },
+    "about": {
+      "mission": {
+        "title": "مهمتنا",
+        "heading": "نبني تقنيات تتجاوز الحدود",
+        "description": "في X-POSITRON، مهمتنا هي تمكين الشركات من خلال حلول تكنولوجية مبتكرة تدفع النمو والتحول. نؤمن بدفع حدود ما هو ممكن في المجال الرقمي.",
+        "description2": "نحن ملتزمون بالتميز والابتكار المستمر وتقديم نتائج قابلة للقياس لعملائنا في جميع أنحاء العالم."
+      },
+      "journey": {
+        "title": "رحلتنا",
+        "heading": "قصة X-POSITRON",
+        "description": "من البدايات المتواضعة إلى الاعتراف بالصناعة، كانت رحلتنا واحدة من النمو المستمر والابتكار."
+      },
+      "values": {
+        "title": "قيمنا",
+        "heading": "مبادئ توجيهية",
+        "description": "قيمنا الأساسية تحدد من نحن وتوجه كل ما نقوم به."
+      },
+      "team": {
+        "title": "فريقنا",
+        "heading": "تعرف على مهندسينا الكونيين",
+        "description": "محترفون موهوبون مكرسون لإنشاء تجارب رقمية استثنائية."
+      },
+      "values_list": {
+        "innovation": {
+          "title": "الابتكار",
+          "description": "نستكشف باستمرار تقنيات وأساليب جديدة لحل المشكلات المعقدة."
+        },
+        "excellence": {
+          "title": "التميز",
+          "description": "نحافظ على أعلى المعايير في كل ما نقوم به، من جودة الكود إلى التواصل مع العملاء."
+        },
+        "global": {
+          "title": "منظور عالمي",
+          "description": "نحتضن تنوع الفكر والثقافة والخبرة في حلولنا."
+        }
+      },
+      "purpose": {
+        "title": "هادفون",
+        "description": "إنشاء تجارب رقمية هادفة"
+      },
+      "user": {
+        "title": "التركيز على المستخدم",
+        "description": "التصميم للاحتياجات البشرية أولاً"
+      }
+    },
+    "contact": {
+      "title": "تواصل معنا",
+      "heading": "أرسل لنا إرسالًا بين النجوم",
+      "description": "هل أنت جاهز لبدء رحلتك الرقمية؟ نحن هنا للمساعدة في إحياء رؤيتك.",
+      "form": {
+        "name": "الاسم",
+        "email": "البريد الإلكتروني",
+        "subject": "الموضوع",
+        "message": "الرسالة",
+        "namePlaceholder": "اسمك",
+        "emailPlaceholder": "بريدك@مثال.كوم",
+        "subjectPlaceholder": "كيف يمكننا المساعدة؟",
+        "messagePlaceholder": "أخبرنا عن مشروعك..."
+      },
+      "info": {
+        "title": "معلومات الاتصال",
+        "email": {
+          "title": "البريد الإلكتروني",
+          "value": "contact@xpositron.com"
+        },
+        "location": {
+          "title": "الموقع",
+          "value": "123 شارع التكنولوجيا، وادي السيليكون، كاليفورنيا 94024"
+        },
+        "phone": {
+          "title": "الهاتف",
+          "value": "+1 (555) 123-4567"
+        }
+      },
+      "hours": {
+        "title": "ساعات العمل",
+        "weekdays": "الإثنين - الجمعة",
+        "weekdayHours": "9:00 صباحًا - 6:00 مساءً",
+        "saturday": "السبت",
+        "saturdayHours": "10:00 صباحًا - 4:00 مساءً",
+        "sunday": "الأحد",
+        "sundayHours": "مغلق"
+      }
+    },
+    "technologies": {
+      "title": "خبرة تقنية",
+      "heading": "مجموعة التقنيات لدينا",
+      "description": "استكشف أحدث التقنيات التي نستخدمها لإنشاء حلول رقمية قوية لعملائنا."
+    },
+    "portfolio": {
+      "title": "أعمالنا",
+      "heading": "استكشف محفظتنا",
+      "description": "اكتشف حلولنا الرقمية المبتكرة التي ساعدت الشركات في مختلف الصناعات.",
+      "filters": {
+        "all": "الكل"
+      }
+    },
+    "footer": {
+      "about": "عن X-POSITRON",
+      "aboutText": "نحن وكالة رقمية متخصصة في إنشاء حلول ويب وجوال مبتكرة تدفع نمو الأعمال.",
+      "contact": "اتصل بنا",
+      "legal": "قانوني",
+      "follow": "تابعنا",
+      "rights": "جميع الحقوق محفوظة",
+      "sitemap": "خريطة الموقع",
+      "privacy": "سياسة الخصوصية",
+      "terms": "شروط الخدمة"
+    },
+    "stats": {
+      "projectsCompleted": "مشروع منجز",
+      "teamMembers": "عضو في الفريق",
+      "countriesServed": "دولة مخدومة",
+      "yearsOfExcellence": "سنوات من التميز"
+    },
+    "privacyPolicy": {
+      "title": "سياسة الخصوصية",
+      "sections": {
+        "intro": {
+          "title": "1. مقدمة",
+          "content": "في X-POSITRON، نأخذ خصوصيتك على محمل الجد. توضح سياسة الخصوصية هذه كيفية جمع واستخدام والكشف عن وحماية معلوماتك عند زيارة موقعنا الإلكتروني أو استخدام خدماتنا. يرجى قراءة هذه السياسة بعناية. إذا كنت لا توافق على شروط سياسة الخصوصية هذه، يرجى عدم الوصول إلى الموقع."
+        },
+        "collection": {
+          "title": "2. المعلومات التي نجمعها",
+          "content": "قد نجمع معلومات شخصية تقدمها طواعية عند:",
+          "items": [
+            "التسجيل في خدماتنا",
+            "التعبير عن اهتمامك بالحصول على معلومات عنا أو عن منتجاتنا وخدماتنا",
+            "المشاركة في الأنشطة على موقعنا",
+            "الاتصال بنا"
+          ]
+        },
+        "usage": {
+          "title": "3. كيف نستخدم معلوماتك",
+          "content": "قد نستخدم المعلومات التي نجمعها لأغراض مختلفة، بما في ذلك:",
+          "items": [
+            "توفير وصيانة وتحسين خدماتنا",
+            "التواصل معك بخصوص خدماتنا",
+            "الرد على استفساراتك",
+            "مراقبة وتحليل الاتجاهات والاستخدام والأنشطة",
+            "اكتشاف ومنع ومعالجة المشكلات التقنية"
+          ]
+        },
+        "cookies": {
+          "title": "4. ملفات تعريف الارتباط وتقنيات التتبع",
+          "content": "قد نستخدم ملفات تعريف الارتباط وإشارات الويب وبكسلات التتبع وتقنيات التتبع الأخرى للمساعدة في تخصيص موقعنا وتحسين تجربتك. عند الوصول إلى موقعنا الإلكتروني، لا يتم جمع معلوماتك الشخصية من خلال استخدام تكنولوجيا التتبع. معظم المتصفحات معدة لقبول ملفات تعريف الارتباط افتراضيًا. يمكنك إزالة أو رفض ملفات تعريف الارتباط، ولكن كن على علم بأن مثل هذا الإجراء قد يؤثر على توافر وظائف الموقع."
+        },
+        "contact": {
+          "title": "5. اتصل بنا",
+          "content": "إذا كانت لديك أسئلة أو مخاوف بشأن سياسة الخصوصية هذه، يرجى الاتصال بنا على:",
+          "email": "info@xpositron.tech"
+        }
+      }
+    },
+    "terms": {
+      "title": "شروط الخدمة"
+    },
+    "sitemap": {
+      "title": "خريطة الموقع"
+    }
+  }
+}

@@ -1,0 +1,15 @@
+
+{
+  "en": [
+    { "id": 1, "value": "200+", "label": "Projects Completed" },
+    { "id": 2, "value": "50+", "label": "Team Members" },
+    { "id": 3, "value": "15+", "label": "Countries Served" },
+    { "id": 4, "value": "8", "label": "Years of Excellence" }
+  ],
+  "ar": [
+    { "id": 1, "value": "200+", "label": "مشروع منجز" },
+    { "id": 2, "value": "50+", "label": "عضو في الفريق" },
+    { "id": 3, "value": "15+", "label": "دولة مخدومة" },
+    { "id": 4, "value": "8", "label": "سنوات من التميز" }
+  ]
+}

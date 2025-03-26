@@ -1,0 +1,57 @@
+
+{
+  "en": [
+    {
+      "year": "2016",
+      "title": "The Beginning",
+      "description": "X-POSITRON was founded with a vision to create innovative digital solutions."
+    },
+    {
+      "year": "2018",
+      "title": "Expansion",
+      "description": "Opened new offices and expanded our team to serve a growing client base."
+    },
+    {
+      "year": "2020",
+      "title": "Global Reach",
+      "description": "Started working with international clients and established a global presence."
+    },
+    {
+      "year": "2022",
+      "title": "Innovation Hub",
+      "description": "Launched our innovation lab focused on emerging technologies."
+    },
+    {
+      "year": "2023",
+      "title": "Award Recognition",
+      "description": "Received multiple industry awards for our cutting-edge projects."
+    }
+  ],
+  "ar": [
+    {
+      "year": "2016",
+      "title": "البداية",
+      "description": "تأسست X-POSITRON برؤية لإنشاء حلول رقمية مبتكرة."
+    },
+    {
+      "year": "2018",
+      "title": "التوسع",
+      "description": "افتتحنا مكاتب جديدة ووسعنا فريقنا لخدمة قاعدة عملاء متنامية."
+    },
+    {
+      "year": "2020",
+      "title": "الوصول العالمي",
+      "description": "بدأنا العمل مع عملاء دوليين وأسسنا وجوداً عالمياً."
+    },
+    {
+      "year": "2022",
+      "title": "مركز الابتكار",
+      "description": "أطلقنا مختبر الابتكار الخاص بنا الذي يركز على التقنيات الناشئة."
+    },
+    {
+      "year": "2023",
+      "title": "جوائز التقدير",
+      "description": "حصلنا على العديد من جوائز الصناعة لمشاريعنا المتطورة."
+    }
+  ]
+}

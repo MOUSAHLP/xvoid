@@ -2,10 +2,14 @@
 import React from "react";
 import { motion } from "framer-motion";
 import StarBackground from "@/components/StarBackground";
+import { useLanguage } from "@/context/LanguageContext";
 
 const PrivacyPolicy: React.FC = () => {
+  const { language, t } = useLanguage();
+  const isArabic = language === 'ar';
+
   return (
-    <>
+    <div className={isArabic ? 'rtl' : 'ltr'}>
       <StarBackground />
       <section className="min-h-screen pt-32 pb-20">
         <div className="container mx-auto px-4">
@@ -14,69 +18,87 @@ const PrivacyPolicy: React.FC = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <h1 className="text-4xl font-bold mb-8 text-center">Privacy Policy</h1>
+            <h1 className="text-4xl font-bold mb-8 text-center">{t('privacyPolicy.title')}</h1>
             
             <div className="cosmic-card max-w-4xl mx-auto">
               <div className="space-y-6">
                 <section>
-                  <h2 className="text-2xl font-bold mb-4">1. Introduction</h2>
+                  <h2 className="text-2xl font-bold mb-4">{t('privacyPolicy.sections.intro.title')}</h2>
                   <p className="text-white/80">
-                    At X-POSITRON, we take your privacy seriously. This Privacy Policy explains how we collect, use, disclose, 
-                    and safeguard your information when you visit our website or use our services. Please read this policy carefully. 
-                    If you do not agree with the terms of this privacy policy, please do not access the site.
+                    {t('privacyPolicy.sections.intro.content')}
                   </p>
                 </section>
                 
                 <section>
-                  <h2 className="text-2xl font-bold mb-4">2. Information We Collect</h2>
+                  <h2 className="text-2xl font-bold mb-4">{t('privacyPolicy.sections.collection.title')}</h2>
                   <p className="text-white/80 mb-3">
-                    We may collect personal information that you voluntarily provide to us when you:
+                    {t('privacyPolicy.sections.collection.content')}
                   </p>
                   <ul className="list-disc pl-6 space-y-2 text-white/80">
-                    <li>Register for our services</li>
-                    <li>Express an interest in obtaining information about us or our products and services</li>
-                    <li>Participate in activities on our website</li>
-                    <li>Contact us</li>
+                    {language === 'en' ? (
+                      <>
+                        <li>Register for our services</li>
+                        <li>Express an interest in obtaining information about us or our products and services</li>
+                        <li>Participate in activities on our website</li>
+                        <li>Contact us</li>
+                      </>
+                    ) : (
+                      <>
+                        <li>التسجيل في خدماتنا</li>
+                        <li>التعبير عن اهتمامك بالحصول على معلومات عنا أو عن منتجاتنا وخدماتنا</li>
+                        <li>المشاركة في الأنشطة على موقعنا</li>
+                        <li>الاتصال بنا</li>
+                      </>
+                    )}
                   </ul>
                 </section>
                 
                 <section>
-                  <h2 className="text-2xl font-bold mb-4">3. How We Use Your Information</h2>
+                  <h2 className="text-2xl font-bold mb-4">{t('privacyPolicy.sections.usage.title')}</h2>
                   <p className="text-white/80 mb-3">
-                    We may use the information we collect for various purposes, including:
+                    {t('privacyPolicy.sections.usage.content')}
                   </p>
                   <ul className="list-disc pl-6 space-y-2 text-white/80">
-                    <li>Providing, maintaining, and improving our services</li>
-                    <li>Communicating with you about our services</li>
-                    <li>Responding to your inquiries</li>
-                    <li>Monitoring and analyzing trends, usage, and activities</li>
-                    <li>Detecting, preventing, and addressing technical issues</li>
+                    {language === 'en' ? (
+                      <>
+                        <li>Providing, maintaining, and improving our services</li>
+                        <li>Communicating with you about our services</li>
+                        <li>Responding to your inquiries</li>
+                        <li>Monitoring and analyzing trends, usage, and activities</li>
+                        <li>Detecting, preventing, and addressing technical issues</li>
+                      </>
+                    ) : (
+                      <>
+                        <li>توفير وصيانة وتحسين خدماتنا</li>
+                        <li>التواصل معك بخصوص خدماتنا</li>
+                        <li>الرد على استفساراتك</li>
+                        <li>مراقبة وتحليل الاتجاهات والاستخدام والأنشطة</li>
+                        <li>اكتشاف ومنع ومعالجة المشكلات التقنية</li>
+                      </>
+                    )}
                   </ul>
                 </section>
                 
                 <section>
-                  <h2 className="text-2xl font-bold mb-4">4. Cookies and Tracking Technologies</h2>
+                  <h2 className="text-2xl font-bold mb-4">{t('privacyPolicy.sections.cookies.title')}</h2>
                   <p className="text-white/80">
-                    We may use cookies, web beacons, tracking pixels, and other tracking technologies to help customize our 
-                    website and improve your experience. When you access our website, your personal information is not collected 
-                    through the use of tracking technology. Most browsers are set to accept cookies by default. You can remove or 
-                    reject cookies, but be aware that such action could affect the availability and functionality of the website.
+                    {t('privacyPolicy.sections.cookies.content')}
                   </p>
                 </section>
                 
                 <section>
-                  <h2 className="text-2xl font-bold mb-4">5. Contact Us</h2>
+                  <h2 className="text-2xl font-bold mb-4">{t('privacyPolicy.sections.contact.title')}</h2>
                   <p className="text-white/80">
-                    If you have questions or concerns about this Privacy Policy, please contact us at:
+                    {t('privacyPolicy.sections.contact.content')}
                   </p>
-                  <p className="text-cosmic-blue mt-2">info@xpositron.tech</p>
+                  <p className="text-cosmic-blue mt-2">{t('privacyPolicy.sections.contact.email')}</p>
                 </section>
               </div>
             </div>
           </motion.div>
         </div>
       </section>
-    </>
+    </div>
   );
 };
 
