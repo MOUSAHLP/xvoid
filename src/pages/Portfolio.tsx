@@ -77,8 +77,6 @@ const Portfolio: React.FC = () => {
                 image={project.image}
                 category={project.category}
                 delay={index}
-                demoLink={project.demoLink || undefined}
-                videoLink={project.videoLink || undefined}
               />
             ))}
           </div>

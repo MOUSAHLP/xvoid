@@ -1,6 +1,5 @@
 
-import React, { createContext, useState, useContext, ReactNode, useEffect } from 'react';
-import { useLocation, useNavigate } from 'react-router-dom';
+import React, { createContext, useState, useContext, ReactNode } from 'react';
 import translations from '../data/translations.json';
 
 export type Language = 'en' | 'ar';
@@ -14,38 +13,16 @@ interface LanguageContextType {
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
 
 export const LanguageProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
-  const location = useLocation();
-  const navigate = useNavigate();
-  const [language, setLanguage] = useState<Language>(
-    location.pathname.startsWith('/ar') ? 'ar' : 'en'
-  );
-
-  useEffect(() => {
-    // Update language based on URL changes
-    const newLanguage = location.pathname.startsWith('/ar') ? 'ar' : 'en';
-    if (language !== newLanguage) {
-      setLanguage(newLanguage);
-    }
-  }, [location.pathname]);
+  // Get initial language from localStorage or default to 'en'
+  const initialLanguage = localStorage.getItem('language') as Language || 'en';
+  const [language, setLanguage] = useState<Language>(initialLanguage);
 
   const changeLanguage = (lang: Language) => {
     setLanguage(lang);
+    localStorage.setItem('language', lang);
     
-    // Don't navigate if we're already on the right path
-    const currentIsArabic = location.pathname.startsWith('/ar');
-    if ((lang === 'ar' && !currentIsArabic) || (lang === 'en' && currentIsArabic)) {
-      const newPath = getTogglePath(location.pathname, lang);
-      navigate(newPath);
-    }
-  };
-
-  const getTogglePath = (path: string, targetLang: Language): string => {
-    if (targetLang === 'ar' && !path.startsWith('/ar')) {
-      return `/ar${path === '/' ? '' : path}`;
-    } else if (targetLang === 'en' && path.startsWith('/ar')) {
-      return path.replace('/ar', '') || '/';
-    }
-    return path;
+    // Update document dir attribute for RTL support
+    document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
   };
 
   const t = (key: string): string => {
