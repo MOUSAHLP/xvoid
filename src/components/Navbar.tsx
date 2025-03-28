@@ -92,13 +92,13 @@ const Navbar: React.FC = () => {
           </div>
           
           {/* Language Selector and CTA Button */}
-          <div className="hidden md:flex items-center space-x-4">
+          <div className="hidden md:flex items-center">
             <LanguageSelector />
             
-            {/* CTA Button */}
+            {/* CTA Button - Added additional spacing for Arabic */}
             <Link
               to={`${baseUrl}/contact`}
-              className="hidden md:inline-flex cosmic-button"
+              className={`hidden md:inline-flex cosmic-button ${isArabic ? 'mr-4' : 'ml-4'}`}
             >
               <span>{t('buttons.launchProject')}</span>
             </Link>

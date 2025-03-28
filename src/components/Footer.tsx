@@ -14,7 +14,6 @@ import {
 import { useLanguage } from "@/context/LanguageContext";
 
 const Footer: React.FC = () => {
-  const currentYear = new Date().getFullYear();
   const { language, t } = useLanguage();
   const isArabic = language === 'ar';
   const baseUrl = isArabic ? '/ar' : '';
@@ -170,7 +169,7 @@ const Footer: React.FC = () => {
         {/* Copyright */}
         <div className="flex flex-col md:flex-row items-center justify-between">
           <p className="text-white/50 text-sm mb-4 md:mb-0">
-            © {currentYear} X-POSITRON. {t('footer.rights')}
+            © 2020 X-POSITRON. {t('footer.rights')}
           </p>
           
           {/* Add more space between Arabic text links */}

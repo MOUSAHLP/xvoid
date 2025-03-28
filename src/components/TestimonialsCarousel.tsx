@@ -26,7 +26,7 @@ const TestimonialsCarousel: React.FC<TestimonialsCarouselProps> = ({ testimonial
   const isArabic = language === 'ar';
 
   return (
-    <Carousel className="w-full max-w-4xl mx-auto">
+    <Carousel className="w-full max-w-4xl mx-auto" dir={isArabic ? 'rtl' : 'ltr'}>
       <CarouselContent>
         {testimonials.map((testimonial) => (
           <CarouselItem key={testimonial.id} className="md:basis-1/2 lg:basis-1/2">
@@ -52,8 +52,8 @@ const TestimonialsCarousel: React.FC<TestimonialsCarouselProps> = ({ testimonial
         ))}
       </CarouselContent>
       <div className="flex items-center justify-center gap-2 mt-4">
-        <CarouselPrevious className={`relative ${isArabic ? 'right-4' : 'left-4'} static bg-cosmic-blue/10 hover:bg-cosmic-blue/20 border-cosmic-blue/20`} />
-        <CarouselNext className={`relative ${isArabic ? 'left-4' : 'right-4'} static bg-cosmic-blue/10 hover:bg-cosmic-blue/20 border-cosmic-blue/20`} />
+        <CarouselPrevious className={`relative ${isArabic ? 'order-last' : 'order-first'} static bg-cosmic-blue/10 hover:bg-cosmic-blue/20 border-cosmic-blue/20`} />
+        <CarouselNext className={`relative ${isArabic ? 'order-first' : 'order-last'} static bg-cosmic-blue/10 hover:bg-cosmic-blue/20 border-cosmic-blue/20`} />
       </div>
     </Carousel>
   );

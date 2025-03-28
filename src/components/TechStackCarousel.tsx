@@ -46,7 +46,7 @@ const TechStackCarousel: React.FC<TechStackCarouselProps> = ({ technologies }) =
   }
 
   return (
-    <Carousel className="w-full">
+    <Carousel className="w-full" dir={isArabic ? 'rtl' : 'ltr'}>
       <CarouselContent>
         {Object.entries(categorizedTech).map(([category, techs]) => (
           <CarouselItem key={category} className="md:basis-1/2 lg:basis-1/3">
@@ -67,8 +67,8 @@ const TechStackCarousel: React.FC<TechStackCarouselProps> = ({ technologies }) =
         ))}
       </CarouselContent>
       <div className="flex items-center justify-center gap-2 mt-4">
-        <CarouselPrevious className={`relative ${isArabic ? 'right-4' : 'left-4'} static bg-cosmic-purple/10 hover:bg-cosmic-purple/20 border-cosmic-purple/20`} />
-        <CarouselNext className={`relative ${isArabic ? 'left-4' : 'right-4'} static bg-cosmic-purple/10 hover:bg-cosmic-purple/20 border-cosmic-purple/20`} />
+        <CarouselPrevious className={`relative ${isArabic ? 'order-last' : 'order-first'} static bg-cosmic-purple/10 hover:bg-cosmic-purple/20 border-cosmic-purple/20`} />
+        <CarouselNext className={`relative ${isArabic ? 'order-first' : 'order-last'} static bg-cosmic-purple/10 hover:bg-cosmic-purple/20 border-cosmic-purple/20`} />
       </div>
     </Carousel>
   );
