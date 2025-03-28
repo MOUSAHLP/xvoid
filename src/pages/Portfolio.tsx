@@ -71,7 +71,7 @@ const Portfolio: React.FC = () => {
             {filteredProjects.map((project, index) => (
               <ProjectCard
                 key={project.id}
-                id={Number(project.id)} // Converted to number
+                id={project.id}
                 title={project.title}
                 description={project.description}
                 image={project.image}

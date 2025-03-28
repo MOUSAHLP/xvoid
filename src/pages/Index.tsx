@@ -40,28 +40,28 @@ const Index: React.FC = () => {
   // Mock data for projects
   const projects = [
     {
-      id: 1,  // Changed from "1" to 1 (number)
+      id: "1",
       title: isArabic ? "لوحة تحكم Nebula المالية" : "Nebula Finance Dashboard",
       description: isArabic ? "لوحة مالية شاملة مع تصور البيانات في الوقت الفعلي ورؤى مدعومة بالذكاء الاصطناعي." : "A comprehensive financial dashboard with real-time data visualization and AI-powered insights.",
       image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop",
       category: isArabic ? "تطبيق ويب" : "Web Application"
     },
     {
-      id: 2,  // Changed from "2" to 2 (number)
+      id: "2",
       title: isArabic ? "تطبيق Quantum Health للجوال" : "Quantum Health Mobile App",
       description: isArabic ? "تطبيق لتتبع الصحة مع توصيات شخصية وتكامل سلس مع الأجهزة." : "A health tracking application with personalized recommendations and seamless device integration.",
       image: "https://images.unsplash.com/photo-1551650975-87deedd944c3?q=80&w=1974&auto=format&fit=crop",
       category: isArabic ? "تطبيق جوال" : "Mobile App"
     },
     {
-      id: 3,  // Changed from "3" to 3 (number)
+      id: "3",
       title: isArabic ? "منصة Stellar للتجارة الإلكترونية" : "Stellar E-commerce Platform",
       description: isArabic ? "حل متكامل للتجارة الإلكترونية مع توصيات المنتجات المدعومة بالذكاء الاصطناعي والتحليلات." : "A complete e-commerce solution with AI-powered product recommendations and analytics.",
       image: "https://images.unsplash.com/photo-1557821552-17105176677c?q=80&w=1932&auto=format&fit=crop",
       category: isArabic ? "تطبيق ويب" : "Web Application"
     },
     {
-      id: 4,  // Changed from "4" to 4 (number)
+      id: "4",
       title: isArabic ? "شبكة Cosmos الاجتماعية" : "Cosmos Social Network",
       description: isArabic ? "منصة اجتماعية من الجيل التالي مع ميزات خصوصية متقدمة وتنسيق المحتوى." : "A next-generation social platform with advanced privacy features and content curation.",
       image: "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?q=80&w=2012&auto=format&fit=crop",
