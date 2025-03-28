@@ -109,8 +109,15 @@ const Index: React.FC = () => {
     }
   ];
   
-  // Technologies data
-  const technologies = isArabic ? technologiesData.ar : technologiesData.en;
+  // Process technologies data for the carousel
+  const flattenedTechnologies = technologiesData.categories.flatMap((category, categoryIndex) => {
+    return category.technologies.map((tech, techIndex) => ({
+      id: categoryIndex * 100 + techIndex,
+      name: tech.name,
+      icon: tech.icon,
+      category: category.name[language] // Use the appropriate language for category name
+    }));
+  });
   
   return (
     <main className={isArabic ? 'rtl' : 'ltr'}>
@@ -319,7 +326,7 @@ const Index: React.FC = () => {
           </div>
           
           {/* Tech Stack Carousel */}
-          <TechStackCarousel technologies={technologies} />
+          <TechStackCarousel technologies={flattenedTechnologies} />
         </div>
       </section>
       

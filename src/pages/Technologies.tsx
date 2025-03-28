@@ -1,5 +1,5 @@
 
-import React, { useEffect } from "react";
+import React from "react";
 import { motion } from "framer-motion";
 import StarBackground from "@/components/StarBackground";
 import TechnologiesSection from "@/components/TechnologiesSection";

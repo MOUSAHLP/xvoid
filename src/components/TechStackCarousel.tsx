@@ -24,6 +24,12 @@ const TechStackCarousel: React.FC<TechStackCarouselProps> = ({ technologies }) =
   const { language } = useLanguage();
   const isArabic = language === 'ar';
 
+  // Defensive check to ensure technologies is an array
+  if (!technologies || !Array.isArray(technologies)) {
+    console.error("Technologies prop is not an array:", technologies);
+    return <div className="p-4">No technology data available</div>;
+  }
+
   // Group technologies by category
   const categorizedTech: Record<string, Technology[]> = {};
   technologies.forEach(tech => {
@@ -32,6 +38,12 @@ const TechStackCarousel: React.FC<TechStackCarouselProps> = ({ technologies }) =
     }
     categorizedTech[tech.category].push(tech);
   });
+
+  // If no categories were created, return early
+  if (Object.keys(categorizedTech).length === 0) {
+    console.error("No categories found in technologies data");
+    return <div className="p-4">No technology categories available</div>;
+  }
 
   return (
     <Carousel className="w-full">
