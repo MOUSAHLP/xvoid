@@ -60,7 +60,7 @@ const Navbar: React.FC = () => {
             aria-label="X-POSITRON Home"
           >
             <img
-              src="/lovable-uploads/f93e34b3-842b-40c2-8f7b-54fae905ccd5.png"
+              src="/lovable-uploads/e99dff10-f965-4153-9bda-9c402aa4d43a.png"
               alt="X-POSITRON Logo"
               className="w-12 h-12 animate-pulse"
             />

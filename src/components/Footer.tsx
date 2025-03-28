@@ -32,7 +32,7 @@ const Footer: React.FC = () => {
           <div>
             <div className="flex items-center space-x-2 mb-4">
               <img
-                src="/lovable-uploads/f93e34b3-842b-40c2-8f7b-54fae905ccd5.png"
+                src="/lovable-uploads/e99dff10-f965-4153-9bda-9c402aa4d43a.png"
                 alt="X-POSITRON Logo"
                 className="w-10 h-10"
               />
