@@ -122,7 +122,23 @@
   
   .cosmic-button {
     @apply px-6 py-3 bg-gradient-to-r from-cosmic-blue to-cosmic-purple rounded-full text-white font-medium transition-all duration-300 
-    hover:shadow-[0_0_15px_rgba(93,109,219,0.5)] hover:from-cosmic-blue hover:to-cosmic-blue-light transform hover:-translate-y-1;
+    hover:shadow-[0_0_15px_rgba(93,109,219,0.5)] transform hover:-translate-y-1;
+  }
+
+  .cosmic-button:hover {
+    background-image: linear-gradient(to right, var(--cosmic-blue), var(--cosmic-blue-light));
+  }
+}
+
+@layer utilities {
+  .hover\:from-cosmic-blue:hover {
+    --tw-gradient-from: var(--cosmic-blue) var(--tw-gradient-from-position);
+    --tw-gradient-to: transparent var(--tw-gradient-to-position);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+  }
+
+  .hover\:to-cosmic-blue-light:hover {
+    --tw-gradient-to: var(--cosmic-blue-light) var(--tw-gradient-to-position);
   }
 }
 
