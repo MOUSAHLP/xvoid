@@ -1,101 +1,87 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { Eye, Youtube, ExternalLink } from "lucide-react";
-import { Link } from "react-router-dom";
+import { ExternalLink } from "lucide-react";
+import { useNavigate } from "react-router-dom";
+import { useLanguage } from "@/context/LanguageContext";
 
 interface ProjectCardProps {
+  id: number;
   title: string;
   description: string;
   image: string;
   category: string;
   delay: number;
-  id?: string;
   demoUrl?: string;
-  youtubeUrl?: string;
 }
 
 const ProjectCard: React.FC<ProjectCardProps> = ({
+  id,
   title,
   description,
   image,
   category,
   delay,
-  id = "1", // Default ID if none provided
   demoUrl,
-  youtubeUrl
 }) => {
+  const { language, t } = useLanguage();
+  const isArabic = language === 'ar';
+  const baseUrl = isArabic ? '/ar' : '';
+  const navigate = useNavigate();
+  
+  const handleClick = () => {
+    navigate(`${baseUrl}/project/${id}`);
+  };
+  
+  const handleDemoClick = (e: React.MouseEvent) => {
+    e.stopPropagation(); // Prevent card click
+    if (demoUrl) {
+      window.open(demoUrl, '_blank');
+    }
+  };
+  
   return (
     <motion.div
-      initial={{ opacity: 0, y: 30 }}
+      initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, delay: delay * 0.1 }}
-      className="group relative overflow-hidden rounded-xl bg-card"
+      onClick={handleClick}
+      className="cosmic-card h-full overflow-hidden group cursor-pointer"
     >
-      {/* Image Overlay */}
-      <div className="relative aspect-video overflow-hidden">
+      <div className="relative h-48 overflow-hidden rounded-lg mb-4">
         <img
           src={image}
           alt={title}
           className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
         />
-        
-        {/* Overlay Gradient */}
-        <div className="absolute inset-0 bg-gradient-to-t from-cosmic-dark via-cosmic-dark/50 to-transparent opacity-60 group-hover:opacity-40 transition-opacity duration-300"></div>
-        
-        {/* Category Badge */}
-        <div className="absolute top-4 left-4 px-3 py-1 text-xs font-medium bg-cosmic-blue/20 backdrop-blur-sm border border-cosmic-blue/30 rounded-full text-cosmic-blue">
+        <div className="absolute inset-0 bg-gradient-to-t from-cosmic-dark to-transparent opacity-70"></div>
+        <div className="absolute top-3 left-3 px-2 py-1 bg-cosmic-blue/30 backdrop-blur-sm rounded-full text-xs font-medium">
           {category}
         </div>
       </div>
       
-      {/* Content */}
-      <div className="p-6">
-        <h3 className="text-xl font-bold mb-2 group-hover:text-glow transition-colors duration-300">
-          {title}
-        </h3>
+      <h3 className="text-xl font-semibold mb-2 group-hover:text-cosmic-blue transition-colors">
+        {title}
+      </h3>
+      
+      <p className="text-white/70 mb-4 line-clamp-2">{description}</p>
+      
+      <div className="flex items-center justify-between">
+        <button
+          className="text-sm font-medium text-cosmic-blue hover:text-cosmic-blue-light transition-colors"
+        >
+          {t('buttons.details')}
+        </button>
         
-        <p className="text-white/70 text-sm mb-4 line-clamp-2">
-          {description}
-        </p>
-        
-        {/* Action Buttons */}
-        <div className="flex items-center space-x-4">
-          {demoUrl && (
-            <a 
-              href={demoUrl} 
-              className="flex items-center text-sm text-white/70 hover:text-cosmic-blue transition-colors duration-300"
-              aria-label={`View ${title} demo`}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Eye className="mr-1 w-4 h-4" />
-              Demo
-            </a>
-          )}
-          
-          {youtubeUrl && (
-            <a 
-              href={youtubeUrl} 
-              className="flex items-center text-sm text-white/70 hover:text-cosmic-purple transition-colors duration-300"
-              aria-label={`Watch ${title} video`}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Youtube className="mr-1 w-4 h-4" />
-              Video
-            </a>
-          )}
-          
-          <Link 
-            to={`/project/${id}`}
-            className="flex items-center text-sm text-white/70 hover:text-cosmic-pink transition-colors duration-300 ml-auto"
-            aria-label={`View ${title} details`}
+        {demoUrl && (
+          <button
+            onClick={handleDemoClick}
+            className="text-sm font-medium text-white/70 hover:text-white transition-colors flex items-center"
           >
-            Details
-            <ExternalLink className="ml-1 w-4 h-4" />
-          </Link>
-        </div>
+            {t('buttons.seeDemo')}
+            <ExternalLink className="ml-1 w-3 h-3" />
+          </button>
+        )}
       </div>
     </motion.div>
   );

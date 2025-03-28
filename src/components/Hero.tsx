@@ -15,7 +15,7 @@ const Hero: React.FC = () => {
       {/* Space Travel Background */}
       <SpaceTravelBackground />
       
-      <div className="container mx-auto relative z-10 pt-20">
+      <div className="container mx-auto relative z-20 pt-20">
         <div className="flex flex-col items-center justify-center text-center">
           {/* Hero Content */}
           <div className="max-w-3xl mx-auto">
@@ -35,15 +35,15 @@ const Hero: React.FC = () => {
             </p>
             
             <div className="flex flex-col items-center">
-              <Link to={`${baseUrl}/contact`} className="cosmic-button group">
+              <Link to={`${baseUrl}/contact`} className="cosmic-button group mb-10">
                 <span className="flex items-center justify-center">
                   {isArabic ? "أطلق مشروعك" : "Launch Your Project"}
                   <ArrowRight className={`${isArabic ? 'mr-2 transform rotate-180' : 'ml-2'} w-5 h-5 transition-transform duration-300 ${isArabic ? 'group-hover:-translate-x-1' : 'group-hover:translate-x-1'}`} />
                 </span>
               </Link>
               
-              {/* Scroll indicator moved here */}
-              <div className="flex flex-col items-center mt-10">
+              {/* Scroll indicator moved below button with correct spacing */}
+              <div className="flex flex-col items-center">
                 <span className="text-white/50 text-sm mb-2">
                   {isArabic ? "استكشف عالمنا" : "Explore our space"}
                 </span>
