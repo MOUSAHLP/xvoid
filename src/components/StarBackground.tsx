@@ -23,7 +23,7 @@ const StarBackground: React.FC = () => {
     // Create stars
     const stars: {x: number; y: number; radius: number; opacity: number; speed: number}[] = [];
     
-    // Generate stars with no flashing/flickering
+    // Generate stars with reduced flashing/flickering
     const generateStars = () => {
       stars.length = 0; // Clear existing stars
       const density = window.innerWidth < 768 ? 50 : 100;
@@ -32,9 +32,9 @@ const StarBackground: React.FC = () => {
         stars.push({
           x: Math.random() * canvas.width,
           y: Math.random() * canvas.height,
-          radius: Math.random() * 1.2 + 0.3, // More consistent size
-          opacity: Math.random() * 0.3 + 0.6, // Higher base opacity
-          speed: Math.random() * 0.03 + 0.01  // Slower speed to reduce flashing
+          radius: Math.random() * 1.5,
+          opacity: Math.random() * 0.5 + 0.5, // Higher base opacity
+          speed: Math.random() * 0.05 + 0.01  // Slower speed to reduce flashing
         });
       }
     };
@@ -43,46 +43,35 @@ const StarBackground: React.FC = () => {
     
     // Animation
     let animationFrameId: number;
-    let lastTime = 0;
-    const interval = 50; // Only update every 50ms to reduce flickering
     
-    const render = (timestamp: number) => {
-      // Only update at certain intervals to reduce flashing
-      if (timestamp - lastTime > interval) {
-        ctx.clearRect(0, 0, canvas.width, canvas.height);
+    const render = () => {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      
+      // Draw stars with more subtle changes to prevent flashing
+      stars.forEach(star => {
+        ctx.beginPath();
+        ctx.arc(star.x, star.y, star.radius, 0, Math.PI * 2);
+        ctx.fillStyle = `rgba(255, 255, 255, ${star.opacity})`;
+        ctx.fill();
         
-        // Fill the background with dark color to prevent white flashes
-        ctx.fillStyle = "#030014"; // cosmic-dark color
-        ctx.fillRect(0, 0, canvas.width, canvas.height);
+        // Even more subtle opacity change to further reduce flickering
+        star.opacity += Math.random() * 0.01 - 0.005; // Reduced opacity variation
+        star.opacity = Math.max(0.5, Math.min(0.8, star.opacity)); // Narrower opacity range
         
-        // Draw stars with fixed opacity to prevent flashing
-        stars.forEach(star => {
-          ctx.beginPath();
-          ctx.arc(star.x, star.y, star.radius, 0, Math.PI * 2);
-          ctx.fillStyle = `rgba(255, 255, 255, ${star.opacity})`;
-          ctx.fill();
-          
-          // Extremely subtle opacity change (almost none)
-          star.opacity += Math.random() * 0.004 - 0.002; 
-          star.opacity = Math.max(0.6, Math.min(0.8, star.opacity)); // Very narrow opacity range
-          
-          // Move stars
-          star.y += star.speed;
-          
-          // Reset position if star moves off screen
-          if (star.y > canvas.height) {
-            star.y = 0;
-            star.x = Math.random() * canvas.width;
-          }
-        });
+        // Move stars
+        star.y += star.speed;
         
-        lastTime = timestamp;
-      }
+        // Reset position if star moves off screen
+        if (star.y > canvas.height) {
+          star.y = 0;
+          star.x = Math.random() * canvas.width;
+        }
+      });
       
       animationFrameId = requestAnimationFrame(render);
     };
     
-    animationFrameId = requestAnimationFrame(render);
+    render();
     
     // Handle resize
     const handleResize = () => {

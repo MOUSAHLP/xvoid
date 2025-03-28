@@ -15,7 +15,7 @@ const Navbar: React.FC = () => {
   // Determine if we're on an Arabic route
   const baseUrl = isArabic ? '/ar' : '';
   
-  // Navigation items
+  // Navigation items - Contact removed as requested
   const navItems = [
     { name: t('nav.home'), path: `${baseUrl}/` },
     { name: t('nav.services'), path: `${baseUrl}/services` },
@@ -54,26 +54,24 @@ const Navbar: React.FC = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <div className="flex-1">
-            <Link 
-              to={baseUrl === '/ar' ? '/ar' : '/'} 
-              className="flex items-center space-x-2"
-              aria-label="X-POSITRON Home"
-            >
-              <img
-                src="/lovable-uploads/f93e34b3-842b-40c2-8f7b-54fae905ccd5.png"
-                alt="X-POSITRON Logo"
-                className="w-12 h-12 animate-pulse"
-              />
-              <span className="font-orbitron text-xl font-bold tracking-wider text-glow">
-                X-POSITRON
-              </span>
-            </Link>
-          </div>
+          <Link 
+            to={baseUrl === '/ar' ? '/ar' : '/'} 
+            className="flex items-center space-x-2"
+            aria-label="X-POSITRON Home"
+          >
+            <img
+              src="/lovable-uploads/f93e34b3-842b-40c2-8f7b-54fae905ccd5.png"
+              alt="X-POSITRON Logo"
+              className="w-12 h-12 animate-pulse"
+            />
+            <span className="font-orbitron text-xl font-bold tracking-wider text-glow">
+              X-POSITRON
+            </span>
+          </Link>
           
-          {/* Desktop Navigation - Properly centered */}
-          <div className="hidden md:flex flex-1 justify-center">
-            <nav className="flex items-center space-x-8">
+          {/* Desktop Navigation - Updated to be centered */}
+          <div className="hidden md:flex items-center justify-center flex-1 mx-8">
+            <nav className="flex items-center space-x-8 justify-center">
               {navItems.map((item) => (
                 <Link
                   key={item.name}
@@ -94,7 +92,7 @@ const Navbar: React.FC = () => {
           </div>
           
           {/* Language Selector and CTA Button */}
-          <div className="hidden md:flex flex-1 items-center justify-end space-x-6">
+          <div className="hidden md:flex items-center space-x-4">
             <LanguageSelector />
             
             {/* CTA Button */}

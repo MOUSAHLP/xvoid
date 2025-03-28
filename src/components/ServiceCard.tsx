@@ -1,11 +1,12 @@
 
-import React from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
-import { useNavigate } from "react-router-dom";
+import { ExternalLink } from "lucide-react";
+import { Link } from "react-router-dom";
 import { useLanguage } from "@/context/LanguageContext";
 
 interface ServiceCardProps {
-  id: number;
+  id?: number;
   title: string;
   description: string;
   icon: React.ReactNode;
@@ -13,64 +14,93 @@ interface ServiceCardProps {
   delay: number;
 }
 
-const ServiceCard: React.FC<ServiceCardProps> = ({
-  id,
-  title,
-  description,
+const ServiceCard: React.FC<ServiceCardProps> = ({ 
+  id, 
+  title, 
+  description, 
   icon,
   color,
-  delay,
+  delay
 }) => {
+  const [isHovered, setIsHovered] = useState(false);
   const { language } = useLanguage();
-  const isArabic = language === 'ar';
-  const baseUrl = isArabic ? '/ar' : '';
-  const navigate = useNavigate();
+  const baseUrl = language === 'ar' ? '/ar' : '';
   
-  const cardColors = {
-    blue: "from-cosmic-blue/10 to-cosmic-blue/5 hover:border-cosmic-blue/40",
-    purple: "from-cosmic-purple/10 to-cosmic-purple/5 hover:border-cosmic-purple/40",
-    pink: "from-cosmic-pink/10 to-cosmic-pink/5 hover:border-cosmic-pink/40",
-  };
-  
-  const handleClick = () => {
-    navigate(`${baseUrl}/service/${id}`);
+  const colorClasses = {
+    blue: {
+      glow: "shadow-neon",
+      textGlow: "text-glow",
+      border: "border-cosmic-blue/30",
+      bg: "from-cosmic-blue/20 to-transparent"
+    },
+    purple: {
+      glow: "shadow-neon-purple",
+      textGlow: "text-glow-purple",
+      border: "border-cosmic-purple/30",
+      bg: "from-cosmic-purple/20 to-transparent"
+    },
+    pink: {
+      glow: "shadow-neon-pink",
+      textGlow: "text-glow-pink",
+      border: "border-cosmic-pink/30",
+      bg: "from-cosmic-pink/20 to-transparent"
+    }
   };
   
   return (
     <motion.div
-      onClick={handleClick}
-      initial={{ opacity: 0, y: 20 }}
+      initial={{ opacity: 0, y: 50 }}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5, delay: delay * 0.1 }}
-      className={`cosmic-card bg-gradient-to-bl ${cardColors[color]} cursor-pointer transition-all duration-300 hover:transform hover:-translate-y-1 group`}
+      transition={{ duration: 0.6, delay: delay * 0.2 }}
+      className={`cosmic-card ${colorClasses[color].border} group`}
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
     >
-      <div className="mb-4">{icon}</div>
-      <h3 className="text-xl font-semibold mb-3">{title}</h3>
-      <p className="text-white/70 mb-4 line-clamp-3">{description}</p>
-      <button
-        className={`text-sm font-medium ${
-          color === "blue" 
-            ? "text-cosmic-blue hover:text-cosmic-blue-light" 
-            : color === "purple" 
-              ? "text-cosmic-purple hover:text-cosmic-purple-light" 
-              : "text-cosmic-pink hover:text-cosmic-pink-light"
-        } transition-colors flex items-center`}
-      >
-        {isArabic ? "معرفة المزيد" : "Learn More"}
-        <motion.span
-          className="ml-1"
-          initial={{ x: 0 }}
-          animate={{ x: [0, 5, 0] }}
-          transition={{
-            duration: 1,
-            ease: "easeInOut",
-            repeat: Infinity,
-            repeatDelay: 1,
-          }}
+      {/* Background glow effect */}
+      <div 
+        className={`absolute inset-0 bg-gradient-to-b ${colorClasses[color].bg} rounded-xl opacity-0 
+                  group-hover:opacity-100 transition-opacity duration-500`} 
+      />
+      
+      {/* Planet icon */}
+      <div className="relative mb-6">
+        <div 
+          className={`w-16 h-16 rounded-full flex items-center justify-center 
+                    bg-white/5 backdrop-blur-sm ${isHovered ? colorClasses[color].glow : ''}
+                    transition-all duration-500`}
         >
-          {isArabic ? "←" : "→"}
-        </motion.span>
-      </button>
+          {icon}
+        </div>
+        
+        {/* Orbiting particle */}
+        <div 
+          className={`absolute w-2 h-2 rounded-full bg-cosmic-${color === 'blue' ? 'blue' : color === 'purple' ? 'purple' : 'pink'} 
+                     top-0 left-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300`}
+          style={{
+            animation: isHovered ? 'orbit 8s linear infinite' : 'none',
+            transformOrigin: '8px 8px'
+          }}
+        />
+      </div>
+      
+      {/* Content */}
+      <h3 className={`text-xl font-bold mb-3 ${colorClasses[color].textGlow}`}>
+        {title}
+      </h3>
+      
+      <p className="text-white/70 mb-4">
+        {description}
+      </p>
+      
+      {id && (
+        <Link 
+          to={`${baseUrl}/service/${id}`} 
+          className={`inline-flex items-center text-sm font-medium ${colorClasses[color].textGlow} group-hover:underline`}
+        >
+          {language === 'ar' ? 'معرفة المزيد' : 'Learn more'}
+          <ExternalLink className={`${language === 'ar' ? 'mr-1' : 'ml-1'} w-4 h-4`} />
+        </Link>
+      )}
     </motion.div>
   );
 };
