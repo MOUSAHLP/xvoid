@@ -47,16 +47,16 @@ const StarBackground: React.FC = () => {
     const render = () => {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
       
-      // Draw stars
+      // Draw stars with more subtle changes to prevent flashing
       stars.forEach(star => {
         ctx.beginPath();
         ctx.arc(star.x, star.y, star.radius, 0, Math.PI * 2);
         ctx.fillStyle = `rgba(255, 255, 255, ${star.opacity})`;
         ctx.fill();
         
-        // Subtle opacity change to prevent harsh flickering
-        star.opacity += Math.random() * 0.02 - 0.01;
-        star.opacity = Math.max(0.3, Math.min(0.8, star.opacity));
+        // Even more subtle opacity change to further reduce flickering
+        star.opacity += Math.random() * 0.01 - 0.005; // Reduced opacity variation
+        star.opacity = Math.max(0.5, Math.min(0.8, star.opacity)); // Narrower opacity range
         
         // Move stars
         star.y += star.speed;
@@ -91,7 +91,7 @@ const StarBackground: React.FC = () => {
   return (
     <canvas
       ref={canvasRef}
-      className="fixed top-0 left-0 w-full h-full z-0 bg-cosmic-dark"
+      className="fixed top-0 left-0 w-full h-full -z-10 bg-cosmic-dark"
       style={{ pointerEvents: "none" }}
     />
   );

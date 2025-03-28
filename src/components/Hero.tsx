@@ -34,7 +34,7 @@ const Hero: React.FC = () => {
               }
             </p>
             
-            <div className="flex flex-col items-center space-y-10">
+            <div className="flex flex-col items-center">
               <Link to={`${baseUrl}/contact`} className="cosmic-button group">
                 <span className="flex items-center justify-center">
                   {isArabic ? "أطلق مشروعك" : "Launch Your Project"}
@@ -43,7 +43,7 @@ const Hero: React.FC = () => {
               </Link>
               
               {/* Scroll indicator moved here */}
-              <div className="flex flex-col items-center mt-8">
+              <div className="flex flex-col items-center mt-10">
                 <span className="text-white/50 text-sm mb-2">
                   {isArabic ? "استكشف عالمنا" : "Explore our space"}
                 </span>

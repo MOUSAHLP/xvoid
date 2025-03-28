@@ -69,9 +69,9 @@ const Navbar: React.FC = () => {
             </span>
           </Link>
           
-          {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
-            <nav className="flex items-center space-x-8">
+          {/* Desktop Navigation - Updated to be centered */}
+          <div className="hidden md:flex items-center justify-center flex-1 mx-8">
+            <nav className="flex items-center space-x-8 justify-center">
               {navItems.map((item) => (
                 <Link
                   key={item.name}
@@ -89,8 +89,10 @@ const Navbar: React.FC = () => {
                 </Link>
               ))}
             </nav>
-            
-            {/* Language Selector */}
+          </div>
+          
+          {/* Language Selector and CTA Button */}
+          <div className="hidden md:flex items-center space-x-4">
             <LanguageSelector />
             
             {/* CTA Button */}

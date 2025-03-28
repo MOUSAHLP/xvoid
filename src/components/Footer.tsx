@@ -106,32 +106,32 @@ const Footer: React.FC = () => {
             </ul>
           </div>
           
-          {/* Services */}
+          {/* Services - Fixed links */}
           <div>
             <h3 className="text-lg font-bold mb-6 text-glow-purple">{t('sections.services.title')}</h3>
             <ul className="space-y-3">
               <li>
-                <Link to={`${baseUrl}/service/web-development`} className="text-white/70 hover:text-cosmic-purple transition-colors duration-300">
+                <Link to={`${baseUrl}/service/1`} className="text-white/70 hover:text-cosmic-purple transition-colors duration-300">
                   {isArabic ? "تطوير الويب" : "Web Development"}
                 </Link>
               </li>
               <li>
-                <Link to={`${baseUrl}/service/mobile-applications`} className="text-white/70 hover:text-cosmic-purple transition-colors duration-300">
+                <Link to={`${baseUrl}/service/2`} className="text-white/70 hover:text-cosmic-purple transition-colors duration-300">
                   {isArabic ? "تطبيقات الجوال" : "Mobile Applications"}
                 </Link>
               </li>
               <li>
-                <Link to={`${baseUrl}/service/ai-solutions`} className="text-white/70 hover:text-cosmic-purple transition-colors duration-300">
+                <Link to={`${baseUrl}/service/3`} className="text-white/70 hover:text-cosmic-purple transition-colors duration-300">
                   {isArabic ? "حلول الذكاء الاصطناعي" : "AI Solutions"}
                 </Link>
               </li>
               <li>
-                <Link to={`${baseUrl}/service/ui-ux-design`} className="text-white/70 hover:text-cosmic-purple transition-colors duration-300">
+                <Link to={`${baseUrl}/service/4`} className="text-white/70 hover:text-cosmic-purple transition-colors duration-300">
                   {isArabic ? "تصميم واجهة المستخدم" : "UI/UX Design"}
                 </Link>
               </li>
               <li>
-                <Link to={`${baseUrl}/service/digital-marketing`} className="text-white/70 hover:text-cosmic-purple transition-colors duration-300">
+                <Link to={`${baseUrl}/service/5`} className="text-white/70 hover:text-cosmic-purple transition-colors duration-300">
                   {isArabic ? "التسويق الرقمي" : "Digital Marketing"}
                 </Link>
               </li>
@@ -173,7 +173,8 @@ const Footer: React.FC = () => {
             © {currentYear} X-POSITRON. {t('footer.rights')}
           </p>
           
-          <div className="flex items-center space-x-6">
+          {/* Add more space between Arabic text links */}
+          <div className={`flex items-center ${isArabic ? 'space-x-0 space-x-reverse space-x-6' : 'space-x-6'}`}>
             <Link to={`${baseUrl}/privacy-policy`} className="text-white/50 text-sm hover:text-white transition-colors duration-300">
               {t('footer.privacy')}
             </Link>

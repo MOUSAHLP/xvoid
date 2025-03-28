@@ -9,6 +9,9 @@ import TechnologiesSection from "../components/TechnologiesSection";
 import { useLanguage } from "@/context/LanguageContext";
 import { useLocation } from "react-router-dom";
 import servicesData from "@/data/services.json";
+import TestimonialsCarousel from "@/components/TestimonialsCarousel";
+import TechStackCarousel from "@/components/TechStackCarousel";
+import technologiesData from "@/data/technologies.json";
 
 const Index: React.FC = () => {
   const { language, t } = useLanguage();
@@ -89,8 +92,25 @@ const Index: React.FC = () => {
       author: isArabic ? "مايكل تشين" : "Michael Chen",
       position: isArabic ? "مؤسس، NexGen" : "Founder, NexGen",
       avatar: "https://i.pravatar.cc/150?img=2"
+    },
+    {
+      id: 3,
+      quote: isArabic ? "التزام X-POSITRON بالابتكار وحل المشكلات جعلنا نتفوق على منافسينا. إنهم شركاء حقيقيون في النجاح." : "X-POSITRON's commitment to innovation and problem-solving has put us ahead of our competitors. They are true partners in success.",
+      author: isArabic ? "إيما رودريغيز" : "Emma Rodriguez",
+      position: isArabic ? "مدير التكنولوجيا، InnovateCorp" : "CTO, InnovateCorp",
+      avatar: "https://i.pravatar.cc/150?img=5"
+    },
+    {
+      id: 4,
+      quote: isArabic ? "لقد أذهلتنا X-POSITRON بتفكيرهم المستقبلي وتنفيذهم الدقيق. لقد تجاوزوا توقعاتنا في كل خطوة." : "X-POSITRON amazed us with their forward-thinking and precise execution. They exceeded our expectations at every step.",
+      author: isArabic ? "ديفيد كيم" : "David Kim",
+      position: isArabic ? "رئيس المنتج، FutureTech" : "Head of Product, FutureTech",
+      avatar: "https://i.pravatar.cc/150?img=8"
     }
   ];
+  
+  // Technologies data
+  const technologies = isArabic ? technologiesData.ar : technologiesData.en;
   
   return (
     <main className={isArabic ? 'rtl' : 'ltr'}>
@@ -257,7 +277,7 @@ const Index: React.FC = () => {
         </div>
       </section>
       
-      {/* Testimonials Section */}
+      {/* Testimonials Section - Updated to use carousel */}
       <section className="py-20 relative bg-cosmic-dark/30">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
@@ -275,33 +295,33 @@ const Index: React.FC = () => {
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            {testimonials.map((testimonial) => (
-              <div key={testimonial.id} className="cosmic-card">
-                <div className="flex items-start mb-4">
-                  <div className={`${isArabic ? 'ml-4' : 'mr-4'}`}>
-                    <div className="w-12 h-12 rounded-full overflow-hidden border-2 border-cosmic-blue">
-                      <img
-                        src={testimonial.avatar}
-                        alt={testimonial.author}
-                        className="w-full h-full object-cover"
-                      />
-                    </div>
-                  </div>
-                  <div>
-                    <h4 className="text-lg font-bold">{testimonial.author}</h4>
-                    <p className="text-white/70 text-sm">{testimonial.position}</p>
-                  </div>
-                </div>
-                <p className="text-white/80 italic">"{testimonial.quote}"</p>
-              </div>
-            ))}
-          </div>
+          {/* Testimonials Carousel */}
+          <TestimonialsCarousel testimonials={testimonials} />
         </div>
       </section>
       
-      {/* Technologies Section - Now AFTER testimonials */}
-      <TechnologiesSection language={isArabic ? "ar" : "en"} />
+      {/* Technologies Section - Now using carousel */}
+      <section className="py-20 relative">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <span className="inline-block px-3 py-1 text-xs font-medium bg-cosmic-purple/10 rounded-full text-cosmic-purple mb-4">
+              {isArabic ? "التقنيات" : "TECHNOLOGIES"}
+            </span>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+              {isArabic ? "مجموعة تقنياتنا" : "Our Tech Stack"}
+            </h2>
+            <p className="text-white/70 max-w-2xl mx-auto">
+              {isArabic
+                ? "نستخدم مجموعة من أحدث التقنيات لبناء حلول رقمية قوية ومستدامة."
+                : "We use a range of cutting-edge technologies to build robust and sustainable digital solutions."
+              }
+            </p>
+          </div>
+          
+          {/* Tech Stack Carousel */}
+          <TechStackCarousel technologies={technologies} />
+        </div>
+      </section>
       
       {/* CTA Section */}
       <section className="py-20 relative overflow-hidden">
@@ -334,4 +354,3 @@ const Index: React.FC = () => {
 };
 
 export default Index;
-
