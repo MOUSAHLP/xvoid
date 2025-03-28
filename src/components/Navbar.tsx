@@ -53,20 +53,17 @@ const Navbar: React.FC = () => {
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
-          {/* Logo */}
+          {/* Logo - removed text and animation class */}
           <Link 
             to={baseUrl === '/ar' ? '/ar' : '/'} 
-            className="flex items-center space-x-2"
-            aria-label="X-POSITRON Home"
+            className="flex items-center"
+            aria-label="Home"
           >
             <img
               src="/lovable-uploads/e99dff10-f965-4153-9bda-9c402aa4d43a.png"
-              alt="X-POSITRON Logo"
-              className="w-12 h-12 animate-pulse"
+              alt="Logo"
+              className="w-12 h-12"
             />
-            <span className="font-orbitron text-xl font-bold tracking-wider text-glow">
-              X-POSITRON
-            </span>
           </Link>
           
           {/* Desktop Navigation - Updated to be centered */}

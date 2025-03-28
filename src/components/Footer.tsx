@@ -28,17 +28,14 @@ const Footer: React.FC = () => {
       
       <div className="container mx-auto px-4 pt-16 pb-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
-          {/* Company Info */}
+          {/* Company Info - removed text next to logo */}
           <div>
-            <div className="flex items-center space-x-2 mb-4">
+            <div className="mb-4">
               <img
                 src="/lovable-uploads/e99dff10-f965-4153-9bda-9c402aa4d43a.png"
-                alt="X-POSITRON Logo"
+                alt="Logo"
                 className="w-10 h-10"
               />
-              <span className="font-orbitron text-lg font-bold text-white">
-                X-POSITRON
-              </span>
             </div>
             
             <p className="text-white/70 mb-6">
