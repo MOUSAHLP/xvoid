@@ -1,4 +1,3 @@
-
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -17,9 +16,11 @@ import Contact from "./pages/Contact";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsOfService from "./pages/TermsOfService";
 import Sitemap from "./pages/Sitemap";
+import FAQ from './pages/FAQ';
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import NotFound from "./pages/NotFound";
+import Careers from './pages/Careers';
 
 const queryClient = new QueryClient();
 
@@ -52,6 +53,8 @@ const AnimatedRoutes = () => {
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         <Route path="/terms-of-service" element={<TermsOfService />} />
         <Route path="/sitemap" element={<Sitemap />} />
+        <Route path="/faq" element={<FAQ />} />
+        <Route path="/careers" element={<Careers />} />
         
         {/* Arabic Routes */}
         <Route path="/ar" element={<Index />} />
@@ -64,6 +67,8 @@ const AnimatedRoutes = () => {
         <Route path="/ar/privacy-policy" element={<PrivacyPolicy />} />
         <Route path="/ar/terms-of-service" element={<TermsOfService />} />
         <Route path="/ar/sitemap" element={<Sitemap />} />
+        <Route path="/ar/faq" element={<FAQ />} />
+        <Route path="/ar/careers" element={<Careers />} />
         
         {/* Catch-all route */}
         <Route path="*" element={<NotFound />} />

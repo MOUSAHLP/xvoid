@@ -32,9 +32,9 @@ const Footer: React.FC = () => {
           <div>
             <div className="mb-4">
               <img
-                src="/lovable-uploads/e99dff10-f965-4153-9bda-9c402aa4d43a.png"
+                src="/images/logo.png"
                 alt="Logo"
-                className="w-10 h-10"
+                className="w-24 h-24"
               />
             </div>
             
@@ -141,19 +141,31 @@ const Footer: React.FC = () => {
               <li className="flex items-start">
                 <MapPin className="w-5 h-5 mr-3 text-cosmic-pink shrink-0 mt-0.5" />
                 <span className="text-white/70">
-                  {isArabic ? "123 شارع التكنولوجيا، المدينة الرقمية، الكون 42" : "123 Tech Boulevard, Digital City, Universe 42"}
+                  {isArabic ? t('contact.address') : t('contact.address')}
                 </span>
               </li>
               <li className="flex items-center">
                 <Phone className="w-5 h-5 mr-3 text-cosmic-pink shrink-0" />
-                <a href="tel:+1234567890" className="text-white/70 hover:text-cosmic-pink transition-colors duration-300">
-                  +1 (234) 567-890
+                <a href={`tel:${t('contact.phone1')}`} className="text-white/70 hover:text-cosmic-pink transition-colors duration-300">
+                  {isArabic ? t('contact.phone1_display') : t('contact.phone1_display')}
+                </a>
+              </li>
+              <li className="flex items-center">
+                <Phone className="w-5 h-5 mr-3 text-cosmic-pink shrink-0" />
+                <a href={`tel:${t('contact.phone2')}`} className="text-white/70 hover:text-cosmic-pink transition-colors duration-300">
+                  {isArabic ? t('contact.phone2_display') : t('contact.phone2_display')}
                 </a>
               </li>
               <li className="flex items-center">
                 <Mail className="w-5 h-5 mr-3 text-cosmic-pink shrink-0" />
-                <a href="mailto:info@xpositron.tech" className="text-white/70 hover:text-cosmic-pink transition-colors duration-300">
-                  info@xpositron.tech
+                <a href={`mailto:${t('contact.email1')}`} className="text-white/70 hover:text-cosmic-pink transition-colors duration-300">
+                  {isArabic ? t('contact.email1') : t('contact.email1')}
+                </a>
+              </li>
+              <li className="flex items-center">
+                <Mail className="w-5 h-5 mr-3 text-cosmic-pink shrink-0" />
+                <a href={`mailto:${t('contact.email2')}`} className="text-white/70 hover:text-cosmic-pink transition-colors duration-300">
+                  {isArabic ? t('contact.email2') : t('contact.email2')}
                 </a>
               </li>
             </ul>

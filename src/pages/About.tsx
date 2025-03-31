@@ -63,7 +63,7 @@ const About: React.FC = () => {
               className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6"
             >
               {isArabic ? (
-                <>عن <span className="text-glow">إكس بوزيترون</span></>
+                <>عن <span className="text-glow">X-POSITRON</span></>
               ) : (
                 <>About <span className="text-glow">X-POSITRON</span></>
               )}
@@ -146,7 +146,7 @@ const About: React.FC = () => {
       
       {/* Company Timeline */}
       <section className="py-20 relative">
-        <div className="absolute inset-0 bg-cosmic-dark/50"></div>
+        <div className="absolute inset-0 "></div>
         <div className="container mx-auto px-4 relative">
           <div className="text-center mb-16">
             <span className="inline-block px-3 py-1 text-xs font-medium bg-cosmic-purple/10 rounded-full text-cosmic-purple mb-4">
@@ -183,7 +183,7 @@ const About: React.FC = () => {
                   </div>
                   
                   <div className="relative md:w-0">
-                    <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-cosmic-dark border-2 border-cosmic-blue flex items-center justify-center z-10">
+                    <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-8 h-8 rounded-full border-2 border-cosmic-blue flex items-center justify-center z-10">
                       <div className="w-3 h-3 bg-cosmic-blue rounded-full"></div>
                     </div>
                   </div>

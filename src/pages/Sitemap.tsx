@@ -30,12 +30,6 @@ const Sitemap: React.FC = () => {
         { name: t('footer.sitemap'), path: `${baseUrl}/sitemap` },
       ]
     },
-    {
-      title: isArabic ? "الروابط الإضافية" : "Additional Links",
-      links: [
-        { name: t('technologies.title'), path: `${baseUrl}/technologies` },
-      ]
-    }
   ];
 
   return (

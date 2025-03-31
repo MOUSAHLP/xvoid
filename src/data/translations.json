@@ -6,7 +6,9 @@
       "services": "Services",
       "portfolio": "Portfolio",
       "about": "About",
-      "contact": "Contact"
+      "contact": "Contact",
+      "faq": "FAQ",
+      "careers": "Careers"
     },
     "buttons": {
       "launchProject": "Launch Your Project",
@@ -144,7 +146,14 @@
         "phone": {
           "title": "Phone",
           "value": "+1 (555) 123-4567"
-        }
+        },
+        "phone1": "+963946649532",
+        "phone1_display": "+963 946 649 532",
+        "phone2": "+963984350792",
+        "phone2_display": "+963 984 350 792",
+        "email1": "eesahalabi@gmail.com",
+        "email2": "mousahlp@gmail.com",
+        "address": "Lebanon - Beirut"
       },
       "hours": {
         "title": "Office Hours",
@@ -154,7 +163,14 @@
         "saturdayHours": "10:00 AM - 4:00 PM",
         "sunday": "Sunday",
         "sundayHours": "Closed"
-      }
+      },
+      "address": "Lebanon - Beirut",
+      "phone1": "+963946649532",
+      "phone1_display": "+963 946 649 532",
+      "phone2": "+963984350792",
+      "phone2_display": "+963 984 350 792",
+      "email1": "eesahalabi@gmail.com",
+      "email2": "mousahlp@gmail.com"
     },
     "technologies": {
       "title": "TECH EXPERTISE",
@@ -220,8 +236,8 @@
         },
         "contact": {
           "title": "5. Contact Us",
-          "content": "If you have questions or concerns about this Privacy Policy, please contact us at:",
-          "email": "info@xpositron.tech"
+          "content": "If you have questions or concerns about this Privacy Policy, please contact us at:"
+         
         }
       }
     },
@@ -238,7 +254,9 @@
       "services": "الخدمات",
       "portfolio": "المشاريع",
       "about": "من نحن",
-      "contact": "اتصل بنا"
+      "contact": "اتصل بنا",
+      "faq": "الأسئلة الشائعة",
+      "careers": "الوظائف"
     },
     "buttons": {
       "launchProject": "أطلق مشروعك",
@@ -246,7 +264,7 @@
       "exploreSpace": "استكشف الفضاء",
       "getStarted": "ابدأ اليوم",
       "details": "عرض التفاصيل",
-      "seeDemo": "مشاهدة العرض",
+      "link": "الرابط",
       "watchVideo": "مشاهدة الفيديو",
       "viewAll": "عرض الكل",
       "send": "إرسال رسالة"
@@ -359,23 +377,20 @@
         "subject": "الموضوع",
         "message": "الرسالة",
         "namePlaceholder": "اسمك",
-        "emailPlaceholder": "بريدك@مثال.كوم",
+        "emailPlaceholder": "بريدك",
         "subjectPlaceholder": "كيف يمكننا المساعدة؟",
         "messagePlaceholder": "أخبرنا عن مشروعك..."
       },
       "info": {
         "title": "معلومات الاتصال",
         "email": {
-          "title": "البريد الإلكتروني",
-          "value": "contact@xpositron.com"
+          "title": "البريد الإلكتروني"
         },
         "location": {
-          "title": "الموقع",
-          "value": "123 شارع التكنولوجيا، وادي السيليكون، كاليفورنيا 94024"
+          "title": "الموقع"
         },
         "phone": {
-          "title": "الهاتف",
-          "value": "+1 (555) 123-4567"
+          "title": "الهاتف"
         }
       },
       "hours": {
@@ -386,7 +401,14 @@
         "saturdayHours": "10:00 صباحًا - 4:00 مساءً",
         "sunday": "الأحد",
         "sundayHours": "مغلق"
-      }
+      },
+      "address": "لبنان - بيروت",
+      "phone1": "+963946649532",
+      "phone1_display": "+963 946 649 532",
+      "phone2": "+963984350792",
+      "phone2_display": "+963 984 350 792",
+      "email1": "eesahalabi@gmail.com",
+      "email2": "mousahlp@gmail.com"
     },
     "technologies": {
       "title": "خبرة تقنية",
@@ -452,8 +474,8 @@
         },
         "contact": {
           "title": "5. اتصل بنا",
-          "content": "إذا كانت لديك أسئلة أو مخاوف بشأن سياسة الخصوصية هذه، يرجى الاتصال بنا على:",
-          "email": "info@xpositron.tech"
+          "content": "إذا كانت لديك أسئلة أو مخاوف بشأن سياسة الخصوصية هذه، يرجى الاتصال بنا على:"
+        
         }
       }
     },

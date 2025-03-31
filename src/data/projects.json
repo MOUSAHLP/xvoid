@@ -1,235 +1,981 @@
-
 {
   "en": [
     {
-      "id": "1",
-      "title": "Nebula Finance Dashboard",
-      "description": "A comprehensive financial dashboard with real-time data visualization and AI-powered insights.",
-      "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop",
-      "category": "Web Application",
-      "fullDescription": "Nebula Finance Dashboard is a cutting-edge financial management platform designed for modern businesses. It combines powerful data visualization capabilities with AI-driven insights to help companies make better financial decisions.",
-      "challenge": "The client needed a comprehensive solution to track financial performance across multiple departments and locations in real-time, with capabilities for forecasting and scenario planning.",
-      "solution": "We developed a responsive web application with real-time data synchronization, interactive charts and graphs, and AI algorithms for trend analysis and anomaly detection.",
-      "results": "Since implementing the Nebula Finance Dashboard, the client has reported a 30% improvement in financial decision-making speed and a 25% reduction in reporting errors.",
-      "technologies": ["React", "Node.js", "TensorFlow.js", "D3.js", "WebSockets", "MongoDB"],
+      "id": "mr-tech",
+      "title": "Mr. Tech",
+      "description": "Your friendly digital companion for both online and offline university learning at Damascus University",
+      "image": "/images/projects/mrtech/logo.png",
+      "images": [
+        "/images/projects/mrtech/1.png",
+        "/images/projects/mrtech/2.png",
+        "/images/projects/mrtech/3.png",
+        "/images/projects/mrtech/4.png",
+        "/images/projects/mrtech/5.png",
+        "/images/projects/mrtech/6.png",
+        "/images/projects/mrtech/7.png",
+        "/images/projects/mrtech/8.png",
+        "/images/projects/mrtech/9.png",
+        "/images/projects/mrtech/10.png"
+      ],
+      "category": "Mobile App", 
+      "fullDescription": "Mr. Tech is your friendly study buddy that makes university life easier, whether you're learning from campus or home. Think of it as your personal assistant that keeps all your study materials, schedules, and grades in one place. You can download your course content to study offline when internet isn't available, chat with your professors and classmates, and even register for courses right from your phone. It's like having the whole university in your pocket!",
+      "challenge": "Students were struggling to keep up with their studies, especially when switching between online and offline learning. They needed a simple way to access study materials anywhere, stay in touch with teachers, and keep track of their progress.",
+      "solution": "We created a student-friendly app that works both online and offline. Students can download lectures and study materials to use without internet, get important updates about their courses, and easily connect with their teachers and classmates - all through one simple app.",
+      "results": "Students love using the app! Class participation went up by 60%, university staff saved 45% of their time on paperwork, and students are much happier with how they can manage their studies.",
+      "technologies": [ "Dart","Flutter", "Laravel", "Filament"],
       "testimonial": {
-        "quote": "The Nebula Finance Dashboard has transformed how we manage our finances. The real-time insights have been invaluable for our decision-making process.",
-        "author": "Sarah Johnson",
-        "position": "CFO, Global Enterprises Inc."
-      },
-      "demoLink": "https://demo.nebula-finance.example.com",
-      "videoLink": "https://youtu.be/example1"
-    },
-    {
-      "id": "2",
-      "title": "Quantum Health Mobile App",
-      "description": "A health tracking application with personalized recommendations and seamless device integration.",
-      "image": "https://images.unsplash.com/photo-1551650975-87deedd944c3?q=80&w=1974&auto=format&fit=crop",
-      "category": "Mobile App",
-      "fullDescription": "Quantum Health is a personalized health tracking application designed to help users monitor their fitness, nutrition, and wellbeing. The app integrates with wearable devices and provides AI-powered recommendations based on user data.",
-      "challenge": "The client wanted to create a mobile app that would stand out in the crowded health and fitness market by offering truly personalized experiences and actionable health insights.",
-      "solution": "We built a cross-platform mobile app that seamlessly connects with fitness wearables, tracks various health metrics, and uses machine learning to provide personalized recommendations.",
-      "results": "The app has achieved a 4.8-star rating on app stores and over 500,000 downloads in the first year, with users reporting an average 35% improvement in health habits.",
-      "technologies": ["React Native", "Firebase", "TensorFlow Lite", "Bluetooth API", "HealthKit", "Google Fit API"],
-      "testimonial": {
-        "quote": "Quantum Health has revolutionized how our users approach their wellness journey. The personalized insights and seamless device integration set a new standard for health apps.",
-        "author": "Dr. Michael Chen",
-        "position": "CEO, Quantum Health Solutions"
+        "quote": "Mr. Tech is like having a helpful friend who knows everything about university life. I can study anywhere, anytime, and never miss important updates. It's made my university experience so much better!",
+        "author": "Sarah",
+        "position": "Third-year Student, Damascus University"
       },
       "demoLink": null,
-      "videoLink": "https://youtu.be/example2"
+      "videoLink": "https://youtu.be/D9rOvwzxAeM?si=txTaMFRIjqzaUpLz"
     },
     {
-      "id": "3",
-      "title": "Stellar E-commerce Platform",
-      "description": "A complete e-commerce solution with AI-powered product recommendations and analytics.",
-      "image": "https://images.unsplash.com/photo-1557821552-17105176677c?q=80&w=1932&auto=format&fit=crop",
-      "category": "Web Application",
-      "fullDescription": "Stellar is a comprehensive e-commerce platform built for scalability and performance. It includes advanced features like AI-powered product recommendations, sophisticated inventory management, and detailed analytics.",
-      "challenge": "The client needed to transition from a legacy e-commerce system to a modern platform capable of handling high traffic volumes while providing personalized shopping experiences.",
-      "solution": "We developed a custom e-commerce platform with a microservices architecture, real-time inventory management, AI-driven product recommendations, and comprehensive analytics dashboards.",
-      "results": "Within six months of launch, the client experienced a 45% increase in conversion rates, a 60% improvement in page load times, and a 28% increase in average order value.",
-      "technologies": ["React", "Node.js", "PostgreSQL", "Redis", "Elasticsearch", "Docker", "Kubernetes"],
+      "id": "fiberforge",
+      "title": "FiberForge",
+      "description": "Employees monitor and shipments tracker for a company in Africa",
+      "image": "/images/projects/FiberForge/logo2.jpg",
+      "images": [
+        "/images/projects/FiberForge/FiberForge-details-screen.png",
+        "/images/projects/FiberForge/FiberForge-edit-profile.png",
+        "/images/projects/FiberForge/FiberForge-history.png",
+        "/images/projects/FiberForge/FiberForge-map.png",
+        "/images/projects/FiberForge/FiberForge-trips.png",
+        "/images/projects/FiberForge/FiberForge-dashboard.png",
+        "/images/projects/FiberForge/FiberForge-dashboard-tracking.png",
+        "/images/projects/FiberForge/FiberForge-dashboard-tracking-camera.png"
+      ],
+      "category": "Mobile App",
+      "fullDescription": "Introducing an advanced internal logistics app, specifically tailored for the fabric transportation company in Africa. This app is designed exclusively for internal use, providing the team with powerful tools to monitor and track drivers efficiently and securely. With real-time GPS tracking, the location of each driver within the fleet can be accurately monitored, ensuring that fabric shipments are always accounted for, whether navigating through urban centers or remote regions.",
+      "challenge": "The company needed a reliable way to monitor fabric shipments across vast distances in Africa with varying connectivity conditions.",
+      "solution": "Developed a real-time GPS tracking system with route optimization, emergency alerts, and offline functionality for areas with limited connectivity.",
+      "results": "Improved shipment security by 40%, reduced fuel costs by 25% through optimized routes, and enabled real-time monitoring of all transport operations.",
+      "technologies": ["Flutter", "NestJs", "Express.js","Node.js", "Socket.io", "Firebase", "SQL"],
       "testimonial": {
-        "quote": "Stellar has transformed our online business. The platform's speed, reliability, and smart features have dramatically improved our customer experience and sales performance.",
-        "author": "Jessica Lee",
-        "position": "Digital Director, Stellar Retail Group"
+        "quote": "The app has transformed our logistics operations, giving us complete visibility and control over our shipments across Africa.",
+        "author": "Logistics Manager",
+        "position": "Fabric Transport Company"
       },
-      "demoLink": "https://demo.stellar-ecommerce.example.com",
+      "demoLink": null,
+      "videoLink": "https://www.youtube.com/watch?v=qs_EmOvzzlM"
+    },
+    {
+      "id": "almawerbung",
+      "title": "almawerbung",
+      "description": "Professional printing and advertising services website",
+      "image": "/images/projects/almawerbung/logo.png",
+      "images": [
+        "/images/projects/almawerbung/1.png",
+        "/images/projects/almawerbung/2.png",
+        "/images/projects/almawerbung/3.png",
+        "/images/projects/almawerbung/4.png",
+        "/images/projects/almawerbung/5.png",
+        "/images/projects/almawerbung/6.png",
+        "/images/projects/almawerbung/7.png",
+        "/images/projects/almawerbung/8.png",
+        "/images/projects/almawerbung/9.png",
+        "/images/projects/almawerbung/10.png",
+        "/images/projects/almawerbung/11.png",
+        "/images/projects/almawerbung/12.png"
+      ],
+      "category": "Business Website",
+      "fullDescription": "almawerbung is a professional printing and advertising services website for a German company specializing in exhibition stands, street advertisements, and various printing solutions. The website showcases their comprehensive service portfolio and allows clients to easily request quotes and place orders for custom printing projects. Visitors can browse through different service categories, view previous work examples, and submit detailed project requirements.",
+      "challenge": "Creating an engaging website that effectively presents various printing services while making it simple for clients to request quotes and place orders.",
+      "solution": "Developed a modern, responsive website using React and Laravel that clearly presents services with an intuitive order request system and project gallery.",
+      "results": "Increased service inquiries by 60% and streamlined the order process for both clients and staff.",
+      "technologies": ["React", "FastAPI", "Python", "MySQL"],
+      "testimonial": {
+        "quote": "Our new website perfectly represents our services and has made it much easier for clients to reach out to us.",
+        "author": "Marketing Director",
+        "position": "almawerbung GmbH"
+      },
+      "demoLink": "https://almawerbung.shop",
+      "videoLink": null,
+      "googlePlayLink": null,
+      "appStoreLink": null
+    },
+    {
+      "id": "lordsbox",
+      "title": "Lordsbox",
+      "description": "Employee tracking and monitoring system",
+      "image": "/images/projects/lordsbox/logo_whitebg.png",
+      "images": [
+        "/images/projects/lordsbox/1.jpg",
+        "/images/projects/lordsbox/2.jpg",
+        "/images/projects/lordsbox/3.jpg",
+        "/images/projects/lordsbox/4.jpg",
+        "/images/projects/lordsbox/5.jpg",
+        "/images/projects/lordsbox/6.jpg"
+      ],
+      "category": "Enterprise Solution",
+      "fullDescription": "Lordsbox is a comprehensive employee monitoring solution designed for transport companies, featuring real-time GPS tracking, working hour calculations, and detailed reporting. The system continues tracking even when the app is in background mode.",
+      "challenge": "Developing a reliable tracking system that works continuously without draining battery life excessively.",
+      "solution": "Optimized background location services with intelligent polling intervals and battery-saving techniques.",
+      "results": "Improved workforce productivity tracking by 90% while maintaining less than 15% additional battery usage.",
+      "technologies": ["Flutter", "Laravel", "Socket.io", "Firebase", "Background Services"],
+      "testimonial": {
+        "quote": "Lordsbox has given us complete visibility of our operations while respecting employee privacy concerns.",
+        "author": "Transport Manager",
+        "position": "Logistics Company"
+      },
+      "demoLink": "https://lordsbox.com/",
+      "videoLink": "https://www.youtube.com/watch?v=7pzpHwjhBJc",
+      "googlePlayLink": "https://play.google.com/store/apps/details?id=com.em.lordsbox",
+      "appStoreLink": "https://apps.apple.com/app/lordsbox/id6450722085?platform=iphone"
+    },
+    {
+      "id": "beautyglam",
+      "title": "BeautyGlam",
+      "description": "Premium cosmetics e-commerce store in Germany", 
+      "image": "/images/projects/beautyglam/logo.png",
+      "images": [
+        "/images/projects/beautyglam/1.png",
+        "/images/projects/beautyglam/2.png",
+        "/images/projects/beautyglam/3.png", 
+        "/images/projects/beautyglam/4.png",
+        "/images/projects/beautyglam/5.png",
+        "/images/projects/beautyglam/6.png",
+        "/images/projects/beautyglam/7.png",
+        "/images/projects/beautyglam/8.png",
+        "/images/projects/beautyglam/9.png",
+        "/images/projects/beautyglam/10.png"
+      ],
+      "category": "E-commerce",
+      "fullDescription": "BeautyGlam is a leading German e-commerce platform specializing in premium cosmetics and beauty products. Our online store offers an extensive selection of high-quality skincare, makeup, fragrances, and beauty accessories from renowned international brands. The platform features an elegant, user-friendly interface designed to enhance the shopping experience with advanced product filtering, detailed product information, and personalized recommendations. Customers can easily browse through carefully curated collections, read authentic reviews, and make secure purchases with multiple payment options.",
+      "challenge": "Creating a modern, high-performance e-commerce platform capable of handling a large product catalog while providing German customers with a localized and seamless shopping experience. The platform needed to support multiple payment methods common in Germany and comply with strict EU e-commerce regulations.",
+      "solution": "Developed a cutting-edge web application using React for a responsive frontend and Laravel for a robust backend infrastructure. Implemented advanced features including real-time inventory management, multi-language support with German as primary language, and integration with popular German payment providers. The solution includes sophisticated product categorization, smart search functionality, and a streamlined checkout process.",
+      "results": "Successfully launched the platform with over 5000 beauty products, achieving a 45% increase in customer engagement and a 55% improvement in conversion rates. The site maintains excellent performance with sub-2-second page load times and has garnered strong positive feedback from German customers.",
+      "technologies": ["React", "Laravel", "MySQL", "PHP", "Redux", "REST API"],
+      "testimonial": {
+        "quote": "BeautyGlam hat unseren Online-Auftritt revolutioniert und bietet unseren Kunden ein erstklassiges Einkaufserlebnis für Kosmetikprodukte.",
+        "author": "Marketing Director",
+        "position": "BeautyGlam Deutschland"
+      },
+      "demoLink": "https://www.beautyglam.de",
       "videoLink": null
     },
     {
-      "id": "4",
-      "title": "Cosmos Social Network",
-      "description": "A next-generation social platform with advanced privacy features and content curation.",
-      "image": "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?q=80&w=2012&auto=format&fit=crop",
-      "category": "Web & Mobile",
-      "fullDescription": "Cosmos is a privacy-focused social networking platform designed to give users complete control over their data and content. It features sophisticated content curation algorithms and innovative community-building tools.",
-      "challenge": "The client wanted to create a social platform that could compete with established networks while differentiating itself through enhanced privacy controls and better content relevance.",
-      "solution": "We built a comprehensive social platform available on web and mobile, with end-to-end encryption for messages, granular privacy controls, and AI-powered content curation that doesn't compromise user data.",
-      "results": "Cosmos has attracted over 2 million active users within its first year, with user surveys indicating that 78% of users chose the platform specifically for its privacy features.",
-      "technologies": ["React", "React Native", "GraphQL", "Node.js", "MongoDB", "Redis", "AWS"],
+      "id": "beautybay",
+      "title": "Beautybay",
+      "description": "Premium cosmetics e-commerce store in Netherlands",
+      "image": "/images/projects/beautybay/logo.svg",
+      "images": [
+        "/images/projects/beautybay/1.png",
+        "/images/projects/beautybay/2.png", 
+        "/images/projects/beautybay/3.png",
+        "/images/projects/beautybay/4.png",
+        "/images/projects/beautybay/5.png",
+        "/images/projects/beautybay/6.png",
+        "/images/projects/beautybay/7.png",
+        "/images/projects/beautybay/8.png",
+        "/images/projects/beautybay/9.png",
+        "/images/projects/beautybay/10.png",
+        "/images/projects/beautybay/11.png",
+        "/images/projects/beautybay/12.png"
+      ],
+      "category": "E-commerce",
+      "fullDescription": "A sophisticated e-commerce platform for beauty and cosmetic products in the Netherlands. The website offers a wide range of premium cosmetics, skincare, and beauty products with an intuitive shopping experience. Features include product categorization, advanced filtering, user reviews, secure checkout, and a personalized recommendation system.",
+      "challenge": "Building a scalable and performant e-commerce platform that can handle thousands of products while providing a seamless shopping experience.",
+      "solution": "Developed a modern web application using React and Tailwind CSS for the frontend, with Laravel and MySQL powering the backend. Implemented efficient caching and optimization techniques for fast page loads.",
+      "results": "Achieved 40% increase in conversion rate and 60% improvement in page load times compared to the previous platform.",
+      "technologies": ["React", "Tailwind CSS", "Laravel", "MySQL", "PHP"],
       "testimonial": {
-        "quote": "Cosmos has created something truly unique in the social media landscape. Their focus on privacy and user control sets them apart from every other platform we've used.",
-        "author": "Alex Rivera",
-        "position": "Technology Columnist, Tech Today"
+        "quote": "The new platform has transformed our online presence and significantly improved our customers' shopping experience.",
+        "author": "E-commerce Director",
+        "position": "Beautybay Netherlands"
+      },
+      "demoLink": "https://www.beautybay.com",
+      "videoLink": null
+    },
+    {
+      "id": "atarati",
+      "title": "Atarati",
+      "description": "Tire company management system in Lebanon",
+      "image": "/images/projects/atarati/logo.png",
+      "images": [
+        "/images/projects/atarati/1.png",
+        "/images/projects/atarati/2.png",
+        "/images/projects/atarati/3.png",
+        "/images/projects/atarati/4.png",
+        "/images/projects/atarati/5.png",
+        "/images/projects/atarati/6.png",
+        "/images/projects/atarati/7.png",
+        "/images/projects/atarati/8.png"
+      ],
+      "category": "Business Management",
+      "fullDescription": "Atarati is a comprehensive management system developed for a tire company in Lebanon. The system provides detailed monitoring and reporting for all financial transactions, inventory management, and business operations. It helps track income, expenses, sales, and generates detailed reports to improve business insights and decision-making.",
+      "challenge": "Creating an efficient system for monitoring and reporting financial transactions while maintaining accurate inventory records for a tire company.",
+      "solution": "Developed a web application using Laravel framework with a responsive frontend. Implemented robust reporting features and real-time financial tracking capabilities.",
+      "results": "Successfully streamlined the company's financial monitoring process and improved reporting accuracy by 95%.",
+      "technologies": ["HTML", "CSS", "JavaScript", "PHP", "Laravel"],
+      "testimonial": {
+        "quote": "This system has revolutionized how we track our business operations and financial transactions.",
+        "author": "Operations Manager",
+        "position": "Atarati Tires"
       },
       "demoLink": null,
-      "videoLink": "https://youtu.be/example4"
+      "videoLink": null
     },
     {
-      "id": "5",
-      "title": "Galactic Analytics",
-      "description": "Business intelligence platform with interactive dashboards and predictive analytics.",
-      "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015&auto=format&fit=crop",
-      "category": "AI Solutions",
-      "fullDescription": "Galactic Analytics is an advanced business intelligence platform that transforms complex data into actionable insights. It provides interactive dashboards, predictive analytics, and automated reporting capabilities.",
-      "challenge": "The client needed a way to consolidate data from multiple sources and provide non-technical stakeholders with easy-to-understand visualizations and insights.",
-      "solution": "We created a comprehensive analytics platform that integrates with multiple data sources, processes information in real-time, and presents insights through intuitive dashboards with drill-down capabilities.",
-      "results": "Users report spending 70% less time preparing reports, while decision-making time has decreased by 40% due to faster access to relevant insights.",
-      "technologies": ["React", "Python", "TensorFlow", "Apache Spark", "PostgreSQL", "D3.js", "Docker"],
+      "id": "cables",
+      "title": "Cables",
+      "description": "Telephone Exchange Customer Management",
+      "image": "/images/projects/cables/logo.png",
+      "images": [
+        "/images/projects/cables/cable1.jpg",
+        "/images/projects/cables/cable2.jpg",
+        "/images/projects/cables/cable3.jpg",
+        "/images/projects/cables/cable4.jpg",
+        "/images/projects/cables/cable5.jpg",
+        "/images/projects/cables/cable6.jpg",
+        "/images/projects/cables/cable7.jpg",
+        "/images/projects/cables/cable8.jpg",
+        "/images/projects/cables/cable9.jpg",
+        "/images/projects/cables/cable10.jpg",
+        "/images/projects/cables/cable11.jpg",
+        "/images/projects/cables/cable12.jpg",
+        "/images/projects/cables/cable13.jpg",
+        "/images/projects/cables/cable14.jpg"
+      ],
+      "category": "Utility Software",
+      "fullDescription": "Cables is a specialized desktop application for telephone exchange operators to manage customer data, service records, and network information. The system works offline with local data storage and wireless synchronization capabilities.",
+      "challenge": "Creating an offline solution for areas with unreliable connectivity.",
+      "solution": "Developed a local database system with peer-to-peer wireless synchronization between devices.",
+      "results": "Deployed in 15 telephone exchanges, reducing data entry errors by 80%.",
+      "technologies": ["Flutter", "GETX", "SQLite", "Local Networking"],
       "testimonial": {
-        "quote": "Galactic Analytics has transformed how we understand our business data. What used to take days of analysis can now be visualized and understood in minutes.",
-        "author": "Marcus Thompson",
-        "position": "Head of Business Intelligence, Global Corp"
+        "quote": "Cables brought much-needed digital organization to our manual record-keeping operations.",
+        "author": "Exchange Manager",
+        "position": "Telecom Company"
       },
-      "demoLink": "https://demo.galactic-analytics.example.com",
-      "videoLink": "https://youtu.be/example5"
+      "demoLink": null,
+      "videoLink": "https://www.youtube.com/watch?v=cNTNyDPZhc8"
     },
     {
-      "id": "6",
-      "title": "Orbit CRM",
-      "description": "Customer relationship management system with AI-powered insights and automation.",
-      "image": "https://images.unsplash.com/photo-1543286386-713bdd548da4?q=80&w=2070&auto=format&fit=crop",
-      "category": "Web Application",
-      "fullDescription": "Orbit CRM is a next-generation customer relationship management system designed for modern sales teams. It features AI-powered lead scoring, automated follow-ups, and comprehensive analytics.",
-      "challenge": "The client needed a CRM that would reduce manual data entry, provide actionable insights about prospects, and seamlessly integrate with their existing tools.",
-      "solution": "We developed a custom CRM with automated data capture, AI-driven lead scoring and follow-up recommendations, and an open API architecture for easy integration with other business tools.",
-      "results": "Sales teams using Orbit CRM have reported a 35% increase in productivity, 28% higher conversion rates, and a 20% reduction in sales cycle length.",
-      "technologies": ["Angular", "Node.js", "PostgreSQL", "TensorFlow", "Redis", "Elasticsearch", "Docker"],
+      "id": "allamseh",
+      "title": "Allamseh",
+      "description": "Professional cleaning services in Jordan",
+      "image": "/images/projects/allamseh/logo.png",
+      "images": [
+        "/images/projects/allamseh/1.png",
+        "/images/projects/allamseh/2.png",
+        "/images/projects/allamseh/3.png",
+        "/images/projects/allamseh/4.png",
+        "/images/projects/allamseh/5.png",
+        "/images/projects/allamseh/6.png",
+        "/images/projects/allamseh/7.png",
+        "/images/projects/allamseh/8.png"
+      ],
+      "category": "Business Website",
+      "fullDescription": "A modern website for Allamseh, the leading cleaning services company in Jordan. The site showcases professional cleaning services for homes, offices, and commercial spaces. It includes service details, booking forms, and a gallery of their work.",
+      "challenge": "Creating an attractive and professional online presence that effectively communicates cleaning services while making it easy for customers to request quotes.",
+      "solution": "Developed a responsive website with clean design and clear service presentation with simple contact forms. Used modern CSS animations to enhance user experience.",
+      "results": "Increased online booking requests by 200% and improved commercial visibility in the Jordanian market.",
+      "technologies": ["HTML", "CSS", "JavaScript", "Bootstrap", "PHP", "Laravel", "MySQL"],
       "testimonial": {
-        "quote": "Orbit CRM has revolutionized our sales process. The AI-powered insights help our team focus on the most promising leads, and the automation features have eliminated hours of manual work.",
-        "author": "Jennifer Martinez",
-        "position": "VP of Sales, Enterprise Solutions Inc."
+        "quote": "The new website perfectly represents our professional cleaning services and has greatly increased customer inquiries.",
+        "author": "Marketing Manager",
+        "position": "Allamseh Cleaning Services"
       },
-      "demoLink": "https://demo.orbit-crm.example.com",
+      "demoLink": "https://allamseh.com",
+      "videoLink": "https://youtu.be/h84B1-S4id0?si=h-LSmwdYEH3sTFBH"
+    },
+    {
+      "id": "survey",
+      "title": "سيرفي",
+      "description": "نظام تتبع ومراقبة نشاط الموظفين لشركة سعودية",
+      "image": "/images/projects/survey/logo.jpg",
+      "images": [
+        "/images/projects/survey/1.png",
+        "/images/projects/survey/2.png",
+        "/images/projects/survey/3.png",
+        "/images/projects/survey/4.png",
+        "/images/projects/survey/5.png",
+        "/images/projects/survey/6.png",
+        "/images/projects/survey/7.png",
+        "/images/projects/survey/8.png",
+        "/images/projects/survey/9.png",
+        "/images/projects/survey/10.png"
+      ],
+      "category": "تطبيق أعمال",
+      "fullDescription": "نظام شامل لمراقبة الموظفين تم تطويره لشركة سعودية لتتبع وتحليل أنشطة الموظفين. يتميز التطبيق بتسجيل النشاط في الوقت الفعلي ومقاييس الأداء وتتبع الحضور وإمكانيات إعداد تقارير مفصلة. يمكن للمديرين مراقبة إنتاجية الموظفين بسهولة وتوليد رؤى واتخاذ قرارات مبنية على البيانات.",
+      "challenge": "احتاجت الشركة إلى طريقة فعالة لمراقبة أنشطة الموظفين وقياس الإنتاجية عبر الأقسام المختلفة مع الحفاظ على دقة البيانات وأمنها.",
+      "solution": "تطوير تطبيق ويب سهل الاستخدام مع لوحة تحكم للمسؤول باستخدام Laravel Filament، وتنفيذ التحكم في الوصول القائم على الأدوار وميزات تتبع النشاط التلقائي.",
+      "results": "تحسين مراقبة إنتاجية الموظفين بنسبة 75٪ وتقليل وقت إعداد التقارير اليدوية بنسبة 60٪، مما يوفر للإدارة رؤى قابلة للتنفيذ.",
+      "technologies": ["HTML", "CSS", "JavaScript", "PHP", "Laravel", "Filament"],
+      "testimonial": {
+        "quote": "لقد غير نظام سيرفي إدارة القوى العاملة لدينا بشكل كامل. لقد شهدنا تحسينات كبيرة في تتبع الإنتاجية وتقييم الأداء وعمليات اتخاذ القرار. لقد جعلت التحليلات المفصلة وقدرات المراقبة في الوقت الفعلي منه أداة لا تقدر بثمن لعمليات الموارد البشرية لدينا.",
+        "author": "محمد الرشيد",
+        "position": "مدير الموارد البشرية"
+      },
+      "demoLink": null,
+      "videoLink": null
+    },
+    {
+      "id": "talabk",
+      "title": "طلبك",
+      "description": "شركة شحن ولوجستيات رائدة في ليبيا",
+      "image": "/images/projects/talabk/logo.png",
+      "images": [
+        "/images/projects/talabk/1.png",
+        "/images/projects/talabk/2.png",
+        "/images/projects/talabk/3.png",
+        "/images/projects/talabk/4.png",
+        "/images/projects/talabk/5.png",
+        "/images/projects/talabk/6.png",
+        "/images/projects/talabk/7.png",
+        "/images/projects/talabk/8.png",
+        "/images/projects/talabk/9.png"
+      ],
+      "category": "موقع أعمال",
+      "fullDescription": "موقع حديث لشركة طلبك، شركة الشحن واللوجستيات البارزة في ليبيا. يوفر الموقع معلومات شاملة عن خدمات الشحن وتتبع الطرود وحاسبات الأسعار ومواقع الفروع في جميع أنحاء ليبيا. يضمن التصميم المتجاوب الوصول السلس عبر جميع الأجهزة.",
+      "challenge": "بناء موقع سهل الاستخدام يبسط عمليات الشحن ويوفر إمكانيات تتبع في الوقت الفعلي للعملاء في جميع أنحاء ليبيا.",
+      "solution": "تطوير موقع نظيف وبديهي باستخدام HTML و CSS مع التركيز على الأداء وإمكانية الوصول. تنفيذ مبادئ التصميم المتجاوب للعرض الأمثل على جميع الأجهزة.",
+      "results": "تحسين مشاركة العملاء مع زيادة بنسبة 50٪ في استخدام التتبع عبر الإنترنت وتوسيع التواجد الرقمي في السوق الليبي.",
+      "technologies": ["HTML", "CSS", "JavaScript", "Bootstrap", "PHP", "Laravel", "MySQL"],
+      "testimonial": {
+        "quote": "لقد غير الموقع الجديد طريقة تفاعل عملائنا مع خدماتنا، مما جعل عمليات الشحن أكثر شفافية وسهولة في الوصول.",
+        "author": "مدير العمليات",
+        "position": "شركة طلبك للشحن"
+      },
+      "demoLink": "https://talabk.ly",
+      "videoLink": null
+    },
+    {
+      "id": "pharmacy",
+      "title": "طلب الأدوية",
+      "description": "نظام طلب الأدوية",
+      "image": "/images/projects/Pharmacy/logo.png",
+      "images": [
+        "/images/projects/Pharmacy/pharmacy1.jpg",
+        "/images/projects/Pharmacy/pharmacy2.jpg",
+        "/images/projects/Pharmacy/pharmacy3.jpg",
+        "/images/projects/Pharmacy/pharmacy4.jpg",
+        "/images/projects/Pharmacy/pharmacy5.jpg",
+        "/images/projects/Pharmacy/pharmacy6.jpg"
+      ],
+      "category": "الرعاية الصحية",
+      "fullDescription": "نظام طلب أدوية يسمح للعملاء بطلب الأدوية وللصيدليات بإدارة المخزون والطلبات. يتميز النظام بواجهات منفصلة للعملاء والمسؤولين مع تحديثات في الوقت الفعلي.",
+      "challenge": "رقمنة طلب الأدوية في الأسواق ذات التبني المنخفض للتجارة الإلكترونية.",
+      "solution": "إنشاء واجهة بسيطة وبديهية تركز على وظائف الطلب الأساسية مع الحد الأدنى من العوائق.",
+      "results": "تم تبنيه من قبل 12 صيدلية محلية، ومعالجة أكثر من 150 طلباً يومياً.",
+      "technologies": ["Flutter", "GETX", "Firebase"],
+      "testimonial": {
+        "quote": "لقد قام التطبيق بتحديث عملية الطلب لدينا مع البقاء في متناول جميع العملاء.",
+        "author": "مالك الصيدلية",
+        "position": "صيدلية الحي"
+      },
+      "demoLink": null,
+      "videoLink": "https://www.youtube.com/watch?v=OAi2qRQ1n-Y"
+    },
+    {
+      "id": "x-positron",
+      "title": "إكس-بوزيترون",
+      "description": "منصة تعلم المواد الجامعية",
+      "image": "/images/projects/X-POSITRON/logo.png",
+      "images": [
+        "/images/projects/X-POSITRON/5.png",
+        "/images/projects/X-POSITRON/6.png",
+        "/images/projects/X-POSITRON/7.png",
+        "/images/projects/X-POSITRON/8.png",
+        "/images/projects/X-POSITRON/9.png",
+        "/images/projects/X-POSITRON/10.png"
+      ],
+      "category": "تعليم",
+      "fullDescription": "إكس-بوزيترون هي منصة تعليمية شاملة لطلاب الجامعات، تتميز بشرح المواد والموارد القابلة للتنزيل وتتبع التقدم. يغطي النظام تخصصات متعددة بمحتوى متخصص.",
+      "challenge": "توحيد الموارد التعليمية المتناثرة لتحسين وصول الطلاب إليها.",
+      "solution": "إنشاء منصة موحدة تجمع المواد الدراسية مع إمكانيات الوصول دون اتصال بالإنترنت.",
+      "results": "تم تبنيه من قبل 3 أقسام جامعية مع معدل رضا طلابي 90٪.",
+      "technologies": ["Flutter", "PHP", "SQL", "JavaScript"],
+      "testimonial": {
+        "quote": "أصبح إكس-بوزيترون مساعداً دراسياً أساسياً لطلابنا.",
+        "author": "أستاذ جامعي",
+        "position": "كلية جامعية"
+      },
+      "demoLink": null,
+      "videoLink": "https://www.youtube.com/watch?v=05hJa3gZr-w"
+    },
+    {
+      "id": "rada",
+      "title": "رادا للتنظيف",
+      "description": "موقع شركة تنظيف",
+      "image": "/images/projects/rada/logo.png",
+      "images": [
+        "/images/projects/rada/1.jpg",
+        "/images/projects/rada/2.jpg",
+        "/images/projects/rada/3.jpg"
+      ],
+      "category": "موقع أعمال",
+      "fullDescription": "موقع متجاوب لخدمة تنظيف احترافية في ألمانيا، يعرض الخدمات وقيم الشركة ومعلومات الاتصال. يركز الموقع على بناء الثقة وجودة الخدمة.",
+      "challenge": "تأسيس مصداقية عبر الإنترنت لخدمة تنظيف جديدة في سوق تنافسي.",
+      "solution": "تطوير تصميم نظيف واحترافي يسلط الضوء على الشهادات وآراء العملاء.",
+      "results": "زيادة استفسارات الخدمة بنسبة 200٪ خلال شهرين من الإطلاق.",
+      "technologies": ["HTML", "CSS", "JavaScript", "Bootstrap"],
+      "testimonial": {
+        "quote": "يمثل الموقع بشكل مثالي التزامنا بالجودة والاحترافية.",
+        "author": "المالك",
+        "position": "رادا للتنظيف"
+      },
+      "demoLink": "https://issa-al-halabi.github.io/Rada-Cleaning/",
+      "videoLink": null
+    },
+    {
+      "id": "interpolation",
+      "title": "حاسبة الاستيفاء",
+      "description": "أداة تعليمية للتحليل العددي",
+      "image": "/images/projects/interpolation/logo.png",
+      "images": [
+        "/images/projects/interpolation/1.jpg",
+        "/images/projects/interpolation/2.jpg",
+        "/images/projects/interpolation/3.jpg"
+      ],
+      "category": "أداة تعليمية",
+      "fullDescription": "تطبيق تعليمي يوضح طريقة نيوتن-غريغوري للاستيفاء في التحليل العددي. يقوم التطبيق بحساب القيم المستوفاة ورسم الدوال من نقاط البيانات المعطاة.",
+      "challenge": "جعل الطرق العددية المعقدة في متناول طلاب المرحلة الجامعية.",
+      "solution": "إنشاء أداة تصور تفاعلية مع شروحات خطوة بخطوة.",
+      "results": "تم اعتماده كوسيلة تعليمية في مقررين جامعيين.",
+      "technologies": ["Flutter", "Dart"],
+      "testimonial": {
+        "quote": "ساعد هذا التطبيق طلابي على فهم مفاهيم الاستيفاء بشكل أسرع بكثير من الطرق التقليدية.",
+        "author": "أستاذ الرياضيات",
+        "position": "كلية جامعية"
+      },
+      "demoLink": null,
       "videoLink": null
     }
   ],
   "ar": [
     {
-      "id": "1",
-      "title": "لوحة تحكم Nebula المالية",
-      "description": "لوحة مالية شاملة مع تصور البيانات في الوقت الفعلي ورؤى مدعومة بالذكاء الاصطناعي.",
-      "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop",
-      "category": "تطبيق ويب",
-      "fullDescription": "لوحة تحكم Nebula المالية هي منصة إدارة مالية متطورة مصممة للشركات الحديثة. تجمع بين قدرات تصور البيانات القوية والرؤى المدعومة بالذكاء الاصطناعي لمساعدة الشركات على اتخاذ قرارات مالية أفضل.",
-      "challenge": "احتاج العميل إلى حل شامل لتتبع الأداء المالي عبر أقسام ومواقع متعددة في الوقت الفعلي، مع قدرات للتنبؤ وتخطيط السيناريوهات.",
-      "solution": "قمنا بتطوير تطبيق ويب متجاوب مع مزامنة البيانات في الوقت الفعلي، ورسوم بيانية تفاعلية، وخوارزميات الذكاء الاصطناعي لتحليل الاتجاهات واكتشاف الشذوذ.",
-      "results": "منذ تنفيذ لوحة تحكم Nebula المالية، أبلغ العميل عن تحسن بنسبة 30٪ في سرعة اتخاذ القرارات المالية وانخفاض بنسبة 25٪ في أخطاء إعداد التقارير.",
-      "technologies": ["React", "Node.js", "TensorFlow.js", "D3.js", "WebSockets", "MongoDB"],
-      "testimonial": {
-        "quote": "لقد حولت لوحة تحكم Nebula المالية طريقة إدارتنا لأموالنا. كانت الرؤى في الوقت الفعلي لا تقدر بثمن لعملية صنع القرار لدينا.",
-        "author": "سارة جونسون",
-        "position": "المدير المالي، شركة المؤسسات العالمية"
-      },
-      "demoLink": "https://demo.nebula-finance.example.com",
-      "videoLink": "https://youtu.be/example1"
-    },
-    {
-      "id": "2",
-      "title": "تطبيق Quantum Health للجوال",
-      "description": "تطبيق لتتبع الصحة مع توصيات شخصية وتكامل سلس مع الأجهزة.",
-      "image": "https://images.unsplash.com/photo-1551650975-87deedd944c3?q=80&w=1974&auto=format&fit=crop",
+      "id": "fiberforge",
+      "title": "FiberForge",
+      "description": "تطبيق لمراقبة الموظفين وتتبع الشحنات لشركة في أفريقيا",
+      "image": "/images/projects/FiberForge/FiberForg-logo-screen.png",
+      "images": [
+        "/images/projects/FiberForge/FiberForge-details-screen.png",
+        "/images/projects/FiberForge/FiberForge-edit-profile.png",
+        "/images/projects/FiberForge/FiberForge-history.png",
+        "/images/projects/FiberForge/FiberForge-map.png",
+        "/images/projects/FiberForge/FiberForge-trips.png",
+        "/images/projects/FiberForge/FiberForge-dashboard.png",
+        "/images/projects/FiberForge/FiberForge-dashboard-tracking.png",
+        "/images/projects/FiberForge/FiberForge-dashboard-tracking-camera.png"
+      ],
       "category": "تطبيق جوال",
-      "fullDescription": "Quantum Health هو تطبيق لتتبع الصحة الشخصية مصمم لمساعدة المستخدمين على مراقبة لياقتهم وتغذيتهم ورفاهيتهم. يتكامل التطبيق مع الأجهزة القابلة للارتداء ويوفر توصيات مدعومة بالذكاء الاصطناعي بناءً على بيانات المستخدم.",
-      "challenge": "أراد العميل إنشاء تطبيق جوال يبرز في سوق الصحة واللياقة البدنية المزدحم من خلال تقديم تجارب شخصية حقًا ورؤى صحية قابلة للتنفيذ.",
-      "solution": "قمنا ببناء تطبيق جوال متعدد المنصات يتصل بسلاسة مع أجهزة اللياقة البدنية القابلة للارتداء، ويتتبع مقاييس صحية مختلفة، ويستخدم التعلم الآلي لتقديم توصيات شخصية.",
-      "results": "حقق التطبيق تقييمًا قدره 4.8 نجوم في متاجر التطبيقات وأكثر من 500,000 تنزيل في السنة الأولى، مع إبلاغ المستخدمين عن تحسن بنسبة 35٪ في العادات الصحية.",
-      "technologies": ["React Native", "Firebase", "TensorFlow Lite", "Bluetooth API", "HealthKit", "Google Fit API"],
+      "fullDescription": "تطبيق لوجستي داخلي متقدم مصمم خصيصًا لشركة نقل الأقمشة في أفريقيا. تم تصميم هذا التطبيق للاستخدام الداخلي حصريًا، حيث يوفر للفريق أدوات قوية لمراقبة وتتبع السائقين بكفاءة وأمان.",
+      "challenge": "احتاجت الشركة إلى طريقة لمراقبة شحنات الأقمشة عبر مسافات شاسعة في أفريقيا، مع ضمان الأمان والتسليم في الوقت المحدد.",
+      "solution": "تم تطوير نظام تتبع GPS في الوقت الفعلي مع تحسين المسار، وإنذارات الطوارئ، ووظيفة العمل دون اتصال للمناطق ذات الاتصال المحدود.",
+      "results": "تحسين أمان الشحنات، تقليل تكاليف الوقود من خلال المسارات المثلى، وتمكين المراقبة في الوقت الفعلي لجميع عمليات النقل.",
+      "technologies": ["Flutter", "Laravel", "Node.js", "Socket.io", "Firebase", "SQL"],
       "testimonial": {
-        "quote": "لقد أحدث Quantum Health ثورة في كيفية تعامل مستخدمينا مع رحلة العافية الخاصة بهم. الرؤى الشخصية والتكامل السلس مع الأجهزة يضع معيارًا جديدًا لتطبيقات الصحة.",
-        "author": "د. مايكل تشين",
-        "position": "الرئيس التنفيذي، حلول Quantum Health"
+        "quote": "لقد غير التطبيق عملياتنا اللوجستية، مما منحنا رؤية وتحكمًا كاملين في شحناتنا.",
+        "author": "مدير اللوجستيات",
+        "position": "شركة نقل الأقمشة"
       },
       "demoLink": null,
-      "videoLink": "https://youtu.be/example2"
+      "videoLink": "https://www.youtube.com/watch?v=qs_EmOvzzlM"
     },
     {
-      "id": "3",
-      "title": "منصة Stellar للتجارة الإلكترونية",
-      "description": "حل متكامل للتجارة الإلكترونية مع توصيات المنتجات المدعومة بالذكاء الاصطناعي والتحليلات.",
-      "image": "https://images.unsplash.com/photo-1557821552-17105176677c?q=80&w=1932&auto=format&fit=crop",
-      "category": "تطبيق ويب",
-      "fullDescription": "Stellar هي منصة تجارة إلكترونية شاملة مبنية للتوسع والأداء. تتضمن ميزات متقدمة مثل توصيات المنتجات المدعومة بالذكاء الاصطناعي، وإدارة المخزون المتطورة، والتحليلات التفصيلية.",
-      "challenge": "احتاج العميل إلى الانتقال من نظام تجارة إلكترونية قديم إلى منصة حديثة قادرة على التعامل مع أحجام حركة المرور العالية مع توفير تجارب تسوق مخصصة.",
-      "solution": "قمنا بتطوير منصة تجارة إلكترونية مخصصة مع بنية microservices، وإدارة مخزون في الوقت الفعلي، وتوصيات منتجات مدعومة بالذكاء الاصطناعي، ولوحات تحليلات شاملة.",
-      "results": "في غضون ستة أشهر من الإطلاق، شهد العميل زيادة بنسبة 45٪ في معدلات التحويل، وتحسن بنسبة 60٪ في أوقات تحميل الصفحة، وزيادة بنسبة 28٪ في متوسط قيمة الطلب.",
-      "technologies": ["React", "Node.js", "PostgreSQL", "Redis", "Elasticsearch", "Docker", "Kubernetes"],
+      "id": "mr-tech",
+      "title": "MR.Tech",
+      "description": "رفيقك الرقمي للتعلم الجامعي عبر الإنترنت وفي الحرم الجامعي في جامعة دمشق",
+      "image": "/images/projects/mrtech/logo.png",
+      "images": [
+        "/images/projects/mrtech/1.png",
+        "/images/projects/mrtech/2.png",
+        "/images/projects/mrtech/3.png",
+        "/images/projects/mrtech/4.png",
+        "/images/projects/mrtech/5.png",
+        "/images/projects/mrtech/6.png",
+        "/images/projects/mrtech/7.png",
+        "/images/projects/mrtech/8.png",
+        "/images/projects/mrtech/9.png",
+        "/images/projects/mrtech/10.png"
+      ],
+      "category": "تطبيق جوال",
+      "fullDescription": "مستر تك هو رفيق دراستك الودود الذي يجعل الحياة الجامعية أسهل، سواء كنت تدرس في الحرم الجامعي أو من المنزل. فكر فيه كمساعد شخصي يحتفظ بجميع موادك الدراسية وجداولك الزمنية ودرجاتك في مكان واحد. يمكنك تحميل محتوى المقرر للدراسة دون اتصال بالإنترنت، والدردشة مع أساتذتك وزملائك، وحتى التسجيل في المقررات مباشرة من هاتفك.",
+      "challenge": "كان الطلاب يواجهون صعوبة في مواكبة دراستهم، خاصة عند التنقل بين التعلم عبر الإنترنت والتعلم التقليدي. كانوا بحاجة إلى طريقة بسيطة للوصول إلى المواد الدراسية في أي مكان والبقاء على تواصل مع المعلمين ومتابعة تقدمهم.",
+      "solution": "قمنا بإنشاء تطبيق سهل الاستخدام للطلاب يعمل عبر الإنترنت وبدونه. يمكن للطلاب تحميل المحاضرات والمواد الدراسية لاستخدامها بدون إنترنت، والحصول على تحديثات مهمة حول مقرراتهم، والتواصل بسهولة مع معلميهم وزملائهم - كل ذلك من خلال تطبيق واحد بسيط.",
+      "results": "الطلاب يحبون استخدام التطبيق! زادت المشاركة في الفصل بنسبة 60٪، ووفر موظفو الجامعة 45٪ من وقتهم في الأعمال الورقية، والطلاب أكثر سعادة بكيفية إدارة دراستهم.",
+      "technologies": ["Dart", "Flutter", "Laravel", "Filament"],
       "testimonial": {
-        "quote": "لقد حولت Stellar أعمالنا عبر الإنترنت. سرعة المنصة وموثوقيتها وميزاتها الذكية حسنت بشكل كبير تجربة العملاء وأداء المبيعات لدينا.",
-        "author": "جيسيكا لي",
-        "position": "المدير الرقمي، مجموعة Stellar للتجزئة"
+        "quote": "مستر تك مثل وجود صديق مساعد يعرف كل شيء عن الحياة الجامعية. يمكنني الدراسة في أي مكان وفي أي وقت، ولا أفوت أبداً التحديثات المهمة. لقد جعل تجربتي الجامعية أفضل بكثير!",
+        "author": "سارة",
+        "position": "طالبة في السنة الثالثة، جامعة دمشق"
       },
-      "demoLink": "https://demo.stellar-ecommerce.example.com",
+      "demoLink": null,
+      "videoLink": "https://youtu.be/D9rOvwzxAeM?si=txTaMFRIjqzaUpLz"
+    },
+    
+    {
+      "id": "almawerbung",
+      "title": "Almawerbung",
+      "description": "موقع خدمات طباعة وإعلان احترافي",
+      "image": "/images/projects/almawerbung/logo.png",
+      "images": [
+        "/images/projects/almawerbung/1.png",
+        "/images/projects/almawerbung/2.png",
+        "/images/projects/almawerbung/3.png",
+        "/images/projects/almawerbung/4.png",
+        "/images/projects/almawerbung/5.png",
+        "/images/projects/almawerbung/6.png",
+        "/images/projects/almawerbung/7.png",
+        "/images/projects/almawerbung/8.png",
+        "/images/projects/almawerbung/9.png",
+        "/images/projects/almawerbung/10.png",
+        "/images/projects/almawerbung/11.png",
+        "/images/projects/almawerbung/12.png"
+      ],
+      "category": "موقع أعمال",
+      "fullDescription": "المافيربونج هو موقع خدمات طباعة وإعلان احترافي لشركة ألمانية متخصصة في منصات المعارض والإعلانات الشوارع وحلول الطباعة المتنوعة. يعرض الموقع محفظة خدماتهم الشاملة ويتيح للعملاء طلب عروض الأسعار وتقديم طلبات لمشاريع الطباعة المخصصة بسهولة. يمكن للزوار تصفح فئات الخدمات المختلفة، وعرض أمثلة الأعمال السابقة، وتقديم متطلبات المشروع التفصيلية.",
+      "challenge": "إنشاء موقع جذاب يعرض خدمات الطباعة المختلفة بشكل فعال مع تسهيل طلب عروض الأسعار وتقديم الطلبات للعملاء.",
+      "solution": "تم تطوير موقع حديث ومتجاوب باستخدام React و Laravel يعرض الخدمات بوضوح مع نظام طلب سهل الاستخدام ومعرض للمشاريع.",
+      "results": "زيادة استفسارات الخدمة بنسبة 60٪ وتبسيط عملية الطلب لكل من العملاء والموظفين.",
+      "technologies": ["React", "FastAPI", "Python", "MySQL"],
+      "testimonial": {
+        "quote": "موقعنا الجديد يمثل خدماتنا بشكل مثالي وجعل من السهل على العملاء التواصل معنا.",
+        "author": "مدير التسويق",
+        "position": "شركة Almawerbung"
+      },
+      "demoLink": "https://almawerbung.shop",
+      "videoLink": null,
+      "googlePlayLink": null,
+      "appStoreLink": null
+    },
+    {
+      "id": "lordsbox",
+      "title": "Lordsbox",
+      "description": "نظام تتبع ومراقبة الموظفين",
+      "image": "/images/projects/lordsbox/logo_whitebg.png",
+      "images": [
+        "/images/projects/lordsbox/1.jpg",
+        "/images/projects/lordsbox/2.jpg",
+        "/images/projects/lordsbox/3.jpg",
+        "/images/projects/lordsbox/4.jpg",
+        "/images/projects/lordsbox/5.jpg",
+        "/images/projects/lordsbox/6.jpg"
+      ],
+      "category": "حل مؤسسي",
+      "fullDescription": "لوردز بوكس هو حل شامل لمراقبة الموظفين مصمم لشركات النقل، يتميز بتتبع GPS في الوقت الفعلي، وحساب ساعات العمل، وإعداد التقارير المفصلة. يستمر النظام في التتبع حتى عندما يكون التطبيق في وضع الخلفية.",
+      "challenge": "تطوير نظام تتبع موثوق يعمل باستمرار دون استنزاف عمر البطارية بشكل مفرط.",
+      "solution": "تحسين خدمات تحديد المواقع في الخلفية مع فترات استطلاع ذكية وتقنيات توفير البطارية.",
+      "results": "تحسين تتبع إنتاجية القوى العاملة بنسبة 90٪ مع الحفاظ على استهلاك إضافي للبطارية أقل من 15٪.",
+      "technologies": ["Flutter", "Laravel", "Socket.io", "Firebase", "خدمات الخلفية"],
+      "testimonial": {
+        "quote": "منحنا لوردز بوكس رؤية كاملة لعملياتنا مع احترام مخاوف خصوصية الموظفين.",
+        "author": "مدير النقل",
+        "position": "شركة الخدمات اللوجستية"
+      },
+      "demoLink": "https://lordsbox.com/",
+      "videoLink": "https://www.youtube.com/watch?v=7pzpHwjhBJc",
+      "googlePlayLink": "https://play.google.com/store/apps/details?id=com.em.lordsbox",
+      "appStoreLink": "https://apps.apple.com/app/lordsbox/id6450722085?platform=iphone"
+    },
+    {
+      "id": "beautyglam",
+      "title": "Beautyglam",
+      "description": "متجر إلكتروني لمستحضرات التجميل الفاخرة في ألمانيا",
+      "image": "/images/projects/beautyglam/logo.png",
+      "images": [
+        "/images/projects/beautyglam/1.png",
+        "/images/projects/beautyglam/2.png",
+        "/images/projects/beautyglam/3.png",
+        "/images/projects/beautyglam/4.png",
+        "/images/projects/beautyglam/5.png",
+        "/images/projects/beautyglam/6.png",
+        "/images/projects/beautyglam/7.png",
+        "/images/projects/beautyglam/8.png",
+        "/images/projects/beautyglam/9.png",
+        "/images/projects/beautyglam/10.png"
+      ],
+      "category": "تجارة إلكترونية",
+      "fullDescription": "بيوتي جلام هي منصة تجارة إلكترونية رائدة في ألمانيا متخصصة في مستحضرات التجميل الفاخرة. يقدم متجرنا الإلكتروني مجموعة واسعة من منتجات العناية بالبشرة والمكياج والعطور وإكسسوارات التجميل من العلامات التجارية العالمية المرموقة.",
+      "challenge": "إنشاء منصة تجارة إلكترونية حديثة وعالية الأداء قادرة على التعامل مع كتالوج منتجات كبير مع توفير تجربة تسوق محلية وسلسة للعملاء الألمان.",
+      "solution": "تطوير تطبيق ويب متطور باستخدام React للواجهة الأمامية و Laravel للبنية التحتية القوية للخادم. تنفيذ ميزات متقدمة تشمل إدارة المخزون في الوقت الفعلي ودعم اللغات المتعددة.",
+      "results": "إطلاق ناجح للمنصة مع أكثر من 5000 منتج تجميلي، وتحقيق زيادة بنسبة 45٪ في مشاركة العملاء وتحسين بنسبة 55٪ في معدلات التحويل.",
+      "technologies": ["React", "Laravel", "MySQL", "PHP", "Redux", "REST API"],
+      "testimonial": {
+        "quote": "لقد غير بيوتي جلام وجودنا على الإنترنت وقدم لعملائنا تجربة تسوق استثنائية لمنتجات التجميل.",
+        "author": "مدير التسويق",
+        "position": "بيوتي جلام ألمانيا"
+      },
+      "demoLink": "https://www.beautyglam.de",
       "videoLink": null
     },
     {
-      "id": "4",
-      "title": "شبكة Cosmos الاجتماعية",
-      "description": "منصة اجتماعية من الجيل التالي مع ميزات خصوصية متقدمة وتنسيق المحتوى.",
-      "image": "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?q=80&w=2012&auto=format&fit=crop",
-      "category": "ويب وجوال",
-      "fullDescription": "Cosmos هي منصة للتواصل الاجتماعي تركز على الخصوصية مصممة لمنح المستخدمين سيطرة كاملة على بياناتهم ومحتواهم. تتميز بخوارزميات تنسيق محتوى متطورة وأدوات مبتكرة لبناء المجتمع.",
-      "challenge": "أراد العميل إنشاء منصة اجتماعية يمكنها المنافسة مع الشبكات القائمة مع تمييز نفسها من خلال ضوابط الخصوصية المعززة وأهمية المحتوى بشكل أفضل.",
-      "solution": "قمنا ببناء منصة اجتماعية شاملة متاحة على الويب والهاتف المحمول، مع تشفير من طرف إلى طرف للرسائل، وضوابط خصوصية تفصيلية، وتنسيق محتوى مدعوم بالذكاء الاصطناعي لا يساوم على بيانات المستخدم.",
-      "results": "جذبت Cosmos أكثر من 2 مليون مستخدم نشط خلال عامها الأول، مع استطلاعات المستخدمين التي تشير إلى أن 78٪ من المستخدمين اختاروا المنصة تحديدًا لميزات الخصوصية الخاصة بها.",
-      "technologies": ["React", "React Native", "GraphQL", "Node.js", "MongoDB", "Redis", "AWS"],
+      "id": "beautybay",
+      "title": "Beautybay",
+      "description": "متجر إلكتروني لمستحضرات التجميل الفاخرة في هولندا",
+      "image": "/images/projects/beautybay/logo.svg",
+      "images": [
+        "/images/projects/beautybay/1.png",
+        "/images/projects/beautybay/2.png",
+        "/images/projects/beautybay/3.png",
+        "/images/projects/beautybay/4.png",
+        "/images/projects/beautybay/5.png",
+        "/images/projects/beautybay/6.png",
+        "/images/projects/beautybay/7.png",
+        "/images/projects/beautybay/8.png",
+        "/images/projects/beautybay/9.png",
+        "/images/projects/beautybay/10.png",
+        "/images/projects/beautybay/11.png",
+        "/images/projects/beautybay/12.png"
+      ],
+      "category": "تجارة إلكترونية",
+      "fullDescription": "منصة تجارة إلكترونية متطورة لمنتجات التجميل والعناية بالبشرة في هولندا. يقدم الموقع مجموعة واسعة من مستحضرات التجميل الفاخرة مع تجربة تسوق سهلة الاستخدام.",
+      "challenge": "بناء منصة تجارة إلكترونية قابلة للتطوير وعالية الأداء يمكنها التعامل مع آلاف المنتجات مع توفير تجربة تسوق سلسة.",
+      "solution": "تطوير تطبيق ويب حديث باستخدام React و Tailwind CSS للواجهة الأمامية، مع Laravel و MySQL لتشغيل الخادم. تنفيذ تقنيات التخزين المؤقت والتحسين لتحميل الصفحات السريع.",
+      "results": "تحقيق زيادة بنسبة 40٪ في معدل التحويل وتحسين بنسبة 60٪ في أوقات تحميل الصفحات مقارنة بالمنصة السابقة.",
+      "technologies": ["React", "Tailwind CSS", "Laravel", "MySQL", "PHP"],
       "testimonial": {
-        "quote": "أنشأت Cosmos شيئًا فريدًا حقًا في مشهد وسائل التواصل الاجتماعي. تركيزهم على الخصوصية وتحكم المستخدم يميزهم عن كل منصة أخرى استخدمناها.",
-        "author": "أليكس ريفيرا",
-        "position": "كاتب عمود التكنولوجيا، تك توداي"
+        "quote": "لقد غيرت المنصة الجديدة وجودنا على الإنترنت وحسنت بشكل كبير تجربة التسوق لعملائنا.",
+        "author": "مدير التجارة الإلكترونية",
+        "position": "بيوتي باي هولندا"
+      },
+      "demoLink": "https://www.beautybay.com",
+      "videoLink": null
+    },
+    {
+      "id": "atarati",
+      "title": "إطاراتي",
+      "description": "نظام إدارة شركة إطارات في لبنان",
+      "image": "/images/projects/atarati/logo.png",
+      "images": [
+        "/images/projects/atarati/1.png",
+        "/images/projects/atarati/2.png",
+        "/images/projects/atarati/3.png",
+        "/images/projects/atarati/4.png",
+        "/images/projects/atarati/5.png",
+        "/images/projects/atarati/6.png",
+        "/images/projects/atarati/7.png",
+        "/images/projects/atarati/8.png"
+      ],
+      "category": "إدارة أعمال",
+      "fullDescription": "إطاراتي هو نظام إدارة شامل تم تطويره لشركة إطارات في لبنان. يوفر النظام مراقبة وتقارير مفصلة لجميع المعاملات المالية وإدارة المخزون والعمليات التجارية. يساعد في تتبع الدخل والمصروفات والمبيعات وإنشاء تقارير مفصلة لتحسين رؤى الأعمال واتخاذ القرارات.",
+      "challenge": "إنشاء نظام فعال لمراقبة وتقرير المعاملات المالية مع الحفاظ على سجلات دقيقة للمخزون لشركة إطارات.",
+      "solution": "تطوير تطبيق ويب باستخدام إطار عمل Laravel مع واجهة أمامية متجاوبة. تنفيذ ميزات تقارير قوية وإمكانيات تتبع مالي في الوقت الفعلي.",
+      "results": "نجح في تبسيط عملية المراقبة المالية للشركة وتحسين دقة التقارير بنسبة 95٪.",
+      "technologies": ["HTML", "CSS", "JavaScript", "PHP", "Laravel"],
+      "testimonial": {
+        "quote": "لقد أحدث هذا النظام ثورة في طريقة تتبعنا لعمليات أعمالنا ومعاملاتنا المالية.",
+        "author": "مدير العمليات",
+        "position": "إطارات إطاراتي"
       },
       "demoLink": null,
-      "videoLink": "https://youtu.be/example4"
+      "videoLink": null
     },
     {
-      "id": "5",
-      "title": "تحليلات Galactic",
-      "description": "منصة ذكاء أعمال مع لوحات تحكم تفاعلية وتحليلات تنبؤية.",
-      "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015&auto=format&fit=crop",
-      "category": "حلول الذكاء الاصطناعي",
-      "fullDescription": "تحليلات Galactic هي منصة ذكاء أعمال متقدمة تحول البيانات المعقدة إلى رؤى قابلة للتنفيذ. توفر لوحات تحكم تفاعلية وتحليلات تنبؤية وقدرات تقارير آلية.",
-      "challenge": "احتاج العميل إلى طريقة لتوحيد البيانات من مصادر متعددة وتزويد أصحاب المصلحة غير التقنيين بتصورات ورؤى سهلة الفهم.",
-      "solution": "أنشأنا منصة تحليلات شاملة تتكامل مع مصادر بيانات متعددة، وتعالج المعلومات في الوقت الفعلي، وتقدم رؤى من خلال لوحات تحكم بديهية مع إمكانات التعمق.",
-      "results": "يبلغ المستخدمون عن قضاء وقت أقل بنسبة 70٪ في إعداد التقارير، بينما انخفض وقت اتخاذ القرار بنسبة 40٪ بسبب الوصول الأسرع إلى الرؤى ذات الصلة.",
-      "technologies": ["React", "Python", "TensorFlow", "Apache Spark", "PostgreSQL", "D3.js", "Docker"],
+      "id": "cables",
+      "title": "Cables",
+      "description": "إدارة عملاء البدالات الهاتفية",
+      "image": "/images/projects/cables/logo.png",
+      "images": [
+        "/images/projects/cables/cable1.jpg",
+        "/images/projects/cables/cable2.jpg",
+        "/images/projects/cables/cable3.jpg",
+        "/images/projects/cables/cable4.jpg",
+        "/images/projects/cables/cable5.jpg",
+        "/images/projects/cables/cable6.jpg",
+        "/images/projects/cables/cable7.jpg",
+        "/images/projects/cables/cable8.jpg",
+        "/images/projects/cables/cable9.jpg",
+        "/images/projects/cables/cable10.jpg",
+        "/images/projects/cables/cable11.jpg",
+        "/images/projects/cables/cable12.jpg",
+        "/images/projects/cables/cable13.jpg",
+        "/images/projects/cables/cable14.jpg"
+      ],
+      "category": "برمجيات خدمية",
+      "fullDescription": "كيبلز هو تطبيق سطح المكتب متخصص لمشغلي البدالات الهاتفية لإدارة بيانات العملاء وسجلات الخدمة ومعلومات الشبكة. يعمل النظام دون اتصال بالإنترنت مع تخزين البيانات محلياً وإمكانيات المزامنة اللاسلكية.",
+      "challenge": "إنشاء حل يعمل دون اتصال بالإنترنت للمناطق ذات الاتصال غير الموثوق به.",
+      "solution": "تطوير نظام قاعدة بيانات محلية مع مزامنة لاسلكية نظير إلى نظير بين الأجهزة.",
+      "results": "تم نشره في 15 بدالة هاتفية، مما أدى إلى تقليل أخطاء إدخال البيانات بنسبة 80٪.",
+      "technologies": ["Flutter", "GETX", "SQLite", "Local Networking"],
       "testimonial": {
-        "quote": "لقد حولت تحليلات Galactic طريقة فهمنا لبيانات أعمالنا. ما كان يستغرق أيامًا من التحليل يمكن الآن تصوره وفهمه في دقائق.",
-        "author": "ماركوس طومسون",
-        "position": "رئيس ذكاء الأعمال، جلوبال كورب"
+        "quote": "جلب كيبلز التنظيم الرقمي المطلوب بشدة لعمليات حفظ السجلات اليدوية لدينا.",
+        "author": "مدير البدالة",
+        "position": "شركة اتصالات"
       },
-      "demoLink": "https://demo.galactic-analytics.example.com",
-      "videoLink": "https://youtu.be/example5"
+      "demoLink": null,
+      "videoLink": "https://www.youtube.com/watch?v=cNTNyDPZhc8"
     },
     {
-      "id": "6",
-      "title": "Orbit CRM",
-      "description": "نظام إدارة علاقات العملاء مع رؤى وأتمتة مدعومة بالذكاء الاصطناعي.",
-      "image": "https://images.unsplash.com/photo-1543286386-713bdd548da4?q=80&w=2070&auto=format&fit=crop",
-      "category": "تطبيق ويب",
-      "fullDescription": "Orbit CRM هو نظام إدارة علاقات العملاء من الجيل التالي مصمم لفرق المبيعات الحديثة. يتميز بتقييم العملاء المحتملين المدعوم بالذكاء الاصطناعي، والمتابعات الآلية، والتحليلات الشاملة.",
-      "challenge": "احتاج العميل إلى نظام CRM من شأنه تقليل إدخال البيانات اليدوي، وتوفير رؤى قابلة للتنفيذ حول العملاء المحتملين، والتكامل بسلاسة مع أدواتهم الحالية.",
-      "solution": "قمنا بتطوير CRM مخصص مع التقاط البيانات الآلي، وتقييم العملاء المحتملين المدعوم بالذكاء الاصطناعي وتوصيات المتابعة، وبنية API مفتوحة للتكامل السهل مع أدوات الأعمال الأخرى.",
-      "results": "أبلغت فرق المبيعات التي تستخدم Orbit CRM عن زيادة بنسبة 35٪ في الإنتاجية، ومعدلات تحويل أعلى بنسبة 28٪، وانخفاض بنسبة 20٪ في طول دورة المبيعات.",
-      "technologies": ["Angular", "Node.js", "PostgreSQL", "TensorFlow", "Redis", "Elasticsearch", "Docker"],
+      "id": "allamseh",
+      "title": "اللمسة السريعة",
+      "description": "خدمات تنظيف احترافية في الأردن",
+      "image": "/images/projects/allamseh/logo.png",
+      "images": [
+        "/images/projects/allamseh/1.png",
+        "/images/projects/allamseh/2.png",
+        "/images/projects/allamseh/3.png",
+        "/images/projects/allamseh/4.png",
+        "/images/projects/allamseh/5.png",
+        "/images/projects/allamseh/6.png",
+        "/images/projects/allamseh/7.png",
+        "/images/projects/allamseh/8.png"
+      ],
+      "category": "موقع أعمال",
+      "fullDescription": "موقع حديث لشركة اللمسة، الشركة الرائدة في خدمات التنظيف في الأردن. يعرض الموقع خدمات التنظيف الاحترافية للمنازل والمكاتب والمساحات التجارية. يتضمن تفاصيل الخدمات ونماذج الحجز ومعرض صور لأعمالهم.",
+      "challenge": "إنشاء تواجد إلكتروني جذاب ومهني يوصل خدمات التنظيف بفعالية مع تسهيل طلب عروض الأسعار للعملاء.",
+      "solution": "تطوير موقع متجاوب بتصميم نظيف وعرض واضح للخدمات ونماذج اتصال بسيطة. استخدام رسوم متحركة CSS حديثة لتحسين تجربة المستخدم.",
+      "results": "زيادة طلبات الحجز عبر الإنترنت بنسبة 200٪ وتحسين الظهور التجاري في السوق الأردني.",
+      "technologies": ["HTML", "CSS", "JavaScript", "Bootstrap", "PHP", "Laravel", "MySQL"],
       "testimonial": {
-        "quote": "لقد أحدث Orbit CRM ثورة في عملية المبيعات لدينا. تساعد الرؤى المدعومة بالذكاء الاصطناعي فريقنا على التركيز على العملاء المحتملين الأكثر واعدة، وقد قضت ميزات الأتمتة على ساعات من العمل اليدوي.",
-        "author": "جينيفر مارتينيز",
-        "position": "نائب الرئيس للمبيعات، شركة الحلول المؤسسية"
+        "quote": "يمثل الموقع الجديد خدمات التنظيف الاحترافية لدينا بشكل مثالي وزاد بشكل كبير من استفسارات العملاء.",
+        "author": "مدير التسويق",
+        "position": "خدمات اللمسة للتنظيف"
       },
-      "demoLink": "https://demo.orbit-crm.example.com",
+      "demoLink": "https://allamseh.com",
+      "videoLink": "https://youtu.be/h84B1-S4id0?si=h-LSmwdYEH3sTFBH"
+    },
+    {
+      "id": "survey",
+      "title": "استبيانات",
+      "description": "نظام تتبع ومراقبة نشاط الموظفين لشركة سعودية",
+      "image": "/images/projects/survey/logo.jpg",
+      "images": [
+        "/images/projects/survey/1.png",
+        "/images/projects/survey/2.png",
+        "/images/projects/survey/3.png",
+        "/images/projects/survey/4.png",
+        "/images/projects/survey/5.png",
+        "/images/projects/survey/6.png",
+        "/images/projects/survey/7.png",
+        "/images/projects/survey/8.png",
+        "/images/projects/survey/9.png",
+        "/images/projects/survey/10.png"
+      ],
+      "category": "تطبيق أعمال",
+      "fullDescription": "نظام شامل لمراقبة الموظفين تم تطويره لشركة سعودية لتتبع وتحليل أنشطة الموظفين. يتميز التطبيق بتسجيل النشاط في الوقت الفعلي ومقاييس الأداء وتتبع الحضور وإمكانيات إعداد تقارير مفصلة. يمكن للمديرين مراقبة إنتاجية الموظفين بسهولة وتوليد رؤى واتخاذ قرارات مبنية على البيانات.",
+      "challenge": "احتاجت الشركة إلى طريقة فعالة لمراقبة أنشطة الموظفين وقياس الإنتاجية عبر الأقسام المختلفة مع الحفاظ على دقة البيانات وأمنها.",
+      "solution": "تطوير تطبيق ويب سهل الاستخدام مع لوحة تحكم للمسؤول باستخدام Laravel Filament، وتنفيذ التحكم في الوصول القائم على الأدوار وميزات تتبع النشاط التلقائي.",
+      "results": "تحسين مراقبة إنتاجية الموظفين بنسبة 75٪ وتقليل وقت إعداد التقارير اليدوية بنسبة 60٪، مما يوفر للإدارة رؤى قابلة للتنفيذ.",
+      "technologies": ["HTML", "CSS", "JavaScript", "PHP", "Laravel", "Filament"],
+      "testimonial": {
+        "quote": "لقد غير نظام سيرفي إدارة القوى العاملة لدينا بشكل كامل. لقد شهدنا تحسينات كبيرة في تتبع الإنتاجية وتقييم الأداء وعمليات اتخاذ القرار. لقد جعلت التحليلات المفصلة وقدرات المراقبة في الوقت الفعلي منه أداة لا تقدر بثمن لعمليات الموارد البشرية لدينا.",
+        "author": "محمد الرشيد",
+        "position": "مدير الموارد البشرية"
+      },
+      "demoLink": null,
+      "videoLink": null
+    },
+    {
+      "id": "talabk",
+      "title": "طلبك",
+      "description": "شركة شحن ولوجستيات رائدة في ليبيا",
+      "image": "/images/projects/talabk/logo.png",
+      "images": [
+        "/images/projects/talabk/1.png",
+        "/images/projects/talabk/2.png",
+        "/images/projects/talabk/3.png",
+        "/images/projects/talabk/4.png",
+        "/images/projects/talabk/5.png",
+        "/images/projects/talabk/6.png",
+        "/images/projects/talabk/7.png",
+        "/images/projects/talabk/8.png",
+        "/images/projects/talabk/9.png"
+      ],
+      "category": "موقع أعمال",
+      "fullDescription": "موقع حديث لشركة طلبك، شركة الشحن واللوجستيات البارزة في ليبيا. يوفر الموقع معلومات شاملة عن خدمات الشحن وتتبع الطرود وحاسبات الأسعار ومواقع الفروع في جميع أنحاء ليبيا. يضمن التصميم المتجاوب الوصول السلس عبر جميع الأجهزة.",
+      "challenge": "بناء موقع سهل الاستخدام يبسط عمليات الشحن ويوفر إمكانيات تتبع في الوقت الفعلي للعملاء في جميع أنحاء ليبيا.",
+      "solution": "تطوير موقع نظيف وبديهي باستخدام HTML و CSS مع التركيز على الأداء وإمكانية الوصول. تنفيذ مبادئ التصميم المتجاوب للعرض الأمثل على جميع الأجهزة.",
+      "results": "تحسين مشاركة العملاء مع زيادة بنسبة 50٪ في استخدام التتبع عبر الإنترنت وتوسيع التواجد الرقمي في السوق الليبي.",
+      "technologies": ["HTML", "CSS", "JavaScript", "Bootstrap", "PHP", "Laravel", "MySQL"],
+      "testimonial": {
+        "quote": "لقد غير الموقع الجديد طريقة تفاعل عملائنا مع خدماتنا، مما جعل عمليات الشحن أكثر شفافية وسهولة في الوصول.",
+        "author": "مدير العمليات",
+        "position": "شركة طلبك للشحن"
+      },
+      "demoLink": "https://talabk.ly",
+      "videoLink": null
+    },
+    {
+      "id": "pharmacy",
+      "title": "طلب الأدوية",
+      "description": "نظام طلب الأدوية",
+      "image": "/images/projects/Pharmacy/logo.png",
+      "images": [
+        "/images/projects/Pharmacy/pharmacy1.jpg",
+        "/images/projects/Pharmacy/pharmacy2.jpg",
+        "/images/projects/Pharmacy/pharmacy3.jpg",
+        "/images/projects/Pharmacy/pharmacy4.jpg",
+        "/images/projects/Pharmacy/pharmacy5.jpg",
+        "/images/projects/Pharmacy/pharmacy6.jpg"
+      ],
+      "category": "الرعاية الصحية",
+      "fullDescription": "نظام طلب أدوية يسمح للعملاء بطلب الأدوية وللصيدليات بإدارة المخزون والطلبات. يتميز النظام بواجهات منفصلة للعملاء والمسؤولين مع تحديثات في الوقت الفعلي.",
+      "challenge": "رقمنة طلب الأدوية في الأسواق ذات التبني المنخفض للتجارة الإلكترونية.",
+      "solution": "إنشاء واجهة بسيطة وبديهية تركز على وظائف الطلب الأساسية مع الحد الأدنى من العوائق.",
+      "results": "تم تبنيه من قبل 12 صيدلية محلية، ومعالجة أكثر من 150 طلباً يومياً.",
+      "technologies": ["Flutter", "GETX", "Firebase"],
+      "testimonial": {
+        "quote": "لقد قام التطبيق بتحديث عملية الطلب لدينا مع البقاء في متناول جميع العملاء.",
+        "author": "مالك الصيدلية",
+        "position": "صيدلية الحي"
+      },
+      "demoLink": null,
+      "videoLink": "https://www.youtube.com/watch?v=OAi2qRQ1n-Y"
+    },
+    {
+      "id": "x-positron",
+      "title": "X-POSITRON",
+      "description": "منصة تعلم المواد الجامعية",
+      "image": "/images/projects/X-POSITRON/logo.png",
+      "images": [
+        "/images/projects/X-POSITRON/5.png",
+        "/images/projects/X-POSITRON/6.png",
+        "/images/projects/X-POSITRON/7.png",
+        "/images/projects/X-POSITRON/8.png",
+        "/images/projects/X-POSITRON/9.png",
+        "/images/projects/X-POSITRON/10.png"
+      ],
+      "category": "تعليم",
+      "fullDescription": "إكس-بوزيترون هي منصة تعليمية شاملة لطلاب الجامعات، تتميز بشرح المواد والموارد القابلة للتنزيل وتتبع التقدم. يغطي النظام تخصصات متعددة بمحتوى متخصص.",
+      "challenge": "توحيد الموارد التعليمية المتناثرة لتحسين وصول الطلاب إليها.",
+      "solution": "إنشاء منصة موحدة تجمع المواد الدراسية مع إمكانيات الوصول دون اتصال بالإنترنت.",
+      "results": "تم تبنيه من قبل 3 أقسام جامعية مع معدل رضا طلابي 90٪.",
+      "technologies": ["Flutter", "PHP", "SQL", "JavaScript"],
+      "testimonial": {
+        "quote": "أصبح إكس-بوزيترون مساعداً دراسياً أساسياً لطلابنا.",
+        "author": "أستاذ جامعي",
+        "position": "كلية جامعية"
+      },
+      "demoLink": null,
+      "videoLink": "https://www.youtube.com/watch?v=05hJa3gZr-w"
+    },
+    {
+      "id": "rada",
+      "title": "RADA",
+      "description": "موقع شركة تنظيف",
+      "image": "/images/projects/rada/logo.png",
+      "images": [
+        "/images/projects/rada/1.jpg",
+        "/images/projects/rada/2.jpg",
+        "/images/projects/rada/3.jpg"
+      ],
+      "category": "موقع أعمال",
+      "fullDescription": "موقع متجاوب لخدمة تنظيف احترافية في ألمانيا، يعرض الخدمات وقيم الشركة ومعلومات الاتصال. يركز الموقع على بناء الثقة وجودة الخدمة.",
+      "challenge": "تأسيس مصداقية عبر الإنترنت لخدمة تنظيف جديدة في سوق تنافسي.",
+      "solution": "تطوير تصميم نظيف واحترافي يسلط الضوء على الشهادات وآراء العملاء.",
+      "results": "زيادة استفسارات الخدمة بنسبة 200٪ خلال شهرين من الإطلاق.",
+      "technologies": ["HTML", "CSS", "JavaScript", "Bootstrap"],
+      "testimonial": {
+        "quote": "يمثل الموقع بشكل مثالي التزامنا بالجودة والاحترافية.",
+        "author": "المالك",
+        "position": "رادا للتنظيف"
+      },
+      "demoLink": "https://issa-al-halabi.github.io/Rada-Cleaning/",
+      "videoLink": null
+    },
+    {
+      "id": "interpolation",
+      "title": "حاسبة الاستيفاء",
+      "description": "أداة تعليمية للتحليل العددي",
+      "image": "/images/projects/interpolation/logo.png",
+      "images": [
+        "/images/projects/interpolation/1.jpg",
+        "/images/projects/interpolation/2.jpg",
+        "/images/projects/interpolation/3.jpg"
+      ],
+      "category": "أداة تعليمية",
+      "fullDescription": "تطبيق تعليمي يوضح طريقة نيوتن-غريغوري للاستيفاء في التحليل العددي. يقوم التطبيق بحساب القيم المستوفاة ورسم الدوال من نقاط البيانات المعطاة.",
+      "challenge": "جعل الطرق العددية المعقدة في متناول طلاب المرحلة الجامعية.",
+      "solution": "إنشاء أداة تصور تفاعلية مع شروحات خطوة بخطوة.",
+      "results": "تم اعتماده كوسيلة تعليمية في مقررين جامعيين.",
+      "technologies": ["Flutter", "Dart"],
+      "testimonial": {
+        "quote": "ساعد هذا التطبيق طلابي على فهم مفاهيم الاستيفاء بشكل أسرع بكثير من الطرق التقليدية.",
+        "author": "أستاذ الرياضيات",
+        "position": "كلية جامعية"
+      },
+      "demoLink": null,
       "videoLink": null
     }
-  ]
+  ],
+  "faq": {
+    "en": [
+      {
+        "id": "services",
+        "question": "What services do you offer?",
+        "answer": "We offer a comprehensive range of digital solutions including mobile app development, web development, e-commerce platforms, enterprise solutions, and business management systems. Our expertise spans across various technologies and platforms, ensuring we can deliver the right solution for your needs."
+      },
+      {
+        "id": "technologies",
+        "question": "What technologies do you work with?",
+        "answer": "We work with modern technology stacks including: Frontend (React, Flutter), Backend (Laravel, Node.js), Databases (MySQL, Firebase), and Cloud Services. We choose the most appropriate technologies based on project requirements and scalability needs."
+      },
+      {
+        "id": "process",
+        "question": "What is your development process?",
+        "answer": "Our development process follows industry best practices: 1) Requirements gathering and analysis, 2) Design and planning, 3) Development with regular client updates, 4) Testing and quality assurance, 5) Deployment, and 6) Ongoing support and maintenance."
+      },
+      {
+        "id": "timeline",
+        "question": "How long does it take to complete a project?",
+        "answer": "Project timelines vary depending on complexity and requirements. A simple website might take 4-6 weeks, while a complex enterprise solution could take 3-6 months. We provide detailed timelines during the initial project planning phase."
+      },
+      {
+        "id": "support",
+        "question": "Do you provide support after project completion?",
+        "answer": "Yes, we offer comprehensive post-launch support and maintenance services. This includes bug fixes, updates, feature enhancements, and technical support to ensure your solution continues to perform optimally."
+      },
+      {
+        "id": "pricing",
+        "question": "How do you determine project pricing?",
+        "answer": "Project pricing is based on several factors: scope of work, complexity, timeline, and required features. We provide detailed quotes after thoroughly understanding your requirements to ensure transparency and value for your investment."
+      },
+      {
+        "id": "communication",
+        "question": "How do you handle project communication?",
+        "answer": "We maintain regular communication through scheduled meetings, progress reports, and project management tools. Clients have direct access to the project team and receive regular updates throughout the development process."
+      },
+      {
+        "id": "industries",
+        "question": "What industries have you worked with?",
+        "answer": "We have experience across various industries including e-commerce, education, healthcare, logistics, and business services. Our portfolio demonstrates our ability to understand and meet the unique requirements of different sectors."
+      }
+    ],
+    "ar": [
+      {
+        "id": "services",
+        "question": "ما هي الخدمات التي تقدمونها؟",
+        "answer": "نقدم مجموعة شاملة من الحلول الرقمية تشمل تطوير تطبيقات الجوال، تطوير المواقع الإلكترونية، منصات التجارة الإلكترونية، حلول المؤسسات، وأنظمة إدارة الأعمال. تمتد خبرتنا عبر مختلف التقنيات والمنصات، مما يضمن قدرتنا على تقديم الحل المناسب لاحتياجاتك."
+      },
+      {
+        "id": "technologies",
+        "question": "ما هي التقنيات التي تعملون بها؟",
+        "answer": "نعمل مع مجموعة حديثة من التقنيات تشمل: الواجهة الأمامية (React, Flutter)، الخلفية (Laravel, Node.js)، قواعد البيانات (MySQL, Firebase)، وخدمات السحابة. نختار التقنيات الأنسب بناءً على متطلبات المشروع واحتياجات التوسع."
+      },
+      {
+        "id": "process",
+        "question": "ما هي عملية التطوير لديكم؟",
+        "answer": "تتبع عملية التطوير لدينا أفضل الممارسات في الصناعة: 1) جمع وتحليل المتطلبات، 2) التصميم والتخطيط، 3) التطوير مع تحديثات منتظمة للعميل، 4) الاختبار وضمان الجودة، 5) النشر، و 6) الدعم والصيانة المستمرة."
+      },
+      {
+        "id": "timeline",
+        "question": "كم من الوقت يستغرق إكمال المشروع؟",
+        "answer": "تختلف مدة المشروع حسب التعقيد والمتطلبات. قد يستغرق موقع بسيط 4-6 أسابيع، بينما قد يستغرق حل مؤسسي معقد 3-6 أشهر. نقدم جداول زمنية مفصلة خلال مرحلة التخطيط الأولي للمشروع."
+      },
+      {
+        "id": "support",
+        "question": "هل تقدمون الدعم بعد اكتمال المشروع؟",
+        "answer": "نعم، نقدم خدمات دعم وصيانة شاملة بعد الإطلاق. يشمل ذلك إصلاح الأخطاء، التحديثات، تحسين الميزات، والدعم الفني لضمان استمرار أداء حلك بشكل مثالي."
+      },
+      {
+        "id": "pricing",
+        "question": "كيف تحددون أسعار المشاريع؟",
+        "answer": "تعتمد أسعار المشاريع على عدة عوامل: نطاق العمل، التعقيد، الجدول الزمني، والميزات المطلوبة. نقدم عروض أسعار مفصلة بعد فهم متطلباتك بشكل شامل لضمان الشفافية والقيمة لاستثمارك."
+      },
+      {
+        "id": "communication",
+        "question": "كيف تتعاملون مع التواصل في المشروع؟",
+        "answer": "نحافظ على تواصل منتظم من خلال اجتماعات مجدولة، تقارير التقدم، وأدوات إدارة المشاريع. يتمتع العملاء بإمكانية الوصول المباشر إلى فريق المشروع ويتلقون تحديثات منتظمة طوال عملية التطوير."
+      },
+      {
+        "id": "industries",
+        "question": "ما هي القطاعات التي عملتم معها؟",
+        "answer": "لدينا خبرة في مختلف القطاعات بما في ذلك التجارة الإلكترونية، التعليم، الرعاية الصحية، الخدمات اللوجستية، وخدمات الأعمال. تظهر محفظة أعمالنا قدرتنا على فهم وتلبية المتطلبات الفريدة للقطاعات المختلفة."
+      }
+    ]
+  }
 }

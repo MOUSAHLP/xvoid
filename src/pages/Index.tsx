@@ -1,5 +1,4 @@
 import React from "react";
-import Hero from "@/components/Hero";
 import StarBackground from "@/components/StarBackground";
 import ServiceCard from "@/components/ServiceCard";
 import ProjectCard from "@/components/ProjectCard";
@@ -12,6 +11,9 @@ import servicesData from "@/data/services.json";
 import TestimonialsCarousel from "@/components/TestimonialsCarousel";
 import TechStackCarousel from "@/components/TechStackCarousel";
 import technologiesData from "@/data/technologies.json";
+import SpaceTravelBackground from "@/components/SpaceTravelBackground";
+import projectsData from "@/data/projects.json";
+import FAQSection from "@/components/FAQSection";
 
 const Index: React.FC = () => {
   const { language, t } = useLanguage();
@@ -37,77 +39,27 @@ const Index: React.FC = () => {
     3: "pink" as const
   };
   
-  // Mock data for projects
-  const projects = [
-    {
-      id: "1",
-      title: isArabic ? "لوحة تحكم Nebula المالية" : "Nebula Finance Dashboard",
-      description: isArabic ? "لوحة مالية شاملة مع تصور البيانات في الوقت الفعلي ورؤى مدعومة بالذكاء الاصطناعي." : "A comprehensive financial dashboard with real-time data visualization and AI-powered insights.",
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop",
-      category: isArabic ? "تطبيق ويب" : "Web Application"
-    },
-    {
-      id: "2",
-      title: isArabic ? "تطبيق Quantum Health للجوال" : "Quantum Health Mobile App",
-      description: isArabic ? "تطبيق لتتبع الصحة مع توصيات شخصية وتكامل سلس مع الأجهزة." : "A health tracking application with personalized recommendations and seamless device integration.",
-      image: "https://images.unsplash.com/photo-1551650975-87deedd944c3?q=80&w=1974&auto=format&fit=crop",
-      category: isArabic ? "تطبيق جوال" : "Mobile App"
-    },
-    {
-      id: "3",
-      title: isArabic ? "منصة Stellar للتجارة الإلكترونية" : "Stellar E-commerce Platform",
-      description: isArabic ? "حل متكامل للتجارة الإلكترونية مع توصيات المنتجات المدعومة بالذكاء الاصطناعي والتحليلات." : "A complete e-commerce solution with AI-powered product recommendations and analytics.",
-      image: "https://images.unsplash.com/photo-1557821552-17105176677c?q=80&w=1932&auto=format&fit=crop",
-      category: isArabic ? "تطبيق ويب" : "Web Application"
-    },
-    {
-      id: "4",
-      title: isArabic ? "شبكة Cosmos الاجتماعية" : "Cosmos Social Network",
-      description: isArabic ? "منصة اجتماعية من الجيل التالي مع ميزات خصوصية متقدمة وتنسيق المحتوى." : "A next-generation social platform with advanced privacy features and content curation.",
-      image: "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?q=80&w=2012&auto=format&fit=crop",
-      category: isArabic ? "ويب وجوال" : "Web & Mobile"
-    }
-  ];
+  // Replace the mock projects data with this
+  const allProjects = language === 'en' ? projectsData.en : projectsData.ar;
+  // Get first 4 projects for the homepage
+  const projects = allProjects.slice(0, 4);
   
   // Stats data
   const stats = [
-    { id: 1, value: "200+", label: isArabic ? "مشروع منجز" : "Projects Completed" },
-    { id: 2, value: "50+", label: isArabic ? "عضو في الفريق" : "Team Members" },
+    { id: 1, value: "20+", label: isArabic ? "مشروع منجز" : "Projects Completed" },
+    { id: 2, value: "10+", label: isArabic ? "عضو في الفريق" : "Team Members" },
     { id: 3, value: "15+", label: isArabic ? "دولة مخدومة" : "Countries Served" },
-    { id: 4, value: "8", label: isArabic ? "سنوات من التميز" : "Years of Excellence" }
+    { id: 4, value: "5", label: isArabic ? "سنوات من التميز" : "Years of Excellence" }
   ];
   
   // Testimonials data
-  const testimonials = [
-    {
-      id: 1,
-      quote: isArabic ? "قامت X-POSITRON بتحويل أعمالنا من خلال حلولهم المبتكرة. اهتمامهم بالتفاصيل وتفانيهم في التميز لا مثيل له." : "X-POSITRON transformed our business with their innovative solutions. Their attention to detail and dedication to excellence is unmatched.",
-      author: isArabic ? "سارة جونسون" : "Sarah Johnson",
-      position: isArabic ? "الرئيس التنفيذي، TechFusion" : "CEO, TechFusion",
-      avatar: "https://i.pravatar.cc/150?img=1"
-    },
-    {
-      id: 2,
-      quote: isArabic ? "كان العمل مع فريق X-POSITRON بمثابة نقلة نوعية لشركتنا الناشئة. لقد قدموا أكثر من توقعاتنا وضمن الجدول الزمني المحدد." : "Working with the X-POSITRON team was a game-changer for our startup. They delivered beyond our expectations and within our timeline.",
-      author: isArabic ? "مايكل تشين" : "Michael Chen",
-      position: isArabic ? "مؤسس، NexGen" : "Founder, NexGen",
-      avatar: "https://i.pravatar.cc/150?img=2"
-    },
-    {
-      id: 3,
-      quote: isArabic ? "التزام X-POSITRON بالابتكار وحل المشكلات جعلنا نتفوق على منافسينا. إنهم شركاء حقيقيون في النجاح." : "X-POSITRON's commitment to innovation and problem-solving has put us ahead of our competitors. They are true partners in success.",
-      author: isArabic ? "إيما رودريغيز" : "Emma Rodriguez",
-      position: isArabic ? "مدير التكنولوجيا، InnovateCorp" : "CTO, InnovateCorp",
-      avatar: "https://i.pravatar.cc/150?img=5"
-    },
-    {
-      id: 4,
-      quote: isArabic ? "لقد أذهلتنا X-POSITRON بتفكيرهم المستقبلي وتنفيذهم الدقيق. لقد تجاوزوا توقعاتنا في كل خطوة." : "X-POSITRON amazed us with their forward-thinking and precise execution. They exceeded our expectations at every step.",
-      author: isArabic ? "ديفيد كيم" : "David Kim",
-      position: isArabic ? "رئيس المنتج، FutureTech" : "Head of Product, FutureTech",
-      avatar: "https://i.pravatar.cc/150?img=8"
-    }
-  ];
+  const testimonials = projects.map(project => ({
+    id: project.id,
+    quote: project.testimonial.quote,
+    author: project.testimonial.author,
+    position: project.testimonial.position,
+    avatar: project.image
+  })).filter(t => t.quote && t.author && t.position);
   
   // Process technologies data for the carousel
   const flattenedTechnologies = technologiesData.categories.flatMap((category, categoryIndex) => {
@@ -115,7 +67,7 @@ const Index: React.FC = () => {
       id: categoryIndex * 100 + techIndex,
       name: tech.name,
       icon: tech.icon,
-      category: category.name[language] // Use the appropriate language for category name
+      category: category.name[language]
     }));
   });
   
@@ -124,7 +76,51 @@ const Index: React.FC = () => {
       <StarBackground />
       
       {/* Hero Section */}
-      <Hero />
+      <section className="relative min-h-screen flex items-center justify-center px-4 overflow-hidden">
+      {/* Space Travel Background */}
+      <SpaceTravelBackground />
+      
+      <div className="container mx-auto relative z-10 pt-20">
+        <div className="flex flex-col items-center justify-center text-center">
+          {/* Hero Content */}
+          <div className="max-w-3xl mx-auto">
+            <h1 className="text-4xl md:text-5xl lg:text-display-large font-bold mb-6 leading-tight">
+              {isArabic ? (
+                <>نبني <span className="text-glow">عوالم</span> رقمية <span className="text-glow-purple">مذهلة</span></>
+              ) : (
+                <><span className="text-glow">Crafting</span> Digital <span className="text-glow-purple">Universes</span></>
+              )}
+            </h1>
+            
+            <p className="text-lg md:text-xl text-white/80 mb-8">
+              {isArabic
+                ? "نبني تطبيقات ويب وجوال متطورة تتجاوز الحدود وتستكشف آفاقًا تكنولوجية جديدة."
+                : "We build cutting-edge web and mobile applications that transcend boundaries and explore new technological frontiers."
+              }
+            </p>
+            
+            <div className="flex flex-col items-center">
+              <Link to={`${baseUrl}/contact`} className="cosmic-button group">
+                <span className="flex items-center justify-center">
+                  {isArabic ? "أطلق مشروعك" : "Launch Your Project"}
+                  <ArrowRight className={`${isArabic ? 'mr-2 transform rotate-180' : 'ml-2'} w-5 h-5 transition-transform duration-300 ${isArabic ? 'group-hover:-translate-x-1' : 'group-hover:translate-x-1'}`} />
+                </span>
+              </Link>
+              
+              {/* Scroll indicator moved here */}
+              <div className="flex flex-col items-center mt-10">
+                <span className="text-white/50 text-sm mb-2">
+                  {isArabic ? "استكشف عالمنا" : "Explore our space"}
+                </span>
+                <div className="w-6 h-10 border-2 border-white/20 rounded-full flex justify-center">
+                  <div className="w-1.5 h-1.5 bg-cosmic-blue rounded-full mt-2 animate-star-wave"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
       
       {/* Services Section */}
       <section className="py-20 relative">
@@ -259,7 +255,7 @@ const Index: React.FC = () => {
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
             {projects.map((project, index) => (
               <ProjectCard
                 key={project.id}
@@ -269,6 +265,8 @@ const Index: React.FC = () => {
                 image={project.image}
                 category={project.category}
                 delay={index}
+                demoUrl={project.demoLink}
+                youtubeUrl={project.videoLink}
               />
             ))}
           </div>
@@ -327,6 +325,35 @@ const Index: React.FC = () => {
           
           {/* Tech Stack Carousel */}
           <TechStackCarousel technologies={flattenedTechnologies} />
+        </div>
+      </section>
+      
+      {/* FAQ Section */}
+      <section className="py-20 relative">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <span className="inline-block px-3 py-1 text-xs font-medium bg-cosmic-blue/10 rounded-full text-cosmic-blue mb-4">
+              {isArabic ? "الأسئلة الشائعة" : "FAQ"}
+            </span>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+              {isArabic ? "الأسئلة المتكررة" : "Common Questions"}
+            </h2>
+            <p className="text-white/70 max-w-2xl mx-auto">
+              {isArabic
+                ? "اعثر على إجابات لأكثر الأسئلة شيوعًا حول خدماتنا"
+                : "Find answers to the most common questions about our services"
+              }
+            </p>
+          </div>
+          
+          <FAQSection />
+          
+          <div className="text-center mt-12">
+            <Link to={`${baseUrl}/faq`} className="inline-flex items-center text-cosmic-blue hover:text-glow transition-colors duration-300 group">
+              {isArabic ? "عرض جميع الأسئلة" : "View All Questions"}
+              <ArrowRight className={`${isArabic ? 'mr-2 transform rotate-180' : 'ml-2'} w-4 h-4 transform transition-transform duration-300 ${isArabic ? 'group-hover:-translate-x-1' : 'group-hover:translate-x-1'}`} />
+            </Link>
+          </div>
         </div>
       </section>
       

@@ -91,7 +91,7 @@ const StarBackground: React.FC = () => {
   return (
     <canvas
       ref={canvasRef}
-      className="fixed top-0 left-0 w-full h-full -z-10 bg-cosmic-dark"
+      className="fixed top-0 left-0 w-full h-full z-0 "
       style={{ pointerEvents: "none" }}
     />
   );

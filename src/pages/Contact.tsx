@@ -106,23 +106,21 @@ const Contact: React.FC = () => {
                 <h2 className="text-2xl font-bold mb-6">{t('contact.info.title')}</h2>
                 
                 <div className="space-y-6">
-                  <div className="flex items-start">
+                <div className="flex items-start">
                     <div className="w-12 h-12 rounded-full bg-cosmic-blue/10 flex items-center justify-center mr-4">
                       <Mail className="w-6 h-6 text-cosmic-blue" />
                     </div>
                     <div>
                       <h3 className="text-lg font-semibold">{t('contact.info.email.title')}</h3>
-                      <p className="text-white/70">{t('contact.info.email.value')}</p>
+                      <a href={`mailto:${t('contact.email1')}`} className="text-white/70 hover:text-cosmic-blue transition-colors">{t('contact.email1')}</a>
                     </div>
-                  </div>
-                  
-                  <div className="flex items-start">
-                    <div className="w-12 h-12 rounded-full bg-cosmic-purple/10 flex items-center justify-center mr-4">
-                      <MapPin className="w-6 h-6 text-cosmic-purple" />
+                  </div>  <div className="flex items-start">
+                    <div className="w-12 h-12 rounded-full bg-cosmic-blue/10 flex items-center justify-center mr-4">
+                      <Mail className="w-6 h-6 text-cosmic-blue" />
                     </div>
                     <div>
-                      <h3 className="text-lg font-semibold">{t('contact.info.location.title')}</h3>
-                      <p className="text-white/70">{t('contact.info.location.value')}</p>
+                      <h3 className="text-lg font-semibold">{t('contact.info.email.title')}</h3>
+                      <a href={`mailto:${t('contact.email2')}`} className="text-white/70 hover:text-cosmic-blue transition-colors">{t('contact.email2')}</a>
                     </div>
                   </div>
                   
@@ -132,7 +130,27 @@ const Contact: React.FC = () => {
                     </div>
                     <div>
                       <h3 className="text-lg font-semibold">{t('contact.info.phone.title')}</h3>
-                      <p className="text-white/70">{t('contact.info.phone.value')}</p>
+                      <a href={`tel:${t('contact.phone1')}`} className="text-white/70 hover:text-cosmic-pink transition-colors">{t('contact.phone1_display')}</a>
+                    </div>
+                  </div>
+                  
+                  <div className="flex items-start">
+                    <div className="w-12 h-12 rounded-full bg-cosmic-pink/10 flex items-center justify-center mr-4">
+                      <Phone className="w-6 h-6 text-cosmic-pink" />
+                    </div>
+                    <div>
+                      <h3 className="text-lg font-semibold">{t('contact.info.phone.title')}</h3>
+                      <a href={`tel:${t('contact.phone2')}`} className="text-white/70 hover:text-cosmic-pink transition-colors">{t('contact.phone2_display')}</a>
+                    </div>
+                  </div>
+                  
+                  <div className="flex items-start">
+                    <div className="w-12 h-12 rounded-full bg-cosmic-purple/10 flex items-center justify-center mr-4">
+                      <MapPin className="w-6 h-6 text-cosmic-purple" />
+                    </div>
+                    <div>
+                      <h3 className="text-lg font-semibold">{t('contact.info.location.title')}</h3>
+                      <a href={`https://maps.google.com/?q=${t('contact.address')}`} target="_blank" rel="noopener noreferrer" className="text-white/70 hover:text-cosmic-purple transition-colors">{t('contact.address')}</a>
                     </div>
                   </div>
                 </div>

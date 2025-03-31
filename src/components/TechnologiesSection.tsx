@@ -7,27 +7,27 @@ import { ArrowRight } from "lucide-react";
 const technologies = [
   {
     name: "React",
-    icon: "/lovable-uploads/f7f4b5c7-9f4b-4c5e-9d8e-5f3a7e8a1c5d.png",
+    icon: "/images/f7f4b5c7-9f4b-4c5e-9d8e-5f3a7e8a1c5d.png",
     description: "Building interactive user interfaces with React's component-based architecture"
   },
   {
     name: "Node.js",
-    icon: "/lovable-uploads/a2f4b5c7-9f4b-4c5e-9d8e-5f3a7e8a1c5d.png",
+    icon: "/images/a2f4b5c7-9f4b-4c5e-9d8e-5f3a7e8a1c5d.png",
     description: "Powerful backend solutions with JavaScript runtime environment"
   },
   {
     name: "TensorFlow",
-    icon: "/lovable-uploads/b3f4b5c7-9f4b-4c5e-9d8e-5f3a7e8a1c5d.png",
+    icon: "/images/b3f4b5c7-9f4b-4c5e-9d8e-5f3a7e8a1c5d.png",
     description: "Advanced machine learning and AI model development and deployment"
   },
   {
     name: "MongoDB",
-    icon: "/lovable-uploads/c4f4b5c7-9f4b-4c5e-9d8e-5f3a7e8a1c5d.png",
+    icon: "/images/c4f4b5c7-9f4b-4c5e-9d8e-5f3a7e8a1c5d.png",
     description: "Scalable NoSQL database solutions for modern applications"
   },
   {
     name: "AWS",
-    icon: "/lovable-uploads/d5f4b5c7-9f4b-4c5e-9d8e-5f3a7e8a1c5d.png",
+    icon: "/images/d5f4b5c7-9f4b-4c5e-9d8e-5f3a7e8a1c5d.png",
     description: "Cloud infrastructure and services for reliable application hosting"
   },
   {

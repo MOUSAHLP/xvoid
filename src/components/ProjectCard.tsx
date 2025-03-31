@@ -1,4 +1,3 @@
-
 import React from "react";
 import { motion } from "framer-motion";
 import { Eye, Youtube, ExternalLink } from "lucide-react";
@@ -21,83 +20,89 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   image,
   category,
   delay,
-  id = "1", // Default ID if none provided
+  id = "1",
   demoUrl,
   youtubeUrl
 }) => {
   return (
-    <motion.div
-      initial={{ opacity: 0, y: 30 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5, delay: delay * 0.1 }}
-      className="group relative overflow-hidden rounded-xl bg-card"
+    <Link 
+      to={`/project/${id}`}
+      className="block w-full"
+      aria-label={`View ${title} details`}
     >
-      {/* Image Overlay */}
-      <div className="relative aspect-video overflow-hidden">
-        <img
-          src={image}
-          alt={title}
-          className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-        />
-        
-        {/* Overlay Gradient */}
-        <div className="absolute inset-0 bg-gradient-to-t from-cosmic-dark via-cosmic-dark/50 to-transparent opacity-60 group-hover:opacity-40 transition-opacity duration-300"></div>
-        
-        {/* Category Badge */}
-        <div className="absolute top-4 left-4 px-3 py-1 text-xs font-medium bg-cosmic-blue/20 backdrop-blur-sm border border-cosmic-blue/30 rounded-full text-cosmic-blue">
-          {category}
-        </div>
-      </div>
-      
-      {/* Content */}
-      <div className="p-6">
-        <h3 className="text-xl font-bold mb-2 group-hover:text-glow transition-colors duration-300">
-          {title}
-        </h3>
-        
-        <p className="text-white/70 text-sm mb-4 line-clamp-2">
-          {description}
-        </p>
-        
-        {/* Action Buttons */}
-        <div className="flex items-center space-x-4">
-          {demoUrl && (
-            <a 
-              href={demoUrl} 
-              className="flex items-center text-sm text-white/70 hover:text-cosmic-blue transition-colors duration-300"
-              aria-label={`View ${title} demo`}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Eye className="mr-1 w-4 h-4" />
-              Demo
-            </a>
-          )}
+      <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: delay * 0.1 }}
+        className="group relative overflow-hidden rounded-xl bg-card h-full hover:transform hover:scale-[1.02] transition-all duration-300"
+      >
+        {/* Image Container */}
+        <div className="relative w-full h-48 overflow-hidden">
+          <img
+            src={image}
+            alt={title}
+            className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-card to-transparent opacity-60" />
           
-          {youtubeUrl && (
-            <a 
-              href={youtubeUrl} 
-              className="flex items-center text-sm text-white/70 hover:text-cosmic-purple transition-colors duration-300"
-              aria-label={`Watch ${title} video`}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Youtube className="mr-1 w-4 h-4" />
-              Video
-            </a>
-          )}
-          
-          <Link 
-            to={`/project/${id}`}
-            className="flex items-center text-sm text-white/70 hover:text-cosmic-pink transition-colors duration-300 ml-auto"
-            aria-label={`View ${title} details`}
-          >
-            Details
-            <ExternalLink className="ml-1 w-4 h-4" />
-          </Link>
+          {/* Category Badge */}
+          <span className="absolute top-3 left-3 px-2 py-1 text-xs font-medium bg-cosmic-blue/20 text-cosmic-blue rounded-full backdrop-blur-sm">
+            {category}
+          </span>
         </div>
-      </div>
-    </motion.div>
+        
+        {/* Content */}
+        <div className="p-4">
+          <h3 className="text-lg font-bold mb-2 group-hover:text-glow transition-colors duration-300 line-clamp-1">
+            {title}
+          </h3>
+          
+          <p className="text-white/70 text-sm mb-4 line-clamp-2 h-10">
+            {description}
+          </p>
+          
+          {/* Action Buttons */}
+          <div className="flex items-center justify-between">
+            <span className="text-sm text-cosmic-blue flex items-center">
+              <ExternalLink className="mr-1.5 w-3.5 h-3.5" />
+              <span className="text-xs">View Project</span>
+            </span>
+            
+            {(demoUrl || youtubeUrl) && (
+              <div className="flex items-center space-x-3">
+                {demoUrl && (
+                  <a 
+                    href={demoUrl} 
+                    className="flex items-center text-xs text-white/70 hover:text-cosmic-blue transition-colors duration-300"
+                    aria-label={`View ${title} demo`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={(e) => e.stopPropagation()}
+                  >
+                    <Eye className="mr-1 w-3.5 h-3.5" />
+                    Demo
+                  </a>
+                )}
+                
+                {youtubeUrl && (
+                  <a 
+                    href={youtubeUrl} 
+                    className="flex items-center text-xs text-white/70 hover:text-cosmic-purple transition-colors duration-300"
+                    aria-label={`Watch ${title} video`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={(e) => e.stopPropagation()}
+                  >
+                    <Youtube className="mr-1 w-3.5 h-3.5" />
+                    Video
+                  </a>
+                )}
+              </div>
+            )}
+          </div>
+        </div>
+      </motion.div>
+    </Link>
   );
 };
 

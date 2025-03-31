@@ -1,4 +1,3 @@
-
 import React, { useEffect, useRef } from "react";
 
 interface Star {
@@ -38,13 +37,13 @@ const SpaceTravelBackground: React.FC = () => {
         stars.push({
           x: Math.random() * canvas.width * 2 - canvas.width,
           y: Math.random() * canvas.height * 2 - canvas.height,
-          z: Math.random() * 1000 + 100,
+          z: Math.random() * 1000 + 50,
           size: Math.random() * 1.5 + 0.5,
           color: i % 100 === 0 ? 
             `rgb(${157 + Math.random() * 98}, ${Math.random() * 100}, ${255})` : // Purple stars
             i % 50 === 0 ? 
-            `rgb(0, ${240 + Math.random() * 15}, ${255})` : // Blue stars
-            `rgb(255, 255, 255)` // White stars
+            `rgb(0, ${Math.floor(240 + Math.random() * 15)}, 255)` :
+            `rgb(255, 255, 255)`
         });
       }
       starsRef.current = stars;
@@ -54,7 +53,8 @@ const SpaceTravelBackground: React.FC = () => {
 
     // Animate stars
     const animate = () => {
-      ctx.fillStyle = "rgba(10, 10, 31, 0.3)";
+      // Use a solid background color instead of fade
+      ctx.fillStyle = "rgb(10, 10, 31)";
       ctx.fillRect(0, 0, canvas.width, canvas.height);
       
       const centerX = canvas.width / 2;
@@ -62,11 +62,11 @@ const SpaceTravelBackground: React.FC = () => {
       
       // Draw and update stars
       starsRef.current.forEach((star) => {
-        // Update star position (move closer to create travel effect)
+        // Update star position
         star.z -= speedRef.current;
         
         // If star is too close, reset it far away
-        if (star.z <= 0) {
+         if (star.z <= 0) {
           star.z = 1000;
           star.x = Math.random() * canvas.width * 2 - canvas.width;
           star.y = Math.random() * canvas.height * 2 - canvas.height;
@@ -81,7 +81,7 @@ const SpaceTravelBackground: React.FC = () => {
         if (x >= 0 && x <= canvas.width && y >= 0 && y <= canvas.height) {
           // Size and opacity based on distance
           const size = Math.max(0.5, star.size * factor * 2);
-          const opacity = Math.min(1, factor * 3);
+          const opacity = Math.min(0.8, factor * 2);
           
           // Draw star
           ctx.beginPath();
@@ -89,7 +89,7 @@ const SpaceTravelBackground: React.FC = () => {
           
           // Larger stars get a glow effect
           if (size > 1.5) {
-            ctx.shadowBlur = size * 2;
+            ctx.shadowBlur = size * 1.5;
             ctx.shadowColor = star.color;
           } else {
             ctx.shadowBlur = 0;
@@ -97,14 +97,14 @@ const SpaceTravelBackground: React.FC = () => {
           
           // Draw streaks for faster stars
           if (factor > 0.8) {
-            const tailLength = Math.min(20, factor * 10);
+            const tailLength = Math.min(15, factor * 8);
             const dx = (centerX - x) / 50;
             const dy = (centerY - y) / 50;
             
             ctx.beginPath();
             ctx.moveTo(x, y);
             ctx.lineTo(x + dx * tailLength, y + dy * tailLength);
-            ctx.strokeStyle = star.color.replace('rgb', 'rgba').replace(')', `, ${opacity * 0.5})`);
+            ctx.strokeStyle = star.color.replace('rgb', 'rgba').replace(')', `, ${opacity * 0.3})`);
             ctx.lineWidth = size / 2;
             ctx.stroke();
           }

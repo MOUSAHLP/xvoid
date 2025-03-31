@@ -1,0 +1,36 @@
+{
+    "en": [
+      {
+        "id": 1,
+        "question": "What services do you specialize in?",
+        "answer": "We specialize in web development, mobile app development, and AI solutions. Our team creates cutting-edge digital solutions using the latest technologies."
+      },
+      {
+        "id": 2,
+        "question": "How long does a typical project take?",
+        "answer": "Project timelines vary depending on complexity and scope. Simple websites might take 1-3 weeks, while complex applications can take 2-3 months or more."
+      },
+      {
+        "id": 3,
+        "question": "Do you provide ongoing support after project completion?",
+        "answer": "Yes, we offer comprehensive maintenance and support packages to ensure your digital solution continues to perform optimally after launch."
+      }
+    ],
+    "ar": [
+      {
+        "id": 1,
+        "question": "ما هي الخدمات التي تتخصصون فيها؟",
+        "answer": "نحن متخصصون في تطوير الويب وتطوير تطبيقات الجوال وحلول الذكاء الاصطناعي. يقوم فريقنا بإنشاء حلول رقمية متطورة باستخدام أحدث التقنيات."
+      },
+      {
+        "id": 2,
+        "question": "كم من الوقت يستغرق المشروع النموذجي؟",
+        "answer": "تختلف مدة المشروع حسب تعقيده ونطاقه. قد تستغرق المواقع البسيطة 1-3 أسابيع، بينما قد تستغرق التطبيقات المعقدة 2-3 أشهر أو أكثر."
+      },
+      {
+        "id": 3,
+        "question": "هل تقدمون دعمًا مستمرًا بعد اكتمال المشروع؟",
+        "answer": "نعم، نقدم حزم صيانة ودعم شاملة لضمان استمرار أداء حلولك الرقمية بشكل مثالي بعد الإطلاق."
+      }
+    ]
+  }

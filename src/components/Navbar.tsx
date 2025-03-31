@@ -21,6 +21,8 @@ const Navbar: React.FC = () => {
     { name: t('nav.services'), path: `${baseUrl}/services` },
     { name: t('nav.portfolio'), path: `${baseUrl}/portfolio` },
     { name: t('nav.about'), path: `${baseUrl}/about` },
+    { name: t('nav.faq'), path: `${baseUrl}/faq` },
+    { name: t('nav.careers'), path: `${baseUrl}/careers` },
   ];
   
   // Handle scroll effect
@@ -48,7 +50,7 @@ const Navbar: React.FC = () => {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled ? "bg-cosmic-dark/90 backdrop-blur-lg shadow-lg" : "bg-transparent"
+        scrolled ? " backdrop-blur-lg shadow-lg" : "bg-transparent"
       } ${isArabic ? 'rtl' : 'ltr'}`}
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -60,20 +62,20 @@ const Navbar: React.FC = () => {
             aria-label="Home"
           >
             <img
-              src="/lovable-uploads/e99dff10-f965-4153-9bda-9c402aa4d43a.png"
+              src="/images/logo.png"
               alt="Logo"
-              className="w-12 h-12"
+              className="w-12 h-12 sm:w-24 sm:h-24"
             />
           </Link>
           
           {/* Desktop Navigation - Updated to be centered */}
-          <div className="hidden md:flex items-center justify-center flex-1 mx-8">
-            <nav className="flex items-center space-x-8 justify-center">
+          <div className="hidden lg:flex items-center justify-center flex-1 mx-8">
+            <nav className="flex items-center justify-center">
               {navItems.map((item) => (
                 <Link
                   key={item.name}
                   to={item.path}
-                  className={`relative px-1 py-2 font-medium text-sm transition-colors duration-300 group ${
+                  className={`relative px-1 py-2 font-medium text-sm transition-colors duration-300 group mx-2 ${
                     location.pathname === item.path
                       ? "text-glow"
                       : "text-white/80 hover:text-cosmic-blue"
@@ -89,13 +91,13 @@ const Navbar: React.FC = () => {
           </div>
           
           {/* Language Selector and CTA Button */}
-          <div className="hidden md:flex items-center">
+          <div className="hidden lg:flex items-center">
             <LanguageSelector />
             
             {/* CTA Button - Added additional spacing for Arabic */}
             <Link
               to={`${baseUrl}/contact`}
-              className={`hidden md:inline-flex cosmic-button ${isArabic ? 'mr-4' : 'ml-4'}`}
+              className={`hidden lg:inline-flex cosmic-button ${isArabic ? 'mr-4' : 'ml-4'}`}
             >
               <span>{t('buttons.launchProject')}</span>
             </Link>
@@ -103,7 +105,7 @@ const Navbar: React.FC = () => {
           
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden text-white focus:outline-none"
+            className="lg:hidden text-white focus:outline-none"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             aria-label={isMenuOpen ? "Close menu" : "Open menu"}
           >
@@ -118,7 +120,7 @@ const Navbar: React.FC = () => {
       
       {/* Mobile Menu */}
       <div
-        className={`md:hidden absolute w-full bg-cosmic-dark/95 backdrop-blur-xl transition-all duration-300 ease-in-out ${
+        className={`lg:hidden absolute w-full bg-cosmic-dark/95 backdrop-blur-xl transition-all duration-300 ease-in-out ${
           isMenuOpen ? "max-h-screen border-b border-cosmic-blue/30" : "max-h-0 overflow-hidden"
         }`}
       >
