@@ -1,55 +1,30 @@
-
 {
   "en": [
     {
-      "name": "Alex Chen",
-      "position": "Founder & CEO",
+      "name": "Issa AlHalabi",
+      "position": "Co-Founder & CEO",
       "image": "https://i.pravatar.cc/300?img=12",
-      "description": "Visionary leader with 15+ years of tech experience."
+      "description": "Full-stack developer turned entrepreneur with 8+ years of programming experience. Specialized in Python and JavaScript ecosystems. Leads X-POSITRON's technical vision while driving business growth."
     },
     {
-      "name": "Emma Rodriguez",
-      "position": "CTO",
+      "name": "Mousa AlHalabi",
+      "position": "Co-Founder & CTO",
       "image": "https://i.pravatar.cc/300?img=10",
-      "description": "Technology expert specializing in AI and machine learning."
-    },
-    {
-      "name": "Michael Johnson",
-      "position": "Design Director",
-      "image": "https://i.pravatar.cc/300?img=11",
-      "description": "Award-winning designer with a passion for user experience."
-    },
-    {
-      "name": "Sarah Kim",
-      "position": "Development Lead",
-      "image": "https://i.pravatar.cc/300?img=9",
-      "description": "Full-stack developer with expertise in scalable applications."
+      "description": "Senior software engineer with 7+ years in system architecture. Expert in AI/ML implementations and cloud-native development. Hands-on leader who actively codes core frameworks."
     }
   ],
   "ar": [
     {
-      "name": "أليكس تشن",
-      "position": "المؤسس والرئيس التنفيذي",
+      "name": "عيسى الحلبي",
+      "position": "الشريك المؤسس والرئيس التنفيذي",
       "image": "https://i.pravatar.cc/300?img=12",
-      "description": "قائد صاحب رؤية مع أكثر من 15 عامًا من الخبرة التقنية."
+      "description": "مطور Full-stack تحول إلى رائد أعمال مع خبرة برمجية تزيد عن 8 سنوات. متخصص في أنظمة Python وJavaScript. يقود الرؤية التقنية لـ X-POSITRON مع دفع النمو التجاري."
     },
     {
-      "name": "إيما رودريغيز",
-      "position": "المدير التقني",
+      "name": "موسى الحلبي",
+      "position": "الشريك المؤسس والمدير التقني",
       "image": "https://i.pravatar.cc/300?img=10",
-      "description": "خبير تكنولوجي متخصص في الذكاء الاصطناعي والتعلم الآلي."
-    },
-    {
-      "name": "مايكل جونسون",
-      "position": "مدير التصميم",
-      "image": "https://i.pravatar.cc/300?img=11",
-      "description": "مصمم حائز على جوائز مع شغف لتجربة المستخدم."
-    },
-    {
-      "name": "سارة كيم",
-      "position": "رئيس التطوير",
-      "image": "https://i.pravatar.cc/300?img=9",
-      "description": "مطور شامل مع خبرة في التطبيقات القابلة للتوسع."
+      "description": "مهندس برمجيات أول بخبرة تزيد عن 7 سنوات في هندسة الأنظمة. خبير في تطبيقات الذكاء الاصطناعي/التعلم الآلي والتطوير السحابي. قائد عملي يشارك بنشاط في برمجة الهياكل الأساسية."
     }
   ]
 }

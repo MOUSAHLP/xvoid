@@ -10,7 +10,7 @@ interface ServiceCardProps {
   title: string;
   description: string;
   icon: React.ReactNode;
-  color: "blue" | "purple" | "pink";
+  color: string;
   delay: number;
 }
 

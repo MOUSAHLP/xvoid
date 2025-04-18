@@ -7,7 +7,7 @@
       "description": "We create responsive, fast and secure web applications using cutting-edge technologies.",
       "icon": "Monitor",
       "color": "blue",
-      "fullDescription": "Our web development services cover everything from simple websites to complex web applications. We use modern frameworks like React, Angular, and Vue.js to build responsive, fast-loading sites that look great on any device. Our development process focuses on clean code, security, and user experience.",
+      "fullDescription": "Our web development services cover everything from simple websites to complex web applications. We use modern frameworks like React to build responsive, fast-loading sites that look great on any device. Our development process focuses on clean code, security, and user experience.",
       "features": [
         "Responsive design for all devices",
         "Performance optimization",
@@ -56,7 +56,7 @@
       "title": "UI/UX Design",
       "description": "User-centered design that creates intuitive and engaging digital experiences.",
       "icon": "Palette",
-      "color": "green",
+      "color": "blue",
       "fullDescription": "Our design team creates user interfaces that are not only visually appealing but also intuitive and functional. We follow a user-centered design process, conducting research, creating wireframes and prototypes, and testing with real users to ensure the final product meets their needs and expectations.",
       "features": [
         "User research and personas",
@@ -73,7 +73,7 @@
       "title": "E-commerce Solutions",
       "description": "Custom online stores and marketplace platforms that drive sales and growth.",
       "icon": "ShoppingCart",
-      "color": "blue",
+      "color": "purple",
       "fullDescription": "We build e-commerce solutions that help businesses sell their products or services online. From custom online stores to marketplace platforms, our e-commerce solutions include everything you need to manage products, process payments, and provide excellent customer service.",
       "features": [
         "Custom online store development",
@@ -90,7 +90,7 @@
       "title": "Digital Marketing",
       "description": "Strategic marketing solutions to increase your online visibility and reach.",
       "icon": "TrendingUp",
-      "color": "purple",
+      "color": "pink",
       "fullDescription": "Our digital marketing services help businesses reach their target audience, generate leads, and increase conversions. We use data-driven strategies across various channels to create campaigns that deliver measurable results and ROI.",
       "features": [
         "Search engine optimization (SEO)",
@@ -110,7 +110,7 @@
       "description": "نقوم بإنشاء تطبيقات ويب سريعة وآمنة وسريعة الاستجابة باستخدام أحدث التقنيات.",
       "icon": "Monitor",
       "color": "blue",
-      "fullDescription": "تغطي خدمات تطوير الويب لدينا كل شيء من المواقع البسيطة إلى تطبيقات الويب المعقدة. نستخدم أطر عمل حديثة مثل React و Angular و Vue.js لبناء مواقع سريعة التحميل وسريعة الاستجابة تبدو رائعة على أي جهاز. تركز عملية التطوير لدينا على الكود النظيف والأمان وتجربة المستخدم.",
+      "fullDescription": "تغطي خدمات تطوير الويب لدينا كل شيء من المواقع البسيطة إلى تطبيقات الويب المعقدة. نستخدم أطر عمل حديثة مثل React لبناء مواقع سريعة التحميل وسريعة الاستجابة تبدو رائعة على أي جهاز. تركز عملية التطوير لدينا على الكود النظيف والأمان وتجربة المستخدم.",
       "features": [
         "تصميم متجاوب لجميع الأجهزة",
         "تحسين الأداء",
@@ -159,7 +159,7 @@
       "title": "تصميم واجهة المستخدم/تجربة المستخدم",
       "description": "تصميم يركز على المستخدم يخلق تجارب رقمية بديهية وجذابة.",
       "icon": "Palette",
-      "color": "green",
+      "color": "blue",
       "fullDescription": "يقوم فريق التصميم لدينا بإنشاء واجهات مستخدم ليست جذابة بصرياً فحسب، بل أيضاً بديهية وعملية. نتبع عملية تصميم تركز على المستخدم، وإجراء الأبحاث، وإنشاء الإطارات السلكية والنماذج الأولية، والاختبار مع مستخدمين حقيقيين لضمان تلبية المنتج النهائي لاحتياجاتهم وتوقعاتهم.",
       "features": [
         "أبحاث المستخدم والشخصيات",
@@ -176,7 +176,7 @@
       "title": "حلول التجارة الإلكترونية",
       "description": "متاجر إلكترونية مخصصة ومنصات سوق تدفع المبيعات والنمو.",
       "icon": "ShoppingCart",
-      "color": "blue",
+      "color": "purple",
       "fullDescription": "نقوم ببناء حلول التجارة الإلكترونية التي تساعد الشركات على بيع منتجاتها أو خدماتها عبر الإنترنت. من المتاجر الإلكترونية المخصصة إلى منصات السوق، تتضمن حلول التجارة الإلكترونية لدينا كل ما تحتاجه لإدارة المنتجات ومعالجة المدفوعات وتقديم خدمة عملاء ممتازة.",
       "features": [
         "تطوير متجر إلكتروني مخصص",

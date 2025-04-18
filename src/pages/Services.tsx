@@ -3,7 +3,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import StarBackground from "@/components/StarBackground";
 import ServiceCard from "@/components/ServiceCard";
-import { Monitor, Smartphone, BrainCircuit } from "lucide-react";
+import { Monitor, Smartphone, BrainCircuit, Palette, ShoppingCart, TrendingUp } from "lucide-react";
 import { useLanguage } from "@/context/LanguageContext";
 import servicesData from "@/data/services.json";
 
@@ -18,19 +18,12 @@ const Services: React.FC = () => {
   const iconComponents = {
     "Monitor": <Monitor className="w-7 h-7 text-cosmic-blue" />,
     "Smartphone": <Smartphone className="w-7 h-7 text-cosmic-purple" />,
-    "BrainCircuit": <BrainCircuit className="w-7 h-7 text-cosmic-pink" />
+    "BrainCircuit": <BrainCircuit className="w-7 h-7 text-cosmic-pink" />,
+    "Palette": <Palette className="w-7 h-7 text-cosmic-blue" />,
+    "ShoppingCart": <ShoppingCart className="w-7 h-7 text-cosmic-purple" />,
+    "TrendingUp": <TrendingUp className="w-7 h-7 text-cosmic-pink" />,
   };
-  
-  // Color mapping for services
-  const colorMapping = {
-    1: "blue" as const,
-    2: "purple" as const,
-    3: "pink" as const,
-    4: "blue" as const,
-    5: "purple" as const,
-    6: "pink" as const
-  };
-  
+
   return (
     <div className={isArabic ? 'rtl' : 'ltr'}>
       <StarBackground />
@@ -70,7 +63,7 @@ const Services: React.FC = () => {
                   title={service.title}
                   description={service.description}
                   icon={iconComponents[iconKey] || iconComponents.Monitor}
-                  color={colorMapping[service.id as keyof typeof colorMapping] || "blue"}
+                  color={service.color || "blue"}
                   delay={index}
                 />
               );

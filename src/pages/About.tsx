@@ -2,6 +2,7 @@
 import React from "react";
 import StarBackground from "@/components/StarBackground";
 import { motion } from "framer-motion";
+import teamData from "@/data/team.json";
 import { 
   Rocket, 
   Users, 
@@ -21,32 +22,7 @@ const About: React.FC = () => {
   const timeline = language === 'en' ? timelineData.en : timelineData.ar;
   
   // Team data with translations
-  const team = [
-    {
-      name: isArabic ? "أليكس تشن" : "Alex Chen",
-      position: isArabic ? "المؤسس والرئيس التنفيذي" : "Founder & CEO",
-      image: "https://i.pravatar.cc/300?img=12",
-      description: isArabic ? "قائد ذو رؤية مع أكثر من 15 عامًا من الخبرة التقنية." : "Visionary leader with 15+ years of tech experience."
-    },
-    {
-      name: isArabic ? "إيما رودريغيز" : "Emma Rodriguez",
-      position: isArabic ? "المدير التقني" : "CTO",
-      image: "https://i.pravatar.cc/300?img=10",
-      description: isArabic ? "خبيرة تكنولوجية متخصصة في الذكاء الاصطناعي وتعلم الآلة." : "Technology expert specializing in AI and machine learning."
-    },
-    {
-      name: isArabic ? "مايكل جونسون" : "Michael Johnson",
-      position: isArabic ? "مدير التصميم" : "Design Director",
-      image: "https://i.pravatar.cc/300?img=11",
-      description: isArabic ? "مصمم حائز على جوائز مع شغف لتجربة المستخدم." : "Award-winning designer with a passion for user experience."
-    },
-    {
-      name: isArabic ? "سارة كيم" : "Sarah Kim",
-      position: isArabic ? "قائدة التطوير" : "Development Lead",
-      image: "https://i.pravatar.cc/300?img=9",
-      description: isArabic ? "مطورة شاملة مع خبرة في التطبيقات القابلة للتوسع." : "Full-stack developer with expertise in scalable applications."
-    },
-  ];
+  const team = language === 'en' ? teamData.en : teamData.ar;
   
   return (
     <div className={isArabic ? 'rtl' : 'ltr'}>
@@ -240,7 +216,7 @@ const About: React.FC = () => {
       </section>
       
       {/* Team Section */}
-      <section className="py-20 relative">
+      {/* <section className="py-20 relative">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <span className="inline-block px-3 py-1 text-xs font-medium bg-cosmic-blue/10 rounded-full text-cosmic-blue mb-4">
@@ -280,7 +256,7 @@ const About: React.FC = () => {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 };

@@ -19,7 +19,8 @@
       "seeDemo": "See Demo",
       "watchVideo": "Watch Video",
       "viewAll": "View All",
-      "send": "Send Message"
+      "send": "Send Message",
+       "sending": "Sending..."
     },
     "hero": {
       "title": "Digital Solutions for The Future",
@@ -137,7 +138,7 @@
         "title": "Contact Information",
         "email": {
           "title": "Email",
-          "value": "contact@xpositron.com"
+          "value": "tech.xpositron@gmail.com"
         },
         "location": {
           "title": "Location",
@@ -146,14 +147,7 @@
         "phone": {
           "title": "Phone",
           "value": "+1 (555) 123-4567"
-        },
-        "phone1": "+963946649532",
-        "phone1_display": "+963 946 649 532",
-        "phone2": "+963984350792",
-        "phone2_display": "+963 984 350 792",
-        "email1": "eesahalabi@gmail.com",
-        "email2": "mousahlp@gmail.com",
-        "address": "Lebanon - Beirut"
+        }
       },
       "hours": {
         "title": "Office Hours",
@@ -169,8 +163,17 @@
       "phone1_display": "+963 946 649 532",
       "phone2": "+963984350792",
       "phone2_display": "+963 984 350 792",
+      "email": "tech.xpositron@gmail.com",
       "email1": "eesahalabi@gmail.com",
-      "email2": "mousahlp@gmail.com"
+      "email2": "mousahlp@gmail.com",
+      "success": {
+        "title": "Message sent successfully",
+        "message": "Thank you for contacting us. We will get back to you soon."
+      },
+      "error": {
+        "title": "Error sending message",
+        "message": "An error occurred while sending your message. Please try again later."
+      }
     },
     "technologies": {
       "title": "TECH EXPERTISE",
@@ -267,7 +270,8 @@
       "link": "الرابط",
       "watchVideo": "مشاهدة الفيديو",
       "viewAll": "عرض الكل",
-      "send": "إرسال رسالة"
+      "send": "إرسال رسالة",
+      "sending": "جاري الإرسال..."
     },
     "hero": {
       "title": "حلول رقمية للمستقبل",
@@ -407,8 +411,17 @@
       "phone1_display": "+963 946 649 532",
       "phone2": "+963984350792",
       "phone2_display": "+963 984 350 792",
+      "email": "tech.xpositron@gmail.com",
       "email1": "eesahalabi@gmail.com",
-      "email2": "mousahlp@gmail.com"
+      "email2": "mousahlp@gmail.com",
+      "success": {
+        "title": "تم إرسال الرسالة بنجاح",
+        "message": "شكراً لتواصلك معنا. سنرد عليك قريباً."
+      },
+      "error": {
+        "title": "خطأ في إرسال الرسالة",  
+        "message": "حدث خطأ أثناء إرسال رسالتك. يرجى المحاولة مرة أخرى لاحقاً."
+      }
     },
     "technologies": {
       "title": "خبرة تقنية",
