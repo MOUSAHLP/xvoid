@@ -29,8 +29,8 @@ const TermsOfService: React.FC = () => {
                   </h2>
                   <p className="text-white/80">
                     {isArabic
-                      ? "مرحبًا بك في X-POSITRON. باستخدام موقعنا الإلكتروني وخدماتنا، فإنك توافق على الالتزام بهذه الشروط والأحكام."
-                      : "Welcome to X-POSITRON. By using our website and services, you agree to comply with these terms and conditions."
+                      ? "مرحبًا بك في X-VOID. باستخدام موقعنا الإلكتروني وخدماتنا، فإنك توافق على الالتزام بهذه الشروط والأحكام."
+                      : "Welcome to X-VOID. By using our website and services, you agree to comply with these terms and conditions."
                     }
                   </p>
                 </section>

@@ -1,36 +1,126 @@
 {
-    "en": [
-      {
-        "id": 1,
-        "question": "What services do you specialize in?",
-        "answer": "We specialize in web development, mobile app development, and AI solutions. Our team creates cutting-edge digital solutions using the latest technologies."
-      },
-      {
-        "id": 2,
-        "question": "How long does a typical project take?",
-        "answer": "Project timelines vary depending on complexity and scope. Simple websites might take 1-3 weeks, while complex applications can take 2-3 months or more."
-      },
-      {
-        "id": 3,
-        "question": "Do you provide ongoing support after project completion?",
-        "answer": "Yes, we offer comprehensive maintenance and support packages to ensure your digital solution continues to perform optimally after launch."
-      }
-    ],
-    "ar": [
-      {
-        "id": 1,
-        "question": "ما هي الخدمات التي تتخصصون فيها؟",
-        "answer": "نحن متخصصون في تطوير الويب وتطوير تطبيقات الجوال وحلول الذكاء الاصطناعي. يقوم فريقنا بإنشاء حلول رقمية متطورة باستخدام أحدث التقنيات."
-      },
-      {
-        "id": 2,
-        "question": "كم من الوقت يستغرق المشروع النموذجي؟",
-        "answer": "تختلف مدة المشروع حسب تعقيده ونطاقه. قد تستغرق المواقع البسيطة 1-3 أسابيع، بينما قد تستغرق التطبيقات المعقدة 2-3 أشهر أو أكثر."
-      },
-      {
-        "id": 3,
-        "question": "هل تقدمون دعمًا مستمرًا بعد اكتمال المشروع؟",
-        "answer": "نعم، نقدم حزم صيانة ودعم شاملة لضمان استمرار أداء حلولك الرقمية بشكل مثالي بعد الإطلاق."
-      }
-    ]
-  }
+  "en": [
+    {
+      "id": 1,
+      "question": "Why should I choose your company over competitors?",
+      "answer": "We combine technical expertise with a client-first approach. Unlike others, we offer: (1) Transparent pricing with no hidden fees, (2) Dedicated project managers for seamless communication, and (3) Post-launch support with a 30-day satisfaction guarantee."
+    },
+    {
+      "id": 2,
+      "question": "What services do you specialize in?",
+      "answer": "We specialize in web development, mobile app development, and AI solutions. Our team creates cutting-edge digital solutions using the latest technologies."
+    },
+    {
+      "id":3,
+      "question": "How long does a typical project take?",
+      "answer": "Project timelines vary depending on complexity and scope. Simple websites might take 1-3 weeks, while complex applications can take 2-3 months or more."
+    },
+    {
+      "id": 4,
+      "question": "How quickly can you start my project?",
+      "answer": "Most projects kick off within 48 hours of contract signing. We assign a team within 24 hours and provide a detailed roadmap in your first meeting."
+    },
+    {
+      "id": 5,
+      "question": "Do you provide ongoing support after project completion?",
+      "answer": "Yes, we offer comprehensive maintenance and support packages to ensure your digital solution continues to perform optimally after launch."
+    },
+    {
+      "id": 6,
+      "question": "What if I need changes after the project starts?",
+      "answer": "We build flexibility into our process. Minor changes are free during development. For major revisions, we provide a cost/time estimate upfront so you stay in control."
+    },
+    {
+      "id": 7,
+      "question": "Do you offer discounts for long-term partnerships?",
+      "answer": "Yes! Clients who commit to 3+ projects receive: (1) 15% off total costs, (2) Priority support, and (3) Free annual security audits. Let’s discuss a tailored package for you."
+    },
+    {
+      "id": 8,
+      "question": "Can you work with existing systems or APIs?",
+      "answer": "Absolutely. We integrate seamlessly with third-party APIs, legacy systems, and custom platforms to extend functionality."
+    },
+    {
+      "id": 9,
+      "question": "How do you ensure data security?",
+      "answer": "We implement industry-standard encryption, secure authentication, and regular audits to protect sensitive data."
+    },
+    {
+      "id": 10,
+      "question": "Do you offer UI/UX design services?",
+      "answer": "Yes, our design team creates intuitive, user-centric interfaces to enhance engagement and usability."
+    },
+    {
+      "id":11,
+      "question": "What industries have you worked with?",
+      "answer": "We’ve delivered solutions for healthcare, logistics, education, e-commerce, and more across global markets."
+    },
+    {
+      "id": 12,
+      "question": "What technologies do you use for development?",
+      "answer": "We use modern frameworks like React, Flutter, Laravel, and Node.js, along with databases such as MySQL and Firebase, tailored to your project's needs."
+    }
+  ],
+  "ar": [
+    {
+      "id": 1,
+      "question": "لماذا يجب أن أختاركم بدلاً من المنافسين؟",
+      "answer": "نحن نجمع بين الخبرة الفنية ونهج يركز على العميل. نقدم: (1) تسعيرًا شفافًا بدون رسوم خفية، (2) مدير مشروع مخصص لضمان التواصل السلس، و (3) دعم ما بعد التسليم مع ضمان رضا لمدة 30 يومًا."
+    },
+    {
+      "id": 2,
+      "question": "ما هي الخدمات التي تتخصصون فيها؟",
+      "answer": "نحن متخصصون في تطوير الويب وتطوير تطبيقات الجوال وحلول الذكاء الاصطناعي. يقوم فريقنا بإنشاء حلول رقمية متطورة باستخدام أحدث التقنيات."
+    },
+    {
+      "id": 3,
+      "question": "كم من الوقت يستغرق المشروع النموذجي؟",
+      "answer": "تختلف مدة المشروع حسب تعقيده ونطاقه. قد تستغرق المواقع البسيطة 1-3 أسابيع، بينما قد تستغرق التطبيقات المعقدة 2-3 أشهر أو أكثر."
+    },
+    {
+      "id": 4,
+      "question": "ما هي المدة اللازمة لبدء مشروعي؟",
+      "answer": "يبدأ معظم المشاريع خلال 48 ساعة من توقيع العقد. نعين فريقًا خلال 24 ساعة ونقدم خطة عمل مفصلة في أول اجتماع."
+    },
+    {
+      "id": 5,
+      "question": "هل تقدمون دعمًا مستمرًا بعد اكتمال المشروع؟",
+      "answer": "نعم، نقدم حزم صيانة ودعم شاملة لضمان استمرار أداء حلولك الرقمية بشكل مثالي بعد الإطلاق."
+    },
+    {
+      "id": 6,
+      "question": "ماذا لو احتجت لتغييرات بعد بدء المشروع؟",
+      "answer": "نحن نضمن المرونة في عملياتنا. التغييرات الطفيفة مجانية أثناء التطوير. للتعديلات الكبيرة، نقدم تقديرًا للتكلفة/الوقت مسبقًا لتبقى مسيطرًا على المشروع."
+    },
+    {
+      "id": 7,
+      "question": "هل تقدمون خصومات للشراكات طويلة الأجل؟",
+      "answer": "نعم! العملاء الذين يلتزمون بـ 3 مشاريع أو أكثر يحصلون على: (1) خصم 15% من التكلفة الإجمالية، (2) دعم مسبق الأولوية، و (3) فحص أمان سنوي مجاني. دعونا نناقش حزمة مخصصة لك."
+    },
+    {
+      "id": 8,
+      "question": "هل يمكنكم العمل مع أنظمة أو واجهات برمجة موجودة مسبقًا؟",
+      "answer": "بالتأكيد. ندمج بسلاسة مع واجهات برمجة التطبيقات الخارجية والأنظمة القديمة والمنصات المخصصة لتعزيز الوظائف."
+    },
+    {
+      "id": 9,
+      "question": "كيف تضمنون أمان البيانات؟",
+      "answer": "نطبق تشفيرًا وفق معايير القطاع، ومصادقة آمنة، ومراجعات دورية لحماية البيانات الحساسة."
+    },
+    {
+      "id": 10,
+      "question": "هل تقدمون خدمات تصميم واجهات المستخدم/التجربة المستخدم؟",
+      "answer": "نعم، يصمم فريقنا واجهات سهلة الاستخدام ومركزة على المستخدم لتعزيز التفاعل وسلاسة الاستخدام."
+    },
+    {
+      "id": 11,
+      "question": "ما هي القطاعات التي عملتم معها؟",
+      "answer": "قدمنا حلولًا للرعاية الصحية، واللوجستيات، والتعليم، والتجارة الإلكترونية، وغيرها في أسواق عالمية."
+    },
+    {
+      "id": 12,
+      "question": "ما التقنيات التي تستخدمونها في التطوير؟",
+      "answer": "نستخدم أطر عمل حديثة مثل React وFlutter وLaravel وNode.js، وقواعد بيانات مثل MySQL وFirebase، مع تكييفها حسب متطلبات مشروعك."
+    }
+  ]
+}

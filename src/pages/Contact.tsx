@@ -201,7 +201,7 @@ const Contact: React.FC = () => {
                       {t('contact.form.phone')} *
                     </label>
                     <input
-                      type="tel"
+                      type="number"
                       id="phone"
                       name="phone"
                       required

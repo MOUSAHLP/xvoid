@@ -24,7 +24,7 @@ const FAQSection: React.FC<{ showAll?: boolean }> = ({ showAll = false }) => {
 
   // Get FAQ data based on language
   const faqs: FAQItem[] = isArabic ? faqData.ar : faqData.en;
-  const displayedFaqs = showAll ? faqs : faqs.slice(0, 3);
+  const displayedFaqs = showAll ? faqs : faqs.slice(0, 6);
 
   return (
     <div className="w-full max-w-4xl mx-auto">

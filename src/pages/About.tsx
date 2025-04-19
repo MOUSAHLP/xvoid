@@ -39,9 +39,9 @@ const About: React.FC = () => {
               className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6"
             >
               {isArabic ? (
-                <>عن <span className="text-glow">X-POSITRON</span></>
+                <>عن <span className="text-glow">X-VOID</span></>
               ) : (
-                <>About <span className="text-glow">X-POSITRON</span></>
+                <>About <span className="text-glow">X-VOID</span></>
               )}
             </motion.h1>
             <motion.p 

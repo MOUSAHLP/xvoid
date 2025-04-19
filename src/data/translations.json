@@ -1,4 +1,3 @@
-
 {
   "en": {
     "nav": {
@@ -20,7 +19,7 @@
       "watchVideo": "Watch Video",
       "viewAll": "View All",
       "send": "Send Message",
-       "sending": "Sending..."
+      "sending": "Sending..."
     },
     "hero": {
       "title": "Digital Solutions for The Future",
@@ -79,12 +78,12 @@
       "mission": {
         "title": "OUR MISSION",
         "heading": "We build tech that travels beyond boundaries",
-        "description": "At X-POSITRON, our mission is to empower businesses with innovative technology solutions that drive growth and transformation. We believe in pushing the boundaries of what's possible in the digital realm.",
+        "description": "At X-VOID, our mission is to empower businesses with innovative technology solutions that drive growth and transformation. We believe in pushing the boundaries of what's possible in the digital realm.",
         "description2": "We're committed to excellence, continuous innovation, and delivering measurable results for our clients across the globe."
       },
       "journey": {
         "title": "OUR JOURNEY",
-        "heading": "The X-POSITRON Story",
+        "heading": "The X-VOID Story",
         "description": "From humble beginnings to industry recognition, our journey has been one of continuous growth and innovation."
       },
       "values": {
@@ -127,10 +126,12 @@
       "form": {
         "name": "Name",
         "email": "Email",
+        "phone": "Phone",
         "subject": "Subject",
         "message": "Message",
         "namePlaceholder": "Your name",
         "emailPlaceholder": "your.email@example.com",
+        "phonePlaceholder": "Your phone number",
         "subjectPlaceholder": "How can we help?",
         "messagePlaceholder": "Tell us about your project..."
       },
@@ -138,7 +139,7 @@
         "title": "Contact Information",
         "email": {
           "title": "Email",
-          "value": "tech.xpositron@gmail.com"
+          "value": "eesahalabi@gmail.com"
         },
         "location": {
           "title": "Location",
@@ -158,12 +159,12 @@
         "sunday": "Sunday",
         "sundayHours": "Closed"
       },
-      "address": "Lebanon - Beirut",
+      "address": "Syria - Damascus / Lebanon - Beirut",
       "phone1": "+963946649532",
       "phone1_display": "+963 946 649 532",
       "phone2": "+963984350792",
       "phone2_display": "+963 984 350 792",
-      "email": "tech.xpositron@gmail.com",
+      "email": "eesahalabi@gmail.com",
       "email1": "eesahalabi@gmail.com",
       "email2": "mousahlp@gmail.com",
       "success": {
@@ -189,7 +190,7 @@
       }
     },
     "footer": {
-      "about": "About X-POSITRON",
+      "about": "About X-VOID",
       "aboutText": "We are a digital agency specialized in creating innovative web and mobile solutions that drive business growth.",
       "contact": "Contact Us",
       "legal": "Legal",
@@ -210,7 +211,7 @@
       "sections": {
         "intro": {
           "title": "1. Introduction",
-          "content": "At X-POSITRON, we take your privacy seriously. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or use our services. Please read this policy carefully. If you do not agree with the terms of this privacy policy, please do not access the site."
+          "content": "At X-VOID, we take your privacy seriously. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or use our services. Please read this policy carefully. If you do not agree with the terms of this privacy policy, please do not access the site."
         },
         "collection": {
           "title": "2. Information We Collect",
@@ -240,7 +241,6 @@
         "contact": {
           "title": "5. Contact Us",
           "content": "If you have questions or concerns about this Privacy Policy, please contact us at:"
-         
         }
       }
     },
@@ -330,12 +330,12 @@
       "mission": {
         "title": "مهمتنا",
         "heading": "نبني تقنيات تتجاوز الحدود",
-        "description": "في X-POSITRON، مهمتنا هي تمكين الشركات من خلال حلول تكنولوجية مبتكرة تدفع النمو والتحول. نؤمن بدفع حدود ما هو ممكن في المجال الرقمي.",
+        "description": "في X-VOID، مهمتنا هي تمكين الشركات من خلال حلول تكنولوجية مبتكرة تدفع النمو والتحول. نؤمن بدفع حدود ما هو ممكن في المجال الرقمي.",
         "description2": "نحن ملتزمون بالتميز والابتكار المستمر وتقديم نتائج قابلة للقياس لعملائنا في جميع أنحاء العالم."
       },
       "journey": {
         "title": "رحلتنا",
-        "heading": "قصة X-POSITRON",
+        "heading": "قصة X-VOID",
         "description": "من البدايات المتواضعة إلى الاعتراف بالصناعة، كانت رحلتنا واحدة من النمو المستمر والابتكار."
       },
       "values": {
@@ -378,10 +378,12 @@
       "form": {
         "name": "الاسم",
         "email": "البريد الإلكتروني",
+        "phone": "رقم الهاتف",
         "subject": "الموضوع",
         "message": "الرسالة",
         "namePlaceholder": "اسمك",
         "emailPlaceholder": "بريدك",
+        "phonePlaceholder": "رقم هاتفك",
         "subjectPlaceholder": "كيف يمكننا المساعدة؟",
         "messagePlaceholder": "أخبرنا عن مشروعك..."
       },
@@ -406,12 +408,12 @@
         "sunday": "الأحد",
         "sundayHours": "مغلق"
       },
-      "address": "لبنان - بيروت",
+      "address": "لبنان - بيروت / دمشق - سوريا ",
       "phone1": "+963946649532",
       "phone1_display": "+963 946 649 532",
       "phone2": "+963984350792",
       "phone2_display": "+963 984 350 792",
-      "email": "tech.xpositron@gmail.com",
+      "email": "eesahalabi@gmail.com",
       "email1": "eesahalabi@gmail.com",
       "email2": "mousahlp@gmail.com",
       "success": {
@@ -419,7 +421,7 @@
         "message": "شكراً لتواصلك معنا. سنرد عليك قريباً."
       },
       "error": {
-        "title": "خطأ في إرسال الرسالة",  
+        "title": "خطأ في إرسال الرسالة",
         "message": "حدث خطأ أثناء إرسال رسالتك. يرجى المحاولة مرة أخرى لاحقاً."
       }
     },
@@ -437,7 +439,7 @@
       }
     },
     "footer": {
-      "about": "عن X-POSITRON",
+      "about": "عن X-VOID",
       "aboutText": "نحن وكالة رقمية متخصصة في إنشاء حلول ويب وجوال مبتكرة تدفع نمو الأعمال.",
       "contact": "اتصل بنا",
       "legal": "قانوني",
@@ -458,7 +460,7 @@
       "sections": {
         "intro": {
           "title": "1. مقدمة",
-          "content": "في X-POSITRON، نأخذ خصوصيتك على محمل الجد. توضح سياسة الخصوصية هذه كيفية جمع واستخدام والكشف عن وحماية معلوماتك عند زيارة موقعنا الإلكتروني أو استخدام خدماتنا. يرجى قراءة هذه السياسة بعناية. إذا كنت لا توافق على شروط سياسة الخصوصية هذه، يرجى عدم الوصول إلى الموقع."
+          "content": "في X-VOID، نأخذ خصوصيتك على محمل الجد. توضح سياسة الخصوصية هذه كيفية جمع واستخدام والكشف عن وحماية معلوماتك عند زيارة موقعنا الإلكتروني أو استخدام خدماتنا. يرجى قراءة هذه السياسة بعناية. إذا كنت لا توافق على شروط سياسة الخصوصية هذه، يرجى عدم الوصول إلى الموقع."
         },
         "collection": {
           "title": "2. المعلومات التي نجمعها",
@@ -488,7 +490,6 @@
         "contact": {
           "title": "5. اتصل بنا",
           "content": "إذا كانت لديك أسئلة أو مخاوف بشأن سياسة الخصوصية هذه، يرجى الاتصال بنا على:"
-        
         }
       }
     },

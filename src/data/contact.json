@@ -1,23 +1,22 @@
-
 {
   "en": {
     "phone1": "+963946649532",
     "phone1_display": "+963 946 649 532",
     "phone2": "+963984350792",
     "phone2_display": "+963 984 350 792",
-    "email": "tech.xpositron@gmail.com",
+    "email": "eesahalabi@gmail.com",
     "email1": "eesahalabi@gmail.com",
     "email2": "mousahlp@gmail.com",
-    "address": "Lebanon - Beirut"
+    "address": "Syria - Damascus / Lebanon - Beirut"
   },
   "ar": {
     "phone1": "+963946649532",
     "phone1_display": "+963 946 649 532",
     "phone2": "+963984350792",
     "phone2_display": "+963 984 350 792",
-    "email": "tech.xpositron@gmail.com",
+    "email": "eesahalabi@gmail.com",
     "email1": "eesahalabi@gmail.com",
     "email2": "mousahlp@gmail.com",
-    "address": "لبنان - بيروت"
+    "address": "لبنان - بيروت / دمشق - سوريا "
   }
 }

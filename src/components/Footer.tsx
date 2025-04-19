@@ -1,15 +1,15 @@
 
 import React from "react";
 import { Link } from "react-router-dom";
-import { 
-  Github, 
-  Youtube, 
-  Linkedin, 
-  Facebook, 
-  Instagram, 
-  Mail, 
-  Phone, 
-  MapPin 
+import {
+  Github,
+  Youtube,
+  Linkedin,
+  Facebook,
+  Instagram,
+  Mail,
+  Phone,
+  MapPin
 } from "lucide-react";
 import { useLanguage } from "@/context/LanguageContext";
 
@@ -17,15 +17,15 @@ const Footer: React.FC = () => {
   const { language, t } = useLanguage();
   const isArabic = language === 'ar';
   const baseUrl = isArabic ? '/ar' : '';
-  
+
   return (
     <footer className={`bg-cosmic-dark relative overflow-hidden border-t border-white/5 ${isArabic ? 'rtl' : 'ltr'}`}>
       {/* Star background */}
       <div className="absolute inset-0 bg-star-pattern bg-[length:20px_20px] opacity-10 pointer-events-none"></div>
-      
+
       {/* Shooting star animation */}
       <div className="absolute -top-4 -left-4 w-2 h-2 bg-cosmic-blue rounded-full opacity-0 animate-shooting-star"></div>
-      
+
       <div className="container mx-auto px-4 pt-16 pb-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Company Info - removed text next to logo */}
@@ -37,15 +37,15 @@ const Footer: React.FC = () => {
                 className="w-24 h-24"
               />
             </div>
-            
+
             <p className="text-white/70 mb-6">
               {t('footer.aboutText')}
             </p>
-            
+
             {/* Social Media */}
             <div className="flex">
               <a
-                href="https://www.linkedin.com/company/x-positron/"
+                href="https://www.linkedin.com/company/x-void/"
                 target="_blank"
                 aria-label="LinkedIn"
                 className="w-10 h-10 mx-2 rounded-full flex items-center justify-center bg-white/5 hover:bg-cosmic-blue/20 transition-colors duration-300 border border-white/10 hover:border-cosmic-blue/30"
@@ -75,7 +75,7 @@ const Footer: React.FC = () => {
               </a> */}
             </div>
           </div>
-          
+
           {/* Quick Links */}
           <div>
             <h3 className="text-lg font-bold mb-6 text-glow">{t('footer.about')}</h3>
@@ -102,7 +102,7 @@ const Footer: React.FC = () => {
               </li>
             </ul>
           </div>
-          
+
           {/* Services - Fixed links */}
           <div>
             <h3 className="text-lg font-bold mb-6 text-glow-purple">{t('sections.services.title')}</h3>
@@ -134,7 +134,7 @@ const Footer: React.FC = () => {
               </li>
             </ul>
           </div>
-          
+
           {/* Contact Info */}
           <div>
             <h3 className="text-lg font-bold mb-6 text-glow-pink">{t('footer.contact')}</h3>
@@ -172,16 +172,16 @@ const Footer: React.FC = () => {
             </ul>
           </div>
         </div>
-        
+
         {/* Divider */}
         <div className="h-px bg-gradient-to-r from-transparent via-white/10 to-transparent my-8"></div>
-        
+
         {/* Copyright */}
         <div className="flex flex-col md:flex-row items-center justify-between">
           <p className="text-white/50 text-sm mb-4 md:mb-0">
-            © 2020 X-POSITRON. {t('footer.rights')}
+            © 2020 X-VOID. {t('footer.rights')}
           </p>
-          
+
           {/* Add more space between Arabic text links */}
           <div className={`flex items-center ${isArabic ? 'space-x-0 space-x-reverse space-x-6' : 'space-x-6'}`}>
             <Link to={`${baseUrl}/privacy-policy`} className="text-white/50 text-sm hover:text-white transition-colors duration-300">

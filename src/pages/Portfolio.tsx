@@ -76,6 +76,8 @@ const Portfolio: React.FC = () => {
                 description={project.description}
                 image={project.image}
                 category={project.category}
+                demoUrl={project.demoLink}
+                youtubeUrl={project.videoLink}
                 delay={index}
               />
             ))}

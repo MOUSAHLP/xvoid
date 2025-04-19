@@ -283,8 +283,8 @@
     },
     {
       "id": "survey",
-      "title": "سيرفي",
-      "description": "نظام تتبع ومراقبة نشاط الموظفين لشركة سعودية",
+      "title": "Survey System",
+      "description": "Employee activity tracking and monitoring system for a Saudi company",
       "image": "/images/projects/survey/logo.jpg",
       "images": [
         "/images/projects/survey/1.png",
@@ -298,24 +298,24 @@
         "/images/projects/survey/9.png",
         "/images/projects/survey/10.png"
       ],
-      "category": "تطبيق أعمال",
-      "fullDescription": "نظام شامل لمراقبة الموظفين تم تطويره لشركة سعودية لتتبع وتحليل أنشطة الموظفين. يتميز التطبيق بتسجيل النشاط في الوقت الفعلي ومقاييس الأداء وتتبع الحضور وإمكانيات إعداد تقارير مفصلة. يمكن للمديرين مراقبة إنتاجية الموظفين بسهولة وتوليد رؤى واتخاذ قرارات مبنية على البيانات.",
-      "challenge": "احتاجت الشركة إلى طريقة فعالة لمراقبة أنشطة الموظفين وقياس الإنتاجية عبر الأقسام المختلفة مع الحفاظ على دقة البيانات وأمنها.",
-      "solution": "تطوير تطبيق ويب سهل الاستخدام مع لوحة تحكم للمسؤول باستخدام Laravel Filament، وتنفيذ التحكم في الوصول القائم على الأدوار وميزات تتبع النشاط التلقائي.",
-      "results": "تحسين مراقبة إنتاجية الموظفين بنسبة 75٪ وتقليل وقت إعداد التقارير اليدوية بنسبة 60٪، مما يوفر للإدارة رؤى قابلة للتنفيذ.",
+      "category": "Business Application",
+      "fullDescription": "A comprehensive employee monitoring system developed for a Saudi company to track and analyze employee activities. The application features real-time activity logging, performance metrics, attendance tracking, and detailed reporting capabilities. Managers can easily monitor employee productivity and generate insights for data-driven decision making.",
+      "challenge": "The company needed an efficient way to monitor employee activities and measure productivity across different departments while maintaining data accuracy and security.",
+      "solution": "Development of a user-friendly web application with an admin dashboard using Laravel Filament, implementing role-based access control and automatic activity tracking features.",
+      "results": "Improved employee productivity monitoring by 75% and reduced manual reporting time by 60%, providing management with actionable insights.",
       "technologies": ["HTML", "CSS", "JavaScript", "PHP", "Laravel", "Filament"],
       "testimonial": {
-        "quote": "لقد غير نظام سيرفي إدارة القوى العاملة لدينا بشكل كامل. لقد شهدنا تحسينات كبيرة في تتبع الإنتاجية وتقييم الأداء وعمليات اتخاذ القرار. لقد جعلت التحليلات المفصلة وقدرات المراقبة في الوقت الفعلي منه أداة لا تقدر بثمن لعمليات الموارد البشرية لدينا.",
-        "author": "محمد الرشيد",
-        "position": "مدير الموارد البشرية"
+        "quote": "The Survey System has completely transformed our workforce management. We've seen significant improvements in productivity tracking, performance evaluation, and decision-making processes. The detailed analytics and real-time monitoring capabilities have made it an invaluable tool for our HR operations.",
+        "author": "Mohammed Al-Rashid",
+        "position": "HR Manager"
       },
       "demoLink": null,
       "videoLink": null
     },
     {
       "id": "talabk",
-      "title": "طلبك",
-      "description": "شركة شحن ولوجستيات رائدة في ليبيا",
+      "title": "Talabk",
+      "description": "A leading shipping and logistics company in Libya",
       "image": "/images/projects/talabk/logo.png",
       "images": [
         "/images/projects/talabk/1.png",
@@ -328,24 +328,24 @@
         "/images/projects/talabk/8.png",
         "/images/projects/talabk/9.png"
       ],
-      "category": "موقع أعمال",
-      "fullDescription": "موقع حديث لشركة طلبك، شركة الشحن واللوجستيات البارزة في ليبيا. يوفر الموقع معلومات شاملة عن خدمات الشحن وتتبع الطرود وحاسبات الأسعار ومواقع الفروع في جميع أنحاء ليبيا. يضمن التصميم المتجاوب الوصول السلس عبر جميع الأجهزة.",
-      "challenge": "بناء موقع سهل الاستخدام يبسط عمليات الشحن ويوفر إمكانيات تتبع في الوقت الفعلي للعملاء في جميع أنحاء ليبيا.",
-      "solution": "تطوير موقع نظيف وبديهي باستخدام HTML و CSS مع التركيز على الأداء وإمكانية الوصول. تنفيذ مبادئ التصميم المتجاوب للعرض الأمثل على جميع الأجهزة.",
-      "results": "تحسين مشاركة العملاء مع زيادة بنسبة 50٪ في استخدام التتبع عبر الإنترنت وتوسيع التواجد الرقمي في السوق الليبي.",
+      "category": "Business Website",
+      "fullDescription": "A modern website for Talabk, a prominent shipping and logistics company in Libya. The site provides comprehensive information on shipping services, package tracking, price calculators, and branch locations across Libya. The responsive design ensures seamless access on all devices.",
+      "challenge": "Building a user-friendly website that simplifies shipping processes and provides real-time tracking capabilities for customers across Libya.",
+      "solution": "Developing a clean, intuitive website using HTML and CSS with a focus on performance and accessibility. Implementing responsive design principles for optimal display on all devices.",
+      "results": "Improved customer engagement with a 50% increase in online tracking usage and expanded digital presence in the Libyan market.",
       "technologies": ["HTML", "CSS", "JavaScript", "Bootstrap", "PHP", "Laravel", "MySQL"],
       "testimonial": {
-        "quote": "لقد غير الموقع الجديد طريقة تفاعل عملائنا مع خدماتنا، مما جعل عمليات الشحن أكثر شفافية وسهولة في الوصول.",
-        "author": "مدير العمليات",
-        "position": "شركة طلبك للشحن"
+        "quote": "The new website has transformed how our customers interact with our services, making shipping processes more transparent and accessible.",
+        "author": "Operations Manager",
+        "position": "Talabk Shipping Company"
       },
       "demoLink": "https://talabk.ly",
       "videoLink": null
     },
     {
       "id": "pharmacy",
-      "title": "طلب الأدوية",
-      "description": "نظام طلب الأدوية",
+      "title": "Medicine Ordering System",
+      "description": "A pharmaceutical ordering platform",
       "image": "/images/projects/Pharmacy/logo.png",
       "images": [
         "/images/projects/Pharmacy/pharmacy1.jpg",
@@ -355,24 +355,24 @@
         "/images/projects/Pharmacy/pharmacy5.jpg",
         "/images/projects/Pharmacy/pharmacy6.jpg"
       ],
-      "category": "الرعاية الصحية",
-      "fullDescription": "نظام طلب أدوية يسمح للعملاء بطلب الأدوية وللصيدليات بإدارة المخزون والطلبات. يتميز النظام بواجهات منفصلة للعملاء والمسؤولين مع تحديثات في الوقت الفعلي.",
-      "challenge": "رقمنة طلب الأدوية في الأسواق ذات التبني المنخفض للتجارة الإلكترونية.",
-      "solution": "إنشاء واجهة بسيطة وبديهية تركز على وظائف الطلب الأساسية مع الحد الأدنى من العوائق.",
-      "results": "تم تبنيه من قبل 12 صيدلية محلية، ومعالجة أكثر من 150 طلباً يومياً.",
+      "category": "Healthcare",
+      "fullDescription": "A medicine ordering system that allows customers to place orders and pharmacies to manage inventory and requests. The system features separate interfaces for customers and administrators with real-time updates.",
+      "challenge": "Digitizing medicine ordering in markets with low e-commerce adoption.",
+      "solution": "Creating a simple, intuitive interface focused on core ordering functions with minimal barriers.",
+      "results": "Adopted by 12 local pharmacies, processing over 150 daily orders.",
       "technologies": ["Flutter", "GETX", "Firebase"],
       "testimonial": {
-        "quote": "لقد قام التطبيق بتحديث عملية الطلب لدينا مع البقاء في متناول جميع العملاء.",
-        "author": "مالك الصيدلية",
-        "position": "صيدلية الحي"
+        "quote": "The app modernized our ordering process while remaining accessible to all customers.",
+        "author": "Pharmacy Owner",
+        "position": "Neighborhood Pharmacy"
       },
       "demoLink": null,
       "videoLink": "https://www.youtube.com/watch?v=OAi2qRQ1n-Y"
     },
     {
       "id": "x-positron",
-      "title": "إكس-بوزيترون",
-      "description": "منصة تعلم المواد الجامعية",
+      "title": "X-Positron",
+      "description": "University learning platform",
       "image": "/images/projects/X-POSITRON/logo.png",
       "images": [
         "/images/projects/X-POSITRON/5.png",
@@ -382,64 +382,64 @@
         "/images/projects/X-POSITRON/9.png",
         "/images/projects/X-POSITRON/10.png"
       ],
-      "category": "تعليم",
-      "fullDescription": "إكس-بوزيترون هي منصة تعليمية شاملة لطلاب الجامعات، تتميز بشرح المواد والموارد القابلة للتنزيل وتتبع التقدم. يغطي النظام تخصصات متعددة بمحتوى متخصص.",
-      "challenge": "توحيد الموارد التعليمية المتناثرة لتحسين وصول الطلاب إليها.",
-      "solution": "إنشاء منصة موحدة تجمع المواد الدراسية مع إمكانيات الوصول دون اتصال بالإنترنت.",
-      "results": "تم تبنيه من قبل 3 أقسام جامعية مع معدل رضا طلابي 90٪.",
+      "category": "Education",
+      "fullDescription": "X-Positron is a comprehensive educational platform for university students, featuring subject explanations, downloadable resources, and progress tracking. The system covers multiple disciplines with specialized content.",
+      "challenge": "Consolidating scattered educational resources to improve student access.",
+      "solution": "Building a unified platform that aggregates study materials with offline accessibility.",
+      "results": "Adopted by 3 university departments with a 90% student satisfaction rate.",
       "technologies": ["Flutter", "PHP", "SQL", "JavaScript"],
       "testimonial": {
-        "quote": "أصبح إكس-بوزيترون مساعداً دراسياً أساسياً لطلابنا.",
-        "author": "أستاذ جامعي",
-        "position": "كلية جامعية"
+        "quote": "X-Positron has become an essential study aid for our students.",
+        "author": "University Professor",
+        "position": "College Faculty"
       },
       "demoLink": null,
       "videoLink": "https://www.youtube.com/watch?v=05hJa3gZr-w"
     },
     {
       "id": "rada",
-      "title": "رادا للتنظيف",
-      "description": "موقع شركة تنظيف",
+      "title": "Rada Cleaning",
+      "description": "Cleaning company website",
       "image": "/images/projects/rada/logo.png",
       "images": [
         "/images/projects/rada/1.jpg",
         "/images/projects/rada/2.jpg",
         "/images/projects/rada/3.jpg"
       ],
-      "category": "موقع أعمال",
-      "fullDescription": "موقع متجاوب لخدمة تنظيف احترافية في ألمانيا، يعرض الخدمات وقيم الشركة ومعلومات الاتصال. يركز الموقع على بناء الثقة وجودة الخدمة.",
-      "challenge": "تأسيس مصداقية عبر الإنترنت لخدمة تنظيف جديدة في سوق تنافسي.",
-      "solution": "تطوير تصميم نظيف واحترافي يسلط الضوء على الشهادات وآراء العملاء.",
-      "results": "زيادة استفسارات الخدمة بنسبة 200٪ خلال شهرين من الإطلاق.",
+      "category": "Business Website",
+      "fullDescription": "A responsive website for a professional cleaning service in Germany, showcasing services, company values, and contact information. The site focuses on building trust and service quality.",
+      "challenge": "Establishing online credibility for a new cleaning service in a competitive market.",
+      "solution": "Developing a clean, professional design highlighting certifications and customer reviews.",
+      "results": "200% increase in service inquiries within two months of launch.",
       "technologies": ["HTML", "CSS", "JavaScript", "Bootstrap"],
       "testimonial": {
-        "quote": "يمثل الموقع بشكل مثالي التزامنا بالجودة والاحترافية.",
-        "author": "المالك",
-        "position": "رادا للتنظيف"
+        "quote": "The website perfectly represents our commitment to quality and professionalism.",
+        "author": "Owner",
+        "position": "Rada Cleaning"
       },
       "demoLink": "https://issa-al-halabi.github.io/Rada-Cleaning/",
       "videoLink": null
     },
     {
       "id": "interpolation",
-      "title": "حاسبة الاستيفاء",
-      "description": "أداة تعليمية للتحليل العددي",
+      "title": "Interpolation Calculator",
+      "description": "Educational tool for numerical analysis",
       "image": "/images/projects/interpolation/logo.png",
       "images": [
         "/images/projects/interpolation/1.jpg",
         "/images/projects/interpolation/2.jpg",
         "/images/projects/interpolation/3.jpg"
       ],
-      "category": "أداة تعليمية",
-      "fullDescription": "تطبيق تعليمي يوضح طريقة نيوتن-غريغوري للاستيفاء في التحليل العددي. يقوم التطبيق بحساب القيم المستوفاة ورسم الدوال من نقاط البيانات المعطاة.",
-      "challenge": "جعل الطرق العددية المعقدة في متناول طلاب المرحلة الجامعية.",
-      "solution": "إنشاء أداة تصور تفاعلية مع شروحات خطوة بخطوة.",
-      "results": "تم اعتماده كوسيلة تعليمية في مقررين جامعيين.",
+      "category": "Educational Tool",
+      "fullDescription": "An educational app demonstrating the Newton-Gregory interpolation method in numerical analysis. The tool calculates interpolated values and plots functions from given data points.",
+      "challenge": "Making complex numerical methods accessible to undergraduate students.",
+      "solution": "Creating an interactive visualization tool with step-by-step explanations.",
+      "results": "Adopted as a teaching aid in two university courses.",
       "technologies": ["Flutter", "Dart"],
       "testimonial": {
-        "quote": "ساعد هذا التطبيق طلابي على فهم مفاهيم الاستيفاء بشكل أسرع بكثير من الطرق التقليدية.",
-        "author": "أستاذ الرياضيات",
-        "position": "كلية جامعية"
+        "quote": "This app helped my students grasp interpolation concepts much faster than traditional methods.",
+        "author": "Mathematics Professor",
+        "position": "College Faculty"
       },
       "demoLink": null,
       "videoLink": null
@@ -667,7 +667,7 @@
     {
       "id": "cables",
       "title": "Cables",
-      "description": "إدارة عملاء البدالات الهاتفية",
+      "description": "إدارة عملاء المقاسم الهاتفية",
       "image": "/images/projects/cables/logo.png",
       "images": [
         "/images/projects/cables/cable1.jpg",
@@ -730,7 +730,7 @@
     },
     {
       "id": "survey",
-      "title": "استبيانات",
+      "title": "نظام استبيانات",
       "description": "نظام تتبع ومراقبة نشاط الموظفين لشركة سعودية",
       "image": "/images/projects/survey/logo.jpg",
       "images": [
