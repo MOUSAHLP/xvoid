@@ -19,7 +19,7 @@ const TermsOfService: React.FC = () => {
             transition={{ duration: 0.5 }}
           >
             <h1 className="text-4xl font-bold mb-8 text-center">{t('terms.title')}</h1>
-            
+
             <div className="cosmic-card max-w-4xl mx-auto">
               <div className="space-y-6">
                 {/* Content will be added here from the JSON files when translations are available */}
@@ -34,7 +34,7 @@ const TermsOfService: React.FC = () => {
                     }
                   </p>
                 </section>
-                
+
                 <section>
                   <h2 className="text-2xl font-bold mb-4">
                     {isArabic ? "2. استخدام الخدمات" : "2. Use of Services"}
@@ -46,7 +46,7 @@ const TermsOfService: React.FC = () => {
                     }
                   </p>
                 </section>
-                
+
                 <section>
                   <h2 className="text-2xl font-bold mb-4">
                     {isArabic ? "3. حقوق الملكية الفكرية" : "3. Intellectual Property Rights"}
@@ -58,7 +58,7 @@ const TermsOfService: React.FC = () => {
                     }
                   </p>
                 </section>
-                
+
                 <section>
                   <h2 className="text-2xl font-bold mb-4">
                     {isArabic ? "4. تعديلات الشروط" : "4. Modifications to Terms"}
@@ -70,7 +70,7 @@ const TermsOfService: React.FC = () => {
                     }
                   </p>
                 </section>
-                
+
                 <section>
                   <h2 className="text-2xl font-bold mb-4">
                     {isArabic ? "5. اتصل بنا" : "5. Contact Us"}
@@ -81,8 +81,15 @@ const TermsOfService: React.FC = () => {
                       : "If you have any questions about our Terms of Service, please contact us at:"
                     }
                   </p>
-                  <p className="text-cosmic-blue mt-2">info@xpositron.tech</p>
-                </section>
+                  <a href={`tel:${t('contact.phone1')}`} className="text-cosmic-blue mt-2 block hover:underline">
+                    {t('contact.phone1_display')}
+                  </a>
+                  <a href={`tel:${t('contact.phone2')}`} className="text-cosmic-blue mt-2 block hover:underline">
+                    {t('contact.phone2_display')}
+                  </a>
+                  <a href={`mailto:${t('contact.email')}`} className="text-cosmic-blue mt-2 block hover:underline">
+                    {t('contact.email')}
+                  </a>                </section>
               </div>
             </div>
           </motion.div>

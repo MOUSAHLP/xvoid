@@ -19,7 +19,7 @@ const PrivacyPolicy: React.FC = () => {
             transition={{ duration: 0.5 }}
           >
             <h1 className="text-4xl font-bold mb-8 text-center">{t('privacyPolicy.title')}</h1>
-            
+
             <div className="cosmic-card max-w-4xl mx-auto">
               <div className="space-y-6">
                 <section>
@@ -28,7 +28,7 @@ const PrivacyPolicy: React.FC = () => {
                     {t('privacyPolicy.sections.intro.content')}
                   </p>
                 </section>
-                
+
                 <section>
                   <h2 className="text-2xl font-bold mb-4">{t('privacyPolicy.sections.collection.title')}</h2>
                   <p className="text-white/80 mb-3">
@@ -52,7 +52,7 @@ const PrivacyPolicy: React.FC = () => {
                     )}
                   </ul>
                 </section>
-                
+
                 <section>
                   <h2 className="text-2xl font-bold mb-4">{t('privacyPolicy.sections.usage.title')}</h2>
                   <p className="text-white/80 mb-3">
@@ -78,20 +78,28 @@ const PrivacyPolicy: React.FC = () => {
                     )}
                   </ul>
                 </section>
-                
+
                 <section>
                   <h2 className="text-2xl font-bold mb-4">{t('privacyPolicy.sections.cookies.title')}</h2>
                   <p className="text-white/80">
                     {t('privacyPolicy.sections.cookies.content')}
                   </p>
                 </section>
-                
+
                 <section>
                   <h2 className="text-2xl font-bold mb-4">{t('privacyPolicy.sections.contact.title')}</h2>
                   <p className="text-white/80">
                     {t('privacyPolicy.sections.contact.content')}
                   </p>
-                  <p className="text-cosmic-blue mt-2">{t('privacyPolicy.sections.contact.email')}</p>
+                  <a href={`tel:${t('contact.phone1')}`} className="text-cosmic-blue mt-2 block hover:underline">
+                    {t('contact.phone1_display')}
+                  </a>
+                  <a href={`tel:${t('contact.phone2')}`} className="text-cosmic-blue mt-2 block hover:underline">
+                    {t('contact.phone2_display')}
+                  </a>
+                  <a href={`mailto:${t('contact.email')}`} className="text-cosmic-blue mt-2 block hover:underline">
+                    {t('contact.email')}
+                  </a>
                 </section>
               </div>
             </div>

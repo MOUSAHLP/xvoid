@@ -17,12 +17,17 @@
         "/images/projects/mrtech/9.png",
         "/images/projects/mrtech/10.png"
       ],
-      "category": "Mobile App", 
+      "category": "Mobile App",
       "fullDescription": "Mr. Tech is your friendly study buddy that makes university life easier, whether you're learning from campus or home. Think of it as your personal assistant that keeps all your study materials, schedules, and grades in one place. You can download your course content to study offline when internet isn't available, chat with your professors and classmates, and even register for courses right from your phone. It's like having the whole university in your pocket!",
       "challenge": "Students were struggling to keep up with their studies, especially when switching between online and offline learning. They needed a simple way to access study materials anywhere, stay in touch with teachers, and keep track of their progress.",
       "solution": "We created a student-friendly app that works both online and offline. Students can download lectures and study materials to use without internet, get important updates about their courses, and easily connect with their teachers and classmates - all through one simple app.",
       "results": "Students love using the app! Class participation went up by 60%, university staff saved 45% of their time on paperwork, and students are much happier with how they can manage their studies.",
-      "technologies": [ "Dart","Flutter", "Laravel", "Filament"],
+      "technologies": [
+        "Dart",
+        "Flutter",
+        "Laravel",
+        "Filament"
+      ],
       "testimonial": {
         "quote": "Mr. Tech is like having a helpful friend who knows everything about university life. I can study anywhere, anytime, and never miss important updates. It's made my university experience so much better!",
         "author": "Sarah",
@@ -51,7 +56,15 @@
       "challenge": "The company needed a reliable way to monitor fabric shipments across vast distances in Africa with varying connectivity conditions.",
       "solution": "Developed a real-time GPS tracking system with route optimization, emergency alerts, and offline functionality for areas with limited connectivity.",
       "results": "Improved shipment security by 40%, reduced fuel costs by 25% through optimized routes, and enabled real-time monitoring of all transport operations.",
-      "technologies": ["Flutter", "NestJs", "Express.js","Node.js", "Socket.io", "Firebase", "SQL"],
+      "technologies": [
+        "Flutter",
+        "NestJs",
+        "Express.js",
+        "Node.js",
+        "Socket.io",
+        "Firebase",
+        "SQL"
+      ],
       "testimonial": {
         "quote": "The app has transformed our logistics operations, giving us complete visibility and control over our shipments across Africa.",
         "author": "Logistics Manager",
@@ -59,6 +72,121 @@
       },
       "demoLink": null,
       "videoLink": "https://www.youtube.com/watch?v=qs_EmOvzzlM"
+    },
+    {
+      "id": "aybk",
+      "title": "AYBK",
+      "description": "Print-on-Demand Ecommerce Platform with Designer Marketplace",
+      "image": "/images/projects/aybk/logo.jpg",
+      "images": [
+        "/images/projects/aybk/aybk1.png",
+        "/images/projects/aybk/aybk2.png",
+        "/images/projects/aybk/aybk3.png",
+        "/images/projects/aybk/aybk4.png",
+        "/images/projects/aybk/aybk5.png",
+        "/images/projects/aybk/aybk6.png",
+        "/images/projects/aybk/aybk7.png",
+        "/images/projects/aybk/aybk8.png",
+        "/images/projects/aybk/aybk9.png",
+        "/images/projects/aybk/aybk10.png",
+        "/images/projects/aybk/aybk11.png",
+        "/images/projects/aybk/aybk12.png",
+        "/images/projects/aybk/aybk13.png",
+        "/images/projects/aybk/aybk14.png"
+      ],
+      "category": "E-commerce",
+      "fullDescription": "Aybk is an innovative print-on-demand ecommerce platform where customers can design custom products directly on the site. The platform features a unique marketplace allowing users to become designers (upload and sell their designs) or traders (affiliate marketers). Includes comprehensive order tracking with real-time status updates and a robust admin dashboard for business management.",
+      "challenge": "Creating a seamless integration between custom product design tools, marketplace functionalities, and print-on-demand logistics while maintaining performance at scale.",
+      "solution": "Developed a modular Laravel application with Livewire for real-time design interactions, Filament for admin management, and Alpine.js for frontend reactivity. Implemented a multi-role system (customer/designer/trader) with separate workflows and commission tracking.",
+      "results": "Launched with 200+ registered designers processing 500+ monthly orders. Reduced product customization time by 70% compared to traditional POD platforms.",
+      "technologies": [
+        "Livewire",
+        "Alpine.js",
+        "Laravel",
+        "Filament",
+        "JavaScript",
+        "MySQL"
+      ],
+      "testimonial": {
+        "quote": "Aybk has transformed how we approach print-on-demand in our region. The designer marketplace feature alone increased our product variety by 300% in the first quarter.",
+        "author": "Khalid Al-Mansoori",
+        "position": "Ecommerce Director"
+      },
+      "demoLink": "https://www.aybk.store",
+      "videoLink": null
+    },
+    {
+      "id": "lordsbox",
+      "title": "Lordsbox",
+      "description": "Employee tracking and monitoring system",
+      "image": "/images/projects/lordsbox/logo_whitebg.png",
+      "images": [
+        "/images/projects/lordsbox/1.jpg",
+        "/images/projects/lordsbox/2.jpg",
+        "/images/projects/lordsbox/3.jpg",
+        "/images/projects/lordsbox/4.jpg",
+        "/images/projects/lordsbox/5.jpg",
+        "/images/projects/lordsbox/6.jpg"
+      ],
+      "category": "Enterprise Solution",
+      "fullDescription": "Lordsbox is a comprehensive employee monitoring solution designed for transport companies, featuring real-time GPS tracking, working hour calculations, and detailed reporting. The system continues tracking even when the app is in background mode.",
+      "challenge": "Developing a reliable tracking system that works continuously without draining battery life excessively.",
+      "solution": "Optimized background location services with intelligent polling intervals and battery-saving techniques.",
+      "results": "Improved workforce productivity tracking by 90% while maintaining less than 15% additional battery usage.",
+      "technologies": [
+        "Flutter",
+        "Laravel",
+        "Socket.io",
+        "Firebase",
+        "Background Services"
+      ],
+      "testimonial": {
+        "quote": "Lordsbox has given us complete visibility of our operations while respecting employee privacy concerns.",
+        "author": "Transport Manager",
+        "position": "Logistics Company"
+      },
+      "demoLink": "https://lordsbox.com/",
+      "videoLink": "https://www.youtube.com/watch?v=7pzpHwjhBJc",
+      "googlePlayLink": "https://play.google.com/store/apps/details?id=com.em.lordsbox",
+      "appStoreLink": "https://apps.apple.com/app/lordsbox/id6450722085?platform=iphone"
+    },
+    {
+      "id": "beautyglam",
+      "title": "BeautyGlam",
+      "description": "Premium cosmetics e-commerce store in Germany",
+      "image": "/images/projects/beautyglam/logo.png",
+      "images": [
+        "/images/projects/beautyglam/1.png",
+        "/images/projects/beautyglam/2.png",
+        "/images/projects/beautyglam/3.png",
+        "/images/projects/beautyglam/4.png",
+        "/images/projects/beautyglam/5.png",
+        "/images/projects/beautyglam/6.png",
+        "/images/projects/beautyglam/7.png",
+        "/images/projects/beautyglam/8.png",
+        "/images/projects/beautyglam/9.png",
+        "/images/projects/beautyglam/10.png"
+      ],
+      "category": "E-commerce",
+      "fullDescription": "BeautyGlam is a leading German e-commerce platform specializing in premium cosmetics and beauty products. Our online store offers an extensive selection of high-quality skincare, makeup, fragrances, and beauty accessories from renowned international brands. The platform features an elegant, user-friendly interface designed to enhance the shopping experience with advanced product filtering, detailed product information, and personalized recommendations. Customers can easily browse through carefully curated collections, read authentic reviews, and make secure purchases with multiple payment options.",
+      "challenge": "Creating a modern, high-performance e-commerce platform capable of handling a large product catalog while providing German customers with a localized and seamless shopping experience. The platform needed to support multiple payment methods common in Germany and comply with strict EU e-commerce regulations.",
+      "solution": "Developed a cutting-edge web application using React for a responsive frontend and Laravel for a robust backend infrastructure. Implemented advanced features including real-time inventory management, multi-language support with German as primary language, and integration with popular German payment providers. The solution includes sophisticated product categorization, smart search functionality, and a streamlined checkout process.",
+      "results": "Successfully launched the platform with over 5000 beauty products, achieving a 45% increase in customer engagement and a 55% improvement in conversion rates. The site maintains excellent performance with sub-2-second page load times and has garnered strong positive feedback from German customers.",
+      "technologies": [
+        "React",
+        "Laravel",
+        "MySQL",
+        "PHP",
+        "Redux",
+        "REST API"
+      ],
+      "testimonial": {
+        "quote": "BeautyGlam hat unseren Online-Auftritt revolutioniert und bietet unseren Kunden ein erstklassiges Einkaufserlebnis für Kosmetikprodukte.",
+        "author": "Marketing Director",
+        "position": "BeautyGlam Deutschland"
+      },
+      "demoLink": "https://www.beautyglam.de",
+      "videoLink": null
     },
     {
       "id": "almawerbung",
@@ -84,7 +212,12 @@
       "challenge": "Creating an engaging website that effectively presents various printing services while making it simple for clients to request quotes and place orders.",
       "solution": "Developed a modern, responsive website using React and Laravel that clearly presents services with an intuitive order request system and project gallery.",
       "results": "Increased service inquiries by 60% and streamlined the order process for both clients and staff.",
-      "technologies": ["React", "FastAPI", "Python", "MySQL"],
+      "technologies": [
+        "React",
+        "FastAPI",
+        "Python",
+        "MySQL"
+      ],
       "testimonial": {
         "quote": "Our new website perfectly represents our services and has made it much easier for clients to reach out to us.",
         "author": "Marketing Director",
@@ -96,73 +229,13 @@
       "appStoreLink": null
     },
     {
-      "id": "lordsbox",
-      "title": "Lordsbox",
-      "description": "Employee tracking and monitoring system",
-      "image": "/images/projects/lordsbox/logo_whitebg.png",
-      "images": [
-        "/images/projects/lordsbox/1.jpg",
-        "/images/projects/lordsbox/2.jpg",
-        "/images/projects/lordsbox/3.jpg",
-        "/images/projects/lordsbox/4.jpg",
-        "/images/projects/lordsbox/5.jpg",
-        "/images/projects/lordsbox/6.jpg"
-      ],
-      "category": "Enterprise Solution",
-      "fullDescription": "Lordsbox is a comprehensive employee monitoring solution designed for transport companies, featuring real-time GPS tracking, working hour calculations, and detailed reporting. The system continues tracking even when the app is in background mode.",
-      "challenge": "Developing a reliable tracking system that works continuously without draining battery life excessively.",
-      "solution": "Optimized background location services with intelligent polling intervals and battery-saving techniques.",
-      "results": "Improved workforce productivity tracking by 90% while maintaining less than 15% additional battery usage.",
-      "technologies": ["Flutter", "Laravel", "Socket.io", "Firebase", "Background Services"],
-      "testimonial": {
-        "quote": "Lordsbox has given us complete visibility of our operations while respecting employee privacy concerns.",
-        "author": "Transport Manager",
-        "position": "Logistics Company"
-      },
-      "demoLink": "https://lordsbox.com/",
-      "videoLink": "https://www.youtube.com/watch?v=7pzpHwjhBJc",
-      "googlePlayLink": "https://play.google.com/store/apps/details?id=com.em.lordsbox",
-      "appStoreLink": "https://apps.apple.com/app/lordsbox/id6450722085?platform=iphone"
-    },
-    {
-      "id": "beautyglam",
-      "title": "BeautyGlam",
-      "description": "Premium cosmetics e-commerce store in Germany", 
-      "image": "/images/projects/beautyglam/logo.png",
-      "images": [
-        "/images/projects/beautyglam/1.png",
-        "/images/projects/beautyglam/2.png",
-        "/images/projects/beautyglam/3.png", 
-        "/images/projects/beautyglam/4.png",
-        "/images/projects/beautyglam/5.png",
-        "/images/projects/beautyglam/6.png",
-        "/images/projects/beautyglam/7.png",
-        "/images/projects/beautyglam/8.png",
-        "/images/projects/beautyglam/9.png",
-        "/images/projects/beautyglam/10.png"
-      ],
-      "category": "E-commerce",
-      "fullDescription": "BeautyGlam is a leading German e-commerce platform specializing in premium cosmetics and beauty products. Our online store offers an extensive selection of high-quality skincare, makeup, fragrances, and beauty accessories from renowned international brands. The platform features an elegant, user-friendly interface designed to enhance the shopping experience with advanced product filtering, detailed product information, and personalized recommendations. Customers can easily browse through carefully curated collections, read authentic reviews, and make secure purchases with multiple payment options.",
-      "challenge": "Creating a modern, high-performance e-commerce platform capable of handling a large product catalog while providing German customers with a localized and seamless shopping experience. The platform needed to support multiple payment methods common in Germany and comply with strict EU e-commerce regulations.",
-      "solution": "Developed a cutting-edge web application using React for a responsive frontend and Laravel for a robust backend infrastructure. Implemented advanced features including real-time inventory management, multi-language support with German as primary language, and integration with popular German payment providers. The solution includes sophisticated product categorization, smart search functionality, and a streamlined checkout process.",
-      "results": "Successfully launched the platform with over 5000 beauty products, achieving a 45% increase in customer engagement and a 55% improvement in conversion rates. The site maintains excellent performance with sub-2-second page load times and has garnered strong positive feedback from German customers.",
-      "technologies": ["React", "Laravel", "MySQL", "PHP", "Redux", "REST API"],
-      "testimonial": {
-        "quote": "BeautyGlam hat unseren Online-Auftritt revolutioniert und bietet unseren Kunden ein erstklassiges Einkaufserlebnis für Kosmetikprodukte.",
-        "author": "Marketing Director",
-        "position": "BeautyGlam Deutschland"
-      },
-      "demoLink": "https://www.beautyglam.de",
-      "videoLink": null
-    },
-    {
       "id": "beautybay",
       "title": "Beautybay",
       "description": "Premium cosmetics e-commerce store in Netherlands",
       "image": "/images/projects/beautybay/logo.svg",
       "images": [
         "/images/projects/beautybay/1.png",
-        "/images/projects/beautybay/2.png", 
+        "/images/projects/beautybay/2.png",
         "/images/projects/beautybay/3.png",
         "/images/projects/beautybay/4.png",
         "/images/projects/beautybay/5.png",
@@ -179,7 +252,13 @@
       "challenge": "Building a scalable and performant e-commerce platform that can handle thousands of products while providing a seamless shopping experience.",
       "solution": "Developed a modern web application using React and Tailwind CSS for the frontend, with Laravel and MySQL powering the backend. Implemented efficient caching and optimization techniques for fast page loads.",
       "results": "Achieved 40% increase in conversion rate and 60% improvement in page load times compared to the previous platform.",
-      "technologies": ["React", "Tailwind CSS", "Laravel", "MySQL", "PHP"],
+      "technologies": [
+        "React",
+        "Tailwind CSS",
+        "Laravel",
+        "MySQL",
+        "PHP"
+      ],
       "testimonial": {
         "quote": "The new platform has transformed our online presence and significantly improved our customers' shopping experience.",
         "author": "E-commerce Director",
@@ -208,7 +287,13 @@
       "challenge": "Creating an efficient system for monitoring and reporting financial transactions while maintaining accurate inventory records for a tire company.",
       "solution": "Developed a web application using Laravel framework with a responsive frontend. Implemented robust reporting features and real-time financial tracking capabilities.",
       "results": "Successfully streamlined the company's financial monitoring process and improved reporting accuracy by 95%.",
-      "technologies": ["HTML", "CSS", "JavaScript", "PHP", "Laravel"],
+      "technologies": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "PHP",
+        "Laravel"
+      ],
       "testimonial": {
         "quote": "This system has revolutionized how we track our business operations and financial transactions.",
         "author": "Operations Manager",
@@ -243,7 +328,12 @@
       "challenge": "Creating an offline solution for areas with unreliable connectivity.",
       "solution": "Developed a local database system with peer-to-peer wireless synchronization between devices.",
       "results": "Deployed in 15 telephone exchanges, reducing data entry errors by 80%.",
-      "technologies": ["Flutter", "GETX", "SQLite", "Local Networking"],
+      "technologies": [
+        "Flutter",
+        "GETX",
+        "SQLite",
+        "Local Networking"
+      ],
       "testimonial": {
         "quote": "Cables brought much-needed digital organization to our manual record-keeping operations.",
         "author": "Exchange Manager",
@@ -272,7 +362,15 @@
       "challenge": "Creating an attractive and professional online presence that effectively communicates cleaning services while making it easy for customers to request quotes.",
       "solution": "Developed a responsive website with clean design and clear service presentation with simple contact forms. Used modern CSS animations to enhance user experience.",
       "results": "Increased online booking requests by 200% and improved commercial visibility in the Jordanian market.",
-      "technologies": ["HTML", "CSS", "JavaScript", "Bootstrap", "PHP", "Laravel", "MySQL"],
+      "technologies": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Bootstrap",
+        "PHP",
+        "Laravel",
+        "MySQL"
+      ],
       "testimonial": {
         "quote": "The new website perfectly represents our professional cleaning services and has greatly increased customer inquiries.",
         "author": "Marketing Manager",
@@ -303,7 +401,14 @@
       "challenge": "The company needed an efficient way to monitor employee activities and measure productivity across different departments while maintaining data accuracy and security.",
       "solution": "Development of a user-friendly web application with an admin dashboard using Laravel Filament, implementing role-based access control and automatic activity tracking features.",
       "results": "Improved employee productivity monitoring by 75% and reduced manual reporting time by 60%, providing management with actionable insights.",
-      "technologies": ["HTML", "CSS", "JavaScript", "PHP", "Laravel", "Filament"],
+      "technologies": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "PHP",
+        "Laravel",
+        "Filament"
+      ],
       "testimonial": {
         "quote": "The Survey System has completely transformed our workforce management. We've seen significant improvements in productivity tracking, performance evaluation, and decision-making processes. The detailed analytics and real-time monitoring capabilities have made it an invaluable tool for our HR operations.",
         "author": "Mohammed Al-Rashid",
@@ -333,7 +438,15 @@
       "challenge": "Building a user-friendly website that simplifies shipping processes and provides real-time tracking capabilities for customers across Libya.",
       "solution": "Developing a clean, intuitive website using HTML and CSS with a focus on performance and accessibility. Implementing responsive design principles for optimal display on all devices.",
       "results": "Improved customer engagement with a 50% increase in online tracking usage and expanded digital presence in the Libyan market.",
-      "technologies": ["HTML", "CSS", "JavaScript", "Bootstrap", "PHP", "Laravel", "MySQL"],
+      "technologies": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Bootstrap",
+        "PHP",
+        "Laravel",
+        "MySQL"
+      ],
       "testimonial": {
         "quote": "The new website has transformed how our customers interact with our services, making shipping processes more transparent and accessible.",
         "author": "Operations Manager",
@@ -360,7 +473,11 @@
       "challenge": "Digitizing medicine ordering in markets with low e-commerce adoption.",
       "solution": "Creating a simple, intuitive interface focused on core ordering functions with minimal barriers.",
       "results": "Adopted by 12 local pharmacies, processing over 150 daily orders.",
-      "technologies": ["Flutter", "GETX", "Firebase"],
+      "technologies": [
+        "Flutter",
+        "GETX",
+        "Firebase"
+      ],
       "testimonial": {
         "quote": "The app modernized our ordering process while remaining accessible to all customers.",
         "author": "Pharmacy Owner",
@@ -387,7 +504,12 @@
       "challenge": "Consolidating scattered educational resources to improve student access.",
       "solution": "Building a unified platform that aggregates study materials with offline accessibility.",
       "results": "Adopted by 3 university departments with a 90% student satisfaction rate.",
-      "technologies": ["Flutter", "PHP", "SQL", "JavaScript"],
+      "technologies": [
+        "Flutter",
+        "PHP",
+        "SQL",
+        "JavaScript"
+      ],
       "testimonial": {
         "quote": "X-Positron has become an essential study aid for our students.",
         "author": "University Professor",
@@ -411,7 +533,12 @@
       "challenge": "Establishing online credibility for a new cleaning service in a competitive market.",
       "solution": "Developing a clean, professional design highlighting certifications and customer reviews.",
       "results": "200% increase in service inquiries within two months of launch.",
-      "technologies": ["HTML", "CSS", "JavaScript", "Bootstrap"],
+      "technologies": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Bootstrap"
+      ],
       "testimonial": {
         "quote": "The website perfectly represents our commitment to quality and professionalism.",
         "author": "Owner",
@@ -435,7 +562,10 @@
       "challenge": "Making complex numerical methods accessible to undergraduate students.",
       "solution": "Creating an interactive visualization tool with step-by-step explanations.",
       "results": "Adopted as a teaching aid in two university courses.",
-      "technologies": ["Flutter", "Dart"],
+      "technologies": [
+        "Flutter",
+        "Dart"
+      ],
       "testimonial": {
         "quote": "This app helped my students grasp interpolation concepts much faster than traditional methods.",
         "author": "Mathematics Professor",
@@ -466,7 +596,14 @@
       "challenge": "احتاجت الشركة إلى طريقة لمراقبة شحنات الأقمشة عبر مسافات شاسعة في أفريقيا، مع ضمان الأمان والتسليم في الوقت المحدد.",
       "solution": "تم تطوير نظام تتبع GPS في الوقت الفعلي مع تحسين المسار، وإنذارات الطوارئ، ووظيفة العمل دون اتصال للمناطق ذات الاتصال المحدود.",
       "results": "تحسين أمان الشحنات، تقليل تكاليف الوقود من خلال المسارات المثلى، وتمكين المراقبة في الوقت الفعلي لجميع عمليات النقل.",
-      "technologies": ["Flutter", "Laravel", "Node.js", "Socket.io", "Firebase", "SQL"],
+      "technologies": [
+        "Flutter",
+        "Laravel",
+        "Node.js",
+        "Socket.io",
+        "Firebase",
+        "SQL"
+      ],
       "testimonial": {
         "quote": "لقد غير التطبيق عملياتنا اللوجستية، مما منحنا رؤية وتحكمًا كاملين في شحناتنا.",
         "author": "مدير اللوجستيات",
@@ -497,7 +634,12 @@
       "challenge": "كان الطلاب يواجهون صعوبة في مواكبة دراستهم، خاصة عند التنقل بين التعلم عبر الإنترنت والتعلم التقليدي. كانوا بحاجة إلى طريقة بسيطة للوصول إلى المواد الدراسية في أي مكان والبقاء على تواصل مع المعلمين ومتابعة تقدمهم.",
       "solution": "قمنا بإنشاء تطبيق سهل الاستخدام للطلاب يعمل عبر الإنترنت وبدونه. يمكن للطلاب تحميل المحاضرات والمواد الدراسية لاستخدامها بدون إنترنت، والحصول على تحديثات مهمة حول مقرراتهم، والتواصل بسهولة مع معلميهم وزملائهم - كل ذلك من خلال تطبيق واحد بسيط.",
       "results": "الطلاب يحبون استخدام التطبيق! زادت المشاركة في الفصل بنسبة 60٪، ووفر موظفو الجامعة 45٪ من وقتهم في الأعمال الورقية، والطلاب أكثر سعادة بكيفية إدارة دراستهم.",
-      "technologies": ["Dart", "Flutter", "Laravel", "Filament"],
+      "technologies": [
+        "Dart",
+        "Flutter",
+        "Laravel",
+        "Filament"
+      ],
       "testimonial": {
         "quote": "مستر تك مثل وجود صديق مساعد يعرف كل شيء عن الحياة الجامعية. يمكنني الدراسة في أي مكان وفي أي وقت، ولا أفوت أبداً التحديثات المهمة. لقد جعل تجربتي الجامعية أفضل بكثير!",
         "author": "سارة",
@@ -506,41 +648,46 @@
       "demoLink": null,
       "videoLink": "https://youtu.be/D9rOvwzxAeM?si=txTaMFRIjqzaUpLz"
     },
-    
     {
-      "id": "almawerbung",
-      "title": "Almawerbung",
-      "description": "موقع خدمات طباعة وإعلان احترافي",
-      "image": "/images/projects/almawerbung/logo.png",
+      "id": "aybk",
+      "title": "أيبك",
+      "description": "منصة تجارة إلكترونية للطباعة عند الطلب مع سوق للمصممين",
+      "image": "/images/projects/aybk/logo.jpg",
       "images": [
-        "/images/projects/almawerbung/1.png",
-        "/images/projects/almawerbung/2.png",
-        "/images/projects/almawerbung/3.png",
-        "/images/projects/almawerbung/4.png",
-        "/images/projects/almawerbung/5.png",
-        "/images/projects/almawerbung/6.png",
-        "/images/projects/almawerbung/7.png",
-        "/images/projects/almawerbung/8.png",
-        "/images/projects/almawerbung/9.png",
-        "/images/projects/almawerbung/10.png",
-        "/images/projects/almawerbung/11.png",
-        "/images/projects/almawerbung/12.png"
+        "/images/projects/aybk/aybk1.png",
+        "/images/projects/aybk/aybk2.png",
+        "/images/projects/aybk/aybk3.png",
+        "/images/projects/aybk/aybk4.png",
+        "/images/projects/aybk/aybk5.png",
+        "/images/projects/aybk/aybk6.png",
+        "/images/projects/aybk/aybk7.png",
+        "/images/projects/aybk/aybk8.png",
+        "/images/projects/aybk/aybk9.png",
+        "/images/projects/aybk/aybk10.png",
+        "/images/projects/aybk/aybk11.png",
+        "/images/projects/aybk/aybk12.png",
+        "/images/projects/aybk/aybk13.png",
+        "/images/projects/aybk/aybk14.png"
       ],
-      "category": "موقع أعمال",
-      "fullDescription": "المافيربونج هو موقع خدمات طباعة وإعلان احترافي لشركة ألمانية متخصصة في منصات المعارض والإعلانات الشوارع وحلول الطباعة المتنوعة. يعرض الموقع محفظة خدماتهم الشاملة ويتيح للعملاء طلب عروض الأسعار وتقديم طلبات لمشاريع الطباعة المخصصة بسهولة. يمكن للزوار تصفح فئات الخدمات المختلفة، وعرض أمثلة الأعمال السابقة، وتقديم متطلبات المشروع التفصيلية.",
-      "challenge": "إنشاء موقع جذاب يعرض خدمات الطباعة المختلفة بشكل فعال مع تسهيل طلب عروض الأسعار وتقديم الطلبات للعملاء.",
-      "solution": "تم تطوير موقع حديث ومتجاوب باستخدام React و Laravel يعرض الخدمات بوضوح مع نظام طلب سهل الاستخدام ومعرض للمشاريع.",
-      "results": "زيادة استفسارات الخدمة بنسبة 60٪ وتبسيط عملية الطلب لكل من العملاء والموظفين.",
-      "technologies": ["React", "FastAPI", "Python", "MySQL"],
+      "category": "تجارة إلكترونية",
+      "fullDescription": "أيبك هي منصة مبتكرة للطباعة عند الطلب حيث يمكن للعملاء تصميم منتجات مخصصة مباشرة على الموقع. تتميز المنصة بسوق فريد يسمح للمستخدمين بأن يصبحوا مصممين (رفع وبيع تصاميمهم) أو تجار (مسوقين بالعمولة). تتضمن نظام متابعة طلبات شامل مع تحديثات حالة في الوقت الفعلي ولوحة تحكم إدارية قوية.",
+      "challenge": "إنشاء تكامل سلس بين أدوات تصميم المنتجات المخصصة ووظائف السوق والخدمات اللوجستية للطباعة عند الطلب مع الحفاظ على الأداء عند التوسع.",
+      "solution": "تم تطوير تطبيق لارافيل معياري مع Livewire لتفاعلات التصميم في الوقت الحقيقي، Filament للإدارة الإدارية، وAlpine.js لواجهة المستخدم التفاعلية. تم تنفيذ نظام متعدد الأدوار (عميل/مصمم/تاجر) مع مسارات عمل منفصلة وتتبع عمولات.",
+      "results": "تم الإطلاق مع 200+ مصمم مسجل ومعالجة 500+ طلب شهريًا. قلص وقت تخصيص المنتجات بنسبة 70٪ مقارنة بمنصات الطباعة عند الطلب التقليدية.",
+      "technologies": [
+        "Livewire",
+        "Alpine.js",
+        "Laravel",
+        "Filament",
+        "JavaScript"
+      ],
       "testimonial": {
-        "quote": "موقعنا الجديد يمثل خدماتنا بشكل مثالي وجعل من السهل على العملاء التواصل معنا.",
-        "author": "مدير التسويق",
-        "position": "شركة Almawerbung"
+        "quote": "غيرت أيبك طريقة تعاملنا مع الطباعة عند الطلب في منطقتنا. ميزة سوق المصممين وحدها زادت تنوع منتجاتنا بنسبة 300٪ في الربع الأول.",
+        "author": "خالد المنصوري",
+        "position": "مدير التجارة الإلكترونية"
       },
-      "demoLink": "https://almawerbung.shop",
-      "videoLink": null,
-      "googlePlayLink": null,
-      "appStoreLink": null
+      "demoLink": "https://www.aybk.store",
+      "videoLink": null
     },
     {
       "id": "lordsbox",
@@ -560,7 +707,13 @@
       "challenge": "تطوير نظام تتبع موثوق يعمل باستمرار دون استنزاف عمر البطارية بشكل مفرط.",
       "solution": "تحسين خدمات تحديد المواقع في الخلفية مع فترات استطلاع ذكية وتقنيات توفير البطارية.",
       "results": "تحسين تتبع إنتاجية القوى العاملة بنسبة 90٪ مع الحفاظ على استهلاك إضافي للبطارية أقل من 15٪.",
-      "technologies": ["Flutter", "Laravel", "Socket.io", "Firebase", "خدمات الخلفية"],
+      "technologies": [
+        "Flutter",
+        "Laravel",
+        "Socket.io",
+        "Firebase",
+        "خدمات الخلفية"
+      ],
       "testimonial": {
         "quote": "منحنا لوردز بوكس رؤية كاملة لعملياتنا مع احترام مخاوف خصوصية الموظفين.",
         "author": "مدير النقل",
@@ -593,7 +746,14 @@
       "challenge": "إنشاء منصة تجارة إلكترونية حديثة وعالية الأداء قادرة على التعامل مع كتالوج منتجات كبير مع توفير تجربة تسوق محلية وسلسة للعملاء الألمان.",
       "solution": "تطوير تطبيق ويب متطور باستخدام React للواجهة الأمامية و Laravel للبنية التحتية القوية للخادم. تنفيذ ميزات متقدمة تشمل إدارة المخزون في الوقت الفعلي ودعم اللغات المتعددة.",
       "results": "إطلاق ناجح للمنصة مع أكثر من 5000 منتج تجميلي، وتحقيق زيادة بنسبة 45٪ في مشاركة العملاء وتحسين بنسبة 55٪ في معدلات التحويل.",
-      "technologies": ["React", "Laravel", "MySQL", "PHP", "Redux", "REST API"],
+      "technologies": [
+        "React",
+        "Laravel",
+        "MySQL",
+        "PHP",
+        "Redux",
+        "REST API"
+      ],
       "testimonial": {
         "quote": "لقد غير بيوتي جلام وجودنا على الإنترنت وقدم لعملائنا تجربة تسوق استثنائية لمنتجات التجميل.",
         "author": "مدير التسويق",
@@ -601,6 +761,46 @@
       },
       "demoLink": "https://www.beautyglam.de",
       "videoLink": null
+    },
+    {
+      "id": "almawerbung",
+      "title": "Almawerbung",
+      "description": "موقع خدمات طباعة وإعلان احترافي",
+      "image": "/images/projects/almawerbung/logo.png",
+      "images": [
+        "/images/projects/almawerbung/1.png",
+        "/images/projects/almawerbung/2.png",
+        "/images/projects/almawerbung/3.png",
+        "/images/projects/almawerbung/4.png",
+        "/images/projects/almawerbung/5.png",
+        "/images/projects/almawerbung/6.png",
+        "/images/projects/almawerbung/7.png",
+        "/images/projects/almawerbung/8.png",
+        "/images/projects/almawerbung/9.png",
+        "/images/projects/almawerbung/10.png",
+        "/images/projects/almawerbung/11.png",
+        "/images/projects/almawerbung/12.png"
+      ],
+      "category": "موقع أعمال",
+      "fullDescription": "المافيربونج هو موقع خدمات طباعة وإعلان احترافي لشركة ألمانية متخصصة في منصات المعارض والإعلانات الشوارع وحلول الطباعة المتنوعة. يعرض الموقع محفظة خدماتهم الشاملة ويتيح للعملاء طلب عروض الأسعار وتقديم طلبات لمشاريع الطباعة المخصصة بسهولة. يمكن للزوار تصفح فئات الخدمات المختلفة، وعرض أمثلة الأعمال السابقة، وتقديم متطلبات المشروع التفصيلية.",
+      "challenge": "إنشاء موقع جذاب يعرض خدمات الطباعة المختلفة بشكل فعال مع تسهيل طلب عروض الأسعار وتقديم الطلبات للعملاء.",
+      "solution": "تم تطوير موقع حديث ومتجاوب باستخدام React و Laravel يعرض الخدمات بوضوح مع نظام طلب سهل الاستخدام ومعرض للمشاريع.",
+      "results": "زيادة استفسارات الخدمة بنسبة 60٪ وتبسيط عملية الطلب لكل من العملاء والموظفين.",
+      "technologies": [
+        "React",
+        "FastAPI",
+        "Python",
+        "MySQL"
+      ],
+      "testimonial": {
+        "quote": "موقعنا الجديد يمثل خدماتنا بشكل مثالي وجعل من السهل على العملاء التواصل معنا.",
+        "author": "مدير التسويق",
+        "position": "شركة Almawerbung"
+      },
+      "demoLink": "https://almawerbung.shop",
+      "videoLink": null,
+      "googlePlayLink": null,
+      "appStoreLink": null
     },
     {
       "id": "beautybay",
@@ -626,7 +826,13 @@
       "challenge": "بناء منصة تجارة إلكترونية قابلة للتطوير وعالية الأداء يمكنها التعامل مع آلاف المنتجات مع توفير تجربة تسوق سلسة.",
       "solution": "تطوير تطبيق ويب حديث باستخدام React و Tailwind CSS للواجهة الأمامية، مع Laravel و MySQL لتشغيل الخادم. تنفيذ تقنيات التخزين المؤقت والتحسين لتحميل الصفحات السريع.",
       "results": "تحقيق زيادة بنسبة 40٪ في معدل التحويل وتحسين بنسبة 60٪ في أوقات تحميل الصفحات مقارنة بالمنصة السابقة.",
-      "technologies": ["React", "Tailwind CSS", "Laravel", "MySQL", "PHP"],
+      "technologies": [
+        "React",
+        "Tailwind CSS",
+        "Laravel",
+        "MySQL",
+        "PHP"
+      ],
       "testimonial": {
         "quote": "لقد غيرت المنصة الجديدة وجودنا على الإنترنت وحسنت بشكل كبير تجربة التسوق لعملائنا.",
         "author": "مدير التجارة الإلكترونية",
@@ -655,7 +861,13 @@
       "challenge": "إنشاء نظام فعال لمراقبة وتقرير المعاملات المالية مع الحفاظ على سجلات دقيقة للمخزون لشركة إطارات.",
       "solution": "تطوير تطبيق ويب باستخدام إطار عمل Laravel مع واجهة أمامية متجاوبة. تنفيذ ميزات تقارير قوية وإمكانيات تتبع مالي في الوقت الفعلي.",
       "results": "نجح في تبسيط عملية المراقبة المالية للشركة وتحسين دقة التقارير بنسبة 95٪.",
-      "technologies": ["HTML", "CSS", "JavaScript", "PHP", "Laravel"],
+      "technologies": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "PHP",
+        "Laravel"
+      ],
       "testimonial": {
         "quote": "لقد أحدث هذا النظام ثورة في طريقة تتبعنا لعمليات أعمالنا ومعاملاتنا المالية.",
         "author": "مدير العمليات",
@@ -690,7 +902,12 @@
       "challenge": "إنشاء حل يعمل دون اتصال بالإنترنت للمناطق ذات الاتصال غير الموثوق به.",
       "solution": "تطوير نظام قاعدة بيانات محلية مع مزامنة لاسلكية نظير إلى نظير بين الأجهزة.",
       "results": "تم نشره في 15 بدالة هاتفية، مما أدى إلى تقليل أخطاء إدخال البيانات بنسبة 80٪.",
-      "technologies": ["Flutter", "GETX", "SQLite", "Local Networking"],
+      "technologies": [
+        "Flutter",
+        "GETX",
+        "SQLite",
+        "Local Networking"
+      ],
       "testimonial": {
         "quote": "جلب كيبلز التنظيم الرقمي المطلوب بشدة لعمليات حفظ السجلات اليدوية لدينا.",
         "author": "مدير البدالة",
@@ -719,7 +936,15 @@
       "challenge": "إنشاء تواجد إلكتروني جذاب ومهني يوصل خدمات التنظيف بفعالية مع تسهيل طلب عروض الأسعار للعملاء.",
       "solution": "تطوير موقع متجاوب بتصميم نظيف وعرض واضح للخدمات ونماذج اتصال بسيطة. استخدام رسوم متحركة CSS حديثة لتحسين تجربة المستخدم.",
       "results": "زيادة طلبات الحجز عبر الإنترنت بنسبة 200٪ وتحسين الظهور التجاري في السوق الأردني.",
-      "technologies": ["HTML", "CSS", "JavaScript", "Bootstrap", "PHP", "Laravel", "MySQL"],
+      "technologies": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Bootstrap",
+        "PHP",
+        "Laravel",
+        "MySQL"
+      ],
       "testimonial": {
         "quote": "يمثل الموقع الجديد خدمات التنظيف الاحترافية لدينا بشكل مثالي وزاد بشكل كبير من استفسارات العملاء.",
         "author": "مدير التسويق",
@@ -750,7 +975,14 @@
       "challenge": "احتاجت الشركة إلى طريقة فعالة لمراقبة أنشطة الموظفين وقياس الإنتاجية عبر الأقسام المختلفة مع الحفاظ على دقة البيانات وأمنها.",
       "solution": "تطوير تطبيق ويب سهل الاستخدام مع لوحة تحكم للمسؤول باستخدام Laravel Filament، وتنفيذ التحكم في الوصول القائم على الأدوار وميزات تتبع النشاط التلقائي.",
       "results": "تحسين مراقبة إنتاجية الموظفين بنسبة 75٪ وتقليل وقت إعداد التقارير اليدوية بنسبة 60٪، مما يوفر للإدارة رؤى قابلة للتنفيذ.",
-      "technologies": ["HTML", "CSS", "JavaScript", "PHP", "Laravel", "Filament"],
+      "technologies": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "PHP",
+        "Laravel",
+        "Filament"
+      ],
       "testimonial": {
         "quote": "لقد غير نظام سيرفي إدارة القوى العاملة لدينا بشكل كامل. لقد شهدنا تحسينات كبيرة في تتبع الإنتاجية وتقييم الأداء وعمليات اتخاذ القرار. لقد جعلت التحليلات المفصلة وقدرات المراقبة في الوقت الفعلي منه أداة لا تقدر بثمن لعمليات الموارد البشرية لدينا.",
         "author": "محمد الرشيد",
@@ -780,7 +1012,15 @@
       "challenge": "بناء موقع سهل الاستخدام يبسط عمليات الشحن ويوفر إمكانيات تتبع في الوقت الفعلي للعملاء في جميع أنحاء ليبيا.",
       "solution": "تطوير موقع نظيف وبديهي باستخدام HTML و CSS مع التركيز على الأداء وإمكانية الوصول. تنفيذ مبادئ التصميم المتجاوب للعرض الأمثل على جميع الأجهزة.",
       "results": "تحسين مشاركة العملاء مع زيادة بنسبة 50٪ في استخدام التتبع عبر الإنترنت وتوسيع التواجد الرقمي في السوق الليبي.",
-      "technologies": ["HTML", "CSS", "JavaScript", "Bootstrap", "PHP", "Laravel", "MySQL"],
+      "technologies": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Bootstrap",
+        "PHP",
+        "Laravel",
+        "MySQL"
+      ],
       "testimonial": {
         "quote": "لقد غير الموقع الجديد طريقة تفاعل عملائنا مع خدماتنا، مما جعل عمليات الشحن أكثر شفافية وسهولة في الوصول.",
         "author": "مدير العمليات",
@@ -807,7 +1047,11 @@
       "challenge": "رقمنة طلب الأدوية في الأسواق ذات التبني المنخفض للتجارة الإلكترونية.",
       "solution": "إنشاء واجهة بسيطة وبديهية تركز على وظائف الطلب الأساسية مع الحد الأدنى من العوائق.",
       "results": "تم تبنيه من قبل 12 صيدلية محلية، ومعالجة أكثر من 150 طلباً يومياً.",
-      "technologies": ["Flutter", "GETX", "Firebase"],
+      "technologies": [
+        "Flutter",
+        "GETX",
+        "Firebase"
+      ],
       "testimonial": {
         "quote": "لقد قام التطبيق بتحديث عملية الطلب لدينا مع البقاء في متناول جميع العملاء.",
         "author": "مالك الصيدلية",
@@ -834,7 +1078,12 @@
       "challenge": "توحيد الموارد التعليمية المتناثرة لتحسين وصول الطلاب إليها.",
       "solution": "إنشاء منصة موحدة تجمع المواد الدراسية مع إمكانيات الوصول دون اتصال بالإنترنت.",
       "results": "تم تبنيه من قبل 3 أقسام جامعية مع معدل رضا طلابي 90٪.",
-      "technologies": ["Flutter", "PHP", "SQL", "JavaScript"],
+      "technologies": [
+        "Flutter",
+        "PHP",
+        "SQL",
+        "JavaScript"
+      ],
       "testimonial": {
         "quote": "أصبح إكس-بوزيترون مساعداً دراسياً أساسياً لطلابنا.",
         "author": "أستاذ جامعي",
@@ -858,7 +1107,12 @@
       "challenge": "تأسيس مصداقية عبر الإنترنت لخدمة تنظيف جديدة في سوق تنافسي.",
       "solution": "تطوير تصميم نظيف واحترافي يسلط الضوء على الشهادات وآراء العملاء.",
       "results": "زيادة استفسارات الخدمة بنسبة 200٪ خلال شهرين من الإطلاق.",
-      "technologies": ["HTML", "CSS", "JavaScript", "Bootstrap"],
+      "technologies": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Bootstrap"
+      ],
       "testimonial": {
         "quote": "يمثل الموقع بشكل مثالي التزامنا بالجودة والاحترافية.",
         "author": "المالك",
@@ -882,7 +1136,10 @@
       "challenge": "جعل الطرق العددية المعقدة في متناول طلاب المرحلة الجامعية.",
       "solution": "إنشاء أداة تصور تفاعلية مع شروحات خطوة بخطوة.",
       "results": "تم اعتماده كوسيلة تعليمية في مقررين جامعيين.",
-      "technologies": ["Flutter", "Dart"],
+      "technologies": [
+        "Flutter",
+        "Dart"
+      ],
       "testimonial": {
         "quote": "ساعد هذا التطبيق طلابي على فهم مفاهيم الاستيفاء بشكل أسرع بكثير من الطرق التقليدية.",
         "author": "أستاذ الرياضيات",
