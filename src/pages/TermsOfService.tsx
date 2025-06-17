@@ -81,12 +81,10 @@ const TermsOfService: React.FC = () => {
                       : "If you have any questions about our Terms of Service, please contact us at:"
                     }
                   </p>
-                  <a href={`tel:${t('contact.phone1')}`} className="text-cosmic-blue mt-2 block hover:underline">
-                    {t('contact.phone1_display')}
+                  <a href={`tel:${t('contact.phone')}`} className="text-cosmic-blue ltr mt-2 block hover:underline">
+                    {t('contact.phone_display')}
                   </a>
-                  <a href={`tel:${t('contact.phone2')}`} className="text-cosmic-blue mt-2 block hover:underline">
-                    {t('contact.phone2_display')}
-                  </a>
+
                   <a href={`mailto:${t('contact.email')}`} className="text-cosmic-blue mt-2 block hover:underline">
                     {t('contact.email')}
                   </a>                </section>

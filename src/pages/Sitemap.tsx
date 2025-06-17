@@ -19,6 +19,8 @@ const Sitemap: React.FC = () => {
         { name: t('nav.services'), path: `${baseUrl}/services` },
         { name: t('nav.portfolio'), path: `${baseUrl}/portfolio` },
         { name: t('nav.about'), path: `${baseUrl}/about` },
+        { name: t('nav.faq'), path: `${baseUrl}/faq` },
+        { name: t('nav.careers'), path: `${baseUrl}/careers` },
         { name: t('nav.contact'), path: `${baseUrl}/contact` },
       ]
     },

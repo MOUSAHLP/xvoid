@@ -1,7 +1,9 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import { useLanguage } from '@/context/LanguageContext';
 import { useLocation } from 'react-router-dom';
 import { useToast } from '@/components/ui/use-toast';
+import emailjs from '@emailjs/browser';
+import { emailjsConfig } from "@/data/emailjs.config";
 
 const CareerForm: React.FC = () => {
   const { language } = useLanguage();
@@ -9,6 +11,10 @@ const CareerForm: React.FC = () => {
   const isArabic = location.pathname.includes('/ar');
   const { toast } = useToast();
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const formRef = useRef<HTMLFormElement>(null);
+
+  // Initialize EmailJS
+  emailjs.init(emailjsConfig.publicKey);
 
   const [formData, setFormData] = useState({
     fullName: '',
@@ -44,7 +50,7 @@ const CareerForm: React.FC = () => {
       if (file.size > 5 * 1024 * 1024) {
         toast({
           title: isArabic ? "خطأ في حجم الملف" : "File Size Error",
-          description: isArabic 
+          description: isArabic
             ? "حجم الملف يجب أن يكون أقل من 5 ميجابايت"
             : "File size must be less than 5MB",
           variant: "destructive",
@@ -60,11 +66,11 @@ const CareerForm: React.FC = () => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    
+
     if (!formData.resume) {
       toast({
         title: isArabic ? "مطلوب ملف السيرة الذاتية" : "Resume Required",
-        description: isArabic 
+        description: isArabic
           ? "الرجاء تحميل ملف السيرة الذاتية"
           : "Please upload your resume file",
         variant: "destructive",
@@ -72,54 +78,62 @@ const CareerForm: React.FC = () => {
       return;
     }
 
-    const submitData = new FormData();
-    submitData.append('full_name', formData.fullName);
-    submitData.append('email', formData.email);
-    submitData.append('phone', formData.phone);
-    submitData.append('position', formData.position);
-    submitData.append('experience', formData.experience);
-    submitData.append('message', formData.message);
-    if (formData.portfolio) submitData.append('portfolio_url', formData.portfolio);
-    submitData.append('resume', formData.resume);
+    setIsSubmitting(true);
 
     try {
-      setIsSubmitting(true);
+      // Format the message to include position, experience, and message
+      const formattedMessage = `
+Position: ${formData.position}
+Experience: ${formData.experience}
+Message: ${formData.message}
+Portfolio: ${formData.portfolio || 'Not provided'}
+      `.trim();
 
-      const response = await fetch('http://127.0.0.1:8000/api/careers', {
-        method: 'POST',
-        body: submitData,
-      });
+      // Prepare email template parameters
+      const templateParams = {
+        name: formData.fullName,
+        email: formData.email,
+        phone: formData.phone,
+        subject: 'New Job Request',
+        message: formattedMessage,
+        time: new Date().toLocaleString()
+      };
 
-      if (!response.ok) {
-        const errorData = await response.json();
-        throw new Error(errorData.message || 'Submission failed');
+      const response = await emailjs.send(
+        emailjsConfig.serviceId,
+        emailjsConfig.templateId,
+        templateParams,
+        emailjsConfig.publicKey
+      );
+
+      if (response.status === 200) {
+        toast({
+          title: isArabic ? "تم إرسال طلبك بنجاح" : "Application Submitted Successfully",
+          description: isArabic
+            ? "سنراجع طلبك ونتواصل معك قريباً. شكراً لاهتمامك!"
+            : "We've received your application and will review it shortly. Thank you for your interest!",
+          variant: "default",
+        });
+
+        // Reset form
+        setFormData({
+          fullName: '',
+          email: '',
+          phone: '',
+          position: '',
+          experience: '',
+          portfolio: '',
+          resume: null,
+          message: ''
+        });
+      } else {
+        throw new Error('Failed to send application');
       }
-
-      toast({
-        title: isArabic ? "تم إرسال طلبك بنجاح" : "Application Submitted Successfully",
-        description: isArabic 
-          ? "سنراجع طلبك ونتواصل معك قريباً. شكراً لاهتمامك!"
-          : "We've received your application and will review it shortly. Thank you for your interest!",
-        variant: "default",
-      });
-
-      // Reset form
-      setFormData({
-        fullName: '',
-        email: '',
-        phone: '',
-        position: '',
-        experience: '',
-        portfolio: '',
-        resume: null,
-        message: ''
-      });
-
     } catch (error) {
       console.error('Submission error:', error);
       toast({
         title: isArabic ? "خطأ في الإرسال" : "Submission Error",
-        description: isArabic 
+        description: isArabic
           ? "حدث خطأ أثناء إرسال الطلب. يرجى المحاولة مرة أخرى أو التواصل معنا مباشرة"
           : "An error occurred while submitting. Please try again or contact us directly.",
         variant: "destructive",
@@ -131,7 +145,7 @@ const CareerForm: React.FC = () => {
 
   return (
     <div className="max-w-3xl mx-auto p-4">
-      <form onSubmit={handleSubmit} className="space-y-6" noValidate>
+      <form ref={formRef} onSubmit={handleSubmit} className="space-y-6" noValidate>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {/* Full Name */}
           <div>
@@ -285,8 +299,8 @@ const CareerForm: React.FC = () => {
 
         {/* Submit Button */}
         <div className="text-center">
-          <button 
-            type="submit" 
+          <button
+            type="submit"
             className="cosmic-button"
             disabled={isSubmitting}
           >

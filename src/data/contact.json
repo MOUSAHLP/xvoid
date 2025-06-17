@@ -1,22 +1,14 @@
 {
   "en": {
-    "phone1": "+963946649532",
-    "phone1_display": "+963 946 649 532",
-    "phone2": "+963984350792",
-    "phone2_display": "+963 984 350 792",
-    "email": "eesahalabi@gmail.com",
-    "email1": "eesahalabi@gmail.com",
-    "email2": "mousahlp@gmail.com",
+    "phone": "+961970288537",
+    "phone_display": "+961 970 288 537",
+    "email": "info.xvoid@gmail.com",
     "address": "Syria - Damascus / Lebanon - Beirut"
   },
   "ar": {
-    "phone1": "+963946649532",
-    "phone1_display": "+963 946 649 532",
-    "phone2": "+963984350792",
-    "phone2_display": "+963 984 350 792",
-    "email": "eesahalabi@gmail.com",
-    "email1": "eesahalabi@gmail.com",
-    "email2": "mousahlp@gmail.com",
+    "phone": "+961970288537",
+    "phone_display": "+961 970 288 537",
+    "email": "info.xvoid@gmail.com",
     "address": "لبنان - بيروت / دمشق - سوريا "
   }
 }

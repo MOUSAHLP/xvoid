@@ -1,9 +1,11 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import { motion } from "framer-motion";
 import StarBackground from "@/components/StarBackground";
 import { Send, Mail, MapPin, Phone as PhoneIcon } from "lucide-react";
 import { useLanguage } from "@/context/LanguageContext";
 import { useToast } from "@/components/ui/use-toast";
+import emailjs from '@emailjs/browser';
+import { emailjsConfig } from "@/data/emailjs.config";
 
 const Contact: React.FC = () => {
   const { language, t } = useLanguage();
@@ -11,6 +13,11 @@ const Contact: React.FC = () => {
   const isArabic = language === 'ar';
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [errors, setErrors] = useState<Record<string, string>>({});
+  const formRef = useRef<HTMLFormElement>(null);
+
+  // Initialize EmailJS
+  emailjs.init(emailjsConfig.publicKey);
+
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -40,77 +47,44 @@ const Contact: React.FC = () => {
     setIsSubmitting(true);
 
     try {
-      const response = await fetch('http://127.0.0.1:8000/api/contact-us', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          name: formData.name,
-          email: formData.email,
-          phone: formData.phone,
-          title: formData.subject,
-          body: formData.message
-        }),
-      });
+      // Add current time to the form data
+      const templateParams = {
+        ...formData,
+        time: new Date().toLocaleString()
+      };
 
-      const data = await response.json();
+      const response = await emailjs.send(
+        emailjsConfig.serviceId,
+        emailjsConfig.templateId,
+        templateParams,
+        emailjsConfig.publicKey
+      );
 
-      if (!response.ok) {
-        if (response.status === 422 && data.errors) {
-          const fieldMap: Record<string, keyof typeof formData> = {
-            name: 'name',
-            email: 'email',
-            phone: 'phone',
-            title: 'subject',
-            body: 'message'
-          };
+      if (response.status === 200) {
+        toast({
+          title: t('contact.success.title'),
+          description: t('contact.success.message'),
+          variant: "default",
+        });
 
-          const formattedErrors: Record<string, string> = {};
-          
-          for (const [apiField, fieldErrors] of Object.entries(data.errors)) {
-            const formField = fieldMap[apiField];
-            if (formField && Array.isArray(fieldErrors) && fieldErrors.length > 0) {
-              formattedErrors[formField] = fieldErrors[0];
-            }
-          }
-
-          setErrors(formattedErrors);
-
-          toast({
-            title: isArabic ? "خطأ في التحقق" : "Validation Error",
-            description: isArabic 
-              ? "الرجاء تصحيح الأخطاء في النموذج"
-              : "Please correct the errors in the form",
-            variant: "destructive",
-          });
-          return;
-        }
-        throw new Error(data.message || 'Submission failed');
+        // Reset form
+        setFormData({
+          name: '',
+          email: '',
+          phone: '',
+          subject: '',
+          message: ''
+        });
+        setErrors({});
+      } else {
+        throw new Error('Failed to send message');
       }
-
-      toast({
-        title: t('contact.success.title'),
-        description: t('contact.success.message'),
-        variant: "default",
-      });
-
-      // Reset form
-      setFormData({
-        name: '',
-        email: '',
-        phone: '',
-        subject: '',
-        message: ''
-      });
-      setErrors({});
-
     } catch (error) {
       console.error('Error submitting form:', error);
       toast({
         title: t('contact.error.title'),
-        description: error instanceof Error 
-          ? error.message 
+        description: error instanceof Error
+          ? error.message
           : t('contact.error.message'),
         variant: "destructive",
       });
@@ -124,7 +98,7 @@ const Contact: React.FC = () => {
       <StarBackground />
       <section className="min-h-screen pt-32 pb-20">
         <div className="container mx-auto px-4">
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
@@ -144,18 +118,18 @@ const Contact: React.FC = () => {
               {t('contact.description')}
             </p>
           </motion.div>
-          
+
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Contact Form */}
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, x: -30 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
               className="cosmic-card"
             >
               <h2 className="text-2xl font-bold mb-6">{t('contact.form.subject')}</h2>
-              
-              <form onSubmit={handleSubmit} className="space-y-6" noValidate>
+
+              <form onSubmit={handleSubmit} className="space-y-6" noValidate ref={formRef}>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
                     <label htmlFor="name" className="block text-sm text-white/70 mb-2">
@@ -233,7 +207,7 @@ const Contact: React.FC = () => {
                     )}
                   </div>
                 </div>
-                
+
                 <div>
                   <label htmlFor="message" className="block text-sm text-white/70 mb-2">
                     {t('contact.form.message')} *
@@ -252,9 +226,9 @@ const Contact: React.FC = () => {
                     <p className="mt-1 text-sm text-red-500">{errors.message}</p>
                   )}
                 </div>
-                
-                <button 
-                  type="submit" 
+
+                <button
+                  type="submit"
                   className="cosmic-button group w-full"
                   disabled={isSubmitting}
                 >
@@ -277,19 +251,19 @@ const Contact: React.FC = () => {
                 </button>
               </form>
             </motion.div>
-            
+
             {/* Contact Information */}
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, x: 30 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5, delay: 0.4 }}
             >
               <div className="cosmic-card mb-8">
                 <h2 className="text-2xl font-bold mb-6">{t('contact.info.title')}</h2>
-                
+
                 <div className="space-y-6">
                   <div className="flex items-start">
-                    <div className="w-12 h-12 rounded-full bg-cosmic-blue/10 flex items-center justify-center mr-4">
+                    <div className="w-12 h-12 rounded-full bg-cosmic-blue/10 flex items-center justify-center mx-4">
                       <Mail className="w-6 h-6 text-cosmic-blue" />
                     </div>
                     <div>
@@ -297,37 +271,27 @@ const Contact: React.FC = () => {
                       <a href={`mailto:${t('contact.email')}`} className="text-white/70 hover:text-cosmic-blue transition-colors">{t('contact.email')}</a>
                     </div>
                   </div>
-                  
+
                   <div className="flex items-start">
-                    <div className="w-12 h-12 rounded-full bg-cosmic-pink/10 flex items-center justify-center mr-4">
+                    <div className="w-12 h-12 rounded-full bg-cosmic-pink/10 flex items-center justify-center mx-4">
                       <PhoneIcon className="w-6 h-6 text-cosmic-pink" />
                     </div>
-                    <div>
+                    <div className="ltr">
                       <h3 className="text-lg font-semibold">{t('contact.info.phone.title')}</h3>
-                      <a href={`tel:${t('contact.phone1')}`} className="text-white/70 hover:text-cosmic-pink transition-colors">{t('contact.phone1_display')}</a>
+                      <a href={`tel:${t('contact.phone')}`} className="text-white/70  hover:text-cosmic-pink transition-colors">{t('contact.phone_display')}</a>
                     </div>
                   </div>
-                  
+
                   <div className="flex items-start">
-                    <div className="w-12 h-12 rounded-full bg-cosmic-pink/10 flex items-center justify-center mr-4">
-                      <PhoneIcon className="w-6 h-6 text-cosmic-pink" />
-                    </div>
-                    <div>
-                      <h3 className="text-lg font-semibold">{t('contact.info.phone.title')}</h3>
-                      <a href={`tel:${t('contact.phone2')}`} className="text-white/70 hover:text-cosmic-pink transition-colors">{t('contact.phone2_display')}</a>
-                    </div>
-                  </div>
-                  
-                  <div className="flex items-start">
-                    <div className="w-12 h-12 rounded-full bg-cosmic-purple/10 flex items-center justify-center mr-4">
+                    <div className="w-12 h-12 rounded-full bg-cosmic-purple/10 flex items-center justify-center mx-4">
                       <MapPin className="w-6 h-6 text-cosmic-purple" />
                     </div>
                     <div>
                       <h3 className="text-lg font-semibold">{t('contact.info.location.title')}</h3>
-                      <a 
-                        href={`https://maps.google.com/?q=${t('contact.address')}`} 
-                        target="_blank" 
-                        rel="noopener noreferrer" 
+                      <a
+                        href={`https://maps.google.com/?q=${t('contact.address')}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="text-white/70 hover:text-cosmic-purple transition-colors"
                       >
                         {t('contact.address')}
@@ -336,7 +300,7 @@ const Contact: React.FC = () => {
                   </div>
                 </div>
               </div>
-              
+
               {/* Office Hours */}
               <div className="cosmic-card">
                 <h2 className="text-2xl font-bold mb-6">{t('contact.hours.title')}</h2>

@@ -66,6 +66,14 @@ const Footer: React.FC = () => {
               >
                 <Instagram className="w-5 h-5 text-white" />
               </a>
+
+              <a
+                href={`https://wa.me/${t('contact.phone')}`}
+                aria-label="Whatsapp"
+                className="w-10 h-10 mx-2 rounded-full flex items-center justify-center bg-white/5 hover:bg-cosmic-blue/20 transition-colors duration-300 border border-white/10 hover:border-cosmic-blue/30"
+              >
+                <Phone className="w-5 h-5 text-white" />
+              </a>
               {/* <a
                 href="#"
                 aria-label="YouTube"
@@ -140,35 +148,24 @@ const Footer: React.FC = () => {
             <h3 className="text-lg font-bold mb-6 text-glow-pink">{t('footer.contact')}</h3>
             <ul className="space-y-4">
               <li className="flex items-start">
-                <MapPin className="w-5 h-5 mr-3 text-cosmic-pink shrink-0 mt-0.5" />
+                <MapPin className="w-5 h-5 mx-3 text-cosmic-pink shrink-0 mt-0.5" />
                 <span className="text-white/70">
                   {isArabic ? t('contact.address') : t('contact.address')}
                 </span>
               </li>
-              <li className="flex items-center">
-                <Phone className="w-5 h-5 mr-3 text-cosmic-pink shrink-0" />
-                <a href={`tel:${t('contact.phone1')}`} className="text-white/70 hover:text-cosmic-pink transition-colors duration-300">
-                  {isArabic ? t('contact.phone1_display') : t('contact.phone1_display')}
+              <li className="flex items-center ">
+                <Phone className="w-5 h-5 mx-3 text-cosmic-pink shrink-0 " />
+                <a href={`tel:${t('contact.phone')}`} className="text-white/70 ltr hover:text-cosmic-pink transition-colors duration-300">
+                  {isArabic ? t('contact.phone_display') : t('contact.phone_display')}
                 </a>
               </li>
+
               <li className="flex items-center">
-                <Phone className="w-5 h-5 mr-3 text-cosmic-pink shrink-0" />
-                <a href={`tel:${t('contact.phone2')}`} className="text-white/70 hover:text-cosmic-pink transition-colors duration-300">
-                  {isArabic ? t('contact.phone2_display') : t('contact.phone2_display')}
-                </a>
-              </li>
-              <li className="flex items-center">
-                <Mail className="w-5 h-5 mr-3 text-cosmic-pink shrink-0" />
+                <Mail className="w-5 h-5 mx-3 text-cosmic-pink shrink-0" />
                 <a href={`mailto:${t('contact.email')}`} className="text-white/70 hover:text-cosmic-pink transition-colors duration-300">
                   {t('contact.email')}
                 </a>
               </li>
-              {/* <li className="flex items-center">
-                <Mail className="w-5 h-5 mr-3 text-cosmic-pink shrink-0" />
-                <a href={`mailto:${t('contact.email2')}`} className="text-white/70 hover:text-cosmic-pink transition-colors duration-300">
-                  {isArabic ? t('contact.email2') : t('contact.email2')}
-                </a>
-              </li> */}
             </ul>
           </div>
         </div>

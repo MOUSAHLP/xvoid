@@ -139,7 +139,7 @@
         "title": "Contact Information",
         "email": {
           "title": "Email",
-          "value": "eesahalabi@gmail.com"
+          "value": "info.xvoid@gmail.com"
         },
         "location": {
           "title": "Location",
@@ -160,13 +160,9 @@
         "sundayHours": "Closed"
       },
       "address": "Syria - Damascus / Lebanon - Beirut",
-      "phone1": "+963946649532",
-      "phone1_display": "+963 946 649 532",
-      "phone2": "+963984350792",
-      "phone2_display": "+963 984 350 792",
-      "email": "eesahalabi@gmail.com",
-      "email1": "eesahalabi@gmail.com",
-      "email2": "mousahlp@gmail.com",
+      "phone": "+961970288537",
+      "phone_display": "+961 970 288 537",
+      "email": "info.xvoid@gmail.com",
       "success": {
         "title": "Message sent successfully",
         "message": "Thank you for contacting us. We will get back to you soon."
@@ -409,13 +405,9 @@
         "sundayHours": "مغلق"
       },
       "address": "لبنان - بيروت / دمشق - سوريا ",
-      "phone1": "+963946649532",
-      "phone1_display": "+963 946 649 532",
-      "phone2": "+963984350792",
-      "phone2_display": "+963 984 350 792",
-      "email": "eesahalabi@gmail.com",
-      "email1": "eesahalabi@gmail.com",
-      "email2": "mousahlp@gmail.com",
+      "phone": "+961970288537",
+      "phone_display": "+961 970 288 537",
+      "email": "info.xvoid@gmail.com",
       "success": {
         "title": "تم إرسال الرسالة بنجاح",
         "message": "شكراً لتواصلك معنا. سنرد عليك قريباً."

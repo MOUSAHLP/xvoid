@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+  <!-- Home Pages -->
+  <url>
+    <loc>https://xvoid.vercel.app/</loc>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://xvoid.vercel.app/ar"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xvoid.vercel.app/"/>
+    <lastmod>2025-06-16</lastmod>
+  </url>
+  <url>
+    <loc>https://xvoid.vercel.app/ar</loc>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xvoid.vercel.app/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://xvoid.vercel.app/ar"/>
+    <lastmod>2025-06-16</lastmod>
+  </url>
+
+  <!-- About Pages -->
+  <url>
+    <loc>https://xvoid.vercel.app/about</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://xvoid.vercel.app/ar/about"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xvoid.vercel.app/about"/>
+    <lastmod>2025-06-16</lastmod>
+  </url>
+  <url>
+    <loc>https://xvoid.vercel.app/ar/about</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xvoid.vercel.app/about"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://xvoid.vercel.app/ar/about"/>
+    <lastmod>2025-06-16</lastmod>
+  </url>
+
+  <!-- Services Pages -->
+  <url>
+    <loc>https://xvoid.vercel.app/services</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://xvoid.vercel.app/ar/services"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xvoid.vercel.app/services"/>
+    <lastmod>2025-06-16</lastmod>
+  </url>
+  <url>
+    <loc>https://xvoid.vercel.app/ar/services</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xvoid.vercel.app/services"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://xvoid.vercel.app/ar/services"/>
+    <lastmod>2025-06-16</lastmod>
+  </url>
+
+  <!-- Individual Service Pages -->
+  <url>
+    <loc>https://xvoid.vercel.app/service/1</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://xvoid.vercel.app/ar/service/1"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xvoid.vercel.app/service/1"/>
+    <lastmod>2025-06-16</lastmod>
+  </url>
+  <url>
+    <loc>https://xvoid.vercel.app/ar/service/1</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xvoid.vercel.app/service/1"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://xvoid.vercel.app/ar/service/1"/>
+    <lastmod>2025-06-16</lastmod>
+  </url>
+  <url>
+    <loc>https://xvoid.vercel.app/service/2</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://xvoid.vercel.app/ar/service/2"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xvoid.vercel.app/service/2"/>
+    <lastmod>2025-06-16</lastmod>
+  </url>
+  <url>
+    <loc>https://xvoid.vercel.app/ar/service/2</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xvoid.vercel.app/service/2"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://xvoid.vercel.app/ar/service/2"/>
+    <lastmod>2025-06-16</lastmod>
+  </url>
+  <url>
+    <loc>https://xvoid.vercel.app/service/3</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://xvoid.vercel.app/ar/service/3"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xvoid.vercel.app/service/3"/>
+    <lastmod>2025-06-16</lastmod>
+  </url>
+  <url>
+    <loc>https://xvoid.vercel.app/ar/service/3</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xvoid.vercel.app/service/3"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://xvoid.vercel.app/ar/service/3"/>
+    <lastmod>2025-06-16</lastmod>
+  </url>
+  <url>
+    <loc>https://xvoid.vercel.app/service/4</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://xvoid.vercel.app/ar/service/4"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xvoid.vercel.app/service/4"/>
+    <lastmod>2025-06-16</lastmod>
+  </url>
+  <url>
+    <loc>https://xvoid.vercel.app/ar/service/4</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xvoid.vercel.app/service/4"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://xvoid.vercel.app/ar/service/4"/>
+    <lastmod>2025-06-16</lastmod>
+  </url>
+  <url>
+    <loc>https://xvoid.vercel.app/service/5</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://xvoid.vercel.app/ar/service/5"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xvoid.vercel.app/service/5"/>
+    <lastmod>2025-06-16</lastmod>
+  </url>
+  <url>
+    <loc>https://xvoid.vercel.app/ar/service/5</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xvoid.vercel.app/service/5"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://xvoid.vercel.app/ar/service/5"/>
+    <lastmod>2025-06-16</lastmod>
+  </url>
+  <url>
+    <loc>https://xvoid.vercel.app/service/6</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://xvoid.vercel.app/ar/service/6"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xvoid.vercel.app/service/6"/>
+    <lastmod>2025-06-16</lastmod>
+  </url>
+  <url>
+    <loc>https://xvoid.vercel.app/ar/service/6</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xvoid.vercel.app/service/6"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://xvoid.vercel.app/ar/service/6"/>
+    <lastmod>2025-06-16</lastmod>
+  </url>
+
+  <!-- Portfolio Pages -->
+  <url>
+    <loc>https://xvoid.vercel.app/portfolio</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://xvoid.vercel.app/ar/portfolio"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xvoid.vercel.app/portfolio"/>
+    <lastmod>2025-06-16</lastmod>
+  </url>
+  <url>
+    <loc>https://xvoid.vercel.app/ar/portfolio</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xvoid.vercel.app/portfolio"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://xvoid.vercel.app/ar/portfolio"/>
+    <lastmod>2025-06-16</lastmod>
+  </url>
+
+  <!-- Individual Project Pages -->
+  <url>
+    <loc>https://xvoid.vercel.app/project/mr-tech</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://xvoid.vercel.app/ar/project/mr-tech"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xvoid.vercel.app/project/mr-tech"/>
+    <lastmod>2025-06-16</lastmod>
+  </url>
+  <url>
+    <loc>https://xvoid.vercel.app/ar/project/mr-tech</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xvoid.vercel.app/project/mr-tech"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://xvoid.vercel.app/ar/project/mr-tech"/>
+    <lastmod>2025-06-16</lastmod>
+  </url>
+  <url>
+    <loc>https://xvoid.vercel.app/project/fiberforge</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://xvoid.vercel.app/ar/project/fiberforge"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xvoid.vercel.app/project/fiberforge"/>
+    <lastmod>2025-06-16</lastmod>
+  </url>
+  <url>
+    <loc>https://xvoid.vercel.app/ar/project/fiberforge</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xvoid.vercel.app/project/fiberforge"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://xvoid.vercel.app/ar/project/fiberforge"/>
+    <lastmod>2025-06-16</lastmod>
+  </url>
+  <url>
+    <loc>https://xvoid.vercel.app/project/aybk</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://xvoid.vercel.app/ar/project/aybk"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xvoid.vercel.app/project/aybk"/>
+    <lastmod>2025-06-16</lastmod>
+  </url>
+  <url>
+    <loc>https://xvoid.vercel.app/ar/project/aybk</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xvoid.vercel.app/project/aybk"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://xvoid.vercel.app/ar/project/aybk"/>
+    <lastmod>2025-06-16</lastmod>
+  </url>
+  <url>
+    <loc>https://xvoid.vercel.app/project/lordsbox</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://xvoid.vercel.app/ar/project/lordsbox"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xvoid.vercel.app/project/lordsbox"/>
+    <lastmod>2025-06-16</lastmod>
+  </url>
+  <url>
+    <loc>https://xvoid.vercel.app/ar/project/lordsbox</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xvoid.vercel.app/project/lordsbox"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://xvoid.vercel.app/ar/project/lordsbox"/>
+    <lastmod>2025-06-16</lastmod>
+  </url>
+  <url>
+    <loc>https://xvoid.vercel.app/project/beautyglam</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://xvoid.vercel.app/ar/project/beautyglam"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xvoid.vercel.app/project/beautyglam"/>
+    <lastmod>2025-06-16</lastmod>
+  </url>
+  <url>
+    <loc>https://xvoid.vercel.app/ar/project/beautyglam</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xvoid.vercel.app/project/beautyglam"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://xvoid.vercel.app/ar/project/beautyglam"/>
+    <lastmod>2025-06-16</lastmod>
+  </url>
+  <url>
+    <loc>https://xvoid.vercel.app/project/almawerbung</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://xvoid.vercel.app/ar/project/almawerbung"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xvoid.vercel.app/project/almawerbung"/>
+    <lastmod>2025-06-16</lastmod>
+  </url>
+  <url>
+    <loc>https://xvoid.vercel.app/ar/project/almawerbung</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xvoid.vercel.app/project/almawerbung"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://xvoid.vercel.app/ar/project/almawerbung"/>
+    <lastmod>2025-06-16</lastmod>
+  </url>
+
+  <!-- Contact Pages -->
+  <url>
+    <loc>https://xvoid.vercel.app/contact</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://xvoid.vercel.app/ar/contact"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xvoid.vercel.app/contact"/>
+    <lastmod>2025-06-16</lastmod>
+  </url>
+  <url>
+    <loc>https://xvoid.vercel.app/ar/contact</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xvoid.vercel.app/contact"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://xvoid.vercel.app/ar/contact"/>
+    <lastmod>2025-06-16</lastmod>
+  </url>
+
+  <!-- Careers Pages -->
+  <url>
+    <loc>https://xvoid.vercel.app/careers</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://xvoid.vercel.app/ar/careers"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xvoid.vercel.app/careers"/>
+    <lastmod>2025-06-16</lastmod>
+  </url>
+  <url>
+    <loc>https://xvoid.vercel.app/ar/careers</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xvoid.vercel.app/careers"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://xvoid.vercel.app/ar/careers"/>
+    <lastmod>2025-06-16</lastmod>
+  </url>
+
+  <!-- FAQ Pages -->
+  <url>
+    <loc>https://xvoid.vercel.app/faq</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://xvoid.vercel.app/ar/faq"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xvoid.vercel.app/faq"/>
+    <lastmod>2025-06-16</lastmod>
+  </url>
+  <url>
+    <loc>https://xvoid.vercel.app/ar/faq</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xvoid.vercel.app/faq"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://xvoid.vercel.app/ar/faq"/>
+    <lastmod>2025-06-16</lastmod>
+  </url>
+
+  <!-- Privacy Policy Pages -->
+  <url>
+    <loc>https://xvoid.vercel.app/privacy-policy</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://xvoid.vercel.app/ar/privacy-policy"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xvoid.vercel.app/privacy-policy"/>
+    <lastmod>2025-06-16</lastmod>
+  </url>
+  <url>
+    <loc>https://xvoid.vercel.app/ar/privacy-policy</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xvoid.vercel.app/privacy-policy"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://xvoid.vercel.app/ar/privacy-policy"/>
+    <lastmod>2025-06-16</lastmod>
+  </url>
+
+  <!-- Terms of Service Pages -->
+  <url>
+    <loc>https://xvoid.vercel.app/terms-of-service</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://xvoid.vercel.app/ar/terms-of-service"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xvoid.vercel.app/terms-of-service"/>
+    <lastmod>2025-06-16</lastmod>
+  </url>
+  <url>
+    <loc>https://xvoid.vercel.app/ar/terms-of-service</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xvoid.vercel.app/terms-of-service"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://xvoid.vercel.app/ar/terms-of-service"/>
+    <lastmod>2025-06-16</lastmod>
+  </url>
+
+  <!-- Sitemap Pages -->
+  <url>
+    <loc>https://xvoid.vercel.app/sitemap</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://xvoid.vercel.app/ar/sitemap"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xvoid.vercel.app/sitemap"/>
+    <lastmod>2025-06-16</lastmod>
+  </url>
+  <url>
+    <loc>https://xvoid.vercel.app/ar/sitemap</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xvoid.vercel.app/sitemap"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://xvoid.vercel.app/ar/sitemap"/>
+    <lastmod>2025-06-16</lastmod>
+  </url>
+
+</urlset> 
