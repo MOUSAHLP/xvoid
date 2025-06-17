@@ -12,7 +12,13 @@ const Contact: React.FC = () => {
   const { toast } = useToast();
   const isArabic = language === 'ar';
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [errors, setErrors] = useState<Record<string, string>>({});
+  const [errors, setErrors] = useState({
+    name: '',
+    email: '',
+    phone: '',
+    subject: '',
+    message: ''
+  });
   const formRef = useRef<HTMLFormElement>(null);
 
   // Initialize EmailJS
@@ -26,6 +32,42 @@ const Contact: React.FC = () => {
     message: ''
   });
 
+  const validateField = (name: string, value: string) => {
+    let error = '';
+
+    switch (name) {
+      case 'name':
+        if (!value.trim()) {
+          error = isArabic ? 'الاسم مطلوب' : 'Name is required';
+        }
+        break;
+      case 'email':
+        if (!value.trim()) {
+          error = isArabic ? 'البريد الإلكتروني مطلوب' : 'Email is required';
+        } else if (!/\S+@\S+\.\S+/.test(value)) {
+          error = isArabic ? 'البريد الإلكتروني غير صالح' : 'Invalid email address';
+        }
+        break;
+      case 'phone':
+        if (!value.trim()) {
+          error = isArabic ? 'رقم الهاتف مطلوب' : 'Phone number is required';
+        }
+        break;
+      case 'subject':
+        if (!value.trim()) {
+          error = isArabic ? 'الموضوع مطلوب' : 'Subject is required';
+        }
+        break;
+      case 'message':
+        if (!value.trim()) {
+          error = isArabic ? 'الرسالة مطلوبة' : 'Message is required';
+        }
+        break;
+    }
+
+    return error;
+  };
+
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
     setFormData(prev => ({
@@ -33,17 +75,48 @@ const Contact: React.FC = () => {
       [name]: value
     }));
     // Clear error when user starts typing
-    if (errors[name]) {
-      setErrors(prev => {
-        const newErrors = { ...prev };
-        delete newErrors[name];
-        return newErrors;
-      });
-    }
+    setErrors(prev => ({
+      ...prev,
+      [name]: ''
+    }));
+  };
+
+  const handleBlur = (e: React.FocusEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { name, value } = e.target;
+    const error = validateField(name, value);
+    setErrors(prev => ({
+      ...prev,
+      [name]: error
+    }));
+  };
+
+  const validateForm = () => {
+    const newErrors = {
+      name: validateField('name', formData.name),
+      email: validateField('email', formData.email),
+      phone: validateField('phone', formData.phone),
+      subject: validateField('subject', formData.subject),
+      message: validateField('message', formData.message)
+    };
+
+    setErrors(newErrors);
+    return !Object.values(newErrors).some(error => error !== '');
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+
+    if (!validateForm()) {
+      toast({
+        title: isArabic ? "خطأ في النموذج" : "Form Error",
+        description: isArabic
+          ? "يرجى ملء جميع الحقول المطلوبة بشكل صحيح"
+          : "Please fill in all required fields correctly",
+        variant: "destructive",
+      });
+      return;
+    }
+
     setIsSubmitting(true);
 
     try {
@@ -67,7 +140,7 @@ const Contact: React.FC = () => {
           variant: "default",
         });
 
-        // Reset form
+        // Reset form and errors
         setFormData({
           name: '',
           email: '',
@@ -75,7 +148,13 @@ const Contact: React.FC = () => {
           subject: '',
           message: ''
         });
-        setErrors({});
+        setErrors({
+          name: '',
+          email: '',
+          phone: '',
+          subject: '',
+          message: ''
+        });
       } else {
         throw new Error('Failed to send message');
       }
@@ -175,7 +254,7 @@ const Contact: React.FC = () => {
                       {t('contact.form.phone')} *
                     </label>
                     <input
-                      type="number"
+                      type="tel"
                       id="phone"
                       name="phone"
                       required

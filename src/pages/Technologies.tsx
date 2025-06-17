@@ -56,6 +56,7 @@ const Technologies: React.FC = () => {
                         src={tech.icon}
                         alt={tech.name}
                         className="max-w-full max-h-full object-contain"
+                        loading="lazy"
                       />
                     </div>
                     <h3 className="text-lg font-semibold mb-2">{tech.name}</h3>

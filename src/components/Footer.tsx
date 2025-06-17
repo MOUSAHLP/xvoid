@@ -35,6 +35,7 @@ const Footer: React.FC = () => {
                 src="/images/logo.png"
                 alt="Logo"
                 className="w-24 h-24"
+                loading="lazy"
               />
             </div>
 
@@ -108,6 +109,16 @@ const Footer: React.FC = () => {
                   {t('nav.about')}
                 </Link>
               </li>
+              <li>
+                <Link to={`${baseUrl}/faq`} className="text-white/70 hover:text-cosmic-blue transition-colors duration-300">
+                  {t('nav.faq')}
+                </Link>
+              </li>
+              <li>
+                <Link to={`${baseUrl}/careers`} className="text-white/70 hover:text-cosmic-blue transition-colors duration-300">
+                  {t('nav.careers')}
+                </Link>
+              </li>
             </ul>
           </div>
 
@@ -176,11 +187,11 @@ const Footer: React.FC = () => {
         {/* Copyright */}
         <div className="flex flex-col md:flex-row items-center justify-between">
           <p className="text-white/50 text-sm mb-4 md:mb-0">
-            © 2020 X-VOID. {t('footer.rights')}
+            © 2025 X-VOID. {t('footer.rights')}
           </p>
 
           {/* Add more space between Arabic text links */}
-          <div className={`flex items-center ${isArabic ? 'space-x-0 space-x-reverse space-x-6' : 'space-x-6'}`}>
+          <div className={`flex items-center ${isArabic ? ' space-x-reverse space-x-6' : 'space-x-6'}`}>
             <Link to={`${baseUrl}/privacy-policy`} className="text-white/50 text-sm hover:text-white transition-colors duration-300">
               {t('footer.privacy')}
             </Link>

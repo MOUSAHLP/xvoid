@@ -63,7 +63,7 @@ const TechStackCarousel: React.FC<TechStackCarouselProps> = ({ technologies }) =
                   {techs.map(tech => (
                     <div key={tech.id} className="flex flex-col items-center">
                       <div className="w-12 h-12 mb-2 flex items-center justify-center">
-                        <img src={tech.icon} alt={tech.name} className="max-w-full max-h-full object-contain" />
+                        <img src={tech.icon} alt={tech.name} className="max-w-full max-h-full object-contain" loading="lazy" />
                       </div>
                       <span className={`text-sm text-white/70 ${isArabic ? 'text-right' : 'text-left'}`}>{tech.name}</span>
                     </div>

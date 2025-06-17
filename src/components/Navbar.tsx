@@ -65,6 +65,7 @@ const Navbar: React.FC = () => {
               src="/images/logo.png"
               alt="Logo"
               className="w-12 h-12 sm:w-24 sm:h-24"
+              loading="lazy"
             />
           </Link>
           

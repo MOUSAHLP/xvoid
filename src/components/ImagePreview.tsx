@@ -147,6 +147,7 @@ const ImagePreview = ({
             alt={`Preview ${currentIndex + 1}`}
             className="max-w-full max-h-[90vh] object-contain"
             draggable={false}
+            loading="lazy"
           />
           
           {/* Image counter */}

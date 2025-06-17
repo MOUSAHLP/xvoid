@@ -17,8 +17,7 @@ import FAQSection from "@/components/FAQSection";
 
 const Index: React.FC = () => {
   const { language, t } = useLanguage();
-  const location = useLocation();
-  const isArabic = location.pathname.includes('/ar');
+  const isArabic = language === 'ar';
   const baseUrl = isArabic ? '/ar' : '';
   
   // Get first 3 services based on language

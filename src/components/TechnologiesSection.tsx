@@ -102,7 +102,7 @@ const TechnologiesSection: React.FC<TechnologiesSectionProps> = ({
             >
               <div className="flex flex-col items-center text-center p-6">
                 <div className="w-20 h-20 mb-4 flex items-center justify-center bg-white/5 rounded-full">
-                  <img src={tech.icon} alt={tech.name} className="w-12 h-12" />
+                  <img src={tech.icon} alt={tech.name} className="w-12 h-12" loading="lazy" />
                 </div>
                 <h3 className="text-xl font-bold mb-2 group-hover:text-glow transition-colors duration-300">
                   {tech.name}

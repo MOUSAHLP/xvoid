@@ -4,6 +4,7 @@ import { useLocation } from 'react-router-dom';
 import { useToast } from '@/components/ui/use-toast';
 import emailjs from '@emailjs/browser';
 import { emailjsConfig } from "@/data/emailjs.config";
+import { Send } from 'lucide-react';
 
 const CareerForm: React.FC = () => {
   const { language } = useLanguage();
@@ -27,6 +28,16 @@ const CareerForm: React.FC = () => {
     message: ''
   });
 
+  // Add validation states
+  const [errors, setErrors] = useState({
+    fullName: '',
+    email: '',
+    phone: '',
+    position: '',
+    experience: '',
+    resume: ''
+  });
+
   const positions = [
     { value: 'frontend', label: isArabic ? 'مطور واجهة أمامية' : 'Frontend Developer' },
     { value: 'backend', label: isArabic ? 'مطور خلفية' : 'Backend Developer' },
@@ -35,11 +46,67 @@ const CareerForm: React.FC = () => {
     { value: 'other', label: isArabic ? 'وظيفة أخرى' : 'Other Position' }
   ];
 
+  const validateField = (name: string, value: string | File | null) => {
+    let error = '';
+
+    switch (name) {
+      case 'fullName':
+        if (!value) {
+          error = isArabic ? 'الاسم الكامل مطلوب' : 'Full name is required';
+        }
+        break;
+      case 'email':
+        if (!value) {
+          error = isArabic ? 'البريد الإلكتروني مطلوب' : 'Email is required';
+        } else if (!/\S+@\S+\.\S+/.test(value as string)) {
+          error = isArabic ? 'البريد الإلكتروني غير صالح' : 'Invalid email address';
+        }
+        break;
+      case 'phone':
+        if (!value) {
+          error = isArabic ? 'رقم الهاتف مطلوب' : 'Phone number is required';
+        }
+        break;
+      case 'position':
+        if (!value) {
+          error = isArabic ? 'الوظيفة مطلوبة' : 'Position is required';
+        }
+        break;
+      case 'experience':
+        if (!value) {
+          error = isArabic ? 'سنوات الخبرة مطلوبة' : 'Experience is required';
+        }
+        break;
+      case 'resume':
+        if (!value) {
+          error = isArabic ? 'السيرة الذاتية مطلوبة' : 'Resume is required';
+        }
+        break;
+    }
+
+    return error;
+  };
+
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     const { name, value } = e.target;
     setFormData(prev => ({
       ...prev,
       [name]: value
+    }));
+
+    // Clear error when user starts typing
+    setErrors(prev => ({
+      ...prev,
+      [name]: ''
+    }));
+  };
+
+  const handleBlur = (e: React.FocusEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+    const { name, value } = e.target;
+    const error = validateField(name, value);
+    setErrors(prev => ({
+      ...prev,
+      [name]: error
     }));
   };
 
@@ -61,18 +128,36 @@ const CareerForm: React.FC = () => {
         ...prev,
         resume: file
       }));
+      setErrors(prev => ({
+        ...prev,
+        resume: ''
+      }));
     }
+  };
+
+  const validateForm = () => {
+    const newErrors = {
+      fullName: validateField('fullName', formData.fullName),
+      email: validateField('email', formData.email),
+      phone: validateField('phone', formData.phone),
+      position: validateField('position', formData.position),
+      experience: validateField('experience', formData.experience),
+      resume: validateField('resume', formData.resume)
+    };
+
+    setErrors(newErrors);
+    return !Object.values(newErrors).some(error => error !== '');
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
-    if (!formData.resume) {
+    if (!validateForm()) {
       toast({
-        title: isArabic ? "مطلوب ملف السيرة الذاتية" : "Resume Required",
+        title: isArabic ? "خطأ في النموذج" : "Form Error",
         description: isArabic
-          ? "الرجاء تحميل ملف السيرة الذاتية"
-          : "Please upload your resume file",
+          ? "يرجى ملء جميع الحقول المطلوبة بشكل صحيح"
+          : "Please fill in all required fields correctly",
         variant: "destructive",
       });
       return;
@@ -115,7 +200,7 @@ Portfolio: ${formData.portfolio || 'Not provided'}
           variant: "default",
         });
 
-        // Reset form
+        // Reset form and errors
         setFormData({
           fullName: '',
           email: '',
@@ -125,6 +210,14 @@ Portfolio: ${formData.portfolio || 'Not provided'}
           portfolio: '',
           resume: null,
           message: ''
+        });
+        setErrors({
+          fullName: '',
+          email: '',
+          phone: '',
+          position: '',
+          experience: '',
+          resume: ''
         });
       } else {
         throw new Error('Failed to send application');
@@ -150,7 +243,7 @@ Portfolio: ${formData.portfolio || 'Not provided'}
           {/* Full Name */}
           <div>
             <label htmlFor="fullName" className="block text-sm font-medium mb-2">
-              {isArabic ? "الاسم الكامل" : "Full Name"}
+              {isArabic ? "الاسم الكامل" : "Full Name"} *
             </label>
             <input
               id="fullName"
@@ -159,15 +252,19 @@ Portfolio: ${formData.portfolio || 'Not provided'}
               required
               value={formData.fullName}
               onChange={handleInputChange}
-              className="cosmic-input w-full"
+              onBlur={handleBlur}
+              className={`cosmic-input w-full ${errors.fullName ? 'border-red-500 focus:border-red-500' : ''}`}
               placeholder={isArabic ? "أدخل اسمك الكامل" : "Enter your full name"}
             />
+            {errors.fullName && (
+              <p className="text-sm text-red-600 mt-1">{errors.fullName}</p>
+            )}
           </div>
 
           {/* Email */}
           <div>
             <label htmlFor="email" className="block text-sm font-medium mb-2">
-              {isArabic ? "البريد الإلكتروني" : "Email"}
+              {isArabic ? "البريد الإلكتروني" : "Email"} *
             </label>
             <input
               id="email"
@@ -176,15 +273,19 @@ Portfolio: ${formData.portfolio || 'Not provided'}
               required
               value={formData.email}
               onChange={handleInputChange}
-              className="cosmic-input w-full"
+              onBlur={handleBlur}
+              className={`cosmic-input w-full ${errors.email ? 'border-red-500 focus:border-red-500' : ''}`}
               placeholder={isArabic ? "أدخل بريدك الإلكتروني" : "Enter your email"}
             />
+            {errors.email && (
+              <p className="text-sm text-red-600 mt-1">{errors.email}</p>
+            )}
           </div>
 
           {/* Phone */}
           <div>
             <label htmlFor="phone" className="block text-sm font-medium mb-2">
-              {isArabic ? "رقم الهاتف" : "Phone Number"}
+              {isArabic ? "رقم الهاتف" : "Phone Number"} *
             </label>
             <input
               id="phone"
@@ -193,15 +294,19 @@ Portfolio: ${formData.portfolio || 'Not provided'}
               required
               value={formData.phone}
               onChange={handleInputChange}
-              className="cosmic-input w-full"
+              onBlur={handleBlur}
+              className={`cosmic-input w-full ${errors.phone ? 'border-red-500 focus:border-red-500' : ''}`}
               placeholder={isArabic ? "أدخل رقم هاتفك" : "Enter your phone number"}
             />
+            {errors.phone && (
+              <p className="text-sm text-red-600 mt-1">{errors.phone}</p>
+            )}
           </div>
 
           {/* Position */}
           <div>
             <label htmlFor="position" className="block text-sm font-medium mb-2">
-              {isArabic ? "الوظيفة المطلوبة" : "Position"}
+              {isArabic ? "الوظيفة المطلوبة" : "Position"} *
             </label>
             <select
               id="position"
@@ -209,7 +314,8 @@ Portfolio: ${formData.portfolio || 'Not provided'}
               required
               value={formData.position}
               onChange={handleInputChange}
-              className="cosmic-input w-full"
+              onBlur={handleBlur}
+              className={`cosmic-input w-full ${errors.position ? 'border-red-500 focus:border-red-500' : ''}`}
             >
               <option value="">
                 {isArabic ? "اختر الوظيفة" : "Select position"}
@@ -220,12 +326,15 @@ Portfolio: ${formData.portfolio || 'Not provided'}
                 </option>
               ))}
             </select>
+            {errors.position && (
+              <p className="text-sm text-red-600 mt-1">{errors.position}</p>
+            )}
           </div>
 
           {/* Years of Experience */}
           <div>
             <label htmlFor="experience" className="block text-sm font-medium mb-2">
-              {isArabic ? "سنوات الخبرة" : "Years of Experience"}
+              {isArabic ? "سنوات الخبرة" : "Years of Experience"} *
             </label>
             <input
               id="experience"
@@ -234,9 +343,13 @@ Portfolio: ${formData.portfolio || 'Not provided'}
               required
               value={formData.experience}
               onChange={handleInputChange}
-              className="cosmic-input w-full"
+              onBlur={handleBlur}
+              className={`cosmic-input w-full ${errors.experience ? 'border-red-500 focus:border-red-500' : ''}`}
               placeholder={isArabic ? "مثال: 3 سنوات" : "e.g., 3 years"}
             />
+            {errors.experience && (
+              <p className="text-sm text-red-600 mt-1">{errors.experience}</p>
+            )}
           </div>
 
           {/* Portfolio URL */}
@@ -268,7 +381,7 @@ Portfolio: ${formData.portfolio || 'Not provided'}
             required
             accept=".pdf,.doc,.docx"
             onChange={handleFileChange}
-            className="cosmic-input w-full file:mr-4 file:py-2 file:px-4 file:rounded-md file:border-0 file:text-sm file:font-semibold file:bg-gray-100 file:text-gray-700 hover:file:bg-gray-200"
+            className={`cosmic-input w-full file:mr-4 file:py-2 file:px-4 file:rounded-md file:border-0 file:text-sm file:font-semibold file:bg-gray-100 file:text-gray-700 hover:file:bg-gray-200 ${errors.resume ? 'border-red-500 focus:border-red-500' : ''}`}
           />
           <p className="text-sm text-muted-foreground mt-1">
             {isArabic ? "PDF, DOC, أو DOCX (الحد الأقصى 5 ميجابايت)" : "PDF, DOC, or DOCX (max 5MB)"}
@@ -278,6 +391,9 @@ Portfolio: ${formData.portfolio || 'Not provided'}
               {isArabic ? "تم اختيار الملف: " : "Selected file: "}
               {formData.resume.name}
             </p>
+          )}
+          {errors.resume && (
+            <p className="text-sm text-red-600 mt-1">{errors.resume}</p>
           )}
         </div>
 
@@ -301,7 +417,7 @@ Portfolio: ${formData.portfolio || 'Not provided'}
         <div className="text-center">
           <button
             type="submit"
-            className="cosmic-button"
+            className="cosmic-button group w-full"
             disabled={isSubmitting}
           >
             {isSubmitting ? (
@@ -313,7 +429,10 @@ Portfolio: ${formData.portfolio || 'Not provided'}
                 {isArabic ? "جاري الإرسال..." : "Submitting..."}
               </span>
             ) : (
-              isArabic ? "إرسال الطلب" : "Submit Application"
+              <>
+                <span className="group-hover:-translate-x-1">   {isArabic ? "إرسال الطلب" : "Submit Application"} </span>
+                <Send className={`${isArabic ? 'mr-2' : 'ml-2'} w-4 h-4 transition-transform duration-300 ${isArabic ? 'group-hover:-translate-x-1' : 'group-hover:translate-x-1'}`} />
+              </>
             )}
           </button>
         </div>
