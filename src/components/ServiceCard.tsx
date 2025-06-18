@@ -97,7 +97,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
           to={`${baseUrl}/service/${id}`} 
           className={`inline-flex items-center text-sm font-medium ${colorClasses[color].textGlow} group-hover:underline`}
         >
-          {language === 'ar' ? 'معرفة المزيد' : 'Learn more'}
+          {language === 'ar' ? 'معرفة المزيد' : 'More'}
           <ExternalLink className={`${language === 'ar' ? 'mr-1' : 'ml-1'} w-4 h-4`} />
         </Link>
       )}

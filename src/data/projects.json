@@ -19,7 +19,7 @@
       ],
       "category": "Mobile App",
       "fullDescription": "Mr. Tech is your friendly study buddy that makes university life easier, whether you're learning from campus or home. Think of it as your personal assistant that keeps all your study materials, schedules, and grades in one place. You can download your course content to study offline when internet isn't available, chat with your professors and classmates, and even register for courses right from your phone. It's like having the whole university in your pocket!",
-      "challenge": "Students were struggling to keep up with their studies, especially when switching between online and offline learning. They needed a simple way to access study materials anywhere, stay in touch with teachers, and keep track of their progress.",
+      "challenge": "Students in Syria were struggling to keep up with their studies, especially when switching between online and offline learning. They needed a simple way to access study materials anywhere, stay in touch with teachers, and keep track of their progress.",
       "solution": "We created a student-friendly app that works both online and offline. Students can download lectures and study materials to use without internet, get important updates about their courses, and easily connect with their teachers and classmates - all through one simple app.",
       "results": "Students love using the app! Class participation went up by 60%, university staff saved 45% of their time on paperwork, and students are much happier with how they can manage their studies.",
       "technologies": [
@@ -98,7 +98,7 @@
       "fullDescription": "Aybk is an innovative print-on-demand ecommerce platform where customers can design custom products directly on the site. The platform features a unique marketplace allowing users to become designers (upload and sell their designs) or traders (affiliate marketers). Includes comprehensive order tracking with real-time status updates and a robust admin dashboard for business management.",
       "challenge": "Creating a seamless integration between custom product design tools, marketplace functionalities, and print-on-demand logistics while maintaining performance at scale.",
       "solution": "Developed a modular Laravel application with Livewire for real-time design interactions, Filament for admin management, and Alpine.js for frontend reactivity. Implemented a multi-role system (customer/designer/trader) with separate workflows and commission tracking.",
-      "results": "Launched with 200+ registered designers processing 500+ monthly orders. Reduced product customization time by 70% compared to traditional POD platforms.",
+      "results": "Launched with 200+ registered designers processing 500+ monthly orders. Reduced product customization time by 70% compared to traditional POD platforms. Users are happy with the platform and the designers are getting paid for their work. and the POD is new to Syria and Lebanon and we are the first to launch it in Syria and Lebanon",
       "technologies": [
         "Livewire",
         "Alpine.js",
@@ -130,7 +130,7 @@
       ],
       "category": "Enterprise Solution",
       "fullDescription": "Lordsbox is a comprehensive employee monitoring solution designed for transport companies, featuring real-time GPS tracking, working hour calculations, and detailed reporting. The system continues tracking even when the app is in background mode.",
-      "challenge": "Developing a reliable tracking system that works continuously without draining battery life excessively.",
+      "challenge": "Developing a reliable tracking system that works continuously without draining battery life excessively. making it easy for the company to monitor their employees and their work hours in Germany.",
       "solution": "Optimized background location services with intelligent polling intervals and battery-saving techniques.",
       "results": "Improved workforce productivity tracking by 90% while maintaining less than 15% additional battery usage.",
       "technologies": [
@@ -325,7 +325,7 @@
       ],
       "category": "Utility Software",
       "fullDescription": "Cables is a specialized desktop application for telephone exchange operators to manage customer data, service records, and network information. The system works offline with local data storage and wireless synchronization capabilities.",
-      "challenge": "Creating an offline solution for areas with unreliable connectivity.",
+      "challenge": "Creating an offline solution for areas with unreliable connectivity. making it easy for the company to manage their customers and their services in Syria.",
       "solution": "Developed a local database system with peer-to-peer wireless synchronization between devices.",
       "results": "Deployed in 15 telephone exchanges, reducing data entry errors by 80%.",
       "technologies": [
@@ -470,7 +470,7 @@
       ],
       "category": "Healthcare",
       "fullDescription": "A medicine ordering system that allows customers to place orders and pharmacies to manage inventory and requests. The system features separate interfaces for customers and administrators with real-time updates.",
-      "challenge": "Digitizing medicine ordering in markets with low e-commerce adoption.",
+      "challenge": "Digitizing medicine ordering in markets with low e-commerce adoption. making it easy for the pharmacies to manage their inventory and their customers in Syria.",
       "solution": "Creating a simple, intuitive interface focused on core ordering functions with minimal barriers.",
       "results": "Adopted by 12 local pharmacies, processing over 150 daily orders.",
       "technologies": [
@@ -521,7 +521,7 @@
     {
       "id": "rada",
       "title": "Rada Cleaning",
-      "description": "Cleaning company website",
+      "description": "Cleaning company website in Germany",
       "image": "/images/projects/rada/logo.png",
       "images": [
         "/images/projects/rada/1.jpg",
@@ -631,7 +631,7 @@
       ],
       "category": "تطبيق جوال",
       "fullDescription": "مستر تك هو رفيق دراستك الودود الذي يجعل الحياة الجامعية أسهل، سواء كنت تدرس في الحرم الجامعي أو من المنزل. فكر فيه كمساعد شخصي يحتفظ بجميع موادك الدراسية وجداولك الزمنية ودرجاتك في مكان واحد. يمكنك تحميل محتوى المقرر للدراسة دون اتصال بالإنترنت، والدردشة مع أساتذتك وزملائك، وحتى التسجيل في المقررات مباشرة من هاتفك.",
-      "challenge": "كان الطلاب يواجهون صعوبة في مواكبة دراستهم، خاصة عند التنقل بين التعلم عبر الإنترنت والتعلم التقليدي. كانوا بحاجة إلى طريقة بسيطة للوصول إلى المواد الدراسية في أي مكان والبقاء على تواصل مع المعلمين ومتابعة تقدمهم.",
+      "challenge": "كان الطلاب في سوريا يواجهون صعوبة في مواكبة دراستهم، خاصة عند التنقل بين التعلم عبر الإنترنت والتعلم التقليدي. كانوا بحاجة إلى طريقة بسيطة للوصول إلى المواد الدراسية في أي مكان والبقاء على تواصل مع المعلمين ومتابعة تقدمهم.",
       "solution": "قمنا بإنشاء تطبيق سهل الاستخدام للطلاب يعمل عبر الإنترنت وبدونه. يمكن للطلاب تحميل المحاضرات والمواد الدراسية لاستخدامها بدون إنترنت، والحصول على تحديثات مهمة حول مقرراتهم، والتواصل بسهولة مع معلميهم وزملائهم - كل ذلك من خلال تطبيق واحد بسيط.",
       "results": "الطلاب يحبون استخدام التطبيق! زادت المشاركة في الفصل بنسبة 60٪، ووفر موظفو الجامعة 45٪ من وقتهم في الأعمال الورقية، والطلاب أكثر سعادة بكيفية إدارة دراستهم.",
       "technologies": [
@@ -673,7 +673,7 @@
       "fullDescription": "أيبك هي منصة مبتكرة للطباعة عند الطلب حيث يمكن للعملاء تصميم منتجات مخصصة مباشرة على الموقع. تتميز المنصة بسوق فريد يسمح للمستخدمين بأن يصبحوا مصممين (رفع وبيع تصاميمهم) أو تجار (مسوقين بالعمولة). تتضمن نظام متابعة طلبات شامل مع تحديثات حالة في الوقت الفعلي ولوحة تحكم إدارية قوية.",
       "challenge": "إنشاء تكامل سلس بين أدوات تصميم المنتجات المخصصة ووظائف السوق والخدمات اللوجستية للطباعة عند الطلب مع الحفاظ على الأداء عند التوسع.",
       "solution": "تم تطوير تطبيق لارافيل معياري مع Livewire لتفاعلات التصميم في الوقت الحقيقي، Filament للإدارة الإدارية، وAlpine.js لواجهة المستخدم التفاعلية. تم تنفيذ نظام متعدد الأدوار (عميل/مصمم/تاجر) مع مسارات عمل منفصلة وتتبع عمولات.",
-      "results": "تم الإطلاق مع 200+ مصمم مسجل ومعالجة 500+ طلب شهريًا. قلص وقت تخصيص المنتجات بنسبة 70٪ مقارنة بمنصات الطباعة عند الطلب التقليدية.",
+      "results": "أُطلقت المنصة مع أكثر من 200+ مصمم مسجل، يعالجون أكثر من 500+ طلب شهريًا. قلّصنا وقت تخصيص المنتج بنسبة 70% مقارنةً بمنصات POD التقليدية. المستخدمون راضون عن المنصة، ويحصل المصممون على أجر مقابل عملهم. منصة POD جديدة في سوريا ولبنان، ونحن أول من أطلقها فيهما.",
       "technologies": [
         "Livewire",
         "Alpine.js",
@@ -899,7 +899,7 @@
       ],
       "category": "برمجيات خدمية",
       "fullDescription": "كيبلز هو تطبيق سطح المكتب متخصص لمشغلي البدالات الهاتفية لإدارة بيانات العملاء وسجلات الخدمة ومعلومات الشبكة. يعمل النظام دون اتصال بالإنترنت مع تخزين البيانات محلياً وإمكانيات المزامنة اللاسلكية.",
-      "challenge": "إنشاء حل يعمل دون اتصال بالإنترنت للمناطق ذات الاتصال غير الموثوق به.",
+      "challenge": "إنشاء حل غير متصل بالإنترنت للمناطق ذات الاتصال غير الموثوق. مما يسهل على الشركة إدارة عملائها وخدماتها في سوريا",
       "solution": "تطوير نظام قاعدة بيانات محلية مع مزامنة لاسلكية نظير إلى نظير بين الأجهزة.",
       "results": "تم نشره في 15 بدالة هاتفية، مما أدى إلى تقليل أخطاء إدخال البيانات بنسبة 80٪.",
       "technologies": [
@@ -956,7 +956,7 @@
     {
       "id": "survey",
       "title": "نظام استبيانات",
-      "description": "نظام تتبع ومراقبة نشاط الموظفين لشركة سعودية",
+      "description": "نظام تتبع ومراقبة نشاط الموظفين لشركة في سعودية",
       "image": "/images/projects/survey/logo.jpg",
       "images": [
         "/images/projects/survey/1.png",
@@ -1044,7 +1044,7 @@
       ],
       "category": "الرعاية الصحية",
       "fullDescription": "نظام طلب أدوية يسمح للعملاء بطلب الأدوية وللصيدليات بإدارة المخزون والطلبات. يتميز النظام بواجهات منفصلة للعملاء والمسؤولين مع تحديثات في الوقت الفعلي.",
-      "challenge": "رقمنة طلب الأدوية في الأسواق ذات التبني المنخفض للتجارة الإلكترونية.",
+      "challenge": "رقمنة طلب الأدوية في الأسواق ذات التبني المنخفض للتجارة الإلكترونية. مما يسهل على الصيدليات إدارة عملائها وخدماتها في سوريا",
       "solution": "إنشاء واجهة بسيطة وبديهية تركز على وظائف الطلب الأساسية مع الحد الأدنى من العوائق.",
       "results": "تم تبنيه من قبل 12 صيدلية محلية، ومعالجة أكثر من 150 طلباً يومياً.",
       "technologies": [
@@ -1095,7 +1095,7 @@
     {
       "id": "rada",
       "title": "RADA",
-      "description": "موقع شركة تنظيف",
+      "description": "موقع شركة تنظيف في ألمانيا",
       "image": "/images/projects/rada/logo.png",
       "images": [
         "/images/projects/rada/1.jpg",
