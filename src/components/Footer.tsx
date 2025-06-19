@@ -45,23 +45,16 @@ const Footer: React.FC = () => {
 
             {/* Social Media */}
             <div className="flex">
+
               <a
-                href="https://www.linkedin.com/company/x-void/"
-                target="_blank"
-                aria-label="LinkedIn"
-                className="w-10 h-10 mx-2 rounded-full flex items-center justify-center bg-white/5 hover:bg-cosmic-blue/20 transition-colors duration-300 border border-white/10 hover:border-cosmic-blue/30"
-              >
-                <Linkedin className="w-5 h-5 text-white" />
-              </a>
-              <a
-                href="https://www.facebook.com/profile.php?id=61575030836742"
+                href="https://www.facebook.com/share/15uu24cF2a/"
                 aria-label="Facebook"
                 className="w-10 h-10 mx-2 rounded-full flex items-center justify-center bg-white/5 hover:bg-cosmic-blue/20 transition-colors duration-300 border border-white/10 hover:border-cosmic-blue/30"
               >
                 <Facebook className="w-5 h-5 text-white" />
               </a>
               <a
-                href="https://www.instagram.com/x_positron"
+                href="https://www.instagram.com/xvoid.tech"
                 aria-label="Instagram"
                 className="w-10 h-10 mx-2 rounded-full flex items-center justify-center bg-white/5 hover:bg-cosmic-blue/20 transition-colors duration-300 border border-white/10 hover:border-cosmic-blue/30"
               >
@@ -74,6 +67,15 @@ const Footer: React.FC = () => {
                 className="w-10 h-10 mx-2 rounded-full flex items-center justify-center bg-white/5 hover:bg-cosmic-blue/20 transition-colors duration-300 border border-white/10 hover:border-cosmic-blue/30"
               >
                 <Phone className="w-5 h-5 text-white" />
+              </a>
+
+              <a
+                href="https://www.linkedin.com/company/x-void/"
+                target="_blank"
+                aria-label="LinkedIn"
+                className="w-10 h-10 mx-2 rounded-full flex items-center justify-center bg-white/5 hover:bg-cosmic-blue/20 transition-colors duration-300 border border-white/10 hover:border-cosmic-blue/30"
+              >
+                <Linkedin className="w-5 h-5 text-white" />
               </a>
               {/* <a
                 href="#"
